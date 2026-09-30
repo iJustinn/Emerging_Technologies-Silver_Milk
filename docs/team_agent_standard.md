@@ -1,6 +1,6 @@
 # Team Agent Design and Integration Standard — Team Silver Milk
 
-**MASY1-GC 1800 · Team Lab 2 · Version 1.0 — ratified in the 2026-09-29 workshop**
+**MASY1-GC 1800 · Team Lab 2 · Version 1.0 — ratified in the 2026-09-29 workshop**  
 Members: Dian Li, Justin Zhong, Karuna Srivastava, Nini Huang, Yuanxiang Zhang
 
 > Governing question: *What fixed technical and professional rules must every team-approved specialist satisfy so the seven agents can later operate as one system?*
