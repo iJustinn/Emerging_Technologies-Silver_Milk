@@ -36,7 +36,7 @@
 2. The swap test shows that output changes little when only the audience changes (decision D-05). Later ET specialists must show organization-level change.
 3. The 18-element screen is qualitative. No reader or print-size test was run (the transfer chart kept a dark background).
 4. ChatGPT Work file-write permission varies by session. In the transfer run, outputs were written to a fallback folder and copied in by the team; the JSON records this as a delivery `fail`.
-5. Only 2 of 5 members submitted individual candidates.
+5. The team selected Justin Zhong’s and Karuna Srivastava’s individual candidates as the two stronger candidates for this exercise and decided not to include the other three candidates.
 
 ## Semester agent inventory (for the final MoE system)
 

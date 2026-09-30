@@ -87,7 +87,7 @@ Every team-approved specialist must: keep FROZEN CORE and the frozen schema unch
 - **Blocker:** the ET scaffold ZIP is not yet in the team workspace; the standard was exercised on the Chart Improvement practice scaffold.
 - **Public repo vs. frozen check:** the promotion procedure needs the scaffold's `tools/` in the repo, but instructor materials must not be published in a public repo. **DECIDED:** make the repo private before Lab 3 (owner: Justin; not yet done).
 - **Dissent recorded:** none raised at ratification. Evidence that would reopen these decisions: a candidate that loses on the common case but clearly wins on a second case (would reopen the tie-breaker); a context-contrast case where the organization-level finding does not change (would reopen the swap-test threshold).
-- **Participation limitation:** only 2 of 5 members (Justin, Karuna) brought individual chart-agent packages; the comparison therefore covers two candidates.
+- **Candidate selection:** the team chose Justin Zhong’s and Karuna Srivastava’s packages as the two stronger candidates for this exercise and decided not to include the other three candidates; the comparison therefore covers the two selected candidates.
 
 ## 11. Version, AI use, and handoff
 

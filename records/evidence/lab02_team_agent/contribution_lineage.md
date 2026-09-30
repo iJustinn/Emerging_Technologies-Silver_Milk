@@ -2,7 +2,7 @@
 
 Which candidate or team member contributed each adopted instruction or design rule, why the team accepted it, and any later team revision. Tags match `specialist_instructions.md`.
 
-Candidates compared: **[Z]** Justin Zhong (`agents/candidate_zhong`, v0.2-student) and **[S]** Karuna Srivastava (`agents/candidate_srivastava`, v0.2-student). Dian Li, Nini Huang, and Yuanxiang Zhang did not submit individual candidates. **[T]** = added by the team in the Lab 2 workshop (2026-09-29).
+Candidates compared: **[Z]** Justin Zhong (`agents/candidate_zhong`, v0.2-student) and **[S]** Karuna Srivastava (`agents/candidate_srivastava`, v0.2-student). The team decided not to include the individual candidates from Dian Li, Nini Huang, and Yuanxiang Zhang because the two selected candidates were stronger for this exercise. **[T]** = added by the team in the Lab 2 workshop (2026-09-29).
 
 | Adopted rule | Source | Why accepted (evidence) | Later team revision |
 |---|---|---|---|

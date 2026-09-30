@@ -1,7 +1,7 @@
 # Lab 2 Candidate Comparison: Chart Improvement Practice Agents
 
 **Status:** pre-read prepared before the team discussion (Justin, AI-assisted). §4 was completed in class on 2026-09-29.
-**Packages received:** 2 of 5. Justin Zhong (`Zhong_Chart_Improvement_Agent.zip`) and Karuna Srivastava (`Karuna_Chart_Improvement_Practice_Scaffold_v1_0 3.zip`). Dian Li, Nini Huang, and Yuanxiang Zhang: no package (recorded, not hidden).
+**Packages selected:** Justin Zhong (`Zhong_Chart_Improvement_Agent.zip`) and Karuna Srivastava (`Karuna_Chart_Improvement_Practice_Scaffold_v1_0 3.zip`). The team chose these two as the stronger candidates for this exercise and decided not to include the individual candidates from Dian Li, Nini Huang, and Yuanxiang Zhang.
 Purpose: to test the draft standard (`docs/team_agent_standard.md`) on real candidates and to build the team chart-improvement agent (v1.0) from them.
 
 ## 1. Checks run (same tools, same data for both)
