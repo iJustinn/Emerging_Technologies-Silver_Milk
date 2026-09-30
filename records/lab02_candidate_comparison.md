@@ -45,6 +45,18 @@ Different questions, audiences, and baselines mean the two outputs **cannot be r
 - R4: no `.git`/IDE folders in submitted ZIPs.
 - R5: adopt Karuna's Check / FAIL / FIX rule format as the team template for specialist instructions.
 
+## 3b. T-03 result: common case (evidence, run in class)
+
+Same instructor question, same baseline, same 5 inputs, three runs (see `test_failure_log.md` T-03, charts in `records/evidence/lab02_t03/`):
+
+| Run | Agent | Audience | Title | On-chart limits | Checks |
+|---|---|---|---|---|---|
+| A | Karuna | NYT editor | "Female passengers had a higher survival rate" (generic) | No policy/cause; age NA included; **no "children not tested"** | All pass; numbers correct |
+| B1 | Justin | Safety board | "Female survival was 53.6 percentage points higher" | "Child prioritization was not tested"; no policy/cause | All pass; numbers correct |
+| B2 | Karuna | Safety board | "Female passengers had a higher survival rate" (generic) | No policy/cause; "children not analyzed separately" | All pass; numbers correct |
+
+What this shows: once the case is common, the two agents produce nearly the same chart. That supports rule R1 and standard §5 step 2. The remaining differences are title strength and whether the chart itself says the children claim was untested. The swap test (editor → board) changed little for either agent. Decide whether that is fine for a fixed question or a sign of weak context sensitivity.
+
 ## 4. Team judgment (fill in class)
 
 - Which rules (R1–R5) go into the standard: ___

@@ -1,0 +1,242 @@
+{
+  "agent": {
+    "name": "Business Chart Improvement Agent",
+    "specialty": "evidence-preserving business visualization improvement",
+    "version": "0.2-student"
+  },
+  "business_question": "You are supporting a New York Times editor who is fact-checking a reporter's proposed statement that the Titanic evacuation followed a 'women and children first' practice. Using the supplied Titanic passenger dataset, determine what the data show about the relationship between sex and survival. Give a numerical answer using survivor counts, survival rates, the percentage-point difference, and the relative survival rate. Create one chart illustrating the result for the editor. Distinguish an observed association from proof that a particular evacuation policy or order caused the result, and identify briefly what this dataset alone cannot establish.",
+  "business_answer_shown": "Female passengers: 339 survivors / 466 passengers (72.7%); male passengers: 161 / 843 (19.1%). Female minus male survival is +53.6 percentage points; female survival rate divided by male survival rate is 3.81. This is an observed sex-survival association, not proof that a policy or order caused it.",
+  "baseline_chart_assessment": [
+    {
+      "issue": "NO: The direction is visible, but the topic title does not state the finding or numerical contrast.",
+      "why_it_matters": "The audience must infer the answer rather than read it immediately.",
+      "related_principle": "Visual Story",
+      "priority": "high"
+    },
+    {
+      "issue": "YES: Only the two sex groups relevant to the supplied question are shown.",
+      "why_it_matters": "Preserve the focused comparison; adding class or child groups would change this question.",
+      "related_principle": "Visual Props",
+      "priority": "low"
+    },
+    {
+      "issue": "YES: A familiar two-bar chart is used.",
+      "why_it_matters": "A standard bar form supports quick reading; retain it.",
+      "related_principle": "Storytellers",
+      "priority": "low"
+    },
+    {
+      "issue": "YES: Bar height consistently means survival percentage; sex labels are plain language.",
+      "why_it_matters": "Preserve the conventional encoding and categories.",
+      "related_principle": "Signs",
+      "priority": "low"
+    },
+    {
+      "issue": "YES: Light gridlines, no legend and little non-data ink keep the signal clear.",
+      "why_it_matters": "Retain the restrained background and reference grid.",
+      "related_principle": "Communication",
+      "priority": "low"
+    },
+    {
+      "issue": "YES: The chart is informational and readable rather than decorative.",
+      "why_it_matters": "No cosmetic redesign is needed.",
+      "related_principle": "Function",
+      "priority": "low"
+    },
+    {
+      "issue": "NO: Survivor counts, denominators, percentage-point difference, relative rate and interpretation limits are absent.",
+      "why_it_matters": "These are required to fact-check the proposed statement and judge use in training material.",
+      "related_principle": "Need",
+      "priority": "high"
+    },
+    {
+      "issue": "NO: Readable labels do not address the likely inference that higher female survival proves an evacuation practice.",
+      "why_it_matters": "Both the editor and non-technical board need an explicit limit on interpretation.",
+      "related_principle": "Audience",
+      "priority": "high"
+    },
+    {
+      "issue": "NO: The title identifies variables but does not answer the sex-survival question or distinguish association from causation.",
+      "why_it_matters": "The reader needs the observed finding and its evidentiary boundary.",
+      "related_principle": "Frame",
+      "priority": "high"
+    },
+    {
+      "issue": "YES: The taller female bar makes the main direction apparent.",
+      "why_it_matters": "Keep female first; the new finding title requires matching emphasis.",
+      "related_principle": "Seeing",
+      "priority": "low"
+    },
+    {
+      "issue": "YES: The two comparable bars share a scale and are grouped together.",
+      "why_it_matters": "Keep the adjacent bars on the same 0–100% axis.",
+      "related_principle": "Mind (Gestalt)",
+      "priority": "low"
+    },
+    {
+      "issue": "YES: Rates reveal a substantial survival association rather than merely showing raw counts.",
+      "why_it_matters": "Retain rates as the main measure.",
+      "related_principle": "Quality",
+      "priority": "low"
+    },
+    {
+      "issue": "YES: A single blue hue is used consistently and categories are labeled.",
+      "why_it_matters": "Change the male bar to gray only to meet the new title’s emphasis requirement.",
+      "related_principle": "Color",
+      "priority": "low"
+    },
+    {
+      "issue": "YES: No 3D effects, imagery, heavy borders or heavy gridlines distract from the comparison.",
+      "why_it_matters": "Keep the chart restrained.",
+      "related_principle": "Chart Junk",
+      "priority": "low"
+    },
+    {
+      "issue": "NO: “Titanic survival rate by sex” names the variables without stating the finding.",
+      "why_it_matters": "A verified finding title communicates the answer faster without asserting a cause.",
+      "related_principle": "Title",
+      "priority": "high"
+    },
+    {
+      "issue": "YES: Aligned bar lengths allow accurate magnitude comparisons.",
+      "why_it_matters": "Keep bars and the zero baseline; fix numerical lookup with direct labels.",
+      "related_principle": "Right Chart",
+      "priority": "low"
+    },
+    {
+      "issue": "YES: A two-category bar chart matches the sex comparison in business_question.txt.",
+      "why_it_matters": "No alternative chart type is necessary.",
+      "related_principle": "Selection",
+      "priority": "low"
+    },
+    {
+      "issue": "NO: Exact rates must be estimated from the axis; counts and denominators are unavailable.",
+      "why_it_matters": "Direct labels provide the referenceable values required by the editor.",
+      "related_principle": "Tables",
+      "priority": "high"
+    }
+  ],
+  "data_fidelity_checks": [
+    {
+      "check": "Required inputs and governing framework",
+      "result": "pass",
+      "notes": "Read all five mapped inputs. Applied the principles document’s six dimensions and all 18 YES/NO checks; used the case study only for calibration."
+    },
+    {
+      "check": "Passenger counts and valid categories",
+      "result": "pass",
+      "notes": "Sheet1 contains 1,309 passenger rows, 466 female and 843 male; all sex and survival fields are valid. Survivors total 500 = 339 + 161. No rows excluded."
+    },
+    {
+      "check": "Recomputed survival rates",
+      "result": "pass",
+      "notes": "339/466 = 72.746781%; 161/843 = 19.098458%. Bars use unrounded rates; labels round to 72.7% and 19.1%."
+    },
+    {
+      "check": "Difference and relative-rate direction",
+      "result": "pass",
+      "notes": "100 × (339/466 − 161/843) = 53.648323 percentage points, rounded to +53.6. (339/466)/(161/843) = 3.809040, rounded to 3.81; female is the numerator, male the denominator. Calculations precede rounding."
+    },
+    {
+      "check": "Baseline agreement with source",
+      "result": "pass",
+      "notes": "The baseline’s female bar near 73% and male bar near 19% agree visually with recomputation and preserve the same ordering. Exact underlying baseline values cannot be recovered from an unlabeled PNG; no consequential contradiction was found."
+    },
+    {
+      "check": "Missing ages and child definition",
+      "result": "pass",
+      "notes": "Exactly 263 age cells contain the string NA. All are included in the sex denominators; no age is imputed and none is classified as adult. The footnote defines child as under 18 but explicitly states that children are not separately analyzed. The baseline contains no child group or threshold."
+    },
+    {
+      "check": "Scale, labels, source and non-causal wording",
+      "result": "pass",
+      "notes": "Both bars use a common 0–100% axis, original sex categories, direct rates, survivor counts and denominators. The source note states Titanic passenger list, n = 1,309. Title, annotation and report describe association only; the chart explicitly limits causal interpretation."
+    },
+    {
+      "check": "Input preservation and artifact verification",
+      "result": "pass",
+      "notes": "SHA-256 hashes confirm all five input files, including baseline_chart.png, remain unchanged. The separate 2400 × 1500 landscape PNG was opened and inspected at editorial size; the report was checked against the supplied JSON schema."
+    }
+  ],
+  "principles_applied": [
+    {
+      "principle": "Title",
+      "change_made": "Replaced the topic title with the verified finding “Female passengers had a higher survival rate.”",
+      "expected_communication_benefit": "Makes the observed answer immediate without asserting evacuation-policy causation."
+    },
+    {
+      "principle": "Visual Story",
+      "change_made": "Added one contrast annotation: female minus male +53.6 percentage points; female divided by male 3.81×.",
+      "expected_communication_benefit": "States absolute and relative magnitude with explicit comparison direction."
+    },
+    {
+      "principle": "Tables",
+      "change_made": "Added 72.7% and 19.1% directly on or above bars and survivor/denominator labels below each category.",
+      "expected_communication_benefit": "Enables precise fact-checking without axis estimates or a separate legend."
+    },
+    {
+      "principle": "Need",
+      "change_made": "Added the passenger source, all-age scope, rate definition and disclosure that 263 unknown-age records remain included.",
+      "expected_communication_benefit": "Provides the denominator context needed to assess the evidence."
+    },
+    {
+      "principle": "Audience",
+      "change_made": "Added a readable statement that observed association alone cannot establish the evacuation decision process or cause.",
+      "expected_communication_benefit": "Addresses the proposed claim and discourages unsupported policy inference."
+    },
+    {
+      "principle": "Frame",
+      "change_made": "Kept the supplied sex comparison and standard bar form; used blue for female and gray for male to match the finding title.",
+      "expected_communication_benefit": "Aligns question, answer and emphasis. Changes to YES-rated Seeing and Color are required by the higher-priority Title fix; no unrelated breakdown is introduced."
+    }
+  ],
+  "improved_chart": {
+    "artifact_created": true,
+    "filename": "t03b_karuna_agent_contrast.png",
+    "chart_type": "Two adjacent vertical bars comparing survival rates by recorded sex",
+    "title": "Female passengers had a higher survival rate",
+    "accessibility_notes": "2400 × 1500 landscape PNG; font sizes 11–25 pt at the designed 12 × 7.5 inch size. Dark blue and neutral gray; labels and bar heights carry meaning independently of color. White rate text sits inside the long female bar; dark male rate text sits above the short bar with a gap. Common zero-based axis, direct labels and no legend. Inspected at 1200 × 750 editorial-preview size."
+  },
+  "baseline_to_improved_comparison": [
+    {
+      "dimension": "Story",
+      "baseline": "Sex-survival direction is visible, but the finding and contrast are unstated.",
+      "improved": "Finding title and one quantitative contrast annotation make the answer explicit."
+    },
+    {
+      "dimension": "Signs",
+      "baseline": "Conventional percentage bars, readable sex labels and light gridlines.",
+      "improved": "Retains these strengths and adds direct numerical labels."
+    },
+    {
+      "dimension": "Purpose",
+      "baseline": "Shows a sex association but omits the exact evidence and limits needed for fact-checking.",
+      "improved": "Shows counts, denominators, rates, rate difference, directional ratio and a causal boundary."
+    },
+    {
+      "dimension": "Perception",
+      "baseline": "Adjacent bars share a clear zero-based scale.",
+      "improved": "Retains grouping and scale; female emphasis matches the finding title."
+    },
+    {
+      "dimension": "Method",
+      "baseline": "Single hue and restrained styling, but a descriptive topic title.",
+      "improved": "Verified finding title with one accent and neutral context; no decorative additions."
+    },
+    {
+      "dimension": "Charts",
+      "baseline": "Appropriate bar chart, but exact values require estimates.",
+      "improved": "Same basic chart form with directly referenceable rates and counts."
+    }
+  ],
+  "remaining_limitations": [
+    "The passenger spreadsheet contains survival outcomes, not evidence of orders, evacuation sequence, boarding decisions or compliance. It cannot establish whether “women and children first” was followed or caused the association; documentary or process evidence is needed for that claim.",
+    "These are aggregate, unadjusted sex rates. They do not establish survival priority for children, equal treatment across classes, a sex effect independent of age or class, or outcomes for crew. No statistical-significance claim is made.",
+    "Packet scope conflict: the generic primary-case instructions request women/children/men and equal application across classes, while business_question.txt explicitly requests sex-survival evidence for a New York Times editor and the case manifest requires a non-causal sex comparison for a review board. The frozen instruction to preserve the supplied question governs this chart; class and child breakdowns were not added.",
+    "The baseline is an unlabeled raster; its exact plotted values and source code cannot be verified. Five-second comprehension and projection readability have not been tested with the intended audience.",
+    "The under-18 child definition is disclosed for transparency but is not used to assign groups or calculate rates in this sex-only chart."
+  ],
+  "abstention_or_more_information_needed": [
+    "No abstention from the supplied sex-survival comparison is necessary. A claim that an evacuation policy or order was followed requires independent historical evidence of the decision process; this dataset alone cannot support it."
+  ]
+}

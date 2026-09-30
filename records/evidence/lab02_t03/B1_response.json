@@ -1,0 +1,165 @@
+{
+  "agent": {
+    "name": "Business Chart Improvement Agent",
+    "specialty": "evidence-preserving business visualization improvement",
+    "version": "0.2-student"
+  },
+  "business_question": "You are supporting a New York Times editor who is fact-checking a reporter's proposed statement that the Titanic evacuation followed a 'women and children first' practice. Using the supplied Titanic passenger dataset, determine what the data show about the relationship between sex and survival. Give a numerical answer using survivor counts, survival rates, the percentage-point difference, and the relative survival rate. Create one chart illustrating the result for the editor. Distinguish an observed association from proof that a particular evacuation policy or order caused the result, and identify briefly what this dataset alone cannot establish.",
+  "business_answer_shown": "In the supplied 1,309 passenger records, 339 of 466 female passengers survived (72.7%), compared with 161 of 843 male passengers (19.1%). Female survival was 53.6 percentage points higher; the female-to-male survival-rate ratio was 3.81. This verifies the sex-survival association only. Child prioritization was not tested, and these data alone cannot establish evacuation decisions, intentions, causes, or whether a policy was followed. The chart preserves the editor's question and provides the same bounded evidence for the case's maritime safety review board.",
+  "baseline_chart_assessment": [
+    {
+      "issue": "Rates must be estimated from bar heights; exact rates, survivor counts, denominators, and comparison measures are absent.",
+      "why_it_matters": "The viewer cannot decode and check the required numerical answer directly.",
+      "related_principle": "Communication",
+      "priority": "high"
+    },
+    {
+      "issue": "The chart omits counts, denominators, the percentage-point difference, the relative rate, and the boundaries of the tested claim.",
+      "why_it_matters": "The editor and review board need these facts and limits to judge how this evidence can be cited.",
+      "related_principle": "Need",
+      "priority": "high"
+    },
+    {
+      "issue": "The baseline provides no explicit warning that child prioritization is untested and an evacuation practice or order cannot be established from this association.",
+      "why_it_matters": "Readers fact-checking a policy statement may mistake a visible sex difference for evidence of the full statement.",
+      "related_principle": "Audience",
+      "priority": "high"
+    },
+    {
+      "issue": "The direction is apparent, but the precise magnitude and limits remain unresolved.",
+      "why_it_matters": "The viewer leaves without the complete numerical answer or a clear boundary on inference.",
+      "related_principle": "Quality",
+      "priority": "high"
+    },
+    {
+      "issue": "The generic title identifies the topic without stating the verified result or its magnitude.",
+      "why_it_matters": "The reader must infer the takeaway rather than seeing a concise observational answer immediately.",
+      "related_principle": "Title",
+      "priority": "medium"
+    }
+  ],
+  "data_fidelity_checks": [
+    {
+      "check": "Required inputs and source roles",
+      "result": "pass",
+      "notes": "Read all five mapped inputs. Data_Visualization_for_Business_Decisions_Principles.pdf governs the qualitative eighteen-element screening. From_Pixels_to_Insights_Case_Study.pdf informed audience awareness and technical review; its case-specific designs and policy framing were not imported. The RUN NOTE controls file locations and delivery."
+    },
+    {
+      "check": "Passenger records, fields, encodings, and inclusion",
+      "result": "pass",
+      "notes": "Inspected every record in Titanic.xlsx, Sheet1, rows 2-1310. Fields are pclass, survived, name, sex, age, embarked, and home.dest. Sex contains female (466) and male (843); survived is a binary integer indicator, interpreted as 1=survived and 0=did not survive, consistent with the baseline. Neither field contains missing or ambiguous values. No blank or identical duplicate records were found. All 1,309 records were included without recoding or exclusion; missing values in unrelated fields did not affect eligibility."
+    },
+    {
+      "check": "Counts and reconciliation",
+      "result": "pass",
+      "notes": "Female: 339 survived and 127 did not, total 466. Male: 161 survived and 682 did not, total 843. Denominators sum to 1,309; survivors sum to 500; nonsurvivors sum to 809."
+    },
+    {
+      "check": "Rates and derived comparisons",
+      "result": "pass",
+      "notes": "339/466 x 100 = 72.7467811159%; 161/843 x 100 = 19.0984578885%. Subtraction of unrounded percentage rates gives 53.6483232274 percentage points. (339/466)/(161/843) = 3.8090395330, female divided by male. Displayed rates and difference round to one decimal place; the ratio rounds to two. Percentage points and multiplicative rate ratio are kept distinct."
+    },
+    {
+      "check": "Baseline values, ordering, units, and scale",
+      "result": "pass",
+      "notes": "Female precedes male, with a common zero baseline and a 0%-100% scale. Visible bar heights agree approximately with the verified 72.7% and 19.1%; no consequential value error was detected. Exact baseline values cannot be read because numeric bar labels are absent."
+    },
+    {
+      "check": "Improved values, annotations, and encoding",
+      "result": "pass",
+      "notes": "Recomputed the same records for the rerun. Both bar heights use unrounded rates on a shared 0%-100% scale. Verified category-to-value pairing, 339/466 and 161/843 labels, 72.7% and 19.1% rate labels, the 53.6-percentage-point title, directed 3.81-times ratio, population label, source, and rounding note."
+    },
+    {
+      "check": "Claim components and first-run revision",
+      "result": "pass",
+      "notes": "Separated the sex-survival association, child prioritization, and existence or causal effect of an evacuation practice or order. Only the first component is tested. First-run weakness: a generic causal limitation omitted explicit disclosure that child prioritization was untested. Revised a local working copy of the specialist instruction to require component-by-component on-chart disclosure, then reran the same case. The final chart names the untested child component and states that decisions, intentions, causes, and whether a policy was followed cannot be established. The supplied packet remains unchanged; no age analysis was added."
+    },
+    {
+      "check": "Framework coverage and visual inspection",
+      "result": "pass",
+      "notes": "Inspected all eighteen elements using qualitative YES/NO judgments, with Tables not applicable. Each of the five NO findings has a separate assessment entry; all eighteen judgments appear across the six comparison entries. Compared baseline and improved charts side by side and inspected the final chart at 1,522 x 892 and 761 x 446 pixels and in grayscale. Labels and notes remain readable with no clipping or overlap. These are inspection judgments, not measured usability scores."
+    },
+    {
+      "check": "Output schema, files, and input preservation",
+      "result": "pass",
+      "notes": "Validated response.json against the supplied schema and confirmed both requested files in B1. The chart is a separate 1,522 x 892 PNG, with the required relative filename in this report. SHA-256 hashes for all five inputs match the pre-work hashes, preserving the baseline and reference files unchanged."
+    }
+  ],
+  "principles_applied": [
+    {
+      "principle": "Communication and Need",
+      "change_made": "Added direct survival percentages, survivor counts and denominators, the percentage-point difference, and the explicitly directed female/male rate ratio.",
+      "expected_communication_benefit": "Addresses missing numerical evidence and estimation burden while retaining both groups, their order, and the truthful common scale."
+    },
+    {
+      "principle": "Title and Visual Story",
+      "change_made": "Replaced the generic heading with 'Female survival was 53.6 percentage points higher' and identified the supplied population in the subtitle.",
+      "expected_communication_benefit": "Addresses the generic-title deficiency with a quick, observational takeaway; the population context prevents an unsupported claim about a broader population."
+    },
+    {
+      "principle": "Audience and Quality",
+      "change_made": "Added a visible note that child prioritization was not tested and the data alone cannot establish decisions, intentions, causes, or whether a policy was followed.",
+      "expected_communication_benefit": "Addresses the missing claim limits and reduces the risk of citing an association as proof of the full evacuation-policy statement."
+    },
+    {
+      "principle": "Communication, Mind, and Color",
+      "change_made": "Grouped each direct rate with its bar, sex label, and counts; used flat, darker bars with neutral shared color and quiet gridlines.",
+      "expected_communication_benefit": "Supports reading the newly added evidence at article size without legend lookup, color dependence, or competition from decorative styling; no data or context was removed."
+    },
+    {
+      "principle": "Right Chart, Selection, and Visual Props",
+      "change_made": "Retained the simple vertical bar comparison, female-then-male order, and full percentage scale; added only labels and context needed for this fact check.",
+      "expected_communication_benefit": "Preserves the baseline's effective comparison convention and keeps the revision focused rather than adding an unnecessary chart type or table."
+    }
+  ],
+  "improved_chart": {
+    "artifact_created": true,
+    "filename": "t03b_chart_improvement_agent_contrast.png",
+    "chart_type": "Two vertical bars comparing survival rates by recorded sex on a shared 0%-100% scale",
+    "title": "Female survival was 53.6 percentage points higher",
+    "accessibility_notes": "Direct category, percentage, and count labels; no legend or reliance on color to distinguish groups. Dark text and one neutral dark blue provide contrast on white. Inspected at full size, half size, and in grayscale; the claim limitations remain visible. PNG text is rasterized; accessible text is supplied in this JSON."
+  },
+  "baseline_to_improved_comparison": [
+    {
+      "dimension": "Story",
+      "baseline": "YES: Visual Story, Visual Props, Storytellers. The two bars make the direction of the sex-survival difference clear, the chart is focused, and the familiar basic convention supports comparison. Visual Story is borderline YES: the direction is readily visible, although the exact magnitude and inference limits are missing. NO: none. Not applicable: none.",
+      "improved": "Retained the focused basic bar comparison. The verified title, direct values, and concise limitations make the same observed answer more explicit without inventing a causal story."
+    },
+    {
+      "dimension": "Signs",
+      "baseline": "YES: Signs, Function. Explicit sex labels and conventional bars are neutral and informational. NO: Communication, because exact required values must be estimated or are missing. Not applicable: none.",
+      "improved": "Added direct numerical labels and grouped evidence. Neutral signs and informational emphasis are retained; flat dark bars support legibility and precise endpoints."
+    },
+    {
+      "dimension": "Purpose",
+      "baseline": "YES: Frame; the metric and categories match the observed sex-survival question. NO: Need and Audience; required comparison measures and counts are absent, and the untested child and policy components are undisclosed. Not applicable: none.",
+      "improved": "Preserved the exact supplied question while presenting counts, rates, difference, directed ratio, and claim limits for both the editor and the maritime review board. The chart can support citation of the association, but cannot establish the proposed practice."
+    },
+    {
+      "dimension": "Perception",
+      "baseline": "YES: Seeing and Mind; bars dominate the visual, align on a common baseline, and pair clearly with their categories. NO: Quality; the exact answer and limits remain unresolved. Not applicable: none.",
+      "improved": "Kept the clear ordering and scale, paired each group with its exact evidence, and added the bounded takeaway and limitations. This resolves the numerical information gap without suggesting a mechanism."
+    },
+    {
+      "dimension": "Method",
+      "baseline": "YES: Color and Chart Junk. One shared blue is sparse and categories are directly named. Chart Junk is borderline YES: gradients and rounded caps add little, but do not materially obscure this simple comparison. NO: Title; it names the subject without the observed takeaway or magnitude. Not applicable: none.",
+      "improved": "Added an observational magnitude in the title. Flat darker bars and quiet lines help the new direct labels remain readable at reduced size; retained necessary units, scale, source, rounding, and claim limits."
+    },
+    {
+      "dimension": "Charts",
+      "baseline": "YES: Right Chart and Selection; lengths share a zero baseline and full percentage scale, appropriate for comparing two observed rates. NO: none. Not applicable: Tables, because no table is present or needed; exact values can be conveyed in direct labels.",
+      "improved": "Retained the chart type, scale, and order. Added direct lookup values without an unnecessary table."
+    }
+  ],
+  "remaining_limitations": [
+    "The association alone cannot establish an evacuation policy or order, the decision process, intentions, or causes of the survival difference. Independent historical evidence would be needed for those claims.",
+    "Child prioritization was not tested; an age-based analysis is outside this existing sex-survival chart improvement task.",
+    "The supplied workbook does not document provenance or coverage sufficiently to establish representativeness or justify generalization beyond its 1,309 records, including application to modern evacuation training.",
+    "Rates and the difference are rounded to one decimal place and the relative rate to two; bars use unrounded values.",
+    "The rerun fixes the first draft's missing child-scope disclosure, but inspection does not replace an editor's or domain expert's review or a measured reader-comprehension study."
+  ],
+  "abstention_or_more_information_needed": [
+    "No additional information is needed to verify and improve the supplied sex-survival comparison. Abstain from concluding that the full 'women and children first' claim is established.",
+    "To assess child prioritization, a separately authorized age-based inquiry with a defined child category would be needed. To assess whether an evacuation practice or order existed or caused outcomes, obtain independent historical documentation of decisions and implementation."
+  ]
+}
