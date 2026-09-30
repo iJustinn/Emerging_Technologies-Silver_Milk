@@ -4,6 +4,7 @@
 
 When it is available:
 
+0. **Gate:** do not commit the scaffold while this repo is public. First make the repo private, or get instructor approval (issue I-04).
 1. Keep the Brightspace ZIP unchanged. Unzip a working copy into this folder.
 2. Before committing, confirm that nothing under `course_materials/` or any other instructor file is caught by `.gitignore`. Do **not** force-add ignored files, because this repo is public.
 3. Run `python tools/check_frozen_core.py` and paste the output into `records/test_failure_log.md`.

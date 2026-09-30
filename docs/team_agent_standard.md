@@ -36,7 +36,7 @@ The ET scaffold (`MASY1800_ET_Agent_Scaffold_v1_0`) is assumed to follow the sam
 
 ## 4. Passing validation is necessary, not sufficient
 
-`validate_response.py` checks only that the top-level keys exist and have basic types. It does **not** check enum values, the fields inside array items, empty arrays, whether the artifact exists, or content. In the workshop we saved a deliberately broken response (`priority: "urgent"`, zero data-fidelity checks, zero principles applied, a causal "proven" claim, `artifact_created: true` for a missing file). It printed **`VALIDATION PASSED`** (`records/evidence/lab02_weak_output_probe.json`, logged as T-02).
+`validate_response.py` checks only that the top-level keys exist and have basic types. It does **not** check enum values, the fields inside array items, empty arrays, whether the artifact exists, or content. A pre-workshop probe (Justin, AI-assisted; for the team to re-run or confirm in class) saved a deliberately broken response (`priority: "urgent"`, zero data-fidelity checks, zero principles applied, a causal "proven" claim, `artifact_created: true` for a missing file). It printed **`VALIDATION PASSED`** (`records/evidence/lab02_weak_output_probe.json`, logged as T-02).
 
 So every candidate also gets a **human context review**:
 - **Swap test:** change the organization or posture in the case. If the organization-level finding barely changes, the agent is fluent, not contextual.
@@ -73,9 +73,20 @@ So every candidate also gets a **human context review**:
 - **One team convention:** one common primary and contrast case for all candidates, with a `1.0-team` version and a git commit and tag on promotion.
 - **One integration failure we intend to prevent:** a specialist that passes the validator but is generic or unsupported — fluent output that would silently bias the final MoE recommendation. Prevented by the Section 4 human context review.
 
-## 9. Open issues and dissent (fill in class)
+## 9. Team decision *(pending ratification)*
+
+Every team-approved specialist must: keep FROZEN CORE and the frozen schema unchanged; keep the three-level ET → application → organization distinction; carry the Section 3 evidence package; pass both the validator and the Section 4 human context review; and enter `main` only through the Section 6 promotion procedure.
+
+## 10. Open issues and dissent (fill in class)
 
 - **Inventory mismatch:** our Lab 1 mission lists creation, innovation, diffusion, *disruption*, *readiness*, adoption. The course's seven are Creation, Innovation, Promethean, Diffusion, Adoption, Organizational Adoption, Landscape. *Default:* follow the course seven; map "readiness" to Organizational Adoption; disruption is covered inside Promethean and Innovation. TEAM DECIDES.
 - **Carried from Lab 1:** how to reconcile conflicting specialist findings. Deferred to Lab 10 (`records/integration_issue_log.md`, I-01).
 - **Blocker:** the ET scaffold ZIP is not yet in the team workspace; the standard was exercised on the Chart Improvement practice scaffold.
+- **Public repo vs. frozen check:** the promotion procedure needs the scaffold's `tools/` in the repo, but instructor materials must not be published in a public repo. Must be resolved before Lab 3 (make the repo private, or get instructor approval). TEAM DECIDES.
 - **Dissent recorded:** _(none yet — record any disagreement about versioning, testing, evidence quality, or workspace conventions here)_
+
+## 11. Version, AI use, and handoff
+
+- **Version / workspace:** `github.com/iJustinn/Emerging_Technologies-Silver_Milk`, draft v0 at commit `1d851d5` (updated after ratification). Contributions: `records/contribution_record.md`.
+- **AI use / verification:** Claude Code drafted this v0 and the record templates from the course instructions and scaffold files. Claims about the scaffold were checked by running the local tools: `check_frozen_core.py`, `new_agent.py`, `build_prompt.py`, and `validate_response.py` on saved responses and on the probe (T-01, T-02). The rules themselves are the team's to accept.
+- **Final-project handoff:** gives the MoE system a common contract, the seven-agent inventory, a promotion and version procedure, and a comparison and testing protocol. Still open for integration: I-01 (reconciling conflicting findings) and I-02 (the validator checks only structure).
