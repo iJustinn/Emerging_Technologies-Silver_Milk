@@ -1,0 +1,137 @@
+{
+  "agent": {
+    "name": "Silver-Milk Team Chart Improvement Agent",
+    "specialty": "evidence-preserving business visualization improvement",
+    "version": "1.0-team"
+  },
+  "business_question": "You are supporting a New York Times editor who is fact-checking a reporter's proposed statement that the Titanic evacuation followed a 'women and children first' practice. Using the supplied Titanic passenger dataset, determine what the data show about the relationship between sex and survival. Give a numerical answer using survivor counts, survival rates, the percentage-point difference, and the relative survival rate. Create one chart illustrating the result for the editor. Distinguish an observed association from proof that a particular evacuation policy or order caused the result, and identify briefly what this dataset alone cannot establish.",
+  "business_answer_shown": "Female: 339/466 survived (72.7%); male: 161/843 (19.1%). Female minus male = 53.6 percentage points; female / male survival rate = 3.81 times. This is an observed association, not proof of evacuation decisions or cause; children are not tested.",
+  "baseline_chart_assessment": [
+    {
+      "issue": "Required counts, denominators, difference and relative rate are absent.",
+      "why_it_matters": "The editor cannot fact-check the numerical statement.",
+      "related_principle": "Purpose / Need",
+      "priority": "high"
+    },
+    {
+      "issue": "No visible distinction between association, children and evacuation decisions.",
+      "why_it_matters": "A sex comparison could be overread as proof of the full historical claim.",
+      "related_principle": "Purpose / Frame",
+      "priority": "high"
+    },
+    {
+      "issue": "The comparison lacks a visible scope limit.",
+      "why_it_matters": "The reader cannot tell what the evidence establishes.",
+      "related_principle": "Perception / Quality",
+      "priority": "high"
+    },
+    {
+      "issue": "The title names variables without stating the finding or magnitude.",
+      "why_it_matters": "The reader must infer the answer.",
+      "related_principle": "Method / Title",
+      "priority": "high"
+    },
+    {
+      "issue": "Exact rates must be estimated from the axis.",
+      "why_it_matters": "Approximate readings do not meet the numerical fact-checking need.",
+      "related_principle": "Charts / Tables",
+      "priority": "high"
+    }
+  ],
+  "data_fidelity_checks": [
+    {
+      "check": "Field encodings and inclusion",
+      "result": "pass",
+      "notes": "sex contains female (466) and male (843); survived contains 1 (500 survivors) and 0 (809 non-survivors). No missing sex or survival values. All 1,309 records included; exclusions = 0. Age has 263 NA strings; age is unused and these records remain included."
+    },
+    {
+      "check": "Recomputed values",
+      "result": "pass",
+      "notes": "339/466 = 72.74678112%; 161/843 = 19.09845789%; difference = 53.64832323 percentage points; female/male = 3.80903953. Calculations use unrounded rates."
+    },
+    {
+      "check": "Baseline versus spreadsheet",
+      "result": "pass",
+      "notes": "Baseline unlabeled bar heights are visually consistent with approximately 72.7% and 19.1%; no consequential disagreement found. Exact baseline source values cannot be recovered from the image."
+    },
+    {
+      "check": "Scale, labels and rounding",
+      "result": "pass",
+      "notes": "Common zero-based 0-100% scale; direct category, count and denominator labels. Rates and difference rounded to one decimal; ratio to two."
+    },
+    {
+      "check": "Artifacts and input preservation",
+      "result": "pass",
+      "notes": "Landscape PNG generated and inspected. Baseline and all input files preserved unchanged."
+    }
+  ],
+  "principles_applied": [
+    {
+      "principle": "Purpose / Need; Charts / Tables",
+      "change_made": "Added exact rate labels, survivor counts, denominators and female/male rate ratio.",
+      "expected_communication_benefit": "Provides all requested quantities directly without axis estimation or a separate table."
+    },
+    {
+      "principle": "Method / Title",
+      "change_made": "Replaced the topic title with the verified 53.6 percentage-point finding.",
+      "expected_communication_benefit": "Makes the magnitude and direction immediately explicit."
+    },
+    {
+      "principle": "Purpose / Frame; Perception / Quality",
+      "change_made": "Added chart-visible notes separating the observed sex association from untested children and evacuation decisions or cause.",
+      "expected_communication_benefit": "Bounds the claim for editorial fact-checking."
+    },
+    {
+      "principle": "Perception / Seeing; Method / Color",
+      "change_made": "Used one dark accent for the female group named in the title and gray for male context, retaining direct labels.",
+      "expected_communication_benefit": "Supports the revised title while preserving interpretation in grayscale."
+    }
+  ],
+  "improved_chart": {
+    "artifact_created": true,
+    "filename": "contrast_improved_chart.png",
+    "chart_type": "Two adjacent vertical bars on a common zero-based percentage scale",
+    "title": "Female survival was 53.6 percentage points higher",
+    "accessibility_notes": "1600 x 1000 landscape PNG; direct labels convey meaning without color. Dark accent and gray context; minimum 24 px text, approximately 11.5 pt at 150 dpi. Female rate is inside its long bar; male rate is above its short bar. Inspected at full size and 1000 px width."
+  },
+  "baseline_to_improved_comparison": [
+    {
+      "dimension": "Story",
+      "baseline": "Visual Story: YES (female rate is clearly higher); Visual Props: YES (one focused comparison); Storytellers: YES (basic bars).",
+      "improved": "Retained the two-bar comparison; quantified the existing story in the title and labels."
+    },
+    {
+      "dimension": "Signs",
+      "baseline": "Signs: YES (conventional categories and percentages); Communication: YES (light grid, no legend); Function: YES (readable informational bars).",
+      "improved": "Retained conventional percentage encoding and restrained gridlines; used square bar ends for precise lengths."
+    },
+    {
+      "dimension": "Purpose",
+      "baseline": "Need: NO (requested quantities absent); Audience: YES (plain labels and readable type); Frame: NO (claim scope not disclosed).",
+      "improved": "Supplies counts, denominators, rates, difference and ratio for the editor, with visible scope notes."
+    },
+    {
+      "dimension": "Perception",
+      "baseline": "Seeing: YES (larger female bar attracts attention); Mind (Gestalt): YES (adjacent groups on common scale); Quality: NO (no evidence limit).",
+      "improved": "Groups each rate, count and denominator with its category; reinforces title emphasis and states the limit."
+    },
+    {
+      "dimension": "Method",
+      "baseline": "Color: YES (single hue, categories identified by text); Chart Junk: YES (restrained design overall); Title: NO (topic only).",
+      "improved": "Title states verified magnitude; accent and gray follow its emphasis. Source, sample size and rounding added without decorative elements."
+    },
+    {
+      "dimension": "Charts",
+      "baseline": "Right Chart: YES (common zero-based bars); Selection: YES (sex comparison); Tables: NO (exact values must be estimated).",
+      "improved": "Retained the appropriate basic chart and added direct exact labels; a separate table is unnecessary."
+    }
+  ],
+  "remaining_limitations": [
+    "The question file names a New York Times editor, while the case manifest names a maritime safety review board. The supplied question governs; the chart is framed for editorial fact-checking.",
+    "Only the sex component is tested; children are not analyzed. The 263 missing ages do not affect this sex comparison.",
+    "The spreadsheet records passenger characteristics and survival, not evacuation orders or decision processes. The association cannot establish a policy or cause.",
+    "This aggregate comparison does not isolate other passenger characteristics; no significance or causal analysis was performed.",
+    "The governing framework favors presentation props; the explicit case requirement for a chart that can be read alone justifies concise visible scope and source notes."
+  ],
+  "abstention_or_more_information_needed": []
+}
