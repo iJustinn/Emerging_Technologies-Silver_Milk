@@ -31,8 +31,9 @@ The ET scaffold (`MASY1800_ET_Agent_Scaffold_v1_0`) is assumed to follow the sam
 3. **Primary case** and **context-contrast case** (same technology, different organization/posture), each with the saved response JSON and validator output.
 4. **One preserved failure** from an earlier run, plus the instruction revision it caused and the rerun result. Failed outputs stay in `responses/` under their original names; they are never deleted or overwritten.
 5. **One named limitation** that remains unresolved.
-6. **Verification note**: which consequential claims were checked against original sources, by whom.
-7. `FROZEN CORE INTACT` output from the commit being promoted.
+6. **Transfer test passed:** the same specialist instructions, *unchanged*, run on a second case with a different question and baseline. They must pass the validator and the §4 review. Instructions hard-coded to one case fail this rule. (Added after the instructor's sample submission.)
+7. **Verification note**: which consequential claims were checked against original sources, by whom.
+8. `FROZEN CORE INTACT` output from the commit being promoted.
 
 ## 4. Passing validation is necessary, not sufficient
 

@@ -1,0 +1,167 @@
+{
+  "agent": {
+    "name": "Silver-Milk Team Chart Improvement Agent",
+    "specialty": "evidence-preserving business visualization improvement",
+    "version": "1.0-team"
+  },
+  "business_question": "You are supporting a museum exhibit designer preparing a panel on the Titanic. Using the supplied passenger dataset, show how survival differed by passenger class (1st, 2nd, 3rd). Give survivor counts, survival rates, and the gap between the highest and lowest class. Create one chart for the exhibit panel, and note briefly what this dataset alone cannot establish about why the difference occurred.",
+  "business_answer_shown": "In the supplied Titanic passenger dataset, 200 of 323 1st-class passengers survived (61.9%), 119 of 277 2nd-class passengers survived (43.0%), and 181 of 709 3rd-class passengers survived (25.5%). The highest survival rate, in 1st class, exceeded the lowest, in 3rd class, by 36.4 percentage points. These records cannot establish why this difference occurred or whether class itself caused it.",
+  "baseline_chart_assessment": [
+    {
+      "issue": "NO: The baseline shows the ordering of survival rates but leaves the main comparison and its magnitude to the viewer.",
+      "why_it_matters": "Museum visitors should grasp the class-survival difference quickly, without estimating and subtracting bar heights.",
+      "related_principle": "Story / Visual Story",
+      "priority": "high"
+    },
+    {
+      "issue": "NO: Survivor counts, class denominators, the highest-to-lowest gap, and a limitation about explaining the difference are absent.",
+      "why_it_matters": "These are required by the exact business question and the exhibit designer's decision context.",
+      "related_principle": "Purpose / Need",
+      "priority": "high"
+    },
+    {
+      "issue": "NO: All bars receive the same color emphasis, and the generic title does not direct attention to the highest-to-lowest comparison.",
+      "why_it_matters": "A clear focal point helps visitors identify the leading group and comparison immediately.",
+      "related_principle": "Perception / Seeing",
+      "priority": "medium"
+    },
+    {
+      "issue": "NO: The chart communicates an association without an explicit boundary on what it can establish about why survival differed.",
+      "why_it_matters": "Visitors could mistake the class-survival pattern for an explanation of its cause.",
+      "related_principle": "Perception / Quality",
+      "priority": "high"
+    },
+    {
+      "issue": "NO: The title names the variables rather than stating the verified finding or available magnitude.",
+      "why_it_matters": "The title should deliver the observed answer and distinguish percentage points from percentage change.",
+      "related_principle": "Method / Title",
+      "priority": "high"
+    },
+    {
+      "issue": "NO: Exact rates cannot be read directly; survivor counts and denominators cannot be read at all.",
+      "why_it_matters": "The question requires exact referenceable values, which estimating from the percentage axis cannot supply.",
+      "related_principle": "Charts / Tables",
+      "priority": "high"
+    }
+  ],
+  "data_fidelity_checks": [
+    {
+      "check": "Required inputs and exact business question",
+      "result": "pass",
+      "notes": "Read all five mapped input files. The question contains a complete instructor task, not a placeholder. It is reproduced verbatim apart from trailing file whitespace."
+    },
+    {
+      "check": "Field encodings, categories, missing values, and exclusions",
+      "result": "pass",
+      "notes": "Sheet1 contains 1,309 passenger rows. pclass contains 1st, 2nd, and 3rd; survived contains numeric 1 (survived) and 0 (did not survive). Neither field has missing or invalid values. Exclusions: 0. All records are retained, including 263 with age = NA, 2 with embarked = NA, and 564 with blank home.dest; those fields are unused. Records were not deduplicated or recoded."
+    },
+    {
+      "check": "Survivor counts, denominators, and survival rates recomputed from the spreadsheet",
+      "result": "pass",
+      "notes": "1st: 200 / 323 = 61.91950464396285%, displayed 61.9%; 2nd: 119 / 277 = 42.96028880866426%, displayed 43.0%; 3rd: 181 / 709 = 25.52891396332863%, displayed 25.5%. Denominators sum to 1,309; survivors sum to 500; nonsurvivors total 809."
+    },
+    {
+      "check": "Highest-to-lowest survival-rate gap and units",
+      "result": "pass",
+      "notes": "1st-class rate minus 3rd-class rate = 36.39059068063422 percentage points, rounded to 36.4. The gap was computed from unrounded rates, not from displayed labels. It is not a percentage change or ratio."
+    },
+    {
+      "check": "Baseline relationships and stated record count",
+      "result": "pass",
+      "notes": "The baseline's 1st > 2nd > 3rd ordering, approximate bar heights, zero-based 0%-100% scale, and note of 1,309 records are consistent with the spreadsheet. No visible contradiction requires correction."
+    },
+    {
+      "check": "Exact numerical values encoded in the baseline image",
+      "result": "not_verified",
+      "notes": "The PNG has no exact rate labels or underlying chart specification, so its precise encoded values cannot be recovered reliably. Improved values were independently recomputed rather than read from the image."
+    },
+    {
+      "check": "Improved encodings, rounding, and claim scope",
+      "result": "pass",
+      "notes": "Bar heights use unrounded recomputed rates on a common 0%-100% axis. Class order remains 1st, 2nd, 3rd. Labels show rates and survivor counts with denominators. The chart defines the measure, names source_data.xlsx and Sheet1 with n = 1,309, discloses rounding and inclusion of all records, and states that the records cannot establish why the difference occurred or whether class caused it."
+    },
+    {
+      "check": "Artifact, schema, and input preservation",
+      "result": "pass",
+      "notes": "The landscape PNG exists and opens at 3600 x 2160 pixels, 300 dpi. The response validates against the packet's exact JSON schema. SHA-256 comparisons confirm all five input files, including the baseline, remain unchanged."
+    },
+    {
+      "check": "Saving both outputs in the RUN NOTE destination",
+      "result": "fail",
+      "notes": "The required Google Drive transfer_v1.0 folder is outside the writable area. The filesystem permission request returned no write grant, so neither requested output was saved there. Both completed files were preserved in this chat's outputs folder instead."
+    }
+  ],
+  "principles_applied": [
+    {
+      "principle": "Story / Visual Story; Method / Title",
+      "change_made": "Replaced the variable-only title with the verified finding: 1st-class survival was 36.4 percentage points higher than 3rd-class survival.",
+      "expected_communication_benefit": "Fixes the unclear takeaway and generic title together. The title communicates the observational difference immediately without implying causation or altering the measures."
+    },
+    {
+      "principle": "Purpose / Need; Charts / Tables",
+      "change_made": "Added directly associated rate labels and survivor-count/denominator labels for each class. Defined survival rate and retained all three class comparisons.",
+      "expected_communication_benefit": "Supplies the requested exact evidence without a separate chart or redundant table. Labels remain clear of bar ends and preserve category-value pairing."
+    },
+    {
+      "principle": "Perception / Seeing; Method / Color",
+      "change_made": "Highlighted 1st class with one blue accent and muted 2nd and 3rd class in gray to match the title's emphasis.",
+      "expected_communication_benefit": "Fixes the lack of a focal point while retaining sparse color, direct labels, and a comparison that remains readable in grayscale."
+    },
+    {
+      "principle": "Perception / Quality; Purpose / Need",
+      "change_made": "Added a visible two-sentence limitation: the records show a class difference but cannot establish why it occurred or whether class itself caused it. Added the dataset source, n, inclusion, and rounding notes.",
+      "expected_communication_benefit": "Separates the tested descriptive comparison from the untested causal explanation on the chart itself. Necessary notes support a standalone museum panel without importing the case study's policy framing."
+    }
+  ],
+  "improved_chart": {
+    "artifact_created": true,
+    "filename": "transfer_test_improved_chart.png",
+    "chart_type": "Vertical bar chart with direct survival-rate and survivor-count/denominator labels",
+    "title": "1st-class survival was 36.4 percentage points higher than 3rd-class survival",
+    "accessibility_notes": "Landscape 3600 x 2160 PNG at 300 dpi (12 x 7.2 inches). Type is 12-25 pt at that size. All text-background contrast ratios are at least 5.0:1; bars contrast with the background by at least 3.28:1. Explicit class names, exact values, bar lengths, and count labels carry the meaning independently of color. The first two rate labels sit inside their longer bars; the third sits above the shorter bar. Final layout was visually inspected. Physical wall-panel readability still depends on reproduction size, lighting, and viewing distance."
+  },
+  "baseline_to_improved_comparison": [
+    {
+      "dimension": "Story",
+      "baseline": "Visual Story: NO - the ranking is visible but the key gap is unstated. Visual Props: YES - one focused class comparison, little prose. Storytellers: YES - a standard bar chart. N/A: none.",
+      "improved": "The finding and 36.4-point gap lead the chart. The single bar-chart comparison is retained; only required labels and explanatory notes are added."
+    },
+    {
+      "dimension": "Signs",
+      "baseline": "Signs: YES - percentages and class labels have conventional meanings. Communication: YES - subdued gridlines, no disconnected legend, little competing ink. Function: YES - information takes priority over decoration. N/A: none.",
+      "improved": "Preserved the conventional percent scale, dark background, direct class labels, and restrained grid. Added exact evidence without a legend or decorative elements."
+    },
+    {
+      "dimension": "Purpose",
+      "baseline": "Need: NO - required survivor counts, class totals, gap, and explanatory limit are absent. Audience: YES - plain class labels and an understandable percent scale. Frame: YES - the title identifies the supplied class-survival question without causal language. N/A: none.",
+      "improved": "Added all requested measures, the rate definition, source context, and visible causal limitation while preserving the exact question and general-public language."
+    },
+    {
+      "dimension": "Perception",
+      "baseline": "Seeing: NO - equal bar emphasis and a generic title leave the key comparison unguided. Mind (Gestalt): YES - adjacent ordered classes on a common scale with clear label pairing. Quality: NO - exact evidence and the limit on explaining the difference are missing. N/A: none.",
+      "improved": "A title-matched 1st-class accent guides attention. Adjacent bars, common scale, and class order are retained. Exact rates, grouped counts, and a visible limit make the answer and its scope explicit."
+    },
+    {
+      "dimension": "Method",
+      "baseline": "Color: YES - one hue used sparsely, with class labels rather than color identifying groups. Chart Junk: YES - no 3D, imagery, heavy grid, or redundant legend. Title: NO - names variables rather than the observed finding and magnitude. N/A: none.",
+      "improved": "Replaced the title with the verified observational finding. Adjusted color only as required by the higher-priority Seeing fix; preserved sparse styling and included necessary source and rounding notes."
+    },
+    {
+      "dimension": "Charts",
+      "baseline": "Right Chart: YES - aligned bar lengths on a shared zero-based 0%-100% scale support comparison. Selection: YES - bars fit comparison across three passenger classes. Tables: NO - exact requested values are unavailable directly; this check applies to referenceable values even without a literal table. N/A: none.",
+      "improved": "Retained the vertical bar chart, zero baseline, full percentage scale, and class ordering. Direct rates and survivor-count/denominator labels supply exact values without adding a table."
+    }
+  ],
+  "remaining_limitations": [
+    "The descriptive class-survival association does not establish why survival differed or whether class itself caused the difference; no causal adjustment, mechanism analysis, or significance test was performed.",
+    "The workbook does not document completeness or representativeness for all Titanic passengers. Claims are bounded to its 1,309 passenger records.",
+    "The baseline PNG lacks exact numerical labels and a chart specification; only its visible ordering, approximate heights, scale, and total could be reconciled.",
+    "Rates and the gap are rounded to one decimal place; calculations and bar heights use unrounded values.",
+    "Layout and contrast were checked, but the actual exhibit reproduction size and viewing conditions are unspecified, and no visitor comprehension test was conducted.",
+    "The requested destination save is incomplete: the prepared files exist in the chat workspace, not in the RUN NOTE's Google Drive transfer_v1.0 folder."
+  ],
+  "abstention_or_more_information_needed": [
+    "Write access to the specified transfer_v1.0 output folder was not granted. Folder write access is needed to complete the RUN NOTE delivery requirement.",
+    "The chart artifact was created and validated, so artifact_created is true. Its fallback copy is /Users/ijustin/Documents/Codex/2026-09-29/execute-the-pasted-prompt-packet-exa/outputs/transfer_test_improved_chart.png. The fallback JSON is /Users/ijustin/Documents/Codex/2026-09-29/execute-the-pasted-prompt-packet-exa/outputs/transfer_test_response.json."
+  ]
+}

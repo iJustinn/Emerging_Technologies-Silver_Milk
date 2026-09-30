@@ -2,7 +2,7 @@
 
 **Status:** pre-read prepared before the team discussion (Justin, AI-assisted). §4 was completed in class on 2026-09-29.
 **Packages received:** 2 of 5. Justin Zhong (`Zhong_Chart_Improvement_Agent.zip`) and Karuna Srivastava (`Karuna_Chart_Improvement_Practice_Scaffold_v1_0 3.zip`). Dian Li, Nini Huang, and Yuanxiang Zhang: no package (recorded, not hidden).
-Purpose: to test the draft standard (`docs/team_agent_standard.md`) on real candidates. The chart agents are **not** being promoted.
+Purpose: to test the draft standard (`docs/team_agent_standard.md`) on real candidates and to build the team chart-improvement agent (v1.0) from them.
 
 ## 1. Checks run (same tools, same data for both)
 
@@ -60,5 +60,5 @@ What this shows: once the case is common, the two agents produce nearly the same
 ## 4. Team judgment (fill in class)
 
 - Which rules (R1–R5) go into the standard: **all five** (D-04)
-- Which candidate is stronger on the *common* case (T-03): no winner declared. They converge; Justin's agent writes a stronger title and states on the chart that the children claim was untested. Nothing is promoted: this is practice.
+- Which candidate is stronger on the *common* case (T-03): no winner declared. They converge; Justin's agent writes a stronger title and states on the chart that the children claim was untested. Both candidates were merged into the team agent v1.0 (`records/contribution_lineage.md` in the ZIP).
 - Dissent: none raised.
