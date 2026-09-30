@@ -1,0 +1,15 @@
+# Instructor / course materials are NOT published in this public repo
+*.pdf
+*.zip
+*.docx
+*.pptx
+*.xlsx
+course_materials/
+
+# Scaffold runtime
+work/*
+!work/.gitkeep
+__pycache__/
+*.pyc
+.DS_Store
+.env

@@ -1,0 +1,13 @@
+# ET Scaffold Working Copy (pending)
+
+**Status: BLOCKER / pending input.** `MASY1800_ET_Agent_Scaffold_v1_0.zip` is not yet in the team workspace.
+
+When it is available:
+
+1. Keep the Brightspace ZIP unchanged. Unzip a working copy into this folder.
+2. Before committing, confirm that nothing under `course_materials/` or any other instructor file is caught by `.gitignore`. Do **not** force-add ignored files, because this repo is public.
+3. Run `python tools/check_frozen_core.py` and paste the output into `records/test_failure_log.md`.
+4. Commit it unchanged as `Add unchanged ET scaffold v1.0 working copy`.
+5. Re-confirm the FROZEN CORE file list in `docs/team_agent_standard.md` Section 1 against this scaffold's `FROZEN_CORE_SHA256.txt`.
+
+Team Lab 2 exercised the workflow on the Chart Improvement Practice Scaffold v1.0 instead (see `records/test_failure_log.md`).

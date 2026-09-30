@@ -1,0 +1,67 @@
+{
+  "agent": {
+    "name": "Business Chart Improvement Agent",
+    "specialty": "evidence-preserving business visualization improvement",
+    "version": "0.2-student"
+  },
+  "business_question": "You are supporting a New York Times editor who is fact-checking a reporter's proposed statement that the Titanic evacuation followed a 'women and children first' practice. Using the supplied Titanic passenger dataset, determine what the data show about the relationship between sex and survival. Give a numerical answer using survivor counts, survival rates, the percentage-point difference, and the relative survival rate. Create one chart illustrating the result for the editor. Distinguish an observed association from proof that a particular evacuation policy or order caused the result, and identify briefly what this dataset alone cannot establish.",
+  "business_answer_shown": "Women and children first was proven.",
+  "baseline_chart_assessment": [
+    {
+      "issue": "x",
+      "priority": "urgent"
+    }
+  ],
+  "data_fidelity_checks": [],
+  "principles_applied": [],
+  "improved_chart": {
+    "artifact_created": true,
+    "filename": "does_not_exist.png",
+    "chart_type": "Horizontal bar chart comparing survival rates by recorded sex",
+    "title": "Female survival rate was 53.6 percentage points higher",
+    "accessibility_notes": "1600x1080 PNG; high-contrast large text, direct rates and counts, a common 0-100% scale, no color-only encoding, and an on-chart note identifying the untested children/age claim component."
+  },
+  "baseline_to_improved_comparison": [
+    {
+      "dimension": "Story",
+      "baseline": "YES: Visual Story (the higher female bar is apparent), Visual Props (focused two-group display), Storytellers (familiar bar convention). NO: none. N/A: none.",
+      "improved": "Retains the clear two-group story and states the verified magnitude directly in the title."
+    },
+    {
+      "dimension": "Signs",
+      "baseline": "YES: Signs (conventional bars and category names), Function (mostly informational). NO: Communication (no exact values on marks). N/A: none.",
+      "improved": "Direct rate and count labels make the comparison numerically decodable."
+    },
+    {
+      "dimension": "Purpose",
+      "baseline": "YES: none. NO: Need (required measures absent), Audience (insufficient for editorial review), Frame (untested children/age component undisclosed). N/A: none.",
+      "improved": "Shows the requested measures and puts the untested claim component and policy limit on the chart itself."
+    },
+    {
+      "dimension": "Perception",
+      "baseline": "YES: Seeing (the rate contrast attracts attention), Mind (common baseline and clear group labels). NO: Quality (precise answer and claim limit unresolved). N/A: none.",
+      "improved": "Aligned bars, direct values, and a visible scope note give a more complete bounded answer."
+    },
+    {
+      "dimension": "Method",
+      "baseline": "YES: Color (one hue is understandable), Chart Junk (rough YES: mostly uncluttered despite a gradient and excess space). NO: Title (topic only, no observed magnitude). N/A: none.",
+      "improved": "Uses a precise observational title and restrained styling; the gradient and excess space are gone."
+    },
+    {
+      "dimension": "Charts",
+      "baseline": "YES: Right Chart (zero-based length comparison), Selection (bar chart suits two categories). NO: none. N/A: Tables (no table is needed for this two-group question).",
+      "improved": "Keeps the appropriate bar encoding and common 0-100% scale while labeling exact values."
+    }
+  ],
+  "remaining_limitations": [
+    "The chart tests only recorded sex versus survival. It does not test the children/age component of the proposed statement; 263 of the 1,309 age entries are NA.",
+    "The supplied records cannot establish whether an evacuation policy or order existed, was applied, or caused the observed difference.",
+    "The completeness and coding accuracy of the underlying historical passenger dataset were not independently audited.",
+    "Passenger class, timing, and other potential factors were not analyzed; this specialist did not perform a new baseline or child-survival analysis.",
+    "The baseline's exact bar heights cannot be recovered from its raster image; only approximate visual agreement with verified rates can be assessed."
+  ],
+  "abstention_or_more_information_needed": [
+    "No additional information is needed for the observed sex-survival comparison. Evaluating the untested children/age component would require a separately authorized analysis with an explicit age definition and a plan for the 263 NA entries.",
+    "A claim about an evacuation policy, order, or causal mechanism would require independent historical evidence beyond this passenger spreadsheet."
+  ]
+}
