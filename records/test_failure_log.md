@@ -17,3 +17,16 @@ Environment: Python 3.10.1, standard library only; no OpenAI API key used.
 
 | Lab | Candidate (member) | Version / commit | Primary | Contrast | Swap test | Evidence traced | Preserved failure | Selected elements |
 |---|---|---|---|---|---|---|---|---|
+| 3 | Zhong [Z] | 0.2-student / `49d9eff` (personal repo) | PASS | PASS | Pass | V1–V6 verified (Assignment 2) | v0.1 rerun drift | Base structure: labeled general parts, stage rule, A1–A3, HANDOFF, evidence enum |
+| 3 | Huang [H] | 0.1-student / `ca74d6c` | PASS | PASS | Pass | Not verified; claims "retrieved" | "early scaling" overclaim; "checked" without audit trail | Not-verified-unless-retrieved; capability ≠ maturity; no pilot authorization |
+| 3 | Li [L] | 0.3 / `b910833` | PASS | PASS | Pass | Source ledger, S8 checked by Dian | Supplied cards labeled as directly checked; prerequisite not sequenced | Inputs are data; supplied attribution; component→task chains; prerequisites as conditions |
+| 3 | Zhang [Y] | 0.3-student / `work` branch (baseline `4116fa5`) | PASS | PASS | Pass | Unverified (403 access errors) | Invalid JSON escapes; assumed reviewer availability | Per-item STATUS; plain URLs and JSON escaping; stakeholder ≠ staff; unit of analysis (moved to the application finding) |
+
+## Lab 3 (Team SubAgent 1: Creation). Runtime for all runs: ChatGPT Work mode, GPT-6.1 Sol, Light, a fresh chat per run (D-08). Details in `agents/team_creation_agent/records/test_log.md`
+
+| ID | Date | Lab | Test | Input | Result | Weakness / action |
+|---|---|---|---|---|---|---|
+| T-07 | 2026-10-06 | 3 (in class; Justin operator, AI-operated) | All 4 candidates on the common pair, instructions unchanged (8 runs) | Bank primary + startup contrast | All 8 pass the validator and the swap test; the recommendations converge. Only [Z] keeps the same stage, defining layer and A1–A3 across contexts. [Y] leaks "bank" into the general level and designs an experiment. [L] labels items "checked in this run". [H] and [L] use Markdown links | Synthesis D-09 |
+| T-08 | 2026-10-06 | 3 | Team v0.9 primary + contrast | Same pair | Validator PASS; 314 / 305 words; stage the same. **A2 verdict flipped (DOES NOT HOLD vs. HOLDS) because the model rephrased the slot; only 3 of 5 predecessors shared (preserved failure)** | D-10 revision |
+| T-09 | 2026-10-06 | 3 | Team v0.9 transfer (unchanged instructions) | Dian's text-to-image diffusion, small retailer | PASS; supplied cards labeled `supplied` (fixes [L]'s Assignment 2 failure); A2 again negatively phrased | Confirms the T-08 cause |
+| T-10 | 2026-10-06 | 3 | Team v1.0-team primary, contrast, transfer | Same three cases | All PASS the validator and every `check_team_run.py` check; A1–A3 HOLDS/UNTESTED/UNTESTED in all three; the same 5 predecessors for bank and startup; swap test passes; the transfer carries prerequisites as conditions | Remaining: W-1 economic enabler varies; W-2 Unix dated 1971 vs. 1974; W-3 one run per case |

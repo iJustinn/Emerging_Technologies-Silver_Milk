@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "AI coding agents: LLM-based software agents that read a codebase, plan multi-step changes, edit files, and run commands/tests with varying human approval (e.g., Claude Code, OpenAI Codex, GitHub Copilot agent mode)",
+  "intended_application": "Building and iterating the company's core product: writing new features, tests, and infrastructure code for a consumer mobile app with an AI backend",
+  "organization": "Seed-stage software startup (illustrative) with 6 engineers",
+  "industry_sector": "Consumer software / personal-finance app; lightly regulated at current scale, no banking license",
+  "business_need": "Ship product features fast enough to find product-market fit before the seed funding runs out",
+  "users_stakeholders": "Founders and engineers, early users, seed investors",
+  "adoption_posture": "Aggressive / leading-edge: adopts new developer tools as soon as they appear useful",
+  "capabilities_constraints": "Strong individual engineers who already use AI tools daily; no formal procurement or audit process; small budget sensitive to per-seat and per-token costs; switching tools costs hours, not months",
+  "risk_consequence_context": "Moderate consequence: defects are mostly reversible through quick redeploys; user financial data must still be protected; speed of learning matters more than completeness",
+  "management_question": "Given where AI coding agents came from and where they sit on the arc of technology, what should this organization assume about the stability of the tool category (architecture, vendors, and working practices) over its planning horizon, and what should it avoid locking in?",
+  "time_horizon": "12 months (one funding runway)",
+  "additional_context": "Context-contrast case: same technology and same management question as primary; organization, application, posture, and consequence changed. Illustrative organization type."
+}

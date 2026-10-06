@@ -1,0 +1,95 @@
+{
+  "agent": {
+    "name": "Emerging Technology Creation Agent",
+    "specialty": "technology creation, predecessor capabilities, enabling conditions, and evolution analysis",
+    "version": "0.1-student"
+  },
+  "analytical_question": "How did AI coding agents emerge from predecessor capabilities, and what does their creation/evolution history imply about architecture, vendor, and working-practice stability over this six-engineer startup's 12-month runway?",
+  "general_et_finding": "AI coding agents represent cumulative integration rather than a single invention. The associated opportunity is to reduce the effort of translating software intentions into working changes, extending assistance from code suggestions to delegated tasks. Direct predecessor capabilities include pretrained language models adapted to code, which supply code generation; reasoning-and-action methods, which connect planning to environmental feedback; and existing repository, shell, build, and test tools, which provide inspection, execution, and verification. The 2021 Codex paper documents code-model capabilities, while ReAct documents interleaved reasoning and action; these establish technical foundations, not a proven genealogical link to every commercial agent. The distinguishing recombination is an iterative loop that reads project context, chooses actions, modifies files, executes tools, and responds to results. Broader enabling conditions include accessible code corpora, model-serving infrastructure, established developer workflows, and demand for faster software delivery; their presence does not establish their individual causal contribution. Stage judgment: documented commercial availability and observed developer use coexist with continued experimentation in orchestration and oversight. Codex's 2025 general availability, its 2026 agent-management interface, METR's observed agent use, and Anthropic's 2026 harness experiments support that bounded classification. They do not establish category-wide mature commercialization, saturated diffusion, or reliable autonomous engineering. Interpretation: the functional category has continuity, but its model/harness boundary and working practices remain unsettled.",
+  "application_finding": "For mobile features, tests, and infrastructure supporting an AI backend, the relevant inheritance is access to existing engineering tools and feedback loops. Agents depend on usable repository context, reproducible builds, executable tests, and explicit acceptance criteria; generating plausible code alone does not establish a functioning product. Mobile behavior, backend integration, and infrastructure changes require different verification environments, so results from browser-app experiments do not demonstrate equivalent performance here. Interpretation: keep product source, requirements, build commands, tests, and deployment definitions independently usable. Treat agent orchestration as a replaceable development aid rather than a prerequisite for operating the consumer app. The backend's runtime AI-provider choices are a separate architectural question from the coding-agent vendor.",
+  "organization_specific_finding": "The supplied context makes reversibility especially valuable: six strong engineers already use AI daily, switching costs hours, and one funding runway limits the value of elaborate procurement or custom orchestration. Interpretation: over October 2026–October 2027, plan for changes in models, interfaces, quotas, and effective supervision practices without assuming a particular vendor will fail or prevail. A lightweight vendor-specific configuration can be reasonable when inexpensive to replace; building an internal agent platform or reshaping the core product around one agent's proprietary workflow creates a larger commitment. The team's aggressive posture supports frequent reassessment, not a different technology history or proof of readiness. Quick redeployment reduces some defect consequences, but disclosure of financial data cannot be reversed in the same way.",
+  "evidence": [
+    {
+      "claim": "Codex demonstrated a GPT model fine-tuned on publicly available GitHub code and evaluated program synthesis using executable correctness tests.",
+      "source_or_reference": "[Chen et al., Evaluating Large Language Models Trained on Code](https://arxiv.org/abs/2107.03374)",
+      "date_or_recency": "First submitted July 7, 2021; retrieved October 6, 2026.",
+      "evidence_type": "Original technical paper.",
+      "notes": "Supports code-trained language models as a predecessor capability. The historical Codex model is distinct from the later agent product sharing its name; this paper does not demonstrate repository-level autonomy."
+    },
+    {
+      "claim": "ReAct interleaves language-model reasoning with actions and environmental observations.",
+      "source_or_reference": "[Yao et al., ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629)",
+      "date_or_recency": "First submitted October 6, 2022; published at ICLR 2023; retrieved October 6, 2026.",
+      "evidence_type": "Original technical paper.",
+      "notes": "Supports the reasoning/action integration as a technical foundation. It does not prove that all coding-agent implementations directly descend from ReAct."
+    },
+    {
+      "claim": "Claude Code entered a limited research preview with capabilities to inspect code, edit files, run tests, and use command-line tools.",
+      "source_or_reference": "[Anthropic, Claude 3.7 Sonnet and Claude Code](https://www.anthropic.com/news/claude-3-7-sonnet)",
+      "date_or_recency": "February 24, 2025; retrieved October 6, 2026.",
+      "evidence_type": "Dated first-party product release.",
+      "notes": "Documents an early product milestone and integrated capabilities, not demonstrated operational maturity or broad adoption."
+    },
+    {
+      "claim": "OpenAI announced Codex general availability, an SDK, and administrative controls.",
+      "source_or_reference": "[OpenAI, Codex is now generally available](https://openai.com/index/codex-now-generally-available/)",
+      "date_or_recency": "October 6, 2025; retrieved October 6, 2026.",
+      "evidence_type": "Dated first-party commercialization evidence.",
+      "notes": "Directly supports commercial availability for this product. Vendor-reported usage and customer outcomes are not independent evidence of category-wide maturity."
+    },
+    {
+      "claim": "OpenAI introduced a desktop interface for managing multiple agents and long-running tasks.",
+      "source_or_reference": "[OpenAI, Introducing the Codex app](https://openai.com/index/introducing-the-codex-app/)",
+      "date_or_recency": "February 2, 2026; Windows update March 4, 2026; retrieved October 6, 2026.",
+      "evidence_type": "Dated first-party product evolution evidence.",
+      "notes": "Documents evolution in interaction and orchestration after general availability. It does not establish that parallel-agent workflows outperform simpler approaches."
+    },
+    {
+      "claim": "Anthropic's application-development experiments changed orchestration as model capabilities changed, removing some previously useful scaffolding while retaining verification needs.",
+      "source_or_reference": "[Anthropic, Harness design for long-running application development](https://www.anthropic.com/engineering/harness-design-long-running-apps)",
+      "date_or_recency": "March 24, 2026; retrieved October 6, 2026.",
+      "evidence_type": "First-party engineering experiments.",
+      "notes": "Direct evidence that model/harness design was still being experimentally revised in 2026. Selected web-app experiments are not representative evidence for mobile development or production reliability."
+    },
+    {
+      "claim": "METR observed increasing use of agentic tools, but reported that selection and measurement problems made its later productivity estimates unreliable.",
+      "source_or_reference": "[METR, We are Changing our Developer Productivity Experiment Design](https://metr.org/blog/2026-02-24-uplift-update/)",
+      "date_or_recency": "February 24, 2026; retrieved October 6, 2026.",
+      "evidence_type": "Independent research update describing experiments and limitations.",
+      "notes": "Supports actual use within the studied developer population. Its early-2025 study found tasks took 19% longer with AI; later results suggested possible improvement but could not reliably quantify it. Neither result determines this startup's current productivity."
+    },
+    {
+      "claim": "Anthropic describes evolving agent containment approaches and limitations of permission-based supervision.",
+      "source_or_reference": "[Anthropic, How we contain Claude across products](https://www.anthropic.com/engineering/how-we-contain-claude)",
+      "date_or_recency": "May 25, 2026; retrieved October 6, 2026.",
+      "evidence_type": "First-party security engineering account.",
+      "notes": "Supports continued development of oversight and access boundaries. It does not certify any particular deployment as safe or compliant."
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "Commercial releases, SDKs, and documented use show that the category has moved beyond invention alone; describing it as merely speculative would understate the evidence.",
+    "Continued experimentation does not imply that every interface is unstable or that existing tools cannot deliver value.",
+    "Independent productivity evidence is context-dependent and temporally limited; historical slowdown and later uncertain speedup must both remain visible.",
+    "Research methods establish relevant foundations but do not provide a complete historical genealogy of every vendor's implementation.",
+    "Sources retrieved on October 6, 2026 include dated 2026 evidence, but this is not an exhaustive inventory of all releases through that date.",
+    "No evidence retrieved supports a confident prediction of vendor survival, market consolidation, interface standardization, or this team's net productivity over the next year."
+  ],
+  "confidence_and_uncertainty": "High confidence in the documented milestones and cumulative integration account; moderate confidence in the bounded classification of commercial availability and actual use alongside ongoing architectural experimentation. Moderate confidence that preserving inexpensive switching options is appropriate for the supplied organizational context. Low confidence in specific 12-month vendor, pricing, or dominant-architecture forecasts. Category-wide maturity would require representative longitudinal evidence of sustained production use, reliability, maintenance outcomes, and workflow stability. Organization-specific implications are inferences from the illustrative case, not observations of an actual team.",
+  "value_opportunity_implication": "The creation path suggests an opportunity to reuse existing engineering infrastructure for faster iteration rather than build a separate automation stack. For this startup, portable acceptance criteria and tests can preserve learning across tool changes. Whether agents actually shorten the path to validated customer learning requires local evidence accounting for review, rework, defects, and usage costs.",
+  "risk_governance_implication": "Tool execution expands consequences beyond an incorrect suggestion to actions affecting files, credentials, infrastructure, and data. Interpretation: preserve independent verification and narrowly scoped access as working practices evolve. Financial-data handling and production permissions deserve separate scrutiny despite the generally reversible defect context. A governance/security specialist must assess containment, data processing, retention, permissions, and compliance; creation history cannot establish their sufficiency.",
+  "recommendation_management_implication": "From the creation/evolution lens, use a reversible 12-month planning assumption: retain the ability to replace the coding agent while preserving product operation and engineering knowledge. Avoid long prepaid commitments without an evidenced advantage, extensive custom orchestration tied to one model's current weaknesses, essential project knowledge stored only in proprietary sessions, and core build or release processes executable only through one agent. Prefer ordinary repository artifacts and small, replaceable integrations; a universal abstraction layer is unnecessary given the stated low switching cost. Reassess after material releases and through a lightweight monthly review. This is a bounded recommendation about commitments and planning assumptions, not authorization to launch a pilot or a comprehensive adoption decision.",
+  "change_monitoring_triggers": [
+    "A model or agent release materially changes task completion, context handling, tool permissions, or the need for existing orchestration.",
+    "Changes in pricing, quotas, availability, deprecation policies, or data terms alter runway exposure or switching costs.",
+    "Project requirements, build steps, or team knowledge become difficult to recover outside one vendor's product.",
+    "Review and rework time, escaped defects, or total cost per accepted change increase despite higher code output.",
+    "A financial-data incident, new sensitive integration, or expanded production access changes the consequence environment.",
+    "Representative independent longitudinal evidence supports a stronger maturity characterization or contradicts the current provisional assessment."
+  ],
+  "abstention_or_more_information_needed": [
+    "Abstain from selecting a winning vendor, predicting vendor survival, or claiming stable architecture throughout the runway.",
+    "Request the mobile stack, build/test environments, current agent usage, costs, and representative task outcomes before making tool-specific contextual judgments.",
+    "Request data-access boundaries and deployment permissions before assessing exposure involving financial information.",
+    "Hand off diffusion and operational maturity to the maturity specialist; economics and measured productivity to the business-case specialist; implementation and security readiness to the relevant specialists. The orchestrator must integrate those findings before any pilot, rollout, or final adoption recommendation."
+  ]
+}

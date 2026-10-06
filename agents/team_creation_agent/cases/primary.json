@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "AI coding agents: LLM-based software agents that read a codebase, plan multi-step changes, edit files, and run commands/tests with varying human approval (e.g., Claude Code, OpenAI Codex, GitHub Copilot agent mode)",
+  "intended_application": "Assisting internal developers with maintenance of legacy integration code, test generation, and code-review preparation on internal (non-customer-facing) systems",
+  "organization": "Mid-size U.S. regional bank (illustrative) with an internal software engineering group of about 300 developers",
+  "industry_sector": "Banking / financial services; federally supervised, subject to model-risk, third-party-risk, and information-security examination",
+  "business_need": "Large maintenance backlog on aging integration code, thin test coverage, and slow code-review cycles that delay regulatory and product changes",
+  "users_stakeholders": "Application developers, engineering managers, information security, model-risk management, third-party-risk management, internal audit, and bank examiners",
+  "adoption_posture": "Conservative / risk-averse: adopts technologies after they are standardized and supported by established vendors",
+  "capabilities_constraints": "Strong change-management and audit processes; code may not leave approved environments; long vendor-approval cycles (6-12 months); limited in-house ML expertise; some developers already use AI assistants informally on personal accounts",
+  "risk_consequence_context": "High consequence: defects or data leakage in banking systems can harm customers, trigger regulatory findings, and are slow and costly to reverse",
+  "management_question": "Given where AI coding agents came from and where they sit on the arc of technology, what should this organization assume about the stability of the tool category (architecture, vendors, and working practices) over its planning horizon, and what should it avoid locking in?",
+  "time_horizon": "24 months (one vendor-approval cycle plus one budget cycle)",
+  "additional_context": "Student-selected case (no technology was supplied with the assignment). The organization is an illustrative type, not a specific named bank."
+}

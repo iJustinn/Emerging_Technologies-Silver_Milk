@@ -2,7 +2,7 @@
 
 | # | Specialist | Lab | Purpose | Team version | Commit / tag | Integration status |
 |---|---|---|---|---|---|---|
-| 1 | Technology Creation | 3 | Creation of the technology | — | — | Not started |
+| 1 | Technology Creation | 3 | How the technology came into existence: need, recombined predecessors, enablers, arc stage, A1–A3 | **1.0-team** | tag `team_creation_agent-v1.0-team` (branch `lab-03-creation-agent`, PR) | **Approved 2026-10-06**; awaiting PR review and merge; I-05, I-06 open |
 | 2 | Innovation Classification | 4 | Invention vs. innovation vs. commercialization; organizational significance | — | — | Not started |
 | 3 | Promethean Classification | 5 | Incremental / breakthrough / civilization-changing significance | — | — | Not started |
 | 4 | Diffusion | 6 | Rogers diffusion factors, adopter position, market/peer spread | — | — | Not started |
