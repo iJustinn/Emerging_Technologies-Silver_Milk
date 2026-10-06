@@ -2,7 +2,7 @@
 
 MASY1-GC 1800 · Team Lab 3 · workshop 2026-10-06 · Team Silver Milk
 
-- **Repository / branch / commit:** `github.com/iJustinn/Emerging_Technologies-Silver_Milk`, branch `lab-03-creation-agent`, folder `agents/team_creation_agent/`. The commit and tag (`team_creation_agent-v1.0-team`) are given in the PR and in `team_inventory_and_version.md`. The full package, which includes the unchanged scaffold, is the ZIP `Silver-Milk_Creation_Agent.zip`. The scaffold stays out of the public repo (I-04).
+- **Repository / branch / commit:** `github.com/iJustinn/Emerging_Technologies-Silver_Milk`, branch `lab-03-creation-agent`, folder `agents/team_creation_agent/`. The commit and tag (`team_creation_agent-v1.0-team`) are given in the PR and in `team_inventory_and_version.md`. The full package, which includes the unchanged scaffold, is the ZIP `Silver-Milk_Creation_Agent.zip`. The scaffold stays out of the repo, which stays public (D-12).
 - **Agent / version:** Silver-Milk Team Creation Agent. First team run `0.9-team`, final `1.0-team`. Scaffold `MASY1800_ET_Agent_Scaffold_v1_0` is unchanged (`FROZEN CORE INTACT`).
 - **Bounded responsibility:** explain how a technology came into existence (need, recombined predecessors, enabling conditions), place it on the arc of technology with a rule, test the A1–A3 assumptions, and state what that history means for the application and organization: what to assume, watch, and avoid locking in.
 - **Questions passed to other specialists** (`HANDOFF →` lines; all three v1.0 runs list all six):
@@ -72,7 +72,8 @@ The team's mitigation is I-05: in the MoE system, hold one reconciled general re
 
 - **Roles (Lab 3, rotated per standard §7):**
   - Justin Zhong: technical operator.
-  - Facilitator, evidence keeper, and skeptic: rotated among Dian Li, Nini Huang, and Yuanxiang Zhang (to be confirmed by the team in `contribution_record.md`).
+  - Facilitator: Nini Huang. Evidence keeper: Dian Li. Skeptic: Yuanxiang Zhang.
+  - Brightspace submitter: Justin Zhong.
   - Karuna Srivastava: absent; her candidate is temporarily missing.
 - **Candidate authors:** Justin Zhong [Z], Nini Huang [H], Dian Li [L], Yuanxiang Zhang [Y].
 - **AI use / verification:**

@@ -1,4 +1,6 @@
-# ET Scaffold Working Copy (pending)
+# ET Scaffold Working Copy (not committed)
+
+**Decided D-12 (Lab 3):** the repo stays public, so the scaffold is never committed here. The full package, scaffold included, is the Brightspace ZIP for each lab. The steps below apply only if D-12 is reopened.
 
 **Status: BLOCKER / pending input.** `MASY1800_ET_Agent_Scaffold_v1_0.zip` is not yet in the team workspace.
 
