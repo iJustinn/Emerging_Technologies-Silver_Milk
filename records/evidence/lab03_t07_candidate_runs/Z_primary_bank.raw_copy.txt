@@ -1,0 +1,122 @@
+{
+  "agent": {
+    "name": "Emerging Technology Creation Agent",
+    "specialty": "technology creation and evolution: originating need, combined predecessor capabilities, enabling conditions, and position in the arc of creation",
+    "version": "0.2-student"
+  },
+  "analytical_question": "How did AI coding agents come into existence, what combination of prior capabilities made them possible, and what does that history imply for this application and organization?",
+  "general_et_finding": "NEED: Software developers and engineering organizations needed to translate change requests into working, verified code while spending substantial human effort navigating repositories, editing files, executing tools, and interpreting failures. Before agents, developers coordinated those steps themselves, assisted by editors, scripts, search, and code completion. The economic pull is reducing scarce engineering time spent coordinating repeated maintenance and verification work; this causal interpretation is inference, not a verified estimate of savings. PREDECESSORS: Five necessary capability classes are identified; dates establish documented antecedents, not exclusive inventions. (1) Code-capable generative language models, demonstrated by Chen et al.'s Codex paper, July 7, 2021: interpret requests and propose code and actions; without this capability the system is not LLM-based. (2) Programmatic file access and hierarchical repository navigation, documented in Ritchie and Thompson's UNIX paper, July 1974, with a revised 1978 edition: obtain existing source and working context; without equivalent access it cannot read a codebase. (3) Programmable text editing and persistence, represented by UNIX editing utilities documented in the same historical system: materialize changes; without equivalent writes it only advises. (4) Process execution and command interfaces, documented in that UNIX account: invoke builds, commands, and tests; without equivalent execution it cannot perform the specified workflow. (5) Stateful reasoning-action-observation orchestration, demonstrated by Yao et al.'s ReAct, October 6, 2022: choose successive actions using returned observations; without equivalent orchestration it is a one-shot generator rather than a multi-step agent. Necessity applies to these capabilities, not particular implementations: UNIX and ReAct are replaceable exemplars. ENABLERS: Scientific/technical—Vaswani et al.'s Transformer, June 2017, provided a scalable sequence-model architecture subsequently used in code-capable LLMs; that historical architecture is an enabler rather than logically necessary to every possible LLM agent. Economic/market—Anthropic's February 24, 2025 announcement offered Claude 3.7 Sonnet at $3 per million input tokens and $15 per million output tokens, making model access purchasable without training a frontier model. These are historical vendor-reported prices, not current quotes; economic viability of repeated agent loops remains an inference. ARC STAGE: Emerging→Developing | defining layer: the LLM-directed control harness that manages context, selects tools, interprets execution feedback, and allocates human versus machine authority | markers: GitHub's February 6, 2025 agent-mode announcement describes an editor-centered iteration loop, meeting the emerging marker of extending existing developer tools to autonomous sequences. OpenAI's May 16, 2025 Codex announcement describes delegated tasks in individual cloud sandboxes, showing a materially different execution and control architecture. OpenAI's December 18, 2025 GPT-5.2-Codex system card documents interface-dependent local and cloud containment, while Anthropic's March 25, 2026 engineering index records continuing work on automatic permission decisions. These observations indicate a forming domain of practice but continuing harness experimentation. The stage cannot exceed Emerging→Developing while defining-layer architectures visibly diverge. This is a provisional specialist interpretation, not proof that all underlying agent algorithms differ. TRAJECTORY (inference): At 5 years, by October 2031, reusable tool interfaces, context management, and policy enforcement may stabilize, while single-agent and delegated orchestration coexist; convergence is conditional on portable behavior and verification practices. At 10 years, by October 2036, a stable control interface could support interchangeable models and specialized verification components, although incompatible harness families may persist. At 15 years, by October 2041, agents could become a conventional software-development subsystem that generates further specialized tools, or remain fragmented where correctness and authority cannot be standardized. These are bounded structural possibilities, not predictions of adoption or guaranteed maturity.",
+  "application_finding": "For legacy integration maintenance, file access, text editing, process execution, versioned changes, and established test runners are mature component classes. Their dependability for this use still depends on reproducible builds and representative test environments. The unsettled components are repository context selection, inference of undocumented integration behavior, multi-step planning, and interpretation of incomplete test results. Test generation can reproduce an existing misunderstanding rather than establish intended behavior. Code-review preparation can produce useful summaries and patches, but the agent's explanation is not independent evidence of correctness. Internal systems may still connect to customer-impacting processes; non-customer-facing use does not establish low consequence.",
+  "organization_specific_finding": "For this illustrative regional bank, a conservative preference for standardized tools conflicts with a defining layer still undergoing architectural experimentation. Its 6–12-month vendor-approval cycle consumes a substantial share of the 24-month horizon, so an approved product's model, harness, permissions, or hosting options may change before the next budget decision. The roughly 300-developer engineering group and strong audit processes support common evidence requirements, but limited ML expertise makes dependence on proprietary agent tuning difficult to sustain. The code-residency constraint makes local editing insufficient evidence of acceptable deployment: model inference, telemetry, and subprocess access also matter. High consequences warrant assuming that architecture and working practices remain changeable, and that established vendor identity does not guarantee stable behavior. Informal personal-account use means actual workflows may already differ from approved ones; its extent is unknown.",
+  "evidence": [
+    {
+      "claim": "Code-trained language models preceded contemporary coding agents and could generate executable code from prompts.",
+      "source_or_reference": "Mark Chen et al., Evaluating Large Language Models Trained on Code, July 7, 2021. [Original paper](https://arxiv.org/abs/2107.03374)",
+      "date_or_recency": "2021-07-07",
+      "evidence_type": "primary-technical",
+      "notes": "Supports the code-generation antecedent; does not establish dependable autonomous repository maintenance."
+    },
+    {
+      "claim": "Hierarchical files, editing utilities, and command/process interfaces were established capabilities decades before LLM agents.",
+      "source_or_reference": "D. M. Ritchie and K. Thompson, The UNIX Time-Sharing System, Communications of the ACM, July 1974; revised Bell System Technical Journal edition, July–August 1978. [Author-hosted historical text](https://www.nokia.com/bell-labs/about/dennis-m-ritchie/cacm.html)",
+      "date_or_recency": "1974; revised 1978",
+      "evidence_type": "primary-historical",
+      "notes": "Documents antecedent capability classes. Neither UNIX nor a particular editor is individually necessary; equivalent capabilities are."
+    },
+    {
+      "claim": "ReAct demonstrated interleaving language-model reasoning with actions and environmental observations.",
+      "source_or_reference": "Shunyu Yao et al., ReAct: Synergizing Reasoning and Acting in Language Models, October 6, 2022. [Original paper](https://arxiv.org/abs/2210.03629)",
+      "date_or_recency": "2022-10-06",
+      "evidence_type": "primary-technical",
+      "notes": "An antecedent for feedback-driven orchestration, not evidence that commercial coding agents directly implement ReAct."
+    },
+    {
+      "claim": "The Transformer supplied a scalable attention-based sequence-model design.",
+      "source_or_reference": "Ashish Vaswani et al., Attention Is All You Need, June 2017. [Original paper](https://arxiv.org/abs/1706.03762)",
+      "date_or_recency": "2017-06",
+      "evidence_type": "primary-technical",
+      "notes": "Classified as a technical enabler because the case definition requires an LLM, not this particular neural architecture."
+    },
+    {
+      "claim": "GitHub announced editor-based agent mode that iterates on changes and errors.",
+      "source_or_reference": "Thomas Dohmke, GitHub Copilot: The agent awakens, February 6, 2025. [GitHub announcement](https://github.blog/news-insights/product-news/github-copilot-the-agent-awakens/)",
+      "date_or_recency": "2025-02-06",
+      "evidence_type": "primary-historical",
+      "notes": "Supports an editor-centered control configuration. Vendor claims do not establish independent effectiveness."
+    },
+    {
+      "claim": "OpenAI introduced Codex with delegated tasks running in individual cloud sandboxes.",
+      "source_or_reference": "OpenAI, Introducing Codex, May 16, 2025. [Originator announcement](https://openai.com/index/introducing-codex/)",
+      "date_or_recency": "2025-05-16",
+      "evidence_type": "primary-historical",
+      "notes": "Supports the delegated execution configuration used in the arc comparison; launch configuration is not a claim about every current Codex interface."
+    },
+    {
+      "claim": "Anthropic launched Claude Code alongside a model available through metered commercial access.",
+      "source_or_reference": "Anthropic, Claude 3.7 Sonnet and Claude Code, February 24, 2025. [Launch and historical pricing](https://www.anthropic.com/news/claude-3-7-sonnet)",
+      "date_or_recency": "2025-02-24",
+      "evidence_type": "dated-market",
+      "notes": "Vendor-reported launch pricing supports an economic enabling condition. It does not establish profitability or current prices."
+    },
+    {
+      "claim": "Codex containment differs between local and cloud interfaces.",
+      "source_or_reference": "OpenAI, Addendum to GPT-5.2 System Card: GPT-5.2-Codex, December 18, 2025. [System card](https://deploymentsafety.openai.com/gpt-5-2-codex)",
+      "date_or_recency": "2025-12-18",
+      "evidence_type": "primary-technical",
+      "notes": "Supports continuing diversity in execution and containment configurations; deployment diversity alone cannot establish different core planning algorithms."
+    },
+    {
+      "claim": "Anthropic recorded further engineering work on Claude Code automatic permission decisions in March 2026.",
+      "source_or_reference": "Anthropic, engineering index entry: How we built Claude Code auto mode: a safer way to skip permissions, March 25, 2026. [Dated engineering index](https://www.anthropic.com/engineering)",
+      "date_or_recency": "2026-03-25; index retrieved 2026-10-06",
+      "evidence_type": "primary-historical",
+      "notes": "The dated index entry was verified; the article body could not be retrieved. Supports continuing permission-design work only."
+    },
+    {
+      "claim": "The defining harness remains provisionally Emerging→Developing, and future structure depends on convergence of control, context, and verification interfaces.",
+      "source_or_reference": "Specialist inference from the dated GitHub, OpenAI, and Anthropic observations listed above; assessment dated October 6, 2026.",
+      "date_or_recency": "2026-10-06; scenarios for 2031, 2036, and 2041",
+      "evidence_type": "inference",
+      "notes": "Includes the arc interpretation and every trajectory claim. A complete current cross-provider architecture comparison was not available."
+    },
+    {
+      "claim": "Engineering labor provides economic pull, while the bank's approval duration and consequence level increase the importance of replaceable architecture and preserved review evidence.",
+      "source_or_reference": "Specialist inference from the technology's documented capabilities and the supplied illustrative case, October 6, 2026.",
+      "date_or_recency": "2026-10-06",
+      "evidence_type": "inference",
+      "notes": "No bank-specific productivity, cost, incident, or operational-readiness data were supplied."
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "A1 ASSUMPTION: A code-capable LLM coupled to tools and feedback can complete some bounded multi-step software tasks. | VERDICT: HOLDS | WHY: Research demonstrates reasoning/action feedback and originator records document implemented coding workflows; this is an existence claim, not a reliability guarantee. | IF DIFFERENT: The category would remain code suggestion or deterministic automation rather than LLM-directed coding agents.",
+    "A2 ASSUMPTION: A de facto defining-layer architecture has already settled across major providers. | VERDICT: DOES NOT HOLD | WHY: Verified records show different control and execution configurations and continued permission-design changes; evidence supports withholding a convergence judgment. | IF DIFFERENT: Demonstrated cross-provider convergence would support Developing despite continued product competition.",
+    "A3 ASSUMPTION: Savings in engineering effort can sustain the full cost of inference, verification, support, and continuing development. | VERDICT: UNTESTED | WHY: Commercial access and product releases demonstrate supply, but the reviewed evidence does not establish durable net economics. | IF DIFFERENT: Persistent verification costs or weak willingness to pay could narrow the technology to bounded niches and slow architectural investment.",
+    "The general analysis uses the technology definition alone; application and organizational implications are separate. However, literal compliance with not reading later fields cannot be independently demonstrated because the complete packet was supplied together.",
+    "The five predecessors are necessary capability classes with dated historical exemplars. Claiming that particular products, UNIX, or ReAct are indispensable would fail the necessity test.",
+    "A shared model-tool-feedback pattern is contrary evidence to complete architectural fragmentation. Different user interfaces alone would not justify the stage cap; the provisional judgment concerns authority, state, context, and execution control.",
+    "Evidence was checked on October 6, 2026, but the latest directly reviewed detailed cross-interface technical record is December 2025; a March 2026 engineering index provides narrower corroboration. No exhaustive October 2026 provider comparison was verified.",
+    "The Fortino chapter and Arthur book were not independently inspected. Their analytical framework is applied as supplied in the packet.",
+    "The organization is illustrative. Its legacy languages, integration dependencies, approved inference environments, contracts, and test adequacy were not supplied."
+  ],
+  "confidence_and_uncertainty": "High confidence in the documented recombination of code models, file/edit interfaces, command execution, and feedback orchestration. Moderate confidence in the provisional Emerging→Developing placement; confidence is lower for the claim that divergence persists across all major providers as of October 2026. Low confidence in long-term economics and the 5-, 10-, and 15-year structural scenarios. No quantified reliability or productivity judgment is supported for the bank.",
+  "value_opportunity_implication": "Inference: The recombination can reduce developers' manual coordination across repository inspection, patch creation, execution, and review preparation. For the stated maintenance backlog, the value opportunity depends on recoverable task context and meaningful feedback from tests. Thin coverage limits the evidence available to the loop, so generated output volume cannot establish useful completed work. Magnitude and significance require other specialist judgments.",
+  "risk_governance_implication": "Inference: Because agents combine probabilistic decisions with file and command authority, the consequential governance boundary includes inference location, credentials, subprocess access, network access, and retained execution evidence. The bank's existing change-management process offers a durable anchor while harness behavior changes. Agent-generated tests and explanations should not serve as their own independent validation. These are implications of the technology's structure and supplied constraints, not a determination of legal compliance.",
+  "recommendation_management_implication": "Over the 24-month horizon, assume that models, harnesses, permissions, and working practices will change, and that established vendors may revise supported configurations. Preserve bank-controlled source, ordinary patches, reproducible build/test instructions, review criteria, and exportable action records. Avoid locking in proprietary conversation state, nonportable policy definitions, exclusive model dependencies, or workflows whose only correctness evidence comes from the agent itself. Require visibility into configuration changes and an exit path for retained evidence. Whether and when to adopt is reserved for the Adoption Agent.",
+  "change_monitoring_triggers": [
+    "Reassess toward Developing if major providers demonstrate interchangeable control, context, and permission interfaces with equivalent behavior on independent tests; a shared connector protocol alone is insufficient.",
+    "Reassess toward Emerging if materially incompatible harness designs proliferate or previously stable control interfaces repeatedly break.",
+    "Consider Developing→Mature only after sustained transferable operating practices, stable interfaces, independent verification methods, and specialist roles are established; product availability alone is insufficient.",
+    "Within the bank's 24 months, monitor changes to model versions, authority defaults, inference location, telemetry, and evidence export that would invalidate approved configurations.",
+    "Monitor measured total effort per accepted maintenance change, including review and rework; persistent unfavorable economics would weaken A3.",
+    "Monitor whether legacy integration tests expose meaningful regressions and whether approval evidence survives vendor or harness changes; these alter organizational interpretation, not automatically the general stage."
+  ],
+  "abstention_or_more_information_needed": [
+    "HANDOFF → Adoption Agent: Given the provisional arc placement and the bank's 24-month horizon, whether and when should the organization adopt?",
+    "HANDOFF → Organizational Adoption Agent: Can approved environments, identity controls, test infrastructure, audit processes, and staff support these agents, and how extensive is informal personal-account use?",
+    "HANDOFF → Landscape Agent: Which vendors provide acceptable inference residency, configuration-change terms, evidence portability, and exit arrangements?",
+    "HANDOFF → Innovation Classification Agent: Does this recombination constitute meaningful or breakthrough innovation under that agent's criteria?",
+    "HANDOFF → Diffusion Agent: How broadly have comparable organizations incorporated these agents into controlled maintenance workflows?",
+    "A definitive current convergence judgment requires a dated cross-provider comparison of planning, state, context, permission, and execution mechanisms. The stage reported here is provisional.",
+    "Application-specific dependability requires the legacy language inventory, representative integration tasks, build reproducibility, test oracles, and approved data-flow boundaries."
+  ]
+}

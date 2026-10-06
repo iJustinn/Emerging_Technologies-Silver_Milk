@@ -1,0 +1,99 @@
+{
+  "agent": {
+    "name": "Emerging Technology Creation Agent",
+    "specialty": "technology creation, predecessor capabilities, enabling conditions, and evolution analysis",
+    "version": "0.1-student"
+  },
+  "analytical_question": "How did AI coding agents emerge from predecessor capabilities, and what does their evolution imply for architecture, vendor, and working-practice stability at this illustrative regional bank over October 2026–October 2028?",
+  "general_et_finding": "Supported evidence: AI coding agents represent cumulative capability integration. Transformer research supplied an important neural architecture foundation; code-trained language models demonstrated natural-language-to-code generation; reasoning-and-action research demonstrated iterative interaction with external environments; and software-agent research integrated repository navigation, editing, and program execution. These are documented technical antecedents, not proof that every commercial product directly implements each research approach. The distinctive recombination is a feedback loop: interpret a task, inspect repository context, select actions, edit code, execute tools or tests, observe results, and revise the next action. Associated needs include reducing repetitive programming work and extending assistance from isolated suggestions to delegated software tasks; interpreting those needs as opportunities does not establish a single cause of invention. Direct predecessor capabilities include language modeling, code synthesis, tool interaction, and development tools that supply execution feedback. Broader enabling conditions include accessible code corpora, training compute, established software-delivery infrastructure, and vendor distribution channels. Their precise causal contributions are not established by the retrieved evidence. Evolution position as of 2026-10-06: research experimentation has progressed into commercial offerings and documented operational use. GitHub's dated general-availability release establishes commercialization of one product, while METR's 2026 account documents agent use among studied developers. Neither establishes mature category-wide diffusion. The judgment that the category remains in an evolving commercialization and working-practice phase is provisional; settled architecture, interoperability, and long-term operational maturity are not demonstrated.",
+  "application_finding": "Interpretation: Legacy maintenance depends especially on inherited repository-navigation and execution-feedback capabilities. Multi-file integration changes require context beyond autocomplete, while test execution can expose some incorrect edits. Thin test coverage weakens that feedback: an agent can generate tests that preserve an existing defect or encode its own mistaken assumptions. Test generation therefore needs independently established expected behavior. Review preparation can produce proposed diffs and explanations, but those explanations are not independent evidence of correctness. GitHub documents technical-debt and test-coverage tasks as intended product uses, not validated outcomes for this bank. The relevant dependency is a reproducible build and trustworthy behavioral checks for the actual legacy stack; stronger general code generation alone cannot resolve undocumented integration semantics.",
+  "organization_specific_finding": "Interpretation based on the supplied illustrative context: The bank's 6–12-month approval cycle consumes a substantial part of its 24-month horizon, so a reviewed model, permission configuration, or agent workflow may change before deployment or renewal. Strong change management offers a place to retain reviewable diffs and test evidence, but limited ML expertise makes custom agent infrastructure a potentially burdensome dependency. Established-vendor support meets one organizational preference without establishing a standardized architecture or stable behavior. Internal systems remain consequential because integration defects or leaked code can affect banking operations. Personal-account use is a supplied context fact, not independently verified adoption evidence, and warrants assessment by information security and third-party risk. The planning assumption should be relative continuity of the broad inspect-edit-execute-review pattern, with uncertainty around specific models, orchestration, permissions, hosting arrangements, and vendor offerings. This is a planning inference, not a prediction that any named vendor will fail or any architecture will disappear.",
+  "evidence": [
+    {
+      "claim": "The Transformer introduced an attention-based sequence architecture and demonstrated more parallelizable training than the compared recurrent approaches.",
+      "source_or_reference": "[Vaswani et al., Attention Is All You Need](https://arxiv.org/abs/1706.03762)",
+      "date_or_recency": "First submitted 2017-06-12; abstract and submission history retrieved 2026-10-06.",
+      "evidence_type": "Original technical research.",
+      "notes": "Supports an architectural antecedent. It does not establish coding-agent capability, commercialization, or a sole origin."
+    },
+    {
+      "claim": "The 2021 Codex paper describes a GPT model fine-tuned on public GitHub code and evaluates synthesis of programs from natural-language descriptions.",
+      "source_or_reference": "[Chen et al., Evaluating Large Language Models Trained on Code](https://arxiv.org/abs/2107.03374)",
+      "date_or_recency": "First submitted 2021-07-07; abstract and submission history retrieved 2026-10-06.",
+      "evidence_type": "Original technical research.",
+      "notes": "Supports code-generation capability and accessible code corpora as an enabling resource. The historical model named Codex should not be conflated with the current agent product; function-level evaluation does not establish repository-level reliability."
+    },
+    {
+      "claim": "ReAct demonstrated interleaving language-model reasoning with actions and observations from external environments.",
+      "source_or_reference": "[Yao et al., ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629)",
+      "date_or_recency": "First submitted 2022-10-06; abstract and submission history retrieved 2026-10-06.",
+      "evidence_type": "Original technical research.",
+      "notes": "Supports an iterative agent-design antecedent. Its evaluated tasks do not establish banking software performance or direct lineage for every commercial coding agent."
+    },
+    {
+      "claim": "SWE-agent integrated interfaces for repository navigation, file editing, and execution of tests and other programs, and studied how interface design affected performance.",
+      "source_or_reference": "[Yang et al., SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](https://arxiv.org/abs/2405.15793)",
+      "date_or_recency": "First submitted 2024-05-06; revised 2024-11-11; abstract and submission history retrieved 2026-10-06.",
+      "evidence_type": "Original software-agent research.",
+      "notes": "Directly supports the repository-level recombination and experimental stage. Benchmark results do not demonstrate commercial scaling or readiness for this bank."
+    },
+    {
+      "claim": "GitHub announced general availability of its coding agent, describing background work in a GitHub Actions environment, draft pull requests, and human review.",
+      "source_or_reference": "[GitHub, Copilot coding agent is now generally available](https://github.blog/changelog/2025-09-25-copilot-coding-agent-is-now-generally-available/)",
+      "date_or_recency": "Published 2025-09-25; retrieved 2026-10-06.",
+      "evidence_type": "Dated first-party product release record.",
+      "notes": "Establishes commercialization of a named product. Listed maintenance and test tasks are documented intended capabilities; this announcement alone does not establish diffusion, effectiveness, or mature operation."
+    },
+    {
+      "claim": "Current Codex documentation distinguishes sandboxing, approval policies, and network controls; it also documents migration from a retired approval-policy setting and warns that command-network controls do not cover every connection.",
+      "source_or_reference": "[OpenAI, Agent approvals & security](https://learn.chatgpt.com/docs/agent-approvals-security)",
+      "date_or_recency": "Living documentation retrieved 2026-10-06; publication and retirement dates were not established.",
+      "evidence_type": "Official technical documentation.",
+      "notes": "Supports current control capabilities, control-surface distinctions, and a concrete configuration change. A local execution sandbox does not prove code stays inside a bank-approved inference environment. Vendor documentation is not independent assurance."
+    },
+    {
+      "claim": "Claude Code documentation describes manual permissions and an auto mode in which a separate classifier evaluates actions, with organization controls over auto mode.",
+      "source_or_reference": "[Anthropic, Claude Code security](https://code.claude.com/docs/en/security)",
+      "date_or_recency": "Living documentation retrieved 2026-10-06; publication date not established.",
+      "evidence_type": "Official technical documentation.",
+      "notes": "Shows that human approval and automated approval are distinct operating arrangements. Does not establish classifier effectiveness, bank suitability, or equivalence with another vendor's controls."
+    },
+    {
+      "claim": "METR's February 2026 update reports increased agentic-tool use among studied developers, but identifies selection effects and measurement problems that make its later productivity estimates unreliable.",
+      "source_or_reference": "[METR, We are Changing our Developer Productivity Experiment Design](https://metr.org/blog/2026-02-24-uplift-update/)",
+      "date_or_recency": "Published 2026-02-24; retrieved 2026-10-06.",
+      "evidence_type": "Primary research organization's methodological update.",
+      "notes": "Provides operational-use evidence beyond a product announcement and contrary evidence to simple productivity claims. The earlier study found tasks took 19% longer with early-2025 tools; METR cautions that later results do not reliably quantify current effects. Neither sample establishes bank-sector diffusion."
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "Commercial availability and documented developer use mean the category cannot responsibly be characterized as invention-only or laboratory-only.",
+    "Established vendors and existing review infrastructure provide continuity, but they do not prove stable models, permissions, contracts, or interoperability.",
+    "METR's earlier slowdown result does not establish that October 2026 agents slow this bank's developers; its later methodological problems also prevent a confident general speedup claim.",
+    "The retrieved evidence does not establish a category-wide dominant architecture, standardized end-to-end control framework, vendor survival probabilities, or mature banking adoption.",
+    "The historical sequence supports cumulative development, not a uniquely proven causal chain from one paper to every product.",
+    "Current vendor documentation describes controls but does not independently verify containment, audit completeness, or operational reliability.",
+    "The organization is illustrative; no repositories, contracts, internal policies, or operational measurements were examined."
+  ],
+  "confidence_and_uncertainty": "High confidence in the documented predecessor capabilities and the distinction between code generation and iterative tool-using agents. Moderate confidence in the provisional evolving-commercialization characterization, supported by dated commercial release evidence, observed developer use, and current control documentation. Low confidence in specific architecture, vendor, or productivity forecasts through October 2028. The broad workflow is more defensible as a planning assumption than the permanence of a particular model or configuration. Stronger stage classification would require longitudinal deployment evidence, failure and incident records, cross-vendor interoperability results, support and deprecation histories, and representative regulated-enterprise adoption data.",
+  "value_opportunity_implication": "Interpretation: The creation path makes bounded maintenance assistance, proposed tests, and review preparation plausible opportunities because agents combine code synthesis with repository inspection and execution feedback. Durable preparatory value may lie in documented integration behavior, reproducible builds, independently specified tests, and representative maintenance tasks that remain useful across vendors. This finding establishes a basis for further evaluation, not expected savings, ROI, staffing reductions, or permission to launch a pilot.",
+  "risk_governance_implication": "Interpretation: Recombining generation with command execution expands the consequence of an error from an incorrect suggestion to a possible file, process, or network action. The bank therefore needs specialists to distinguish model inference location, repository access, execution containment, external tool connections, and human versus automated approvals. A terminal running locally does not establish that prompts or code remain local. Existing review and audit processes could retain evidence, but governance sufficiency has not been assessed. The supplied personal-account usage should be handed to information security and third-party risk for factual assessment and handling under bank policy; this agent makes no compliance determination.",
+  "recommendation_management_implication": "Bounded creation/evolution implication: Plan for replaceability over October 2026–October 2028. Preserve bank-owned source, tests, task definitions, review criteria, and usable audit evidence in forms that can survive an agent change. Avoid irreversible dependence on one model's behavior, proprietary agent memory or task state, vendor-only workflow formats, assumed equivalence of approval modes, or an unverified promise of architectural standardization. Procurement evaluation should examine exportability, supported migration paths, change notices, and the ability to reassess behavior and controls after updates; feasibility and contractual sufficiency belong to other specialists. Revisit the evidence at vendor approval and before budget commitment. Explicit handoff: maturity and diffusion specialists should assess operational stability; implementation and security specialists should assess legacy-stack compatibility and containment; model-risk, third-party-risk, and legal/compliance specialists should assess applicable requirements; economics specialists should assess measured value. The orchestrator must integrate those findings before any pilot or adoption decision.",
+  "change_monitoring_triggers": [
+    "A candidate vendor retires a model, approval mode, API, hosting option, or configuration required by the proposed bank workflow.",
+    "A release changes default permissions, automated approvals, network behavior, inference routing, or logging; request specialist reassessment before treating the reviewed configuration as equivalent.",
+    "Independent longitudinal evidence shows reliable operation on comparable legacy integration tasks, including escaped defects and review burden rather than benchmark scores alone.",
+    "A relevant interoperability standard demonstrates supported cross-vendor migration in practice; reassess lock-in assumptions without equating publication with adoption.",
+    "Vendor ownership, support commitments, contractual data handling, or product availability materially changes.",
+    "Representative bank evaluations show material changes in behavioral correctness, test quality, review effort, or reproducibility after an update.",
+    "At the end of the 6–12-month approval process and before the next budget commitment, refresh the architecture and support evidence."
+  ],
+  "abstention_or_more_information_needed": [
+    "Abstain from a comprehensive adopt/do-not-adopt judgment and from authorizing a pilot on creation history alone.",
+    "Obtain the legacy languages, frameworks, repository sizes, build reproducibility, integration dependencies, and availability of independently specified behavioral tests.",
+    "Clarify what an approved environment permits for model inference, prompt processing, telemetry, retention, and external tool connections; local execution alone is insufficient information.",
+    "Obtain candidate vendor contracts, update and deprecation policies, model-version controls, export capabilities, and support commitments before judging 24-month vendor stability.",
+    "Obtain representative operational evidence before making a stronger scaling, diffusion, or banking-readiness claim.",
+    "Have the appropriate bank specialists determine applicable supervisory treatment and control requirements; these were supplied as context and were not independently assessed."
+  ]
+}

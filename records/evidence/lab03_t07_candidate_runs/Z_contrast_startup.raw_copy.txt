@@ -1,0 +1,120 @@
+{
+  "agent": {
+    "name": "Emerging Technology Creation Agent",
+    "specialty": "technology creation and evolution: originating need, combined predecessor capabilities, enabling conditions, and position in the arc of creation",
+    "version": "0.2-student"
+  },
+  "analytical_question": "How did AI coding agents come into existence, what combination of prior capabilities made them possible, and what does that history imply for this application and organization?",
+  "general_et_finding": "NEED: Software engineers and software-producing organizations needed to translate requirements into coordinated repository changes while managing debugging, testing and maintenance work. Previously, engineers performed these steps themselves, using editors, command-line tools, automation and, later, code-completion assistants. Inference: expensive engineering time and growing software demand created economic pull for systems that could execute a sequence of development actions rather than merely suggest code. PREDECESSORS: Six necessary capability classes are identified; dates document historical implementations, not exclusive inventions or mandatory branded implementations. (1) Generative language modeling capable of conditioning on instructions and context, exemplified by Transformer sequence modeling in 2017: supplies the language-based controller; without language modeling this would not be an LLM-based agent. (2) Learned natural-language-to-code generation, demonstrated by Codex in 2021: translates requests into executable source changes; without code-generation capability the system cannot write requested changes. (3) Programmatic repository reading and navigation, rooted in hierarchical filesystem interfaces documented in UNIX in 1974 and adapted for agents by SWE-agent in 2024: supplies existing-code context; without it this would be a standalone generator rather than a codebase-reading agent. (4) Programmatic text editing and persistent file writes, documented in the UNIX tool environment in 1974 and exposed through SWE-agent's editing interface in 2024: makes proposed changes real; without mutation it remains an adviser. (5) Process execution with observable results, documented in UNIX in 1974 and used for tests and programs by SWE-agent in 2024: runs commands and returns feedback; without it the specified command-running agent is impossible. (6) Stateful action-observation orchestration, demonstrated for LLMs by ReAct in 2022: connects planning, tool actions and subsequent observations across steps; without this capability the system lacks its multi-step agent behavior. Necessity applies to these capabilities, not to UNIX, Transformer, Codex or ReAct as irreplaceable implementations. ENABLERS: Scientific/technical—Transformer attention architecture in 2017 provided a scalable route to contextual sequence modeling; SWE-agent in 2024 showed that interface design materially affects agents' ability to navigate, edit and execute. Particular architectures and optimized interfaces enable performance but are replaceable. Economic/market—OpenAI's April 14, 2025 GPT-4.1 announcement reported lower inference prices than GPT-4o for median queries; inference: cheaper repeated model calls expand the economically feasible action-loop budget. Commercial delivery through GitHub's February 6, 2025 agent-mode announcement and OpenAI's May 16, 2025 Codex launch supplied distribution and packaging, without being necessary to the mechanism. ARC STAGE: Emerging→Developing | defining layer: the LLM-controlled software-action harness, including planning, context/state management, tool selection and feedback-driven execution | markers: GitHub's February 6, 2025 announcement documented a domain of practice forming around agent mode that iterates on changes and terminal feedback, meeting a Developing marker. Anthropic's March 24, 2026 report documented continued experiments with long-running harness organization, while GitHub's November 19, 2025 report described tool-selection experiments; these meet the Emerging marker of unresolved architecture in the defining layer. A common tool-using loop exists, but that does not establish a de facto standard for the complete harness. Visible architectural experimentation therefore caps placement at Emerging→Developing. This is a provisional evidence-based placement, not a claim that every current provider architecture has been exhaustively inspected. TRAJECTORY (inference): Five years, approximately 2031—bounded tasks may acquire more standardized action interfaces and reproducible execution records, while context management and verification remain competing design choices. Ten years, approximately 2036—successful designs may separate specification, execution and verification more consistently; alternatively, model improvements may absorb functions now implemented in external harnesses. Fifteen years, approximately 2041—transferable engineering practice could support maturity and derivative technologies, but persistent verification failures or weak economics could keep dependable autonomy restricted to bounded domains. None of these horizons establishes an inevitable stage transition.",
+  "application_finding": "For building a consumer mobile app and its AI backend, repository access, source editing, version control, build tools and command execution are established components. Their dependability depends on reproducible project configuration and actual test coverage. Conventional tests can check specified behavior, but agent-written tests may repeat the same misunderstanding as agent-written code. Unsettled components include selecting relevant context across mobile and backend repositories, maintaining coherent plans through lengthy changes, handling changing AI-service behavior, and deciding whether observed results justify completion. Infrastructure code increases the importance of execution permissions: a mature command runner can reliably execute an incorrect or overprivileged instruction. Passing local checks does not establish mobile usability, financial-data confidentiality or production correctness.",
+  "organization_specific_finding": "Inference from the supplied case: This six-engineer startup's aggressive posture, daily AI-tool experience and switching costs measured in hours make architectural churn more absorbable over its 12-month runway than it would be for an organization with lengthy qualification and migration processes. It can assume that repository files, ordinary tests and command-line workflows are more durable than particular agent memories, orchestration conventions, permission defaults or subscription packages. It should budget for changes in those latter elements within the runway and avoid assuming any vendor will preserve today's prices or workflow semantics. Its small budget makes total task cost, including retries and engineer review, more relevant than seat price alone. Mostly reversible defects support lightweight workflow changes, but exposure of user financial data is not reversed by redeployment. Consequently, portability can be lightweight while data-access boundaries must remain explicit. No formal procurement process is needed to recognize that distinction.",
+  "evidence": [
+    {
+      "claim": "Transformer sequence modeling supplied an important technical antecedent to contemporary LLMs; its exact architecture is an enabler rather than a logically indispensable implementation.",
+      "source_or_reference": "Ashish Vaswani et al., Attention Is All You Need, June 12, 2017. [Paper](https://arxiv.org/abs/1706.03762)",
+      "date_or_recency": "2017-06-12",
+      "evidence_type": "primary-technical",
+      "notes": "Documents architecture. Its causal role in coding-agent evolution is an interpretation; the paper did not introduce coding agents."
+    },
+    {
+      "claim": "Codex demonstrated learned code generation from natural-language descriptions and documented important correctness limitations.",
+      "source_or_reference": "Mark Chen et al., Evaluating Large Language Models Trained on Code, July 7, 2021. [Paper](https://arxiv.org/abs/2107.03374)",
+      "date_or_recency": "2021-07-07",
+      "evidence_type": "primary-technical",
+      "notes": "The 2021 Codex model is distinct from the later Codex agent product. This is a documented antecedent, not evidence of autonomous repository engineering."
+    },
+    {
+      "claim": "Hierarchical files, editing utilities, process execution and shell interfaces predate LLM agents.",
+      "source_or_reference": "Dennis M. Ritchie and Ken Thompson, The UNIX Time-Sharing System, Communications of the ACM, July 1974. [Original paper, hosted by Carnegie Mellon University](https://www.cs.cmu.edu/~15712/papers/ritchie74.pdf)",
+      "date_or_recency": "1974-07",
+      "evidence_type": "primary-technical",
+      "notes": "Dates a documented implementation of necessary capability classes. It does not imply that agents require UNIX specifically or that these capabilities first appeared together in 1974."
+    },
+    {
+      "claim": "ReAct demonstrated interleaving LLM reasoning, actions and observations to update plans through interaction.",
+      "source_or_reference": "Shunyu Yao et al., ReAct: Synergizing Reasoning and Acting in Language Models, October 6, 2022. [Paper](https://arxiv.org/abs/2210.03629)",
+      "date_or_recency": "2022-10-06",
+      "evidence_type": "primary-technical",
+      "notes": "Documents an antecedent orchestration pattern. Explicit reasoning traces and the named ReAct implementation are not necessary for every coding agent."
+    },
+    {
+      "claim": "SWE-agent integrated repository navigation, file editing and program/test execution, and demonstrated that agent-computer interface design affects performance.",
+      "source_or_reference": "John Yang et al., SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering, May 6, 2024. [Paper](https://arxiv.org/abs/2405.15793)",
+      "date_or_recency": "2024-05-06; revised 2024-11-11",
+      "evidence_type": "primary-technical",
+      "notes": "Supports the recombination account. Benchmark performance does not establish dependable operation on arbitrary production repositories."
+    },
+    {
+      "claim": "GitHub announced agent mode that iterates on code changes and uses terminal feedback, documenting a commercial practice forming around interactive coding agents.",
+      "source_or_reference": "GitHub, GitHub Copilot: The agent awakens, February 6, 2025. [Announcement](https://github.blog/news-insights/product-news/github-copilot-the-agent-awakens/)",
+      "date_or_recency": "2025-02-06",
+      "evidence_type": "dated-market",
+      "notes": "Vendor-reported capabilities. Commercial availability is a practice-formation marker, not proof of architectural convergence."
+    },
+    {
+      "claim": "OpenAI introduced Codex as a cloud coding agent operating in isolated environments.",
+      "source_or_reference": "OpenAI, Introducing Codex, May 16, 2025. [Announcement](https://openai.com/index/introducing-codex/)",
+      "date_or_recency": "2025-05-16",
+      "evidence_type": "primary-historical",
+      "notes": "Documents a release and execution arrangement. A historical product arrangement should not be assumed to describe every current Codex interface."
+    },
+    {
+      "claim": "OpenAI reported GPT-4.1 pricing below GPT-4o for median queries, providing a dated economic enabling condition.",
+      "source_or_reference": "OpenAI, Introducing GPT-4.1 in the API, April 14, 2025. [Announcement](https://openai.com/index/gpt-4-1/)",
+      "date_or_recency": "2025-04-14",
+      "evidence_type": "dated-market",
+      "notes": "Vendor-reported historical price comparison, not a current quotation or evidence that every agent task became cheaper."
+    },
+    {
+      "claim": "GitHub reported experimenting with smaller and dynamically selected tool sets because tool availability affected agent performance.",
+      "source_or_reference": "GitHub, How we’re making GitHub Copilot smarter with fewer tools, November 19, 2025. [Engineering report](https://github.blog/ai-and-ml/github-copilot/how-were-making-github-copilot-smarter-with-fewer-tools/)",
+      "date_or_recency": "2025-11-19",
+      "evidence_type": "primary-technical",
+      "notes": "Vendor engineering evidence of unresolved tool-selection design in the defining layer."
+    },
+    {
+      "claim": "Anthropic reported further harness experiments for long-running application development after earlier approaches encountered performance ceilings.",
+      "source_or_reference": "Prithvi Rajasekaran, Anthropic, Harness design for long-running application development, March 24, 2026. [Engineering report](https://www.anthropic.com/engineering/harness-design-long-running-apps)",
+      "date_or_recency": "2026-03-24",
+      "evidence_type": "primary-technical",
+      "notes": "Supports continued architectural experimentation. It does not establish that all providers diverge on every harness component."
+    },
+    {
+      "claim": "Economic pull, predecessor necessity, the provisional arc classification, all three forecasts and the organizational implications are analytical interpretations.",
+      "source_or_reference": "Emerging Technology Creation Agent, analysis dated October 6, 2026, applying the supplied Fortino/Arthur framework to the cited sources and supplied case.",
+      "date_or_recency": "2026-10-06",
+      "evidence_type": "inference",
+      "notes": "No independent labor-market estimate, startup productivity study or forecast validation was obtained. The supplied framework text was used; the underlying book chapter was not independently inspected."
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "A1 ASSUMPTION: A language model can choose software actions and use observations to continue a useful multi-step process. | VERDICT: HOLDS | WHY: ReAct and SWE-agent document working action-observation mechanisms. This verdict concerns demonstrated functionality on bounded tasks, not universal correctness. | IF DIFFERENT: Code generation would remain a suggestion mechanism requiring humans to perform and coordinate each action.",
+    "A2 ASSUMPTION: The defining harness has converged sufficiently to constitute a de facto architectural standard. | VERDICT: DOES NOT HOLD | WHY: The verified GitHub and Anthropic engineering reports document continuing choices about tool selection and long-running orchestration. Shared terminology and a common outer loop are weaker evidence than transferable architecture. | IF DIFFERENT: Demonstrated convergence plus transferable specialist practice would justify considering Developing without the divergence cap.",
+    "A3 ASSUMPTION: Purchasers' willingness to pay for engineering work saved can sustain the compute and maintenance required by coding agents. | VERDICT: UNTESTED | WHY: Commercial offerings and historical inference-price reductions establish market activity, but do not establish durable margins or net engineering savings after retries and review. | IF DIFFERENT: Development could concentrate on cheaper bounded tasks, require different pricing or lose sustained investment.",
+    "The six predecessors are functional capability classes with dated implementations. They are not six uniquely indispensable inventions; code understanding and code generation also share learned representations.",
+    "The stage assessment is provisional as of October 6, 2026. Verified architectural observations extend into March 2026, but an exhaustive contemporary comparison across the named major providers was not completed.",
+    "Common tool loops and expanding commercial products are contrary evidence to an exclusively Emerging classification. They do not, by themselves, establish convergence of the defining harness.",
+    "No prior same-technology run was supplied. The general finding and A1–A3 are context-independent, but exact agreement with an unseen run cannot be verified.",
+    "The supplied packet exposed all case fields together, so literal proof that application and organization fields were unread before general analysis cannot be provided. The general finding and assumptions exclude those contextual inputs."
+  ],
+  "confidence_and_uncertainty": "High confidence in the documented recombination of language modeling, code generation, software interfaces and iterative control. Moderate confidence in Emerging→Developing because the defining layer is explicit and dated reports support continuing experimentation, but present cross-provider convergence was not exhaustively verified. Low confidence in the 10- and 15-year structural scenarios and in durable category economics. Organization-specific conclusions are conditional inferences from the illustrative case, not measured outcomes for an actual startup.",
+  "value_opportunity_implication": "Inference: The recombination makes coordinated execution of familiar development steps available through natural-language direction. For this startup, existing engineering skill and daily AI experience may reduce the effort needed to accommodate changing tools during its runway. The creation history supports preserving reusable code, tests and task specifications; it does not establish a productivity gain or a product-market-fit outcome.",
+  "risk_governance_implication": "Inference: The defining advance connects probabilistic decisions to real software actions, so working command and editing tools can amplify mistaken plans. Protect financial data through bounded access, synthetic development fixtures and explicit control of production credentials. Keep security-sensitive review and reproducible checks understandable outside a vendor's agent interface. These boundaries should remain stable even when prompts, harnesses and approval defaults change.",
+  "recommendation_management_implication": "For the 12-month planning horizon, assume continued changes in harness architecture, model behavior, vendor packaging and working practices. Treat ordinary repository artifacts and independently runnable checks as durable foundations. Avoid embedding essential product knowledge only in vendor memory, making the build process depend on proprietary orchestration, or committing the runway budget to unverified future pricing. Given six experienced engineers and hours-long switching costs, keep portability measures proportionate: readable repository instructions, standard scripts and recoverable work records. This is an assumption-and-lock-in recommendation; adoption timing and organizational operating readiness require the designated agents.",
+  "change_monitoring_triggers": [
+    "Move toward Developing if major providers converge on interchangeable context/state, action and verification arrangements, and demonstrated migrations preserve behavior with limited provider-specific adaptation.",
+    "Reconsider toward Emerging if harness designs diverge further and routine model or tool changes repeatedly invalidate transferable practices.",
+    "Consider Developing→Mature only after convergence is accompanied by stable professional practice, transferable craft and derivative technologies; product availability alone is insufficient.",
+    "Within the startup's runway, watch for a model or agent update that changes permission semantics, test interpretation or repository instructions enough to require workflow revision.",
+    "Watch for tool switching to grow from hours to days because essential state or build logic has become vendor-specific; that would invalidate the case's low-switching-cost assumption.",
+    "Reassess the economics assumption when sustained measurements show total cost per accepted change, including review and retries, across multiple model and pricing revisions.",
+    "Revisit organization-specific tolerance if the app gains banking functions, substantially more sensitive data or defects that cannot be corrected through quick redeployment."
+  ],
+  "abstention_or_more_information_needed": [
+    "HANDOFF → Adoption Agent: Given runway, measured delivery outcomes and total task costs, whether and when should the startup expand its use of coding agents?",
+    "HANDOFF → Organizational Adoption Agent: Can the six-engineer team maintain effective review, testing and financial-data access boundaries while its agent workflows change?",
+    "HANDOFF → Landscape Agent: What current cross-provider evidence establishes convergence or divergence in context management, orchestration, execution boundaries and pricing?",
+    "More information needed: actual mobile/backend toolchain, test coverage, production-access arrangements and measured task costs would sharpen application and organization implications.",
+    "Abstention: No definitive claim is made about current vendor rankings, durable vendor survival, production correctness, regulatory obligations or a fully verified October 2026 architectural consensus."
+  ]
+}
