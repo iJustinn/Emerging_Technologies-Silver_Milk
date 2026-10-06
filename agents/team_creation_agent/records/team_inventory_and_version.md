@@ -28,7 +28,7 @@
 
 ## Remaining limitations
 
-W-1 economic-enabler evidence varies across runs; W-2 a predecessor's date varies (Unix 1971 vs. 1974); W-3 one run per case per version; W-4 the diffusion stage label is contestable (DS-01); W-5 Light effort with web retrieval only. Karuna Srivastava's candidate was temporarily missing (she was absent) and is not compared.
+W-1 economic-enabler evidence varies across runs; W-2 a predecessor's date varies (Unix 1971 vs. 1974); W-3 one run per case per version; W-4 the diffusion stage label is contestable (DS-01); W-5 Light effort with web retrieval only. Karuna Srivastava's candidate was temporarily missing (she was absent) and is not compared. When it is available it is run on the same common pair; it reopens D-09 only if it exposes a failure of v1.0.
 
 ## Semester agent inventory (for the final MoE system)
 

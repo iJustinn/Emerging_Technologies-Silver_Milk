@@ -16,7 +16,7 @@ MASY1-GC 1800 · Team Lab 3 · workshop 2026-10-06 · Team Silver Milk
 ## Three-level finding (common primary case, v1.0)
 
 - **General ET finding (AI coding agents):** an LLM-controlled harness recombines Unix file and shell tooling (1970s), the Transformer (2017), generative pretraining (GPT, 2018), code-trained models (Codex, 2021), and reasoning–action loops (ReAct, 2022). The need is the repeated coordination work that developers did by hand; it is written as "associated with", not as proven cause.
-  - **Stage:** `Emerging→Developing`. The defining layer, the orchestration harness, still differs across providers. Dated markers: Claude Code 2025-02-24 (a local shell/editor harness), Codex 2025-05-16 (isolated cloud tasks), and Anthropic's sandbox redesign 2025-10-20. All three were verified (E-01 to E-03).
+  - **Stage:** `Emerging→Developing`. The defining layer, the orchestration harness, still differs across providers. Dated markers in the v1.0 primary: GitHub's editor-integrated agent mode (2025-02-06, E-04), OpenAI Codex isolated cloud tasks (2025-05-16, E-02), and Anthropic's containment account (2026-05-25, E-11). All three were verified. The v0.9 primary cited Claude Code 2025-02-24 and the sandbox redesign 2025-10-20 (E-01, E-03), also verified. Which markers are cited varies between runs, but the label does not.
   - **Assumptions:** A1 Mechanism HOLDS; A2 Convergence UNTESTED; A3 Economics UNTESTED.
 - **Application finding:** the unit of analysis is the harness technology. Claude Code, Codex, and Copilot are implementations, and legacy maintenance, test generation, and review preparation are local uses; buying a product is not inventing the technology. The dependable parts are the mature scaffold around the agent (files, shell, tests, diffs). The unsettled parts are repository understanding, multi-step planning, test adequacy, context retention, and approval behavior.
 - **Organization-specific finding:**
@@ -34,7 +34,7 @@ MASY1-GC 1800 · Team Lab 3 · workshop 2026-10-06 · Team Silver Milk
 - **Transfer result (v1.0, instructions unchanged):** validator PASS. The supplied cards are labeled `STATUS: supplied`. The case prerequisites appear as explicit conditions ("owner approval must precede…").
 - **Weakness / failure found (T-08, v0.9):** the model wrote A2 itself and flipped its polarity ("has settled" → DOES NOT HOLD vs. "has not converged" → HOLDS). The verdicts contradicted each other across runs on the same technology, and two of three runs contradicted their own stage label. Only 3 of 5 predecessors were shared.
 - **Revision made:** fixed affirmative A1–A3 statements, an A2 ↔ stage consistency rule, and canonical-record predecessor tracing. **Rerun result:** A2 is consistent in 3 of 3 runs; predecessors are identical for bank and startup.
-- **Consequential claims checked:** E-01 to E-10 in `records/evidence_register.md` (the stage markers for both technologies and the economic enabler). E-05 (Claude Code on Pro plans, June 2025) is confirmed only by secondary sources.
+- **Consequential claims checked:** E-01 to E-13 in `records/evidence_register.md` (every stage marker and economic enabler cited by the v0.9 and v1.0 team runs). Two are confirmed only to the month: E-05 (Claude Code on Pro plans, June 2025; secondary sources) and E-12 (GitHub coding agent; the run's "2025-05-22" date is not confirmed, Build was 2025-05-19). The v1.0 outputs contain no "verified" or "checked" wording.
 
 ## Team decision
 
@@ -64,6 +64,7 @@ The team delegated the choice of which dissents to record. They are recorded una
 - W-2: the same predecessor is dated differently (Unix 1971 vs. 1974).
 - W-3: there is one run per case per version.
 - W-5: all runs used Light effort with web retrieval.
+- The v1.0 runs cite different stage markers (all verified; E-12 only to the month) for the same label. This is part of W-1.
 
 The team's mitigation is I-05: in the MoE system, hold one reconciled general record per technology.
 
@@ -78,7 +79,7 @@ The team's mitigation is I-05: in the MoE system, hold one reconciled general re
   - Claude Code, working in Justin's environment, unpacked the candidates and built every prompt packet with the frozen tools.
   - It drove ChatGPT by computer use for all 14 runs, saved raw and JSON copies, and ran the frozen validator and `check_team_run.py`.
   - It drafted the comparison, the team instructions, and these records.
-  - It verified the consequential dated claims by web search (E-01 to E-10).
+  - It verified the consequential dated claims by web search (E-01 to E-13).
 - **Team decisions:** the team chose the common case, the runtime, and the synthesis (ratified as proposed) and the 350-word cap; it delegated the choice of which dissents to record. ChatGPT produced every agent output, and the outputs were saved exactly as returned.
 - **Final-project handoff:** this is the first approved specialist and the template for Labs 4–9: labeled general parts, fixed assumption slots, STATUS-prefixed evidence, and HANDOFF lines. Open integration items:
   - I-05: one general record per technology.

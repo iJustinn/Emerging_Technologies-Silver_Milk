@@ -64,11 +64,11 @@ All other `check_team_run.py` checks pass on all three runs: five labels, ≤350
 - **Swap test:** the bank finding is about the approval cycle consuming the 24-month horizon and an "established supplier name does not resolve architectural uncertainty". The startup finding is that its "binding constraint is scarce runway and engineering attention" and churn is absorbable. Each would be wrong for the other organization. **Pass.**
 - **Prerequisites as conditions:** transfer: "Owner approval must precede acceptance of concepts; separate authorship and checking must precede any customer-facing campaign use." **Pass** (Dian's Assignment 2 failure is fixed).
 - **Lane:** every run defers adopt/experiment to the Adoption Agent. The startup run's abstention explicitly declines "experiment design". **Pass.**
-- **Evidence test:** the stage markers in the team runs were checked against original sources (`records/evidence_register.md` E-01 to E-10). All dates were confirmed. The economic enabler in E-05 is confirmed only by secondary sources.
+- **Evidence test:** every stage marker and economic enabler cited by the team runs was checked (`records/evidence_register.md` E-01 to E-13). v1.0 primary: E-04, E-02, E-11. v1.0 contrast: E-12 (month only; the day "05-22" is not confirmed) and E-13. v1.0 transfer: Rombach (supplied card), E-09, E-10, E-07. No v1.0 output uses "verified" or "checked" wording.
 
 ## Remaining weaknesses (preserved, not fixed)
 
-- **W-1 Economic enabler varies across runs.** The primary v1.0 cites GitHub's February 2025 product distribution; the contrast v1.0 cites Anthropic's 2026-02-12 revenue report. Both are flagged as weak evidence of sustainable economics, but they are different evidence for the same general claim.
+- **W-1 Economic enabler and cited markers vary across runs.** The primary v1.0 cites GitHub's February 2025 product distribution; the contrast v1.0 cites Anthropic's 2026-02-12 revenue report. Both are flagged as weak evidence of sustainable economics, but they are different evidence for the same general claim.
 - **W-2 Same predecessor, different date.** Unix is dated 1971 (first manual) in one run and 1974 (the CACM paper) in the other.
 - **W-3 One run per case per version.** Stability rests on two v1.0 runs on one technology; it is not a reliability rate.
 - **W-4 The stage label for text-to-image diffusion (Emerging→Developing in 2026) is open to challenge.** See dissent DS-01.
