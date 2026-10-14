@@ -1,0 +1,111 @@
+=== primary_response_v1_1
+VALIDATION PASSED
+PASS  General ≤200 words  (166 words)
+FLAG  Org/industry words in general level  ['supplied']
+PASS  Every evidence note starts with STATUS  bad indices []
+PASS  No Markdown links in sources  []
+PASS  'verified'/'checked' wording (allowed only if retrieved)  (0)
+PASS  HANDOFF lines present  (6)
+PASS  No empty arrays  []
+PASS  agent.version matches metadata  (1.1-team vs 1.1-team)
+INFO  application_finding words: 113
+INFO  organization_specific_finding words: 306
+PASS  LIFECYCLE slots INVENTION/INNOVATION/COMMERCIALIZATION each have a verdict  {'INVENTION': 'HOLDS', 'INNOVATION': 'UNTESTED', 'COMMERCIALIZATION': 'HOLDS'}
+PASS  DEGREE uses an allowed label  (Contested (breakthrough candidate))
+PASS  ENTREPRENEURSHIP uses an allowed label  (Incumbent-led)
+PASS  STATUS IN CASE uses an allowed label  (Proposed)
+PASS  NOVELTY uses an allowed label  (Withheld)
+PASS  No organization-dependent APPLICATION CLASS in application_finding (R-5)  
+PASS  Status is not called 'unspecified' (R-6 default = Proposed)  
+PASS  SIGNIFICANCE label present  (SIGNIFICANCE: Moderate (provisional))
+PASS  Non-withheld SIGNIFICANCE marked provisional  
+PASS  Org label UNIT OF ANALYSIS  
+PASS  Org label REVENUE MECHANISM  
+PASS  Org label CORE OR SUPPORT  
+PASS  Org label MATERIALITY  
+PASS  Org label HORIZON  
+PASS  Org label STRATEGIC RISK  
+PASS  Org finding ≤350 words  (306)
+PASS  Application finding ≤150 words  (113)
+PASS  General finding ≤200 words  (166)
+PASS  COMPETING CLASSIFICATION + DISTINGUISHING EVIDENCE present  
+PASS  Recommendation stays in lane (R-10)  []
+PASS  No Markdown links in sources (R-9)  []
+PASS  No 'verified' wording on evidence not inspected this run (R-9)  indices []
+PASS  evidence_type from the team list  []
+PASS  HANDOFF lines present  (6; agents: ['Adoption', 'Creation', 'Diffusion', 'Landscape', 'Organizational Adoption', 'Promethean'])
+=== contrast_1_response_v1_1
+VALIDATION PASSED
+PASS  General ≤200 words  (175 words)
+FLAG  Org/industry words in general level  ['cost', 'supplied']
+PASS  Every evidence note starts with STATUS  bad indices []
+PASS  No Markdown links in sources  []
+PASS  'verified'/'checked' wording (allowed only if retrieved)  (0)
+PASS  HANDOFF lines present  (6)
+PASS  No empty arrays  []
+PASS  agent.version matches metadata  (1.1-team vs 1.1-team)
+INFO  application_finding words: 128
+INFO  organization_specific_finding words: 306
+PASS  LIFECYCLE slots INVENTION/INNOVATION/COMMERCIALIZATION each have a verdict  {'INVENTION': 'HOLDS', 'INNOVATION': 'UNTESTED', 'COMMERCIALIZATION': 'HOLDS'}
+PASS  DEGREE uses an allowed label  (Contested (breakthrough candidate))
+PASS  ENTREPRENEURSHIP uses an allowed label  (Incumbent-led)
+PASS  STATUS IN CASE uses an allowed label  (Proposed)
+PASS  NOVELTY uses an allowed label  (Withheld)
+PASS  No organization-dependent APPLICATION CLASS in application_finding (R-5)  
+PASS  Status is not called 'unspecified' (R-6 default = Proposed)  
+PASS  SIGNIFICANCE label present  (SIGNIFICANCE: Low (provisional))
+PASS  Non-withheld SIGNIFICANCE marked provisional  
+PASS  Org label UNIT OF ANALYSIS  
+PASS  Org label REVENUE MECHANISM  
+PASS  Org label CORE OR SUPPORT  
+PASS  Org label MATERIALITY  
+PASS  Org label HORIZON  
+PASS  Org label STRATEGIC RISK  
+PASS  Org finding ≤350 words  (306)
+PASS  Application finding ≤150 words  (128)
+PASS  General finding ≤200 words  (175)
+PASS  COMPETING CLASSIFICATION + DISTINGUISHING EVIDENCE present  
+PASS  Recommendation stays in lane (R-10)  []
+PASS  No Markdown links in sources (R-9)  []
+PASS  No 'verified' wording on evidence not inspected this run (R-9)  indices []
+PASS  evidence_type from the team list  []
+PASS  HANDOFF lines present  (6; agents: ['Adoption', 'Creation', 'Diffusion', 'Landscape', 'Organizational Adoption', 'Promethean'])
+PASS  Same DEGREE as paired run (R-4)  (Contested (breakthrough candidate) vs Contested (breakthrough candidate))
+PASS  Same ENTREPRENEURSHIP label as paired run (R-4)  (Incumbent-led vs Incumbent-led)
+PASS  Same LIFECYCLE verdicts as paired run (R-4)  ({'INVENTION': 'HOLDS', 'INNOVATION': 'UNTESTED', 'COMMERCIALIZATION': 'HOLDS'} vs {'INVENTION': 'HOLDS', 'INNOVATION': 'UNTESTED', 'COMMERCIALIZATION': 'HOLDS'})
+PASS  Same application-level labels as paired run (R-5)  ({'STATUS IN CASE': 'Proposed', 'NOVELTY': 'Withheld'} vs {'STATUS IN CASE': 'Proposed', 'NOVELTY': 'Withheld'})
+=== contrast_2_transfer_response_v1_1
+VALIDATION PASSED
+PASS  General ≤200 words  (156 words)
+PASS  Org/industry words in general level  []
+PASS  Every evidence note starts with STATUS  bad indices []
+PASS  No Markdown links in sources  []
+PASS  'verified'/'checked' wording (allowed only if retrieved)  (0)
+PASS  HANDOFF lines present  (6)
+PASS  No empty arrays  []
+PASS  agent.version matches metadata  (1.1-team vs 1.1-team)
+INFO  application_finding words: 104
+INFO  organization_specific_finding words: 282
+PASS  LIFECYCLE slots INVENTION/INNOVATION/COMMERCIALIZATION each have a verdict  {'INVENTION': 'HOLDS', 'INNOVATION': 'UNTESTED', 'COMMERCIALIZATION': 'UNTESTED'}
+PASS  DEGREE uses an allowed label  (Contested (breakthrough candidate))
+PASS  ENTREPRENEURSHIP uses an allowed label  (Not established)
+PASS  STATUS IN CASE uses an allowed label  (Demonstration)
+PASS  NOVELTY uses an allowed label  (Withheld)
+PASS  No organization-dependent APPLICATION CLASS in application_finding (R-5)  
+PASS  Status is not called 'unspecified' (R-6 default = Proposed)  
+PASS  SIGNIFICANCE label present  (SIGNIFICANCE: Withheld (withheld))
+PASS  Org label UNIT OF ANALYSIS  
+PASS  Org label REVENUE MECHANISM  
+PASS  Org label CORE OR SUPPORT  
+PASS  Org label MATERIALITY  
+PASS  Org label HORIZON  
+PASS  Org label STRATEGIC RISK  
+PASS  Org finding ≤350 words  (282)
+PASS  Application finding ≤150 words  (104)
+PASS  General finding ≤200 words  (156)
+PASS  COMPETING CLASSIFICATION + DISTINGUISHING EVIDENCE present  
+PASS  Recommendation stays in lane (R-10)  []
+PASS  No Markdown links in sources (R-9)  []
+PASS  No 'verified' wording on evidence not inspected this run (R-9)  indices []
+PASS  evidence_type from the team list  []
+PASS  HANDOFF lines present  (6; agents: ['Adoption', 'Creation', 'Diffusion', 'Landscape', 'Organizational Adoption', 'Promethean'])
