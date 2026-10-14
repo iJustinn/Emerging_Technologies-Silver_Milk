@@ -6,7 +6,7 @@
 | Lab | Team Lab 4: Synthesize Team SubAgent 2, Innovation Classification (2026-10-13) |
 | Agent / version | `agents/team_innovation_classification_agent`, **1.1-team**. History: 0.9-team → 1.0-team (failure persisted) → 1.1-team |
 | Scaffold | MASY1800_ET_Agent_Scaffold_v1_0, `FROZEN CORE INTACT` |
-| Repository | `github.com/iJustinn/Emerging_Technologies-Silver_Milk`, branch `lab-04-innovation-classification`, tag `team_innovation_classification_agent-v1.1-team` (commit `COMMIT_TBD`) |
+| Repository | `github.com/iJustinn/Emerging_Technologies-Silver_Milk`, branch `lab-04-innovation-classification`, tag `team_innovation_classification_agent-v1.1-team` (the commit SHA is in the PR) |
 | Governing question | Which classification logic best distinguishes invention, innovation, entrepreneurship/commercialization, incremental change, and breakthrough change, and how significant is the contemplated application for this organization, without confusing global novelty with organizational impact? |
 
 ## Three-level finding (common cases, final v1.1 runs)
