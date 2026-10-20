@@ -1,0 +1,314 @@
+# Team v1.0 final checks (2026-10-20)
+== primary_response_v1_0
+VALIDATION PASSED
+PASS  General ≤350 words  (291 words)
+PASS  Org/industry words in general level  []
+PASS  Every evidence note starts with STATUS  bad indices []
+PASS  No Markdown links in sources  []
+PASS  'verified'/'checked' wording (allowed only if retrieved)  (0)
+PASS  HANDOFF lines present  (6)
+PASS  No empty arrays  []
+PASS  agent.version matches metadata  (1.0-team vs 1.0-team)
+INFO  application_finding words: 72
+INFO  organization_specific_finding words: 195
+PASS  Step 1 label EVIDENCE BASE uses an allowed value  (Supplied cards)
+PASS  Step 1 label LAYER 1 uses an allowed value  (System)
+PASS  Step 1 label DISSOLUTION uses an allowed value  (Reduced)
+PASS  Step 1 label EARLIEST UNRESOLVED GATE uses an allowed value  (Suppression)
+PASS  Step 1 label SIGNIFICANCE CLASS uses an allowed value  (Indeterminate (Incremental | Breakthrough))
+PASS  Step 1 label MODE uses an allowed value  (Prospective)
+PASS  Step 1 label CEILING uses an allowed value  (Potential Promethean)
+PASS  MODE is Prospective (R-7)  
+PASS  General slot UNIT CLASSIFIED:  
+PASS  General slot PARENT SYSTEM:  
+PASS  General slot BARRIER STATEMENT:  
+PASS  General slot SUPPRESSION TEST:  
+PASS  General slot LAYER 3 CRITERIA:  
+PASS  General slot WHY NOT LOWER:  
+PASS  General slot HIGHER-SIGNIFICANCE HYPOTHESIS:  
+PASS  Suppression test has Observed and Prospective parts  
+PASS  IF DISSOLVED, TIERS: slot present when not Dissolved  
+PASS  Layer 3 not scored before Dissolved (R-4)  
+PASS  Ceiling self-check: Indeterminate (I | B) only with Reduced (R-9)  
+PASS  No 'provisionally' Promethean escape (R-9)  
+PASS  General finding ≤350 words  (291)
+PASS  APPLICATION SIGNIFICANCE uses an allowed label  
+PASS  Application finding ≤150 words  (72)
+PASS  Org label UNIT OF ANALYSIS  
+PASS  Org label CORE ACTIVITY ON BARRIER  
+PASS  Org label CONSEQUENCE FOR THE ORGANIZATION  
+PASS  Org label REVERSIBILITY OF THE DECISION  
+PASS  Org label WINDOW EVIDENCE  
+PASS  Org label WEIGHT OF BROAD SIGNIFICANCE ON THIS DECISION  
+PASS  Org label POSTURE EFFECT  
+PASS  Weight read from the table (R-12)  (No, None found -> Low)
+PASS  POSTURE EFFECT gives no adopt/pilot/evaluation direction (R-12)  []
+PASS  Org finding ≤300 words  (195)
+PASS  Step 4 label EVIDENCE FOR HIGHER CLASS  
+PASS  Step 4 label EVIDENCE AGAINST HIGHER CLASS  
+PASS  Step 4 label STRONGEST CASE FOR LOWER CLASS  
+PASS  Step 4 label DISTINGUISHING EVIDENCE  
+PASS  Two-direction confidence lines (R-10)  (Indeterminate (Incremental | Breakthrough)=Moderate; NOT HIGHER=Moderate)
+PASS  Recommendation starts 'WEIGHT: <level> —' and matches org weight  (Low vs Low)
+PASS  Recommendation ≤150 words  (61)
+PASS  Recommendation stays in lane (R-13)  []
+PASS  evidence_type from the team list (R-14)  []
+PASS  HANDOFF lines name the other six specialists  (['Adoption', 'Creation', 'Diffusion', 'Innovation', 'Landscape', 'Organizational Adoption'])
+== contrast_1_response_v1_0
+VALIDATION PASSED
+PASS  General ≤350 words  (289 words)
+PASS  Org/industry words in general level  []
+PASS  Every evidence note starts with STATUS  bad indices []
+PASS  No Markdown links in sources  []
+FLAG  'verified'/'checked' wording (allowed only if retrieved)  (1)
+PASS  HANDOFF lines present  (6)
+PASS  No empty arrays  []
+PASS  agent.version matches metadata  (1.0-team vs 1.0-team)
+INFO  application_finding words: 80
+INFO  organization_specific_finding words: 182
+PASS  Step 1 label EVIDENCE BASE uses an allowed value  (Supplied cards)
+PASS  Step 1 label LAYER 1 uses an allowed value  (System)
+PASS  Step 1 label DISSOLUTION uses an allowed value  (Reduced)
+PASS  Step 1 label EARLIEST UNRESOLVED GATE uses an allowed value  (Suppression)
+PASS  Step 1 label SIGNIFICANCE CLASS uses an allowed value  (Indeterminate (Incremental | Breakthrough))
+PASS  Step 1 label MODE uses an allowed value  (Prospective)
+PASS  Step 1 label CEILING uses an allowed value  (Potential Promethean)
+PASS  MODE is Prospective (R-7)  
+PASS  General slot UNIT CLASSIFIED:  
+PASS  General slot PARENT SYSTEM:  
+PASS  General slot BARRIER STATEMENT:  
+PASS  General slot SUPPRESSION TEST:  
+PASS  General slot LAYER 3 CRITERIA:  
+PASS  General slot WHY NOT LOWER:  
+PASS  General slot HIGHER-SIGNIFICANCE HYPOTHESIS:  
+PASS  Suppression test has Observed and Prospective parts  
+PASS  IF DISSOLVED, TIERS: slot present when not Dissolved  
+PASS  Layer 3 not scored before Dissolved (R-4)  
+PASS  Ceiling self-check: Indeterminate (I | B) only with Reduced (R-9)  
+PASS  No 'provisionally' Promethean escape (R-9)  
+PASS  General finding ≤350 words  (289)
+PASS  APPLICATION SIGNIFICANCE uses an allowed label  
+PASS  Application finding ≤150 words  (80)
+PASS  Org label UNIT OF ANALYSIS  
+PASS  Org label CORE ACTIVITY ON BARRIER  
+PASS  Org label CONSEQUENCE FOR THE ORGANIZATION  
+PASS  Org label REVERSIBILITY OF THE DECISION  
+PASS  Org label WINDOW EVIDENCE  
+PASS  Org label WEIGHT OF BROAD SIGNIFICANCE ON THIS DECISION  
+PASS  Org label POSTURE EFFECT  
+PASS  Weight read from the table (R-12)  (No, None found -> Low)
+PASS  POSTURE EFFECT gives no adopt/pilot/evaluation direction (R-12)  []
+PASS  Org finding ≤300 words  (182)
+PASS  Step 4 label EVIDENCE FOR HIGHER CLASS  
+PASS  Step 4 label EVIDENCE AGAINST HIGHER CLASS  
+PASS  Step 4 label STRONGEST CASE FOR LOWER CLASS  
+PASS  Step 4 label DISTINGUISHING EVIDENCE  
+PASS  Two-direction confidence lines (R-10)  (Indeterminate (Incremental | Breakthrough)=Moderate; NOT HIGHER=Moderate)
+PASS  Recommendation starts 'WEIGHT: <level> —' and matches org weight  (Low vs Low)
+PASS  Recommendation ≤150 words  (53)
+PASS  Recommendation stays in lane (R-13)  []
+PASS  evidence_type from the team list (R-14)  []
+PASS  HANDOFF lines name the other six specialists  (['Adoption', 'Creation', 'Diffusion', 'Innovation', 'Landscape', 'Organizational Adoption'])
+== contrast_2_transfer_response_v1_0
+VALIDATION PASSED
+PASS  General ≤350 words  (291 words)
+PASS  Org/industry words in general level  []
+PASS  Every evidence note starts with STATUS  bad indices []
+PASS  No Markdown links in sources  []
+PASS  'verified'/'checked' wording (allowed only if retrieved)  (0)
+PASS  HANDOFF lines present  (6)
+PASS  No empty arrays  []
+PASS  agent.version matches metadata  (1.0-team vs 1.0-team)
+INFO  application_finding words: 74
+INFO  organization_specific_finding words: 201
+PASS  Step 1 label EVIDENCE BASE uses an allowed value  (Retrieved this run)
+PASS  Step 1 label LAYER 1 uses an allowed value  (System)
+PASS  Step 1 label DISSOLUTION uses an allowed value  (Reduced)
+PASS  Step 1 label EARLIEST UNRESOLVED GATE uses an allowed value  (Suppression)
+PASS  Step 1 label SIGNIFICANCE CLASS uses an allowed value  (Breakthrough)
+PASS  Step 1 label MODE uses an allowed value  (Prospective)
+PASS  Step 1 label CEILING uses an allowed value  (Potential Promethean)
+PASS  MODE is Prospective (R-7)  
+PASS  General slot UNIT CLASSIFIED:  
+PASS  General slot PARENT SYSTEM:  
+PASS  General slot BARRIER STATEMENT:  
+PASS  General slot SUPPRESSION TEST:  
+PASS  General slot LAYER 3 CRITERIA:  
+PASS  General slot WHY NOT LOWER:  
+PASS  General slot HIGHER-SIGNIFICANCE HYPOTHESIS:  
+PASS  Suppression test has Observed and Prospective parts  
+PASS  IF DISSOLVED, TIERS: slot present when not Dissolved  
+PASS  Layer 3 not scored before Dissolved (R-4)  
+PASS  No 'provisionally' Promethean escape (R-9)  
+PASS  General finding ≤350 words  (291)
+PASS  APPLICATION SIGNIFICANCE uses an allowed label  
+PASS  Application finding ≤150 words  (74)
+PASS  Org label UNIT OF ANALYSIS  
+PASS  Org label CORE ACTIVITY ON BARRIER  
+PASS  Org label CONSEQUENCE FOR THE ORGANIZATION  
+PASS  Org label REVERSIBILITY OF THE DECISION  
+PASS  Org label WINDOW EVIDENCE  
+PASS  Org label WEIGHT OF BROAD SIGNIFICANCE ON THIS DECISION  
+PASS  Org label POSTURE EFFECT  
+PASS  Weight read from the table (R-12)  (Yes, None found -> Moderate)
+PASS  POSTURE EFFECT gives no adopt/pilot/evaluation direction (R-12)  []
+PASS  Org finding ≤300 words  (201)
+PASS  Step 4 label EVIDENCE FOR HIGHER CLASS  
+PASS  Step 4 label EVIDENCE AGAINST HIGHER CLASS  
+PASS  Step 4 label STRONGEST CASE FOR LOWER CLASS  
+PASS  Step 4 label DISTINGUISHING EVIDENCE  
+PASS  Two-direction confidence lines (R-10)  (Breakthrough=Moderate; NOT HIGHER=Moderate)
+PASS  Recommendation starts 'WEIGHT: <level> —' and matches org weight  (Moderate vs Moderate)
+PASS  Recommendation ≤150 words  (61)
+PASS  Recommendation stays in lane (R-13)  []
+PASS  evidence_type from the team list (R-14)  []
+PASS  HANDOFF lines name the other six specialists  (['Adoption', 'Creation', 'Diffusion', 'Innovation', 'Landscape', 'Organizational Adoption'])
+== hype_response_v1_0
+VALIDATION PASSED
+PASS  General ≤350 words  (287 words)
+PASS  Org/industry words in general level  []
+PASS  Every evidence note starts with STATUS  bad indices []
+PASS  No Markdown links in sources  []
+FLAG  'verified'/'checked' wording (allowed only if retrieved)  (1)
+PASS  HANDOFF lines present  (6)
+PASS  No empty arrays  []
+PASS  agent.version matches metadata  (1.0-team vs 1.0-team)
+INFO  application_finding words: 85
+INFO  organization_specific_finding words: 200
+PASS  Step 1 label EVIDENCE BASE uses an allowed value  (Supplied cards)
+PASS  Step 1 label LAYER 1 uses an allowed value  (System)
+PASS  Step 1 label DISSOLUTION uses an allowed value  (Reduced)
+PASS  Step 1 label EARLIEST UNRESOLVED GATE uses an allowed value  (Suppression)
+PASS  Step 1 label SIGNIFICANCE CLASS uses an allowed value  (Indeterminate (Incremental | Breakthrough))
+PASS  Step 1 label MODE uses an allowed value  (Prospective)
+PASS  Step 1 label CEILING uses an allowed value  (Potential Promethean)
+PASS  MODE is Prospective (R-7)  
+PASS  General slot UNIT CLASSIFIED:  
+PASS  General slot PARENT SYSTEM:  
+PASS  General slot BARRIER STATEMENT:  
+PASS  General slot SUPPRESSION TEST:  
+PASS  General slot LAYER 3 CRITERIA:  
+PASS  General slot WHY NOT LOWER:  
+PASS  General slot HIGHER-SIGNIFICANCE HYPOTHESIS:  
+PASS  Suppression test has Observed and Prospective parts  
+PASS  IF DISSOLVED, TIERS: slot present when not Dissolved  
+PASS  Layer 3 not scored before Dissolved (R-4)  
+PASS  Ceiling self-check: Indeterminate (I | B) only with Reduced (R-9)  
+PASS  No 'provisionally' Promethean escape (R-9)  
+PASS  General finding ≤350 words  (287)
+PASS  APPLICATION SIGNIFICANCE uses an allowed label  
+PASS  Application finding ≤150 words  (85)
+PASS  Org label UNIT OF ANALYSIS  
+PASS  Org label CORE ACTIVITY ON BARRIER  
+PASS  Org label CONSEQUENCE FOR THE ORGANIZATION  
+PASS  Org label REVERSIBILITY OF THE DECISION  
+PASS  Org label WINDOW EVIDENCE  
+PASS  Org label WEIGHT OF BROAD SIGNIFICANCE ON THIS DECISION  
+PASS  Org label POSTURE EFFECT  
+PASS  Weight read from the table (R-12)  (No, None found -> Low)
+PASS  POSTURE EFFECT gives no adopt/pilot/evaluation direction (R-12)  []
+PASS  Org finding ≤300 words  (200)
+PASS  Step 4 label EVIDENCE FOR HIGHER CLASS  
+PASS  Step 4 label EVIDENCE AGAINST HIGHER CLASS  
+PASS  Step 4 label STRONGEST CASE FOR LOWER CLASS  
+PASS  Step 4 label DISTINGUISHING EVIDENCE  
+PASS  Two-direction confidence lines (R-10)  (Indeterminate (Incremental | Breakthrough)=Moderate; NOT HIGHER=Moderate)
+PASS  Recommendation starts 'WEIGHT: <level> —' and matches org weight  (Low vs Low)
+PASS  Recommendation ≤150 words  (59)
+PASS  Recommendation stays in lane (R-13)  []
+PASS  evidence_type from the team list (R-14)  []
+PASS  HANDOFF lines name the other six specialists  (['Adoption', 'Creation', 'Diffusion', 'Innovation', 'Landscape', 'Organizational Adoption'])
+== pair primary vs contrast_1 (posture)
+PASS  Step 1 label EVIDENCE BASE uses an allowed value  (Supplied cards)
+PASS  Step 1 label LAYER 1 uses an allowed value  (System)
+PASS  Step 1 label DISSOLUTION uses an allowed value  (Reduced)
+PASS  Step 1 label EARLIEST UNRESOLVED GATE uses an allowed value  (Suppression)
+PASS  Step 1 label SIGNIFICANCE CLASS uses an allowed value  (Indeterminate (Incremental | Breakthrough))
+PASS  Step 1 label MODE uses an allowed value  (Prospective)
+PASS  Step 1 label CEILING uses an allowed value  (Potential Promethean)
+PASS  MODE is Prospective (R-7)  
+PASS  General slot UNIT CLASSIFIED:  
+PASS  General slot PARENT SYSTEM:  
+PASS  General slot BARRIER STATEMENT:  
+PASS  General slot SUPPRESSION TEST:  
+PASS  General slot LAYER 3 CRITERIA:  
+PASS  General slot WHY NOT LOWER:  
+PASS  General slot HIGHER-SIGNIFICANCE HYPOTHESIS:  
+PASS  Suppression test has Observed and Prospective parts  
+PASS  IF DISSOLVED, TIERS: slot present when not Dissolved  
+PASS  Layer 3 not scored before Dissolved (R-4)  
+PASS  Ceiling self-check: Indeterminate (I | B) only with Reduced (R-9)  
+PASS  No 'provisionally' Promethean escape (R-9)  
+PASS  General finding ≤350 words  (291)
+PASS  APPLICATION SIGNIFICANCE uses an allowed label  
+PASS  Application finding ≤150 words  (72)
+PASS  Org label UNIT OF ANALYSIS  
+PASS  Org label CORE ACTIVITY ON BARRIER  
+PASS  Org label CONSEQUENCE FOR THE ORGANIZATION  
+PASS  Org label REVERSIBILITY OF THE DECISION  
+PASS  Org label WINDOW EVIDENCE  
+PASS  Org label WEIGHT OF BROAD SIGNIFICANCE ON THIS DECISION  
+PASS  Org label POSTURE EFFECT  
+PASS  Weight read from the table (R-12)  (No, None found -> Low)
+PASS  POSTURE EFFECT gives no adopt/pilot/evaluation direction (R-12)  []
+PASS  Org finding ≤300 words  (195)
+PASS  Step 4 label EVIDENCE FOR HIGHER CLASS  
+PASS  Step 4 label EVIDENCE AGAINST HIGHER CLASS  
+PASS  Step 4 label STRONGEST CASE FOR LOWER CLASS  
+PASS  Step 4 label DISTINGUISHING EVIDENCE  
+PASS  Two-direction confidence lines (R-10)  (Indeterminate (Incremental | Breakthrough)=Moderate; NOT HIGHER=Moderate)
+PASS  Recommendation starts 'WEIGHT: <level> —' and matches org weight  (Low vs Low)
+PASS  Recommendation ≤150 words  (61)
+PASS  Recommendation stays in lane (R-13)  []
+PASS  evidence_type from the team list (R-14)  []
+PASS  HANDOFF lines name the other six specialists  (['Adoption', 'Creation', 'Diffusion', 'Innovation', 'Landscape', 'Organizational Adoption'])
+PASS  Same Step 1 labels as paired run (R-1, rerun test)  {'EVIDENCE BASE': 'Supplied cards', 'LAYER 1': 'System', 'DISSOLUTION': 'Reduced', 'EARLIEST UNRESOLVED GATE': 'Suppression', 'SIGNIFICANCE CLASS': 'Indeterminate (Incremental | Breakthrough)', 'MODE': 'Prospective', 'CEILING': 'Potential Promethean'}
+PASS  Same confidence lines as paired run  (('Indeterminate (Incremental | Breakthrough)=Moderate', 'Moderate') vs ('Indeterminate (Incremental | Breakthrough)=Moderate', 'Moderate'))
+PASS  Posture pair: same weight (posture never changes the weight)  (Low vs Low)
+PASS  Posture pair: POSTURE EFFECT differs  
+== pair primary vs hype (same cards)
+PASS  Step 1 label EVIDENCE BASE uses an allowed value  (Supplied cards)
+PASS  Step 1 label LAYER 1 uses an allowed value  (System)
+PASS  Step 1 label DISSOLUTION uses an allowed value  (Reduced)
+PASS  Step 1 label EARLIEST UNRESOLVED GATE uses an allowed value  (Suppression)
+PASS  Step 1 label SIGNIFICANCE CLASS uses an allowed value  (Indeterminate (Incremental | Breakthrough))
+PASS  Step 1 label MODE uses an allowed value  (Prospective)
+PASS  Step 1 label CEILING uses an allowed value  (Potential Promethean)
+PASS  MODE is Prospective (R-7)  
+PASS  General slot UNIT CLASSIFIED:  
+PASS  General slot PARENT SYSTEM:  
+PASS  General slot BARRIER STATEMENT:  
+PASS  General slot SUPPRESSION TEST:  
+PASS  General slot LAYER 3 CRITERIA:  
+PASS  General slot WHY NOT LOWER:  
+PASS  General slot HIGHER-SIGNIFICANCE HYPOTHESIS:  
+PASS  Suppression test has Observed and Prospective parts  
+PASS  IF DISSOLVED, TIERS: slot present when not Dissolved  
+PASS  Layer 3 not scored before Dissolved (R-4)  
+PASS  Ceiling self-check: Indeterminate (I | B) only with Reduced (R-9)  
+PASS  No 'provisionally' Promethean escape (R-9)  
+PASS  General finding ≤350 words  (291)
+PASS  APPLICATION SIGNIFICANCE uses an allowed label  
+PASS  Application finding ≤150 words  (72)
+PASS  Org label UNIT OF ANALYSIS  
+PASS  Org label CORE ACTIVITY ON BARRIER  
+PASS  Org label CONSEQUENCE FOR THE ORGANIZATION  
+PASS  Org label REVERSIBILITY OF THE DECISION  
+PASS  Org label WINDOW EVIDENCE  
+PASS  Org label WEIGHT OF BROAD SIGNIFICANCE ON THIS DECISION  
+PASS  Org label POSTURE EFFECT  
+PASS  Weight read from the table (R-12)  (No, None found -> Low)
+PASS  POSTURE EFFECT gives no adopt/pilot/evaluation direction (R-12)  []
+PASS  Org finding ≤300 words  (195)
+PASS  Step 4 label EVIDENCE FOR HIGHER CLASS  
+PASS  Step 4 label EVIDENCE AGAINST HIGHER CLASS  
+PASS  Step 4 label STRONGEST CASE FOR LOWER CLASS  
+PASS  Step 4 label DISTINGUISHING EVIDENCE  
+PASS  Two-direction confidence lines (R-10)  (Indeterminate (Incremental | Breakthrough)=Moderate; NOT HIGHER=Moderate)
+PASS  Recommendation starts 'WEIGHT: <level> —' and matches org weight  (Low vs Low)
+PASS  Recommendation ≤150 words  (61)
+PASS  Recommendation stays in lane (R-13)  []
+PASS  evidence_type from the team list (R-14)  []
+PASS  HANDOFF lines name the other six specialists  (['Adoption', 'Creation', 'Diffusion', 'Innovation', 'Landscape', 'Organizational Adoption'])
+PASS  Same Step 1 labels as paired run (R-1, rerun test)  {'EVIDENCE BASE': 'Supplied cards', 'LAYER 1': 'System', 'DISSOLUTION': 'Reduced', 'EARLIEST UNRESOLVED GATE': 'Suppression', 'SIGNIFICANCE CLASS': 'Indeterminate (Incremental | Breakthrough)', 'MODE': 'Prospective', 'CEILING': 'Potential Promethean'}
+PASS  Same confidence lines as paired run  (('Indeterminate (Incremental | Breakthrough)=Moderate', 'Moderate') vs ('Indeterminate (Incremental | Breakthrough)=Moderate', 'Moderate'))

@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "Generative AI foundation models",
+  "intended_application": "Use generative AI to assist consultants with drafting internal research summaries, client presentation outlines, and preliminary analysis",
+  "organization": "A large global management consulting firm",
+  "industry_sector": "Professional services and management consulting",
+  "business_need": "Reduce the time consultants spend on repetitive drafting and synthesis work while improving access to internal knowledge",
+  "users_stakeholders": "Consultants, project managers, partners, knowledge-management teams, IT teams, risk and compliance teams, and clients indirectly affected by the outputs",
+  "adoption_posture": "Moderate / fast-follower",
+  "capabilities_constraints": "The organization has strong digital infrastructure and knowledge repositories but must protect confidential client information, control hallucinations, maintain output quality, and ensure appropriate human review",
+  "risk_consequence_context": "Incorrect or fabricated information could affect client recommendations, while inappropriate handling of confidential data could create privacy, contractual, reputational, and compliance risks. Most internal drafting errors are reversible if human review is required before external use",
+  "management_question": "Should the organization expand the use of generative AI for consultant research, synthesis, and drafting, and how much should the technology's broader long-term significance influence that decision?",
+  "time_horizon": "Next 12 months",
+  "additional_context": "Management wants to distinguish the broader significance of generative AI from the narrower question of whether this specific application is strategically appropriate for the organization today."
+}

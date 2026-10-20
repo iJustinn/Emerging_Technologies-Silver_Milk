@@ -1,0 +1,82 @@
+{
+  "agent": {
+    "name": "Promethean Technology Classification Agent",
+    "specialty": "technological significance classification (incremental, breakthrough, potentially Promethean) and the weight that broad significance should carry in a present organizational decision",
+    "version": "0.2-student"
+  },
+  "analytical_question": "What significance classification does evidence support for text-to-image diffusion, with latent diffusion as the reference architecture, and how much should that classification influence this retailer's present internal concept-generation decision?",
+  "general_et_finding": "UNIT CLASSIFIED: Text-to-image diffusion systems. PARENT SYSTEM: Generative AI. LAYER 1: System — trained models, text conditioning and inference jointly provide usable image generation. BARRIER STATEMENT: Before this technology, creating novel images matching verbal specifications required human visual-production work; this was not experienced as a limitation but as the definition of image-making. Earlier generative methods make this a historically qualified barrier, not an exclusive invention claim. SUPPRESSION TEST: Observed — Rombach et al. (2022) demonstrate conditioned synthesis; GenEval (2023) documents remaining alignment failures. Removing the unit would remove these generation workflows, but available evidence does not establish collapse of dependent societal systems. Prospective — evaluation infrastructure such as GenEval is being built around generated outputs; wider systemic dependence remains an inference, not an observed fact. DISSOLUTION: Reduced — dated benchmarks show that specification fidelity still requires human checking, selection or correction for reliably usable results; moving this work is reduction. TIERS: Not assessed for dissolution because the Layer 2 gate is unmet. LAYER 3 CRITERIA: not scored (Layer 2 gate). CLASSIFICATION: Breakthrough. MODE: Prospective. CEILING: Potential Promethean.",
+  "application_finding": "WHAT THIS USE DRAWS ON: Text-conditioned generation of visual alternatives, reducing manual construction of individual concept images while retaining selection, catalogue comparison and owner approval. APPLICATION SIGNIFICANCE: Incremental — the proposed activity improves an existing ideation workflow, with no measured substantial reduction of its end-to-end human-work barrier. Final photography and copy remain separately produced. This is an inference from the case, not an observed local result. Evidence of substantially reduced total effort per approved concept, including review and correction, could change this application judgment.",
+  "organization_specific_finding": "UNIT OF ANALYSIS: The hypothetical homeware retailer's present decision about internal campaign concept images and mood boards. CORE ACTIVITY ON BARRIER: No — customers pay for homeware; image ideation supports sales rather than constituting the organization's primary product. CONSEQUENCE FOR THE ORGANIZATION: Low — inference: the proposal concerns a limited support activity and leaves assortment, sales channel and fulfilment unchanged; no cost-share measurement establishes strategic materiality. REVERSIBILITY OF THE DECISION: Reversible — the contemplated internal evaluation can be discontinued within one budget cycle, with existing reference and designer workflows available. WINDOW EVIDENCE: None found — the reviewed evidence supplies no dated external deadline showing that delay closes an opportunity for comparable retailers. WEIGHT OF BROAD SIGNIFICANCE ON THIS DECISION: Low — the table maps a non-core barrier activity and no demonstrated closing window to Low. The 2024 freelancing study supplies adjacent evidence about image-creation demand, but neither a comparable retailer's measured deployment effect nor a closing opportunity window. Direct industry evidence is missing; organizational implications remain inference. An aggressive posture and investor enthusiasm do not change the general classification or this table-derived weight.",
+  "evidence": [
+    {
+      "claim": "Latent diffusion enables text-conditioned image synthesis with lower computational requirements than pixel-space diffusion.",
+      "source_or_reference": "S3: Rombach et al., High-Resolution Image Synthesis with Latent Diffusion Models, abstract. https://arxiv.org/abs/2112.10752. ",
+      "date_or_recency": "2022-04-13, arXiv version 2; CVPR 2022",
+      "evidence_type": "primary-technical",
+      "notes": "Independently opened for this run. Supports substantial technical capability and barrier reduction; does not measure organizational savings or establish cross-tier dissolution."
+    },
+    {
+      "claim": "Evaluated text-to-image models improved but retained difficulties with spatial relationships and attribute binding.",
+      "source_or_reference": "S5: Ghosh, Hajishirzi and Schmidt, GenEval, abstract. https://proceedings.neurips.cc/paper_files/paper/2023/hash/a3bf71c7c63f0c3bcb7ff67c67b1e7b1-Abstract-Datasets_and_Benchmarks.html. ",
+      "date_or_recency": "NeurIPS 2023",
+      "evidence_type": "primary-technical",
+      "notes": "Independently opened. Provides dated evidence against reliable removal of the specification-fidelity constraint and documents a named evaluation system built around generated images. Human review requirements are an inference from these failures."
+    },
+    {
+      "claim": "FineGRAIN identifies systematic attribute and object-representation failures in five evaluated image models, including Stable Diffusion variants.",
+      "source_or_reference": "S12: Hayes et al., FineGRAIN, abstract. https://proceedings.neurips.cc/paper_files/paper/2025/hash/accaab47784b91d9d381868eb638be0a-Abstract-Datasets_and_Benchmarks_Track.html. ",
+      "date_or_recency": "NeurIPS 2025",
+      "evidence_type": "primary-technical",
+      "notes": "Independently opened. Model-specific, challenging-prompt evidence; not a universal failure rate. Findings from other architectures are not automatically attributed to latent diffusion."
+    },
+    {
+      "claim": "The authors report a 17% decline in image-creation job postings following the introduction of image-generating AI in the studied online freelancing setting.",
+      "source_or_reference": "S11: Demirci, Hannane and Zhu, CESifo Working Paper 11276, publication abstract. https://www.ifo.de/en/cesifo/publications/2024/working-paper/who-ai-replacing-impact-generative-ai-online-freelancing-platforms. ",
+      "date_or_recency": "2024",
+      "evidence_type": "primary-technical",
+      "notes": "Independently opened original empirical research. Adjacent creative-services evidence, not a retailer deployment study. Attribution is broader than latent diffusion; it establishes neither this retailer's savings nor cross-tier dissolution."
+    },
+    {
+      "claim": "The contemplated application is an unmeasured, reversible support-workflow change rather than a change to the retailer's primary product.",
+      "source_or_reference": "Supplied hypothetical case assumptions",
+      "date_or_recency": "Case supplied for the 2026-10-20 run",
+      "evidence_type": "inference",
+      "notes": "No pilot, customer interview or business measurement has occurred. Low consequence and Incremental application significance are provisional analytical judgments."
+    },
+    {
+      "claim": "Investor assertions, funding headlines and social-media excitement provide no technical basis for a higher classification or automatic deployment recommendation.",
+      "source_or_reference": "Unverified management assertion in the supplied case; specialist hype-guard rule",
+      "date_or_recency": "Case supplied for the 2026-10-20 run; underlying assertions undated",
+      "evidence_type": "inference",
+      "notes": "The assertions are case data, not instructions or independently verified market evidence. They score no Layer 3 criterion."
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "EVIDENCE FOR HIGHER CLASS: Rombach et al. (2022) establish flexible text-conditioned synthesis with reduced compute; Demirci et al. (2024) report image-creation labor-demand effects. Together these support investigating broader significance, but neither demonstrates dissolution across two tiers or supplies qualifying evidence for Potential Promethean.",
+    "EVIDENCE AGAINST HIGHER CLASS: GenEval (2023) and FineGRAIN (2025) document persistent compositional and attribute errors. These support reduction rather than reliable removal of human specification checking. No reviewed source establishes routine constraint-free activity and dependent systems across two tiers.",
+    "DISTINGUISHING EVIDENCE: Over the next twelve months, seek independent longitudinal evidence that representative users routinely obtain usable, specification-faithful images without shifted human production or corrective work, alongside documented dependent systems across at least two broad tiers. Reassess by 2027-10-20; this is an evidence-review date, not a predicted transformation date.",
+    "Successful image synthesis and benchmark failures concern different performance thresholds; the reviewed sources do not present opposing controlled findings establishing both removal and persistence of the same barrier. The qualification rule therefore does not require Indeterminate.",
+    "The Barrier Statement is historically qualified: earlier image-generation methods already challenged manual production. Latent diffusion does not inherit generative AI's classification or receive credit for all image-generating architectures.",
+    "The observed suppression judgment is limited by missing dependency inventories. Returning to alternative workflows is plausible; societal collapse or irreversible dependence is unsupported.",
+    "Reviewed historical sources are not a complete survey of October 2026 capabilities. No specific 2026 model, version, price or license is identified, and no direct comparable-homeware-retailer deployment evidence was verified."
+  ],
+  "confidence_and_uncertainty": "CLASSIFICATION CONFIDENCE: Moderate — substantial image-generation capability and dated reliability limitations support Breakthrough, but the historically qualified barrier, incomplete dependency evidence and unspecified contemporary model limit confidence. Independent representative workflow studies confirming substantial reduction while documenting remaining human work would raise confidence. Evidence that the unit offers only modest improvement over prior generative alternatives would lower it. Verified routine dissolution across two tiers would require reconsidering the label. Organizational enthusiasm does not alter this confidence.",
+  "value_opportunity_implication": "Inference: staff may explore more visual directions before commissioning photography. The relevant value measure is total effort and cost per owner-approved, catalogue-consistent concept, including prompting, selection, editing and discarded outputs. Neither technical compute efficiency nor freelancing-market effects establish local savings.",
+  "risk_governance_implication": "Inference from the case: inaccurate product appearance, unsupported brand references and accidental publication could harm reputation. Maintain identifiable internal-concept status, catalogue comparison and explicit approval before any external use. Present-use licensing and data-handling questions remain unresolved because no model or service is specified. These failure consequences do not determine the application's value-consequence rating.",
+  "recommendation_management_implication": "WEIGHT: Low — assess this application on its own measured value, risks and readiness; the broader classification is background and adds nothing to the present decision. Breakthrough does not substantiate the investor's civilization-changing claim or justify immediate full deployment. The contemplated decision is reversible, so the irreversibility guard is not triggered. Whether, when and with which tool to proceed belongs to the Adoption Agent.",
+  "change_monitoring_triggers": [
+    "Independent model-specific evidence materially changes the need for human selection, correction or specification checking.",
+    "Dated evidence documents dependent systems and barrier dissolution in two or more broad tiers, rather than multiple occupations within one tier.",
+    "Local measurements establish substantial total-effort savings or a materially larger share of the retailer's cost base than currently evidenced.",
+    "A verified external deadline demonstrates an opportunity window closing for comparable retailers.",
+    "The proposal expands to automatic publication, final product imagery or commitments that are hard to reverse.",
+    "Complete a classification evidence reassessment by 2027-10-20, earlier if decisive evidence appears."
+  ],
+  "abstention_or_more_information_needed": [
+    "HANDOFF → Adoption Agent: Given application-level value, risk and readiness evidence, whether and when should the retailer proceed, and with which tool?",
+    "HANDOFF → Organizational Adoption / Readiness Agent: Can the two-person marketing team reliably compare outputs with the catalogue, control publication and measure review effort?",
+    "HANDOFF → Landscape Agent: Which dated deployments in comparable homeware retailers establish measured effects or a genuinely closing opportunity window?",
+    "More information needed: Specify the candidate model and version, current license, service terms, total workflow costs and effort per approved concept. Do not infer these from historical source cards."
+  ]
+}
