@@ -58,7 +58,8 @@
   - Only [Z] stayed out of the Adoption lane; only [K] changed its implication with posture.
 - **Team v0.9 (T-29), preserved failure:** on identical cards, primary and posture said Breakthrough while the hype run said Incremental (the barrier was ruled "not convincing"). Cause: no fixed baseline, and no rule for an unmeasured reduction.
 - **Team v1.0 (T-30):** all four runs valid; 293 mechanical checks pass, 0 fail; the human §4 review passes. Same-card runs give identical Step 1 labels; the posture pair keeps the weight and changes POSTURE EFFECT; the transfer gives Breakthrough with weight Moderate.
-- **Claims traced (E-22 to E-28):** every source the v1.0 runs cite was retrieved on 2026-10-20 and matched (see `records/evidence_register.md` in the repo).
+- **Claims traced (E-22 to E-28):** every external source the v1.0 runs cite was retrieved on 2026-10-20 and matched (see `records/evidence_register.md` in the repo).
+  - Not checked: the transfer run also cites `1800-Textbook.pdf, Chapter 11, pages 143–144` from the ChatGPT project. That is course material, typed `primary-technical`, and was not checked by the team (W-2, W-4).
   - Rombach et al. (arXiv v2, 2022-04-13); GenEval (NeurIPS 2023); Stability AI release (Aug 22; year inferred from context); CESifo WP 11276 (2024); FineGRAIN (NeurIPS 2025, partly: the "judge limitations" wording is not in the abstract).
   - GPT-4 Technical Report (2023-03-15); HBS "Navigating the Jagged Technological Frontier" (2023-09-21; figures stated as "over 12% / 25% / 40%").
 
