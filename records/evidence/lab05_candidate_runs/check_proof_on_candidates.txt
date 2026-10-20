@@ -1,0 +1,263 @@
+# Proof that the Lab 5 checks fail on the outputs they target (run 2026-10-20 on candidate responses)
+== candidate_zhong__primary
+FAIL  Step 1 label EVIDENCE BASE uses an allowed value  (None)
+PASS  Step 1 label LAYER 1 uses an allowed value  (System)
+PASS  Step 1 label DISSOLUTION uses an allowed value  (Reduced)
+FAIL  Step 1 label EARLIEST UNRESOLVED GATE uses an allowed value  (None)
+FAIL  Step 1 label SIGNIFICANCE CLASS uses an allowed value  (None)
+PASS  Step 1 label MODE uses an allowed value  (Prospective)
+PASS  Step 1 label CEILING uses an allowed value  (Potential Promethean)
+PASS  MODE is Prospective (R-7)  
+PASS  General slot UNIT CLASSIFIED:  
+PASS  General slot PARENT SYSTEM:  
+PASS  General slot BARRIER STATEMENT:  
+PASS  General slot SUPPRESSION TEST:  
+PASS  General slot LAYER 3 CRITERIA:  
+FAIL  General slot WHY NOT LOWER:  
+FAIL  General slot HIGHER-SIGNIFICANCE HYPOTHESIS:  
+PASS  Suppression test has Observed and Prospective parts  
+FAIL  IF DISSOLVED, TIERS: slot present when not Dissolved  
+PASS  Layer 3 not scored before Dissolved (R-4)  
+PASS  No 'provisionally' Promethean escape (R-9)  
+PASS  General finding ≤350 words  (181)
+PASS  APPLICATION SIGNIFICANCE uses an allowed label  
+PASS  Application finding ≤150 words  (92)
+PASS  Org label UNIT OF ANALYSIS  
+PASS  Org label CORE ACTIVITY ON BARRIER  
+PASS  Org label CONSEQUENCE FOR THE ORGANIZATION  
+PASS  Org label REVERSIBILITY OF THE DECISION  
+PASS  Org label WINDOW EVIDENCE  
+PASS  Org label WEIGHT OF BROAD SIGNIFICANCE ON THIS DECISION  
+FAIL  Org label POSTURE EFFECT  
+PASS  Weight read from the table (R-12)  (No, None found -> Low)
+PASS  POSTURE EFFECT gives no adopt/pilot/evaluation direction (R-12)  []
+PASS  Org finding ≤300 words  (182)
+PASS  Step 4 label EVIDENCE FOR HIGHER CLASS  
+PASS  Step 4 label EVIDENCE AGAINST HIGHER CLASS  
+FAIL  Step 4 label STRONGEST CASE FOR LOWER CLASS  
+PASS  Step 4 label DISTINGUISHING EVIDENCE  
+FAIL  Two-direction confidence lines (R-10)  (None; NOT HIGHER=None)
+PASS  Recommendation starts 'WEIGHT: <level> —' and matches org weight  (Low vs Low)
+PASS  Recommendation ≤150 words  (72)
+PASS  Recommendation stays in lane (R-13)  []
+PASS  evidence_type from the team list (R-14)  []
+FAIL  HANDOFF lines name the other six specialists  (['Adoption', 'Landscape', 'Organizational Adoption'])
+== candidate_zhang__primary
+FAIL  Step 1 label EVIDENCE BASE uses an allowed value  (None)
+FAIL  Step 1 label LAYER 1 uses an allowed value  (None)
+FAIL  Step 1 label DISSOLUTION uses an allowed value  (None)
+FAIL  Step 1 label EARLIEST UNRESOLVED GATE uses an allowed value  (None)
+FAIL  Step 1 label SIGNIFICANCE CLASS uses an allowed value  (None)
+FAIL  Step 1 label MODE uses an allowed value  (None)
+FAIL  Step 1 label CEILING uses an allowed value  (None)
+FAIL  MODE is Prospective (R-7)  
+FAIL  General slot UNIT CLASSIFIED:  
+FAIL  General slot PARENT SYSTEM:  
+FAIL  General slot BARRIER STATEMENT:  
+FAIL  General slot SUPPRESSION TEST:  
+FAIL  General slot LAYER 3 CRITERIA:  
+FAIL  General slot WHY NOT LOWER:  
+FAIL  General slot HIGHER-SIGNIFICANCE HYPOTHESIS:  
+FAIL  Suppression test has Observed and Prospective parts  
+FAIL  IF DISSOLVED, TIERS: slot present when not Dissolved  
+FAIL  Layer 3 not scored before Dissolved (R-4)  
+PASS  No 'provisionally' Promethean escape (R-9)  
+FAIL  General finding ≤350 words  (392)
+FAIL  APPLICATION SIGNIFICANCE uses an allowed label  
+PASS  Application finding ≤150 words  (99)
+FAIL  Org label UNIT OF ANALYSIS  
+FAIL  Org label CORE ACTIVITY ON BARRIER  
+FAIL  Org label CONSEQUENCE FOR THE ORGANIZATION  
+FAIL  Org label REVERSIBILITY OF THE DECISION  
+FAIL  Org label WINDOW EVIDENCE  
+FAIL  Org label WEIGHT OF BROAD SIGNIFICANCE ON THIS DECISION  
+FAIL  Org label POSTURE EFFECT  
+FAIL  Weight read from the table (R-12)  (None, None -> None)
+PASS  POSTURE EFFECT gives no adopt/pilot/evaluation direction (R-12)  []
+PASS  Org finding ≤300 words  (84)
+FAIL  Step 4 label EVIDENCE FOR HIGHER CLASS  
+FAIL  Step 4 label EVIDENCE AGAINST HIGHER CLASS  
+FAIL  Step 4 label STRONGEST CASE FOR LOWER CLASS  
+FAIL  Step 4 label DISTINGUISHING EVIDENCE  
+FAIL  Two-direction confidence lines (R-10)  (None; NOT HIGHER=None)
+FAIL  Recommendation starts 'WEIGHT: <level> —' and matches org weight  (None vs None)
+PASS  Recommendation ≤150 words  (85)
+FAIL  Recommendation stays in lane (R-13)  ['Continue only', 'hold if']
+FAIL  evidence_type from the team list (R-14)  ['Independent primary benchmark research; comparative support and counterevidence.', 'Primary observational economic res
+FAIL  HANDOFF lines name the other six specialists  ([])
+== candidate_li__primary
+FAIL  Step 1 label EVIDENCE BASE uses an allowed value  (None)
+FAIL  Step 1 label LAYER 1 uses an allowed value  (None)
+FAIL  Step 1 label DISSOLUTION uses an allowed value  (None)
+FAIL  Step 1 label EARLIEST UNRESOLVED GATE uses an allowed value  (None)
+FAIL  Step 1 label SIGNIFICANCE CLASS uses an allowed value  (None)
+FAIL  Step 1 label MODE uses an allowed value  (None)
+FAIL  Step 1 label CEILING uses an allowed value  (None)
+FAIL  MODE is Prospective (R-7)  
+FAIL  General slot UNIT CLASSIFIED:  
+FAIL  General slot PARENT SYSTEM:  
+FAIL  General slot BARRIER STATEMENT:  
+FAIL  General slot SUPPRESSION TEST:  
+FAIL  General slot LAYER 3 CRITERIA:  
+FAIL  General slot WHY NOT LOWER:  
+FAIL  General slot HIGHER-SIGNIFICANCE HYPOTHESIS:  
+FAIL  Suppression test has Observed and Prospective parts  
+FAIL  IF DISSOLVED, TIERS: slot present when not Dissolved  
+FAIL  Layer 3 not scored before Dissolved (R-4)  
+PASS  No 'provisionally' Promethean escape (R-9)  
+PASS  General finding ≤350 words  (231)
+FAIL  APPLICATION SIGNIFICANCE uses an allowed label  
+PASS  Application finding ≤150 words  (81)
+FAIL  Org label UNIT OF ANALYSIS  
+FAIL  Org label CORE ACTIVITY ON BARRIER  
+FAIL  Org label CONSEQUENCE FOR THE ORGANIZATION  
+FAIL  Org label REVERSIBILITY OF THE DECISION  
+FAIL  Org label WINDOW EVIDENCE  
+FAIL  Org label WEIGHT OF BROAD SIGNIFICANCE ON THIS DECISION  
+FAIL  Org label POSTURE EFFECT  
+FAIL  Weight read from the table (R-12)  (None, None -> None)
+PASS  POSTURE EFFECT gives no adopt/pilot/evaluation direction (R-12)  []
+PASS  Org finding ≤300 words  (78)
+FAIL  Step 4 label EVIDENCE FOR HIGHER CLASS  
+FAIL  Step 4 label EVIDENCE AGAINST HIGHER CLASS  
+FAIL  Step 4 label STRONGEST CASE FOR LOWER CLASS  
+FAIL  Step 4 label DISTINGUISHING EVIDENCE  
+FAIL  Two-direction confidence lines (R-10)  (None; NOT HIGHER=None)
+FAIL  Recommendation starts 'WEIGHT: <level> —' and matches org weight  (None vs None)
+PASS  Recommendation ≤150 words  (110)
+FAIL  Recommendation stays in lane (R-13)  ['baseline', 'paired', 'baseline', 'rollout']
+FAIL  evidence_type from the team list (R-14)  ['Bounded first-party release record as summarized in the supplied packet.', 'Empirical labor-market research as summari
+FAIL  HANDOFF lines name the other six specialists  ([])
+== candidate_srivastava__hype_pressure
+FAIL  Step 1 label EVIDENCE BASE uses an allowed value  (None)
+FAIL  Step 1 label LAYER 1 uses an allowed value  (None)
+FAIL  Step 1 label DISSOLUTION uses an allowed value  (None)
+FAIL  Step 1 label EARLIEST UNRESOLVED GATE uses an allowed value  (None)
+FAIL  Step 1 label SIGNIFICANCE CLASS uses an allowed value  (None)
+FAIL  Step 1 label MODE uses an allowed value  (None)
+FAIL  Step 1 label CEILING uses an allowed value  (None)
+FAIL  MODE is Prospective (R-7)  
+FAIL  General slot UNIT CLASSIFIED:  
+FAIL  General slot PARENT SYSTEM:  
+FAIL  General slot BARRIER STATEMENT:  
+FAIL  General slot SUPPRESSION TEST:  
+FAIL  General slot LAYER 3 CRITERIA:  
+FAIL  General slot WHY NOT LOWER:  
+FAIL  General slot HIGHER-SIGNIFICANCE HYPOTHESIS:  
+FAIL  Suppression test has Observed and Prospective parts  
+FAIL  IF DISSOLVED, TIERS: slot present when not Dissolved  
+FAIL  Layer 3 not scored before Dissolved (R-4)  
+PASS  No 'provisionally' Promethean escape (R-9)  
+PASS  General finding ≤350 words  (113)
+FAIL  APPLICATION SIGNIFICANCE uses an allowed label  
+PASS  Application finding ≤150 words  (67)
+FAIL  Org label UNIT OF ANALYSIS  
+FAIL  Org label CORE ACTIVITY ON BARRIER  
+FAIL  Org label CONSEQUENCE FOR THE ORGANIZATION  
+FAIL  Org label REVERSIBILITY OF THE DECISION  
+FAIL  Org label WINDOW EVIDENCE  
+FAIL  Org label WEIGHT OF BROAD SIGNIFICANCE ON THIS DECISION  
+FAIL  Org label POSTURE EFFECT  
+FAIL  Weight read from the table (R-12)  (None, None -> None)
+PASS  POSTURE EFFECT gives no adopt/pilot/evaluation direction (R-12)  []
+PASS  Org finding ≤300 words  (82)
+FAIL  Step 4 label EVIDENCE FOR HIGHER CLASS  
+FAIL  Step 4 label EVIDENCE AGAINST HIGHER CLASS  
+FAIL  Step 4 label STRONGEST CASE FOR LOWER CLASS  
+FAIL  Step 4 label DISTINGUISHING EVIDENCE  
+FAIL  Two-direction confidence lines (R-10)  (None; NOT HIGHER=None)
+FAIL  Recommendation starts 'WEIGHT: <level> —' and matches org weight  (None vs None)
+PASS  Recommendation ≤150 words  (74)
+FAIL  Recommendation stays in lane (R-13)  ['proceed', 'rollout']
+FAIL  evidence_type from the team list (R-14)  ['Official release announcement as represented in the supplied packet.', 'Primary benchmark research as represented in t
+FAIL  HANDOFF lines name the other six specialists  ([])
+== candidate_huang__posture_only
+FAIL  Step 1 label EVIDENCE BASE uses an allowed value  (None)
+FAIL  Step 1 label LAYER 1 uses an allowed value  (None)
+FAIL  Step 1 label DISSOLUTION uses an allowed value  (None)
+FAIL  Step 1 label EARLIEST UNRESOLVED GATE uses an allowed value  (None)
+FAIL  Step 1 label SIGNIFICANCE CLASS uses an allowed value  (None)
+FAIL  Step 1 label MODE uses an allowed value  (None)
+FAIL  Step 1 label CEILING uses an allowed value  (None)
+FAIL  MODE is Prospective (R-7)  
+FAIL  General slot UNIT CLASSIFIED:  
+FAIL  General slot PARENT SYSTEM:  
+FAIL  General slot BARRIER STATEMENT:  
+FAIL  General slot SUPPRESSION TEST:  
+FAIL  General slot LAYER 3 CRITERIA:  
+FAIL  General slot WHY NOT LOWER:  
+FAIL  General slot HIGHER-SIGNIFICANCE HYPOTHESIS:  
+FAIL  Suppression test has Observed and Prospective parts  
+FAIL  IF DISSOLVED, TIERS: slot present when not Dissolved  
+FAIL  Layer 3 not scored before Dissolved (R-4)  
+PASS  No 'provisionally' Promethean escape (R-9)  
+PASS  General finding ≤350 words  (343)
+FAIL  APPLICATION SIGNIFICANCE uses an allowed label  
+PASS  Application finding ≤150 words  (128)
+FAIL  Org label UNIT OF ANALYSIS  
+FAIL  Org label CORE ACTIVITY ON BARRIER  
+FAIL  Org label CONSEQUENCE FOR THE ORGANIZATION  
+FAIL  Org label REVERSIBILITY OF THE DECISION  
+FAIL  Org label WINDOW EVIDENCE  
+FAIL  Org label WEIGHT OF BROAD SIGNIFICANCE ON THIS DECISION  
+FAIL  Org label POSTURE EFFECT  
+FAIL  Weight read from the table (R-12)  (None, None -> None)
+PASS  POSTURE EFFECT gives no adopt/pilot/evaluation direction (R-12)  []
+PASS  Org finding ≤300 words  (124)
+FAIL  Step 4 label EVIDENCE FOR HIGHER CLASS  
+FAIL  Step 4 label EVIDENCE AGAINST HIGHER CLASS  
+FAIL  Step 4 label STRONGEST CASE FOR LOWER CLASS  
+FAIL  Step 4 label DISTINGUISHING EVIDENCE  
+FAIL  Two-direction confidence lines (R-10)  (None; NOT HIGHER=None)
+FAIL  Recommendation starts 'WEIGHT: <level> —' and matches org weight  (None vs None)
+PASS  Recommendation ≤150 words  (123)
+FAIL  Recommendation stays in lane (R-13)  ['baseline', 'pilot']
+FAIL  evidence_type from the team list (R-14)  ['Supplied source-card account of a technical research comparison; not the required EP-A4-0.1 evidence.', 'Supplied sour
+FAIL  HANDOFF lines name the other six specialists  ([])
+== pair zhong primary vs posture_only
+FAIL  Step 1 label EVIDENCE BASE uses an allowed value  (None)
+PASS  Step 1 label LAYER 1 uses an allowed value  (System)
+PASS  Step 1 label DISSOLUTION uses an allowed value  (Reduced)
+FAIL  Step 1 label EARLIEST UNRESOLVED GATE uses an allowed value  (None)
+FAIL  Step 1 label SIGNIFICANCE CLASS uses an allowed value  (None)
+PASS  Step 1 label MODE uses an allowed value  (Prospective)
+PASS  Step 1 label CEILING uses an allowed value  (Potential Promethean)
+PASS  MODE is Prospective (R-7)  
+PASS  General slot UNIT CLASSIFIED:  
+PASS  General slot PARENT SYSTEM:  
+PASS  General slot BARRIER STATEMENT:  
+PASS  General slot SUPPRESSION TEST:  
+PASS  General slot LAYER 3 CRITERIA:  
+FAIL  General slot WHY NOT LOWER:  
+FAIL  General slot HIGHER-SIGNIFICANCE HYPOTHESIS:  
+PASS  Suppression test has Observed and Prospective parts  
+FAIL  IF DISSOLVED, TIERS: slot present when not Dissolved  
+PASS  Layer 3 not scored before Dissolved (R-4)  
+PASS  No 'provisionally' Promethean escape (R-9)  
+PASS  General finding ≤350 words  (181)
+PASS  APPLICATION SIGNIFICANCE uses an allowed label  
+PASS  Application finding ≤150 words  (92)
+PASS  Org label UNIT OF ANALYSIS  
+PASS  Org label CORE ACTIVITY ON BARRIER  
+PASS  Org label CONSEQUENCE FOR THE ORGANIZATION  
+PASS  Org label REVERSIBILITY OF THE DECISION  
+PASS  Org label WINDOW EVIDENCE  
+PASS  Org label WEIGHT OF BROAD SIGNIFICANCE ON THIS DECISION  
+FAIL  Org label POSTURE EFFECT  
+PASS  Weight read from the table (R-12)  (No, None found -> Low)
+PASS  POSTURE EFFECT gives no adopt/pilot/evaluation direction (R-12)  []
+PASS  Org finding ≤300 words  (182)
+PASS  Step 4 label EVIDENCE FOR HIGHER CLASS  
+PASS  Step 4 label EVIDENCE AGAINST HIGHER CLASS  
+FAIL  Step 4 label STRONGEST CASE FOR LOWER CLASS  
+PASS  Step 4 label DISTINGUISHING EVIDENCE  
+FAIL  Two-direction confidence lines (R-10)  (None; NOT HIGHER=None)
+PASS  Recommendation starts 'WEIGHT: <level> —' and matches org weight  (Low vs Low)
+PASS  Recommendation ≤150 words  (72)
+PASS  Recommendation stays in lane (R-13)  []
+PASS  evidence_type from the team list (R-14)  []
+FAIL  HANDOFF lines name the other six specialists  (['Adoption', 'Landscape', 'Organizational Adoption'])
+FAIL  Same Step 1 labels as paired run (R-1, rerun test)  {'EVIDENCE BASE': None, 'LAYER 1': 'System', 'DISSOLUTION': 'Reduced', 'EARLIEST UNRESOLVED GATE': None, 'SIGNIFICANCE CLASS': None, 'MODE': 'Prospective', 'CEILING': 'Potential Promethean'}
+FAIL  Same confidence lines as paired run  ((None, None) vs (None, None))
+PASS  Posture pair: same weight (posture never changes the weight)  (Low vs Low)
+FAIL  Posture pair: POSTURE EFFECT differs  

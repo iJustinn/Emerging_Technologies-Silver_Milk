@@ -24,7 +24,7 @@ removed = len(raw.strip()) - len(text)
 try:
     data = json.loads(text)
 except json.JSONDecodeError:
-    fixed = text.replace("\\&", "&")  # ChatGPT copy escapes & in URLs as \& (invalid JSON)
+    fixed = text.replace("\\&", "&")  # ChatGPT copy escapes & in URLs as \& (invalid JSON); log it
     print(f"REPAIR: removed {text.count(chr(92)+'&')} invalid \\& escapes")
     data = json.loads(fixed)
 J.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
@@ -40,5 +40,6 @@ print("general_et_finding words:", len(data.get("general_et_finding", "").split(
 for k in ["contrary_evidence_or_limitations", "change_monitoring_triggers", "abstention_or_more_information_needed"]:
     print(k, "items:", len(data.get(k, [])))
 blob = json.dumps(data).lower()
-print("case check (Lab 4): outsourc =", blob.count("outsourc"), "| cost center/cost-center =",
-      blob.count("cost center") + blob.count("cost-center"), "| pivotdesk =", blob.count("pivotdesk"))
+print("case check: aggressive =", blob.count("aggressive"), "| conservative =", blob.count("conservative"),
+      "| electricity =", blob.count("electricity"), "| consult =", blob.count("consult"),
+      "| retailer =", blob.count("retailer"))

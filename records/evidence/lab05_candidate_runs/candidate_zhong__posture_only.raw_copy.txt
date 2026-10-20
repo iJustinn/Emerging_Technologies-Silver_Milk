@@ -1,0 +1,75 @@
+{
+  "agent": {
+    "name": "Promethean Technology Classification Agent",
+    "specialty": "technological significance classification (incremental, breakthrough, potentially Promethean) and the weight that broad significance should carry in a present organizational decision",
+    "version": "0.2-student"
+  },
+  "analytical_question": "Is text-to-image diffusion incremental, breakthrough, or potentially civilization-changing, and how much should that broader significance influence this retailer's present internal-concept application decision?",
+  "general_et_finding": "UNIT CLASSIFIED: Text-to-image diffusion systems, with latent diffusion as reference architecture. PARENT SYSTEM: Generative AI. LAYER 1: System — a trained, conditioned generator produces images usable for selection and editing. BARRIER STATEMENT: Before this technology, producing novel images matching a verbal specification required human visual construction or direction of a production process; this was not experienced as a limitation but as the definition of image-making. SUPPRESSION TEST: Observed — Rombach et al. (2022) demonstrate conditioned image synthesis; GenEval (2023) documents evaluation infrastructure built around generated outputs. Removing the unit would disable its generation and evaluation workflows, but wider societal collapse is unsupported. Prospective — GenEval (2023) proposes benchmark-guided model development; further dependence is a forecast, not observed irreversibility. DISSOLUTION: Reduced — generation substantially reduces manual construction, but GenEval (2023) and FineGRAIN (2025) document specification errors supporting continued human selection, checking and correction for dependable results. IF DISSOLVED, TIERS: Economic activity through visual production; cognitive and social life through visual expression and communication — prospective inference, not demonstrated dissolution. LAYER 3 CRITERIA: not scored (Layer 2 gate). CLASSIFICATION: Breakthrough — substantial reduction of a production barrier, without demonstrated removal across tiers. MODE: Prospective. CEILING: Potential Promethean.",
+  "application_finding": "WHAT THIS USE DRAWS ON: Generating visual candidates from verbal descriptions, reducing some manual construction during concept exploration. APPLICATION SIGNIFICANCE: Incremental — this proposal assists an existing mood-board workflow while retaining catalogue comparison, owner approval, separately commissioned photography and separately authored copy. The dated technical evidence establishes general capability and limitations, not substantial barrier reduction in this activity at this retailer. A measured reduction in end-to-end effort, including selection and correction, sufficient to change who can perform concept development would support reconsideration as Breakthrough. No local experiment establishes that condition.",
+  "organization_specific_finding": "UNIT OF ANALYSIS: This hypothetical retailer's present decision about using text-to-image diffusion for internal campaign concepts and mood boards. CORE ACTIVITY ON BARRIER: No — customers pay for homeware, while concept-image production supports marketing. CONSEQUENCE FOR THE ORGANIZATION: Low — inference from the bounded supporting workflow, unchanged assortment and fulfilment, and absence of measured ideation costs or savings. REVERSIBILITY OF THE DECISION: Reversible — internal concepts can be discarded and the existing reference-and-designer workflow retained; no substantial integration or enduring commitment is specified. WINDOW EVIDENCE: None found — the reviewed sources establish capability, errors and adjacent labor-market effects, but no dated closing opportunity for comparable retailers. WEIGHT OF BROAD SIGNIFICANCE ON THIS DECISION: Low — the prescribed table gives Low for a supporting activity without dated window evidence. Demirci et al. (2024) provide adjacent image-creation labor-market evidence, not a retailer deployment study. Application value and organizational consequence therefore remain inference. Conservative posture changes acceptable uncertainty and governance, not the technology classification or this table-derived weight.",
+  "evidence": [
+    {
+      "claim": "Latent diffusion supports text-conditioned image synthesis with substantially lower computational requirements than pixel-space diffusion. This supports substantial reduction of image-construction effort, not demonstrated removal of human judgment.",
+      "source_or_reference": "S3: Rombach et al., High-Resolution Image Synthesis with Latent Diffusion Models, abstract. https://arxiv.org/abs/2112.10752. ",
+      "date_or_recency": "Version 2: 13 April 2022; retrieved for this run on 20 October 2026.",
+      "evidence_type": "primary-technical",
+      "notes": "Directly retrieved. Technical efficiency comparisons do not establish a 10x improvement in complete human workflows or dependence across tiers."
+    },
+    {
+      "claim": "GenEval demonstrates an evaluation pipeline for text-to-image outputs and reports continuing problems with spatial relations and attribute binding.",
+      "source_or_reference": "S5: Ghosh, Hajishirzi and Schmidt, GenEval, NeurIPS abstract. https://proceedings.neurips.cc/paper_files/paper/2023/hash/a3bf71c7c63f0c3bcb7ff67c67b1e7b1-Abstract-Datasets_and_Benchmarks.html. ",
+      "date_or_recency": "NeurIPS 2023; retrieved for this run on 20 October 2026.",
+      "evidence_type": "primary-technical",
+      "notes": "Supports a narrow observed dependency and remaining constraints. Benchmark-guided future development is prospective; the study does not measure every subsequent model."
+    },
+    {
+      "claim": "FineGRAIN finds systematic attribute and object-representation errors across five named text-to-image models and limitations in automated evaluation.",
+      "source_or_reference": "S12: Hayes et al., FineGRAIN, NeurIPS abstract. https://proceedings.neurips.cc/paper_files/paper/2025/hash/accaab47784b91d9d381868eb638be0a-Abstract-Datasets_and_Benchmarks_Track.html. ",
+      "date_or_recency": "NeurIPS 2025; retrieved for this run on 20 October 2026.",
+      "evidence_type": "primary-technical",
+      "notes": "Includes Stable Diffusion variants and Flux; findings are model- and prompt-specific. Continued human checking is an inference from these reliability limitations."
+    },
+    {
+      "claim": "An original study reports a 17% decline in image-creation job postings following the introduction of image-generating AI.",
+      "source_or_reference": "S11: Demirci, Hannane and Zhu, CESifo Working Paper 11276, publication abstract. https://www.ifo.de/en/cesifo/publications/2024/working-paper/who-ai-replacing-impact-generative-ai-online-freelancing-platforms. ",
+      "date_or_recency": "2024 working paper; retrieved for this run on 20 October 2026.",
+      "evidence_type": "primary-technical",
+      "notes": "Original empirical research in an adjacent service market. Does not isolate latent diffusion, establish retailer savings, demonstrate barrier dissolution, or identify a closing opportunity."
+    },
+    {
+      "claim": "The proposed application supports retail marketing, is readily reversible, and has unmeasured local value; broader significance consequently receives Low weight.",
+      "source_or_reference": "Supplied hypothetical case assumptions and the packet's core-activity/window weighting table.",
+      "date_or_recency": "Case supplied for this run on 20 October 2026; no local pilot conducted.",
+      "evidence_type": "inference",
+      "notes": "Case interpretation, not independently observed organizational evidence. No directly comparable small-homeware-retailer deployment study was verified."
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "EVIDENCE FOR HIGHER CLASS: Rombach et al. (2022) demonstrate flexible conditioned synthesis with reduced compute, while Demirci et al. (2024) report image-creation labor-demand effects. Together these support investigating broader accessibility and production changes. Neither demonstrates dissolution across two tiers; direct evidence meeting the Potential Promethean threshold is missing.",
+    "EVIDENCE AGAINST HIGHER CLASS: GenEval (2023) and FineGRAIN (2025) document persistent failures in following visual specifications. Moving work from construction to selection and correction is reduction under the packet's rule, not dissolution.",
+    "DISTINGUISHING EVIDENCE: Over the next six to twelve months, independent longitudinal studies would need to show routine specification-satisfying image production without the named human construction/direction constraint, plus dependent systems in both economic activity and cognitive/social life. Reassess by 20 October 2027; this is an evidence-review date, not a predicted societal transition.",
+    "The barrier statement concerns producing images matching a specification, not merely producing any image. Earlier photography, procedural graphics and generative methods mean this is a reduction of a persistent requirement, not a claim that diffusion invented automated image generation.",
+    "Successful generation and benchmark failures do not themselves constitute opposing controlled findings about removal of the same constraint. The evidence supports Reduced rather than the qualification rule's Not yet determinable.",
+    "The verified publications provide historical evidence through 2025, not a comprehensive survey of 2026 systems. The unspecified model, license, price and local workflow prevent model-specific or financial conclusions.",
+    "No dated evidence establishes an expiring opportunity for comparable retailers. Adjacent freelancer-market effects do not establish retail deployment, realized local benefits or urgency."
+  ],
+  "confidence_and_uncertainty": "CLASSIFICATION CONFIDENCE: Moderate — verified technical evidence supports substantial barrier reduction, but the barrier's breadth, historical alternatives and incomplete coverage of current systems limit confidence. Independent replication of durable workflow gains alongside documented remaining human requirements would raise confidence in Breakthrough. Routine constraint-free production and cross-tier dependent systems would require reconsidering the classification. Evidence that apparent gains disappear after correction and selection would weaken it. Organizational conservatism does not change this technology-level confidence.",
+  "value_opportunity_implication": "Inference: More visual candidates could help staff communicate directions to the owner and freelance designer before commissioning photography. Value depends on usable concepts per unit of total staff effort, including prompting, rejection, correction and approval. No local savings, revenue gain or substantial reduction in total operating costs has been established.",
+  "risk_governance_implication": "Inference: Concepts may misrepresent product appearance, introduce unsupported brand references or be mistaken for approved advertising. Retain catalogue comparison, owner approval and the boundary against automatic publication. Model-specific licensing and data-handling questions remain unresolved. Conservative posture makes these uncertainties more salient; it does not make the technology less significant.",
+  "recommendation_management_implication": "WEIGHT: Low — assess the contemplated use on its own demonstrated value, risks and readiness. The technology's Breakthrough classification supplies background, without adding urgency, enlarging the commitment or establishing an adoption recommendation. Keep the six-week decision brief focused on evidence about usable concepts, total preparation effort and governance. The conservative posture does not alter the classification or weighting table. Whether to adopt, when and with which tool belongs to the Adoption Agent.",
+  "change_monitoring_triggers": [
+    "Independent evidence of routine specification-following without continued human construction, selection or correction.",
+    "Documented dependent systems across at least two tiers of human life, rather than deployment in several industries alone.",
+    "Measured local end-to-end concept-development gains after rejected outputs, corrections and approvals are counted.",
+    "Dated external evidence that a specific opportunity for comparable retailers will close with delay.",
+    "A proposal that makes visual production a core offering or introduces substantial irreversible commitments; either changes the organizational analysis.",
+    "Review the technology evidence by 20 October 2027, or earlier if directly relevant independent results appear."
+  ],
+  "abstention_or_more_information_needed": [
+    "HANDOFF → Adoption Agent: Does the application's independently established value justify adoption, and with which tool and timing?",
+    "HANDOFF → Organizational Adoption / Readiness Agent: Can the two marketing staff and owner execute and govern the proposed workflow within their actual capacity?",
+    "HANDOFF → Landscape Agent: Is there dated evidence of a closing opportunity specifically affecting comparable homeware retailers?",
+    "More information needed: Selected model and version, applicable license, total concept-development effort, correction burden and ideation's share of costs. These gaps prevent a measured local benefit claim, not the table-derived Low weight."
+  ]
+}
