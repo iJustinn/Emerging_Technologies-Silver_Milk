@@ -74,3 +74,4 @@ Full table: `common_test_package/lab06_candidate_comparison.md` (ZIP) and `recor
 - **W-2:** transfer base case follows retrieval (Rakuten in v0.9, OpenAI's own use in v1.0).
 - **W-3:** opt-in developer surveys are context under the stage rule, so a technology like coding agents cannot reach the early majority from Stack Overflow data (DS-08).
 - **W-4:** four empty launches (I-16).
+- **W-5:** both postures returned `PEER EVIDENCE ROLE: Prerequisite` (fast follower and conservative), so the slot did not separate this pair; the posture pair passed on TIMING and POSTURE EFFECT alone. A limitation, not a failure.

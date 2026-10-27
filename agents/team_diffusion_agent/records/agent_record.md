@@ -57,7 +57,7 @@ The mapping is inference wherever it says `Speculative`; only the `Observed` cel
 - **Team v1.0 (T-39):** all three runs valid; 280 mechanical checks pass, 0 fail; the human §4 review passes (posture swap, stage rule, lane, transfer).
 - **Claims traced (E-29 to E-39):** every dated item that decides a v1.0 label was retrieved on 2026-10-27 and matched (see `records/evidence_register.md` in the repo). Exceptions, recorded as such: the ServiceNow launch date (E-31) is confirmed from the URL path only, and the two ServiceNow documentation pages (E-35, capability context only) did not render and were not retrieved.
 
-## Team decision
+## Team decision (confirmed as written by Justin in the session, 2026-10-27)
 
 1. **Diffusion judgment the integrated system should accept (ITSM case):** on the supplied evidence, the stage of GenAI generally, of the incident-documentation application, and of the enterprise-service-desk peer group is **Withheld — insufficient evidence**. The application is commercially available and has one named but undated operational account; no qualifying repeated-use share exists at any level. The team does not accept any majority label for it.
 2. **Factor that matters most: observability of dated adopter outcomes.** The only application outcome (E8) is undated, so it can neither set a base case nor make observability `Observed`; that single missing date holds the application at Withheld.
@@ -81,6 +81,7 @@ The mapping is inference wherever it says `Speculative`; only the `Observed` cel
 - **W-2:** without cards, the transfer's base case follows per-run retrieval (Rakuten in v0.9, OpenAI's own use in v1.0); OpenAI's account is a vendor describing its own use (I-10, I-15).
 - **W-3:** the stage rule makes most opt-in developer surveys context (for example, Stack Overflow's agent questions), so Justin's own Assignment 5 judgment (coding agents in the early majority) cannot be reached by this agent (DS-08).
 - **W-4:** four launches produced no reply and were relaunched (runtime incident, I-16).
+- **W-5:** `PEER EVIDENCE ROLE` was `Prerequisite` for both postures, so it did not separate this pair; TIMING and POSTURE EFFECT did.
 - One final run per case; all organizations are hypothetical; the Lab 6 rubric PDF was not in the lab folder, so the general rubric in the instructions was used.
 
 ## Roles, contributions, and AI use
