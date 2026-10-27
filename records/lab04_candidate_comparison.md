@@ -21,7 +21,7 @@ Five Assignment 3 "Innovation and Disruption" candidates, all present, each run 
 - Work mode also reads the operator's local `~/.codex/AGENTS.md`, which references `RTK.md` (shell-tooling notes, no lab content). This was seen in the C10 work log.
 - C03's work log shows "Read files, searched the web". Runs could browse, but the log does not itemize which sources were retrieved.
 - The packet was attached by paste, with one message: `[Run Cxx] Run the attached MASY1800 specialist agent prompt packet exactly as written. Return JSON only, in this chat reply; do not create files.`
-- Claude Code operated the app through computer use for Justin Zhong. ChatGPT produced every response.
+- Justin Zhong coordinated the runs, with Claude Code assisting through computer-use automation. ChatGPT produced every response.
 - Responses were saved with `save_resp.py`. All 10 passed `validate_response.py`. No repairs were needed: there were 0 `\&` escapes and 0 citation markers.
 
 | Run | Candidate | Case | File |

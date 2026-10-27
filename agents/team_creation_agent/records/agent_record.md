@@ -77,8 +77,8 @@ The team's mitigation is I-05: in the MoE system, hold one reconciled general re
   - Karuna Srivastava: absent; her candidate is temporarily missing.
 - **Candidate authors:** Justin Zhong [Z], Nini Huang [H], Dian Li [L], Yuanxiang Zhang [Y].
 - **AI use / verification:**
-  - Claude Code, working in Justin's environment, unpacked the candidates and built every prompt packet with the frozen tools.
-  - It drove ChatGPT by computer use for all 14 runs, saved raw and JSON copies, and ran the frozen validator and `check_team_run.py`.
+  - Justin Zhong coordinated the technical work, with Claude Code assisting with unpacking the candidates and building every prompt packet with the frozen tools.
+  - Claude Code also assisted through computer-use automation for all 14 ChatGPT runs, saving raw and JSON copies, and running the frozen validator and `check_team_run.py`.
   - It drafted the comparison, the team instructions, and these records.
   - It verified the consequential dated claims by web search (E-01 to E-13).
 - **Team decisions:** the team chose the common case, the runtime, and the synthesis (ratified as proposed) and the 350-word cap; it delegated the choice of which dissents to record. ChatGPT produced every agent output, and the outputs were saved exactly as returned.

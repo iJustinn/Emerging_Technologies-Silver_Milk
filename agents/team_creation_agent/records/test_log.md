@@ -4,7 +4,7 @@
 
 - The ChatGPT macOS app in **Work** mode, model **GPT-6.1 Sol**, thinking effort **Light** (the app's lowest setting; the team asked for "low").
 - No project attached. Each run used a fresh conversation, and the app's own web retrieval was active.
-- Claude Code drove the app by computer use for Justin (technical operator). Each packet was pasted as an attachment with one fixed message: *"[Run ID] Run the attached MASY1800 specialist agent prompt packet exactly as written. Return JSON only, in this chat reply; do not create files."*
+- Justin Zhong (technical operator) coordinated the runs, with Claude Code assisting through computer-use automation. Each packet was pasted as an attachment with one fixed message: *"[Run ID] Run the attached MASY1800 specialist agent prompt packet exactly as written. Return JSON only, in this chat reply; do not create files."*
 - The responses were copied with ChatGPT's copy button. `common_test_package/save_resp.py` saved the clipboard exactly (`*.raw_copy.txt`) and a `.json` copy. No run needed any cleanup (`removed_by_cleanup=0`), so each `.json` is the raw text re-indented.
 - **Difference from earlier runs:** the candidates' Assignment 2 runs used other settings (Justin: Chat mode, High; others: not recorded). The common condition here is fair across the candidates, but these runs are not directly comparable with the Assignment 2 results.
 

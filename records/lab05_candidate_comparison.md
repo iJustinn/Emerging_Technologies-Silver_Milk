@@ -15,14 +15,14 @@ Five Assignment 4 "Promethean Technology Classification" candidates, all present
 
 ## Runtime (all 15 runs, 2026-10-20)
 
-- **ChatGPT web** (chatgpt.com) in the Ego Lite browser on Justin's signed-in account. The team asked for this runtime (Justin, 2026-10-20) after computer use was not available in the operating session. Labs 3–4 used the ChatGPT macOS app.
+- **ChatGPT web** (chatgpt.com) in the Ego Lite browser, with Justin Zhong as technical operator. The team asked for this runtime (Justin, 2026-10-20) after computer use was not available in the operating session. Labs 3–4 used the ChatGPT macOS app.
 - **Work** mode, model **GPT-6.1 Sol**, effort **Light**. On the web, the "Power" slider runs 0–5 across models: stop 0 is "GPT-6 Luna High", and stop 1 is "GPT-6.1 Sol Light". Light is therefore the lowest GPT-6.1 Sol stop, the same setting as Labs 3–4.
 - Every run is a fresh chat started inside the ChatGPT project **MASY-1800**. Project settings, re-checked on 2026-10-20: no custom instructions; Memory "Default" ("This project can access memory from outside chats, and vice versa"); Space access enabled. The project's source list was not re-opened this lab (Lab 4 recorded `1800-Textbook.pdf`). [H]'s primary run says it checked Chapter 11 locators "in the supplied textbook", so the project source was visible to at least that run.
 - The packet was attached as a file through the composer's file input, with one message: `[Run L5-x-y] Run the attached MASY1800 specialist agent prompt packet exactly as written. Return JSON only, in this chat reply; do not create files.`
 - Work mode on the web shows the user's connected Gmail/Drive suggestions on the home screen. No run cited them.
 - Responses were copied with each reply's own Copy button and saved with `save_resp.py`. All 15 passed `validate_response.py`. No repairs were needed (0 characters removed by cleanup).
 - **Handling incident:** the first send of L5-L-P lost its attachment before sending, and nothing was sent. The draft was cleared, the file attached again, and the run sent by hand. Because the Files space already held the first upload, the attachment was named `candidate_li__primary(1).txt`.
-- Claude Code operated the browser for Justin Zhong. ChatGPT produced every response. Chat links are in `runmap.txt` (ZIP only).
+- Justin Zhong coordinated the runs, with Claude Code assisting through browser automation (ego-browser scripts). ChatGPT produced every response. Chat links are in `runmap.txt` (ZIP only).
 - **Paths:** in the ZIP, the runs are in `common_test_package/responses/` and the cases in `common_test_package/cases/`. In the repo, the runs are in `records/evidence/lab05_candidate_runs/`; the cases are in the ZIP only, and the team agent's copies are in `agents/team_promethean_classification_agent/cases/`.
 
 | Run | Candidate | Case | File (`responses/`) |

@@ -89,12 +89,12 @@ The common cases hold the technology, application, safeguards, posture, horizon,
   - All five members were present and contributed a candidate.
 - **Contributions.** See `contribution_lineage.md` and `records/contribution_record.md`.
 - **AI use and verification:**
-  - Claude Code, operated for Justin Zhong:
+  - Justin Zhong coordinated the technical work, with Claude Code assisting with:
     - read all five candidate packages
     - built the common test package and the packets
-    - ran all 22 ChatGPT runs through computer use: 10 candidate runs plus 3 runs each for v0.9, v1.0, and v1.1
+    - computer-use automation for all 22 ChatGPT runs: 10 candidate runs plus 3 runs each for v0.9, v1.0, and v1.1
     - drafted the comparison, the team instructions, the check script, and these records
-    - web-checked the sources the final runs cite (E-14 to E-21)
+    - web retrieval and source checks for the sources the final runs cite (E-14 to E-21)
   - ChatGPT (Work mode, GPT-6.1 Sol, Light, project MASY-1800) produced every agent response. Responses are saved unedited; no repairs were needed.
   - The team made every decision recorded here (D-13 to D-19) through Justin's answers in the session. AI exposed the differences; it did not settle them.
 

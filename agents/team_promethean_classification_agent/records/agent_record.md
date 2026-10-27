@@ -95,12 +95,12 @@
   - Yuanxiang Zhang: transfer-test owner and PR reviewer.
 - **Contributions.** See `contribution_lineage.md` and the repo's `records/contribution_record.md`.
 - **AI use and verification:**
-  - Claude Code, operated for Justin Zhong:
+  - Justin Zhong coordinated the technical work, with Claude Code assisting with:
     - read all five candidate packages, and found that Karuna's was the misnamed `MASY1800_ET_Agent_Scaffold_v1_0.zip`
     - built the common test package and the packets
-    - ran all 23 ChatGPT runs in ChatGPT web through the Ego Lite browser (ego-browser scripts): 15 candidate runs plus 4 runs each for v0.9 and v1.0
+    - browser automation for the 23 ChatGPT runs in ChatGPT web through the Ego Lite browser (ego-browser scripts): 15 candidate runs plus 4 runs each for v0.9 and v1.0
     - drafted the comparison, the team instructions, the check script and these records
-    - web-checked the sources the final runs cite (E-22 to E-28)
+    - web retrieval and source checks for the sources the final runs cite (E-22 to E-28)
   - ChatGPT (Work mode, GPT-6.1 Sol, Light, project MASY-1800) produced every agent response. Responses are saved unedited; no repairs were needed.
   - The team made every decision recorded here (D-20 to D-26) through Justin's answers in the session. Two choices were delegated to the operator and are recorded as delegated: the role rotation (confirmed afterwards) and which dissents to record. AI exposed the differences; it did not settle them.
 
