@@ -11,7 +11,7 @@
   - The source list was not re-opened. Lab 4 recorded `1800-Textbook.pdf`, and two team runs cite "1800-Textbook.pdf, Chapter 11" (W-4).
 - The packet was attached as a file through the composer's file input, with one message: `[Run <ID>] Run the attached MASY1800 specialist agent prompt packet exactly as written. Return JSON only, in this chat reply; do not create files.`
 - Work mode could search the web. Runs that retrieved pages say so in `notes` (`STATUS: inspected-this-run`); the web UI does not itemize retrievals.
-- Claude Code operated the browser for Justin Zhong (ego-browser scripts). ChatGPT produced every response.
+- Justin Zhong coordinated the runs, with Claude Code assisting through browser automation (ego-browser scripts). ChatGPT produced every response.
 - Each `.raw_copy.txt` is the clipboard exactly as produced by the reply's own Copy button. Each `.json` is that text parsed and re-indented, with no repairs (0 characters removed in all 23 runs).
 - **Handling incidents** (no effect on any output): the first send of candidate run L5-L-P lost its attachment and nothing was sent, so it was relaunched by hand. The first launch of L5-T10-contrast_2 found no attachment and aborted before sending; it was relaunched. Chat links are listed in the ZIP only (see "Chat links" below).
 

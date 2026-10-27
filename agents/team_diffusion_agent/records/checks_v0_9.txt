@@ -1,0 +1,291 @@
+== primary
+PASS  General ≤350 words  (300 words)
+FLAG  Org/industry words in general level  ['case', 'context', 'enterprise']
+PASS  Every evidence note starts with STATUS  bad indices []
+PASS  No Markdown links in sources  []
+FLAG  'verified'/'checked' wording (allowed only if retrieved)  (2)
+PASS  HANDOFF lines present  (6)
+PASS  No empty arrays  []
+PASS  agent.version matches metadata  (0.9-team vs 0.9-team)
+INFO  application_finding words: 234
+INFO  organization_specific_finding words: 248
+PASS  Step 1 label EVIDENCE BASE uses an allowed value  (Supplied cards)
+PASS  Step 1 label USE LEVEL OBSERVED uses an allowed value  (Scaled)
+PASS  Step 1 label TECHNOLOGY STAGE uses an allowed value  (Withheld — insufficient evidence)
+PASS  Step 1 label STANDARDS uses an allowed value  (None)
+PASS  Step 1 label COMPLEMENTARY ASSETS uses an allowed value  (Partial)
+PASS  Step 1 label BASE CASE uses an allowed value  (None)
+PASS  Step 1 label MESSAGING SHIFT uses an allowed value  (Not observed)
+PASS  Step 1 label NETWORK-EFFECT DEPENDENCY uses an allowed value  (No)
+PASS  Step 1 label RELATIVE ADVANTAGE uses an allowed value  (Neutral · Speculative)
+PASS  Step 1 label COMPATIBILITY uses an allowed value  (Favors · Speculative)
+PASS  Step 1 label COMPLEXITY uses an allowed value  (Inhibits · Speculative)
+PASS  Step 1 label TRIALABILITY uses an allowed value  (Favors · Observed)
+PASS  Step 1 label OBSERVABILITY uses an allowed value  (Favors · Observed)
+PASS  Step 1 label MAIN INHIBITOR type uses an allowed value  (Hypothesized)
+PASS  General slot UNIT:  
+PASS  General slot PARENT:  
+PASS  General slot STAGE BASIS:  
+PASS  General slot CHANGE AGENTS:  
+PASS  General slot OPINION LEADERS:  
+PASS  General slot STRONGEST SIGNAL:  
+PASS  General slot MAIN INHIBITOR:  
+PASS  General finding ≤350 words  (300)
+PASS  Step 2 label USE LEVEL OBSERVED uses an allowed value  (Available)
+PASS  Step 2 label APPLICATION STAGE uses an allowed value  (Withheld — insufficient evidence)
+PASS  Application slot APPLICATION:  
+PASS  Application slot ADOPTION MEANS:  
+PASS  Application slot STAGE BASIS:  
+PASS  Application slot STRONGEST APPLICATION SIGNAL:  
+PASS  Application slot APPLICATION FACTORS:  
+PASS  Application slot RELATIVE ADVANTAGE:  
+PASS  Application slot COMPATIBILITY:  
+PASS  Application slot COMPLEXITY:  
+PASS  Application slot TRIALABILITY:  
+PASS  Application slot OBSERVABILITY:  
+PASS  Application finding ≤250 words  (234)
+PASS  Org label UNIT OF ANALYSIS  
+PASS  Org label PEER GROUP  
+PASS  Org label PEER GROUP STAGE  
+PASS  Org label ORG POSTURE  
+PASS  Org label PEER EVIDENCE ROLE  
+PASS  Org label ORG-SPECIFIC FORCES  
+PASS  Org label TABLE INPUT  
+PASS  Org label TIMING IMPLICATION  
+PASS  Org label POSTURE EFFECT  
+PASS  PEER GROUP STAGE uses an allowed value  
+PASS  ORG POSTURE allowed  (Fast follower)
+PASS  PEER EVIDENCE ROLE allowed  (Prerequisite)
+PASS  TABLE INPUT uses the APPLICATION STAGE (Withheld → Early adopters row) (R-9)  (('Withheld — insufficient evidence', 'Fast follower'); application Withheld — insufficient evidence)
+PASS  TIMING IMPLICATION matches the table cell (R-9)  (Early adopters × Fast follower → expected Patience, got Patience)
+PASS  POSTURE EFFECT gives no adopt/pilot/evaluation direction  []
+PASS  Org finding ≤300 words  (248)
+PASS  Step 4 label COMPETING STAGE READ  
+PASS  Step 4 label DISTINGUISHING EVIDENCE  
+PASS  Step 4 label WEAKEST DIFFUSION CLAIM  
+PASS  Step 4 label EVIDENCE GAPS  
+PASS  WEAKEST DIFFUSION CLAIM gives one allowed reason (R-12)  
+PASS  STAGE CONFIDENCE first, one value per level  {'technology': 'Low', 'application': 'Low', 'peer group': 'Low'}
+PASS  Recommendation starts 'TIMING: <value> —' and matches TIMING IMPLICATION  (Patience vs Patience)
+PASS  Recommendation ≤150 words  (81)
+PASS  Recommendation stays in lane (R-10)  []
+PASS  evidence_type from the team list (R-13)  []
+PASS  date_or_recency gives 'published:' for sourced items (dates rule)  indices []
+PASS  HANDOFF lines name the other six specialists  (['Adoption Agent', 'Creation', 'Innovation', 'Landscape', 'Organizational Adoption', 'Promethean'])
+== contrast_1
+PASS  General ≤350 words  (297 words)
+FLAG  Org/industry words in general level  ['case', 'context', 'enterprise', 'management']
+PASS  Every evidence note starts with STATUS  bad indices []
+PASS  No Markdown links in sources  []
+FLAG  'verified'/'checked' wording (allowed only if retrieved)  (1)
+PASS  HANDOFF lines present  (6)
+PASS  No empty arrays  []
+PASS  agent.version matches metadata  (0.9-team vs 0.9-team)
+INFO  application_finding words: 211
+INFO  organization_specific_finding words: 215
+PASS  Step 1 label EVIDENCE BASE uses an allowed value  (Supplied cards)
+PASS  Step 1 label USE LEVEL OBSERVED uses an allowed value  (Scaled)
+PASS  Step 1 label TECHNOLOGY STAGE uses an allowed value  (Withheld — insufficient evidence)
+PASS  Step 1 label STANDARDS uses an allowed value  (None)
+PASS  Step 1 label COMPLEMENTARY ASSETS uses an allowed value  (Partial)
+PASS  Step 1 label BASE CASE uses an allowed value  (None)
+PASS  Step 1 label MESSAGING SHIFT uses an allowed value  (Not observed)
+PASS  Step 1 label NETWORK-EFFECT DEPENDENCY uses an allowed value  (No)
+PASS  Step 1 label RELATIVE ADVANTAGE uses an allowed value  (Favors · Speculative)
+PASS  Step 1 label COMPATIBILITY uses an allowed value  (Favors · Speculative)
+PASS  Step 1 label COMPLEXITY uses an allowed value  (Inhibits · Speculative)
+PASS  Step 1 label TRIALABILITY uses an allowed value  (Favors · Speculative)
+PASS  Step 1 label OBSERVABILITY uses an allowed value  (Favors · Speculative)
+PASS  Step 1 label MAIN INHIBITOR type uses an allowed value  (Hypothesized)
+PASS  General slot UNIT:  
+PASS  General slot PARENT:  
+PASS  General slot STAGE BASIS:  
+PASS  General slot CHANGE AGENTS:  
+PASS  General slot OPINION LEADERS:  
+PASS  General slot STRONGEST SIGNAL:  
+PASS  General slot MAIN INHIBITOR:  
+PASS  General finding ≤350 words  (297)
+PASS  Step 2 label USE LEVEL OBSERVED uses an allowed value  (Available)
+PASS  Step 2 label APPLICATION STAGE uses an allowed value  (Withheld — insufficient evidence)
+PASS  Application slot APPLICATION:  
+PASS  Application slot ADOPTION MEANS:  
+PASS  Application slot STAGE BASIS:  
+PASS  Application slot STRONGEST APPLICATION SIGNAL:  
+PASS  Application slot APPLICATION FACTORS:  
+PASS  Application slot RELATIVE ADVANTAGE:  
+PASS  Application slot COMPATIBILITY:  
+PASS  Application slot COMPLEXITY:  
+PASS  Application slot TRIALABILITY:  
+PASS  Application slot OBSERVABILITY:  
+PASS  Application finding ≤250 words  (211)
+PASS  Org label UNIT OF ANALYSIS  
+PASS  Org label PEER GROUP  
+PASS  Org label PEER GROUP STAGE  
+PASS  Org label ORG POSTURE  
+PASS  Org label PEER EVIDENCE ROLE  
+PASS  Org label ORG-SPECIFIC FORCES  
+PASS  Org label TABLE INPUT  
+PASS  Org label TIMING IMPLICATION  
+PASS  Org label POSTURE EFFECT  
+PASS  PEER GROUP STAGE uses an allowed value  
+PASS  ORG POSTURE allowed  (Conservative adopter)
+PASS  PEER EVIDENCE ROLE allowed  (Prerequisite)
+PASS  TABLE INPUT uses the APPLICATION STAGE (Withheld → Early adopters row) (R-9)  (('Withheld — insufficient evidence', 'Conservative adopter'); application Withheld — insufficient evidence)
+PASS  TIMING IMPLICATION matches the table cell (R-9)  (Early adopters × Conservative adopter → expected Continued monitoring, got Continued monitoring)
+PASS  POSTURE EFFECT gives no adopt/pilot/evaluation direction  []
+PASS  Org finding ≤300 words  (215)
+PASS  Step 4 label COMPETING STAGE READ  
+PASS  Step 4 label DISTINGUISHING EVIDENCE  
+PASS  Step 4 label WEAKEST DIFFUSION CLAIM  
+PASS  Step 4 label EVIDENCE GAPS  
+PASS  WEAKEST DIFFUSION CLAIM gives one allowed reason (R-12)  
+PASS  STAGE CONFIDENCE first, one value per level  {'technology': 'Low', 'application': 'Low', 'peer group': 'Low'}
+PASS  Recommendation starts 'TIMING: <value> —' and matches TIMING IMPLICATION  (Continued monitoring vs Continued monitoring)
+PASS  Recommendation ≤150 words  (78)
+PASS  Recommendation stays in lane (R-10)  []
+PASS  evidence_type from the team list (R-13)  []
+PASS  date_or_recency gives 'published:' for sourced items (dates rule)  indices []
+PASS  HANDOFF lines name the other six specialists  (['Adoption Agent', 'Creation', 'Innovation', 'Landscape', 'Organizational Adoption', 'Promethean'])
+== contrast_2
+PASS  General ≤350 words  (288 words)
+PASS  Org/industry words in general level  []
+PASS  Every evidence note starts with STATUS  bad indices []
+PASS  No Markdown links in sources  []
+PASS  'verified'/'checked' wording (allowed only if retrieved)  (0)
+PASS  HANDOFF lines present  (6)
+PASS  No empty arrays  []
+PASS  agent.version matches metadata  (0.9-team vs 0.9-team)
+INFO  application_finding words: 203
+INFO  organization_specific_finding words: 198
+PASS  Step 1 label EVIDENCE BASE uses an allowed value  (Retrieved this run)
+PASS  Step 1 label USE LEVEL OBSERVED uses an allowed value  (In production)
+PASS  Step 1 label TECHNOLOGY STAGE uses an allowed value  (Early adopters)
+PASS  Step 1 label STANDARDS uses an allowed value  (None)
+PASS  Step 1 label COMPLEMENTARY ASSETS uses an allowed value  (Partial)
+PASS  Step 1 label BASE CASE uses an allowed value  (Named)
+PASS  Step 1 label MESSAGING SHIFT uses an allowed value  (Not observed)
+PASS  Step 1 label NETWORK-EFFECT DEPENDENCY uses an allowed value  (No)
+PASS  Step 1 label RELATIVE ADVANTAGE uses an allowed value  (Favors · Observed)
+PASS  Step 1 label COMPATIBILITY uses an allowed value  (Favors · Observed)
+PASS  Step 1 label COMPLEXITY uses an allowed value  (Inhibits · Speculative)
+PASS  Step 1 label TRIALABILITY uses an allowed value  (Favors · Speculative)
+PASS  Step 1 label OBSERVABILITY uses an allowed value  (Favors · Observed)
+PASS  Step 1 label MAIN INHIBITOR type uses an allowed value  (Hypothesized)
+PASS  General slot UNIT:  
+PASS  General slot PARENT:  
+PASS  General slot STAGE BASIS:  
+PASS  General slot CHANGE AGENTS:  
+PASS  General slot OPINION LEADERS:  
+PASS  General slot STRONGEST SIGNAL:  
+PASS  General slot MAIN INHIBITOR:  
+PASS  General finding ≤350 words  (288)
+PASS  Step 2 label USE LEVEL OBSERVED uses an allowed value  (Available)
+PASS  Step 2 label APPLICATION STAGE uses an allowed value  (Withheld — insufficient evidence)
+PASS  Application slot APPLICATION:  
+PASS  Application slot ADOPTION MEANS:  
+PASS  Application slot STAGE BASIS:  
+PASS  Application slot STRONGEST APPLICATION SIGNAL:  
+PASS  Application slot APPLICATION FACTORS:  
+PASS  Application slot RELATIVE ADVANTAGE:  
+PASS  Application slot COMPATIBILITY:  
+PASS  Application slot COMPLEXITY:  
+PASS  Application slot TRIALABILITY:  
+PASS  Application slot OBSERVABILITY:  
+PASS  Application finding ≤250 words  (203)
+FLAG  technology stage Early adopters without a share: confirm a DATED base case (stage rule 4)  [Dated base-case floor: OpenAI's 2026-03-11 account describes Rakuten's routine Codex workf]
+PASS  Org label UNIT OF ANALYSIS  
+PASS  Org label PEER GROUP  
+PASS  Org label PEER GROUP STAGE  
+PASS  Org label ORG POSTURE  
+PASS  Org label PEER EVIDENCE ROLE  
+PASS  Org label ORG-SPECIFIC FORCES  
+PASS  Org label TABLE INPUT  
+PASS  Org label TIMING IMPLICATION  
+PASS  Org label POSTURE EFFECT  
+PASS  PEER GROUP STAGE uses an allowed value  
+PASS  ORG POSTURE allowed  (Conservative adopter)
+PASS  PEER EVIDENCE ROLE allowed  (Prerequisite)
+PASS  TABLE INPUT uses the APPLICATION STAGE (Withheld → Early adopters row) (R-9)  (('Withheld — insufficient evidence', 'Conservative adopter'); application Withheld — insufficient evidence)
+PASS  TIMING IMPLICATION matches the table cell (R-9)  (Early adopters × Conservative adopter → expected Continued monitoring, got Continued monitoring)
+PASS  POSTURE EFFECT gives no adopt/pilot/evaluation direction  []
+PASS  Org finding ≤300 words  (198)
+PASS  Step 4 label COMPETING STAGE READ  
+PASS  Step 4 label DISTINGUISHING EVIDENCE  
+PASS  Step 4 label WEAKEST DIFFUSION CLAIM  
+PASS  Step 4 label EVIDENCE GAPS  
+PASS  WEAKEST DIFFUSION CLAIM gives one allowed reason (R-12)  
+PASS  STAGE CONFIDENCE first, one value per level  {'technology': 'Moderate', 'application': 'Low', 'peer group': 'Low'}
+PASS  Recommendation starts 'TIMING: <value> —' and matches TIMING IMPLICATION  (Continued monitoring vs Continued monitoring)
+PASS  Recommendation ≤150 words  (66)
+PASS  Recommendation stays in lane (R-10)  []
+PASS  evidence_type from the team list (R-13)  []
+PASS  date_or_recency gives 'published:' for sourced items (dates rule)  indices []
+PASS  HANDOFF lines name the other six specialists  (['Adoption Agent', 'Creation', 'Innovation', 'Landscape', 'Organizational Adoption', 'Promethean'])
+== pair primary vs contrast_1
+PASS  Step 1 label EVIDENCE BASE uses an allowed value  (Supplied cards)
+PASS  Step 1 label USE LEVEL OBSERVED uses an allowed value  (Scaled)
+PASS  Step 1 label TECHNOLOGY STAGE uses an allowed value  (Withheld — insufficient evidence)
+PASS  Step 1 label STANDARDS uses an allowed value  (None)
+PASS  Step 1 label COMPLEMENTARY ASSETS uses an allowed value  (Partial)
+PASS  Step 1 label BASE CASE uses an allowed value  (None)
+PASS  Step 1 label MESSAGING SHIFT uses an allowed value  (Not observed)
+PASS  Step 1 label NETWORK-EFFECT DEPENDENCY uses an allowed value  (No)
+PASS  Step 1 label RELATIVE ADVANTAGE uses an allowed value  (Neutral · Speculative)
+PASS  Step 1 label COMPATIBILITY uses an allowed value  (Favors · Speculative)
+PASS  Step 1 label COMPLEXITY uses an allowed value  (Inhibits · Speculative)
+PASS  Step 1 label TRIALABILITY uses an allowed value  (Favors · Observed)
+PASS  Step 1 label OBSERVABILITY uses an allowed value  (Favors · Observed)
+PASS  Step 1 label MAIN INHIBITOR type uses an allowed value  (Hypothesized)
+PASS  General slot UNIT:  
+PASS  General slot PARENT:  
+PASS  General slot STAGE BASIS:  
+PASS  General slot CHANGE AGENTS:  
+PASS  General slot OPINION LEADERS:  
+PASS  General slot STRONGEST SIGNAL:  
+PASS  General slot MAIN INHIBITOR:  
+PASS  General finding ≤350 words  (300)
+PASS  Step 2 label USE LEVEL OBSERVED uses an allowed value  (Available)
+PASS  Step 2 label APPLICATION STAGE uses an allowed value  (Withheld — insufficient evidence)
+PASS  Application slot APPLICATION:  
+PASS  Application slot ADOPTION MEANS:  
+PASS  Application slot STAGE BASIS:  
+PASS  Application slot STRONGEST APPLICATION SIGNAL:  
+PASS  Application slot APPLICATION FACTORS:  
+PASS  Application slot RELATIVE ADVANTAGE:  
+PASS  Application slot COMPATIBILITY:  
+PASS  Application slot COMPLEXITY:  
+PASS  Application slot TRIALABILITY:  
+PASS  Application slot OBSERVABILITY:  
+PASS  Application finding ≤250 words  (234)
+PASS  Org label UNIT OF ANALYSIS  
+PASS  Org label PEER GROUP  
+PASS  Org label PEER GROUP STAGE  
+PASS  Org label ORG POSTURE  
+PASS  Org label PEER EVIDENCE ROLE  
+PASS  Org label ORG-SPECIFIC FORCES  
+PASS  Org label TABLE INPUT  
+PASS  Org label TIMING IMPLICATION  
+PASS  Org label POSTURE EFFECT  
+PASS  PEER GROUP STAGE uses an allowed value  
+PASS  ORG POSTURE allowed  (Fast follower)
+PASS  PEER EVIDENCE ROLE allowed  (Prerequisite)
+PASS  TABLE INPUT uses the APPLICATION STAGE (Withheld → Early adopters row) (R-9)  (('Withheld — insufficient evidence', 'Fast follower'); application Withheld — insufficient evidence)
+PASS  TIMING IMPLICATION matches the table cell (R-9)  (Early adopters × Fast follower → expected Patience, got Patience)
+PASS  POSTURE EFFECT gives no adopt/pilot/evaluation direction  []
+PASS  Org finding ≤300 words  (248)
+PASS  Step 4 label COMPETING STAGE READ  
+PASS  Step 4 label DISTINGUISHING EVIDENCE  
+PASS  Step 4 label WEAKEST DIFFUSION CLAIM  
+PASS  Step 4 label EVIDENCE GAPS  
+PASS  WEAKEST DIFFUSION CLAIM gives one allowed reason (R-12)  
+PASS  STAGE CONFIDENCE first, one value per level  {'technology': 'Low', 'application': 'Low', 'peer group': 'Low'}
+PASS  Recommendation starts 'TIMING: <value> —' and matches TIMING IMPLICATION  (Patience vs Patience)
+PASS  Recommendation ≤150 words  (81)
+PASS  Recommendation stays in lane (R-10)  []
+PASS  evidence_type from the team list (R-13)  []
+PASS  date_or_recency gives 'published:' for sourced items (dates rule)  indices []
+PASS  HANDOFF lines name the other six specialists  (['Adoption Agent', 'Creation', 'Innovation', 'Landscape', 'Organizational Adoption', 'Promethean'])
+FAIL  Same Step 1 labels as paired run (R-8)  {'RELATIVE ADVANTAGE': ('Neutral · Speculative', 'Favors · Speculative'), 'TRIALABILITY': ('Favors · Observed', 'Favors · Speculative'), 'OBSERVABILITY': ('Favors · Observed', 'Favors · Speculative')}
+PASS  Same Step 2 labels as paired run (R-8)  identical
+PASS  Posture pair: TIMING or PEER EVIDENCE ROLE differs  (Patience vs Continued monitoring)
+PASS  Posture pair: POSTURE EFFECT differs  

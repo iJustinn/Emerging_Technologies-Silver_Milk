@@ -12,7 +12,7 @@
 - Work mode also reads the operator's local `~/.codex/AGENTS.md`, which references `RTK.md` (shell-tooling notes, no lab content).
 - Runs could search the web. The work logs show "Read files, searched the web" but do not itemize the retrievals.
 - The packet was attached by paste, with one message: `[Run <ID>] Run the attached MASY1800 specialist agent prompt packet exactly as written. Return JSON only, in this chat reply; do not create files.`
-- Claude Code operated the app through computer use for Justin Zhong. ChatGPT produced every response.
+- Justin Zhong coordinated the runs, with Claude Code assisting through computer-use automation. ChatGPT produced every response.
 - Each `.raw_copy.txt` is the clipboard exactly as copied. Each `.json` is that text parsed and re-indented, with no repairs (0 `\&` escapes, 0 citation markers in all 22 runs).
 
 ## Cases

@@ -1,0 +1,91 @@
+{
+  "agent": {
+    "name": "Silver-Milk Team Diffusion Agent",
+    "specialty": "Rogers diffusion of an emerging technology and its application: adopter-category stage by evidence rule at three levels (technology, application, peer group), five perceived characteristics, accelerators and inhibitors, and the timing implication for an organization's decision (never the adoption decision)",
+    "version": "0.9-team"
+  },
+  "analytical_question": "Where are AI coding agents, their use for internal legacy integration maintenance, and comparable regional banks in the diffusion process, and what timing implication follows for a conservative adopter?",
+  "general_et_finding": "EVIDENCE BASE: Retrieved this run\nUNIT: AI coding agents performing multi-step software tasks.\nPARENT: LLM-based software-development assistance.\nUSE LEVEL OBSERVED: In production\nTECHNOLOGY STAGE: Early adopters\nSTAGE BASIS: Dated base-case floor: OpenAI's 2026-03-11 account describes Rakuten's routine Codex workflows. No inspected share establishes representative, repeated adoption across the technology's population.\nFIVE FACTORS:\nRELATIVE ADVANTAGE: Favors · Observed — Microsoft research published 2026-07-01 reports sustained output gains, with pull requests an imperfect value proxy.\nCOMPATIBILITY: Favors · Observed — Rakuten's 2026-03-11 account describes integration with existing CI/CD.\nCOMPLEXITY: Inhibits · Speculative — supervising multi-step execution may require substantial judgment.\nTRIALABILITY: Favors · Speculative — bounded tasks appear divisible; inspected evidence does not establish trial friction.\nOBSERVABILITY: Favors · Observed — the 2026-07-01 Microsoft study links first use to visible social-network use.\nACCELERATORS / INHIBITORS:\nCHANGE AGENTS: OpenAI; Anthropic; GitHub; Microsoft — actively promote agentic coding in the inspected accounts.\nOPINION LEADERS: None identified — social influence is reported, but trusted, imitated individuals are not named.\nSTANDARDS: None — no inspected evidence identifies an adopted formal standard for this unit.\nCOMPLEMENTARY ASSETS: Partial — repositories, CI/CD and command environments are demonstrated; supervision and context remain necessary.\nBASE CASE: Named — Rakuten, 2026-03-11, vendor-reported routine Codex use.\nMESSAGING SHIFT: Not observed — dated operational messages do not establish a transition from earlier novelty messaging.\nNETWORK-EFFECT DEPENDENCY: No — useful execution within one repository does not require adoption by other organizations.\nSTRONGEST SIGNAL: Microsoft study, 2026-07-01: retained use across a four-month window among engineers at one organization; population described as tens of thousands, exact denominator unknown in the inspected abstract.\nMAIN INHIBITOR: Hypothesized — supervision costs may offset benefits; dated retention and discontinuation evidence attributing outcomes to supervision burden would test this.",
+  "application_finding": "APPLICATION: Internal legacy integration maintenance, test generation and review preparation.\nADOPTION MEANS: Recurring agent-assisted changes, tests and review artifacts for existing internal integration systems across successive maintenance cycles.\nUSE LEVEL OBSERVED: Available\nAPPLICATION STAGE: Withheld — insufficient evidence\nSTAGE BASIS: GitHub's 2025-10-14 legacy-modernization account demonstrates relevant techniques, but supplies neither a named organization's routine use of this exact application nor a qualifying repeated-use share. Available describes documented techniques, not proven operational suitability.\nSTRONGEST APPLICATION SIGNAL: The 2025-10-14 account describes Microsoft work combining agents with legacy domain expertise; production status, duration and exact application match remain unspecified.\nAPPLICATION FACTORS:\nRELATIVE ADVANTAGE: Favors · Speculative — broader maintenance gains may transfer, but net advantage for this application is unestablished.\nCOMPATIBILITY: Favors · Speculative — repository and review integration may transfer; internal legacy dependencies remain untested by the inspected evidence.\nCOMPLEXITY: Inhibits · Speculative — implicit integration behavior and sparse tests may increase supervision effort.\nTRIALABILITY: Favors · Speculative — individual maintenance tasks are separable, although environment access may constrain experimentation.\nOBSERVABILITY: Favors · Speculative — diffs and tests expose outputs, but sustained application-specific outcomes are missing.\nRELATION TO TECHNOLOGY: Evidence is less mature for the exact application; actual diffusion lag or lead cannot be established.",
+  "organization_specific_finding": "UNIT OF ANALYSIS: The illustrative regional bank's timing decision concerning agent-assisted internal legacy integration maintenance over 24 months.\nPEER GROUP: Mid-size U.S. regional banks with comparable internal engineering operations and supervisory constraints.\nPEER GROUP STAGE: Withheld — insufficient evidence. STAGE BASIS: No inspected qualifying share or dated routine-use base case for this application within that peer group.\nORG POSTURE: Conservative adopter — the case requires standardization, established support and routine use at comparable banks.\nPEER EVIDENCE ROLE: Prerequisite — comparable-bank routine use is an explicit condition of this posture.\nORG-SPECIFIC FORCES: Observed (case) — environment restrictions and 6–12-month vendor processes slow formal uptake; Observed (case) — maintenance backlog creates demand; Hypothesized — informal assistant familiarity could ease learning, but does not establish agent use.\nTABLE INPUT: Withheld — insufficient evidence × Conservative adopter; use Early adopters row.\nTIMING IMPLICATION: Continued monitoring — the evidence does not establish the application diffusion associated with this posture's entry point.\nPOSTURE EFFECT: This posture tolerates less diffusion uncertainty and requires comparable-peer proof before the timing decision moves. Reassessment is tied to substantive dated application and peer evidence, or the 24-month horizon ending 2028-10-27; broad technology uptake alone does not satisfy that preference.",
+  "evidence": [
+    {
+      "claim": "Rakuten uses Codex in recurring engineering workflows, including incident diagnosis and CI/CD review.",
+      "source_or_reference": "https://openai.com/index/rakuten/",
+      "date_or_recency": "published: 2026-03-11; observed: preceding year, exact deployment dates unknown; accessed: 2026-10-27",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: inspected-this-run — vendor-reported named production base case, not a representative diffusion estimate. Population: Rakuten engineering teams; adoption denominator unknown. This supports the technology floor, not the exact application or regional-bank stage."
+    },
+    {
+      "claim": "Anthropic describes recurring Claude Code use for codebase navigation, testing, review and troubleshooting.",
+      "source_or_reference": "https://claude.com/resources/articles/how-anthropic-teams-use-claude-code",
+      "date_or_recency": "published: 2025-07-24; observed: unknown; accessed: 2026-10-27",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: inspected-this-run — vendor-reported internal use; team population and adoption denominator unknown. Publication is more than 12 months before assessment; retained as historical evidence of routine use, not current prevalence. The exact internal legacy integration application is not established."
+    },
+    {
+      "claim": "Microsoft research reports retained CLI coding-agent use and sustained differences in merged pull requests during a four-month study.",
+      "source_or_reference": "https://arxiv.org/abs/2607.01418",
+      "date_or_recency": "published: 2026-07-01; observed: early 2026, four-month window with exact dates unknown in inspected abstract; accessed: 2026-10-27",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: inspected-this-run — inspected abstract reports tens of thousands of Microsoft engineers, with exact denominator unknown there. One organization's rollout cannot establish cross-organization prevalence. Social-network influence supports observability but does not identify named opinion leaders. Output is not equivalent to delivered value."
+    },
+    {
+      "claim": "A GitHub trace study reports estimated coding-agent adoption of 22.20–28.66% across 128,018 projects.",
+      "source_or_reference": "https://arxiv.org/abs/2601.18341",
+      "date_or_recency": "published: 2026-01-26; revised: 2026-04-08; observed: unknown in inspected abstract; accessed: 2026-10-27",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: inspected-this-run — figures are from the revised abstract. Population: sampled GitHub projects; denominator 128,018 projects. The inspected abstract does not establish a representative population of adopting organizations or repeated-use measurement. Therefore the share is context, not a qualifying stage share."
+    },
+    {
+      "claim": "GitHub presents agent-assisted legacy modernization techniques combining code analysis, tests and domain expertise.",
+      "source_or_reference": "https://github.blog/ai-and-ml/github-copilot/how-github-copilot-and-ai-agents-are-saving-legacy-systems/",
+      "date_or_recency": "published: 2025-10-14; observed: unknown; accessed: 2026-10-27",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: inspected-this-run — vendor-promotional account names Microsoft practitioner Julia Kordick, but not a comparable bank routinely using the exact application. Adoption population and denominator unknown. Publication is more than 12 months before assessment; retained for documented application availability, not current diffusion."
+    },
+    {
+      "claim": "The illustrative bank has a conservative posture, environment restrictions, long vendor processes and informal assistant use.",
+      "source_or_reference": "Attached packet: CASE CONTEXT",
+      "date_or_recency": "published: unknown; observed: unknown",
+      "evidence_type": "case-premise",
+      "notes": "STATUS: supplied — case premises, not externally established facts or source cards. Engineering group is approximately 300 developers; informal-use numerator and denominator unknown. Assistant use does not establish agent adoption."
+    },
+    {
+      "claim": "The timing table maps a withheld application stage to Continued monitoring for a conservative adopter.",
+      "source_or_reference": "Attached packet: specialist timing table and retrieved-evidence interpretation",
+      "date_or_recency": "published: unknown; observed: 2026-10-27 assessment",
+      "evidence_type": "inference",
+      "notes": "STATUS: supplied — packet rule applied to the evidence; this is an analytical timing implication, not an adoption decision or forecast."
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "COMPETING STAGE READ: Early adopters is the plausible application alternative. GitHub's 2025-10-14 legacy account and Rakuten's 2026-03-11 maintenance/review account show adjacent activity, but neither establishes routine use of the exact internal legacy integration application.",
+    "DISTINGUISHING EVIDENCE: A dated account documenting a named organization's repeated use of the exact application across successive maintenance cycles during 2026–2028 would establish the base-case floor. Representative, dated repeated-use shares would distinguish higher bands; longitudinal observations are necessary to identify a stall.",
+    "WEAKEST DIFFUSION CLAIM: Treating the GitHub project's 22.20–28.66% estimated agent adoption as majority diffusion of this application is indirect — project traces do not establish repeated use of internal legacy integration maintenance.",
+    "EVIDENCE GAPS: Gap — representative repeated-use shares for the technology; gap — dated exact-application routine-use accounts; gap — comparable regional-bank evidence; gap — adopted formal standards for the unit; gap — application retention and abandonment observations.",
+    "Withheld stages indicate insufficient evidence, not low adoption. Neither a chasm nor a technology-to-application diffusion lag is established.",
+    "Search coverage is finite. Inspected abstracts do not substitute for full methodological review. Vendor accounts and the single-employer study provide useful use evidence but limited independent generalization."
+  ],
+  "confidence_and_uncertainty": "STAGE CONFIDENCE: technology: Moderate — dated routine-use accounts support the Early adopters floor, while representative repeated-use evidence could move the label; application: Low — Withheld, changeable by a dated exact-application base case or qualifying share; peer group: Low — Withheld, changeable by comparable regional-bank routine-use evidence or a qualifying peer share. The technology label is a rule-based evidentiary floor, not an estimate that actual adoption lies below 16%.",
+  "value_opportunity_implication": "Observed recurring use makes maintenance assistance a credible diffusion phenomenon. Transfer to this exact application remains an inference; backlog reduction, net productivity and economic value are not established here. Those questions belong to the Innovation and Adoption Agents.",
+  "risk_governance_implication": "Environment restrictions and lengthy vendor processes are case-specific forces affecting uptake. They do not reduce measured technology diffusion or establish regulatory acceptability. Standardization and comparable-bank proof matter to the stated posture; execution capacity and control adequacy require separate specialist judgments.",
+  "recommendation_management_implication": "TIMING: Continued monitoring — watch for dated routine use of the exact application, comparable regional-bank accounts, formal standards adopted for coding agents, and representative repeated-use evidence. Reassess when substantive new evidence changes the application stage or peer-proof position, or at the 24-month horizon ending 2028-10-27. Technology production accounts alone do not establish this application's diffusion. This timing interpretation leaves the adoption decision to the Adoption Agent.",
+  "change_monitoring_triggers": [
+    "2026-10-27 through 2028-10-27: A dated named account of recurring exact-application use across successive maintenance cycles would move APPLICATION STAGE from Withheld to Early adopters; timing remains Continued monitoring for this posture.",
+    "2026-10-27 through 2028-10-27: A dated qualifying application share in the 16–50% band would move the application to Early majority absent stall evidence; timing moves toward Patience.",
+    "2026-10-27 through 2028-10-27: A dated qualifying application share above 50% would place it in Late majority or Laggards under the packet bands and move timing to Urgency.",
+    "2026-10-27 through 2028-10-27: A dated routine-use account at a comparable U.S. regional bank would move PEER GROUP STAGE from Withheld to Early adopters and strengthen prerequisite peer proof; it would not independently change application-based timing.",
+    "2026-10-27 through 2028-10-27: Dated repeated observations showing flat or falling qualifying application shares in the 16–50% band, with abandonment or failed conversion, would support Chasm and move conservative-posture timing toward Continued monitoring.",
+    "By 2028-10-27: An adopted named formal coding-agent standard would move STANDARDS from None to Settled and strengthen posture-relevant evidence without independently changing a stage."
+  ],
+  "abstention_or_more_information_needed": [
+    "HANDOFF → Creation Agent: What predecessors and technical developments produced multi-step coding agents, and what arc stage is supported?",
+    "HANDOFF → Innovation Agent: What performance evidence supports the innovation lifecycle and DEGREE label for this application?",
+    "HANDOFF → Promethean Agent: What significance class is supported independently of diffusion?",
+    "HANDOFF → Adoption Agent: Whether, when and how should the bank adopt, including tool choice and any evaluation, pilot, owner, threshold or cadence?",
+    "HANDOFF → Organizational Adoption Agent: Can the bank absorb and execute this application within its skills, environment and governance constraints?",
+    "HANDOFF → Landscape Agent: What additional comparable-bank deployments, vendors and market-structure evidence exist beyond this evidence base?",
+    "More information needed: Dated exact-application routine-use accounts, comparable-bank evidence, representative repeated-use denominators and retention histories. Application and peer stages are withheld; timing is not withheld because posture is explicit."
+  ]
+}
