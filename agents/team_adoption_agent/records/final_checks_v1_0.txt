@@ -1,0 +1,359 @@
+----- common primary
+PASS  General ≤220 words  (139 words)
+PASS  Org/industry words in general level  []
+PASS  Every evidence note starts with STATUS  bad indices []
+PASS  No Markdown links in sources  []
+PASS  'verified'/'checked' wording (allowed only if retrieved)  (0)
+PASS  HANDOFF lines present  (6)
+PASS  No empty arrays  []
+PASS  agent.version matches metadata  (1.0-team vs 1.0-team)
+INFO  application_finding words: 135
+INFO  organization_specific_finding words: 263
+----- common contrast_1
+PASS  General ≤220 words  (147 words)
+PASS  Org/industry words in general level  []
+PASS  Every evidence note starts with STATUS  bad indices []
+PASS  No Markdown links in sources  []
+FLAG  'verified'/'checked' wording (allowed only if retrieved)  (2)
+PASS  HANDOFF lines present  (6)
+PASS  No empty arrays  []
+PASS  agent.version matches metadata  (1.0-team vs 1.0-team)
+INFO  application_finding words: 128
+INFO  organization_specific_finding words: 269
+----- common contrast_2
+PASS  General ≤220 words  (108 words)
+PASS  Org/industry words in general level  []
+PASS  Every evidence note starts with STATUS  bad indices []
+PASS  No Markdown links in sources  []
+FLAG  'verified'/'checked' wording (allowed only if retrieved)  (1)
+PASS  HANDOFF lines present  (6)
+PASS  No empty arrays  []
+PASS  agent.version matches metadata  (1.0-team vs 1.0-team)
+INFO  application_finding words: 86
+INFO  organization_specific_finding words: 275
+----- common contrast_3
+PASS  General ≤220 words  (123 words)
+PASS  Org/industry words in general level  []
+PASS  Every evidence note starts with STATUS  bad indices []
+PASS  No Markdown links in sources  []
+FLAG  'verified'/'checked' wording (allowed only if retrieved)  (8)
+PASS  HANDOFF lines present  (6)
+PASS  No empty arrays  []
+PASS  agent.version matches metadata  (1.0-team vs 1.0-team)
+INFO  application_finding words: 109
+INFO  organization_specific_finding words: 210
+----- adoption primary+pair
+PASS  Label EVIDENCE BASE uses an allowed value  (Supplied cards)
+PASS  Label MATURITY ZONE uses an allowed value  (Bleeding edge)
+PASS  Label MESSAGING SHIFT uses an allowed value  (Not observed)
+PASS  Label RELATIVE ADVANTAGE uses an allowed value  (Unclear)
+PASS  Label APPLICATION ZONE uses an allowed value  (Bleeding edge)
+PASS  Label FIT uses an allowed value  (Partial)
+PASS  Label ADVANTAGE OVER ALTERNATIVE uses an allowed value  (Marginal)
+PASS  Label ORG POSTURE uses an allowed value  (Innovator/early adopter)
+PASS  Label CONSEQUENCE uses an allowed value  (Reversible)
+PASS  Label REVERSIBILITY uses an allowed value  (High)
+PASS  Label CONFIGURATION uses an allowed value  (Acceptable)
+PASS  Label DEFER GATE uses an allowed value  (None)
+PASS  Label PRIMARY UNCERTAINTY uses an allowed value  (Value)
+PASS  Label MODIFIER uses an allowed value  (not applied)
+PASS  Label RECOMMENDATION uses an allowed value  (Bounded experiment)
+PASS  General slot UNIT:  
+PASS  General slot PARENT:  
+PASS  General slot ZONE BASIS:  
+PASS  General slot DIFFUSION EVIDENCE:  
+PASS  General slot KEY UNCERTAINTY:  
+PASS  Application slot ZONE BASIS:  
+PASS  Application slot BEST ALTERNATIVE:  
+PASS  Application slot UPSTREAM READ:  
+PASS  Organization slot UNIT OF ANALYSIS:  
+PASS  Organization slot POSTURE GATE:  
+PASS  Organization slot SCOPING CONDITIONS:  
+PASS  Organization slot DEPARTURE:  
+PASS  Organization slot GATES:  
+PASS  Organization slot TABLE INPUT:  
+PASS  Organization slot POSTURE EFFECT:  
+PASS  Key uncertainty type  
+PASS  General ≤220 words  (139)
+PASS  Application ≤200 words  (135)
+PASS  Organization ≤380 words  (263)
+PASS  Recommendation ≤300 words  (233)
+PASS  Recommendation matches gates, table, uncertainty rule and modifier (R-5)  (Bounded experiment vs Bounded experiment)
+PASS  TABLE INPUT uses the application zone and posture  (Bleeding edge × Innovator/early adopter → Bounded experiment)
+PASS  Response starts RECOMMENDATION: <value> — and matches Step 4  (Bounded experiment)
+PASS  Response slot NOW:  
+PASS  Response slot BEFORE EXECUTION:  
+PASS  Response slot BEFORE WIDER USE:  
+PASS  Response slot EXPERIMENT DESIGN:  
+PASS  Response slot DECISIVE FACTORS:  
+PASS  Response slot DRIVING FACTOR:  
+PASS  Decisive factors carry a level tag  
+PASS  Experiment design part HYPOTHESIS (I-06)  
+PASS  Experiment design part COMPARATOR (I-06)  
+PASS  Experiment design part SCOPE (I-06)  
+PASS  Experiment design part OWNER ROLE (I-06)  
+PASS  Experiment design part MEASURES (I-06)  
+PASS  Experiment design part PROPOSED ACCEPTANCE RULE (I-06)  
+PASS  Experiment design part PROPOSED STOP RULE (I-06)  
+PASS  Experiment design marked pending approval  
+PASS  Step 5 slot ADVOCATE CASE:  
+PASS  Step 5 slot RISK OFFICER CASE:  
+PASS  Step 5 slot NEAREST ALTERNATIVE:  
+PASS  Step 5 slot BIAS CHECK:  
+PASS  Step 5 slot DISTINGUISHING EVIDENCE:  
+PASS  BIAS CHECK covers all four  
+PASS  Confidence opens with one value  
+PASS  ZONE CONFIDENCE present  
+PASS  At least two categorized triggers  
+PASS  Trigger arrows name a recommendation  
+PASS  Trigger slot REVALIDATE:  
+PASS  Trigger slot REVERSAL CONDITION:  
+PASS  Trigger slot REVIEW DATE:  
+PASS  HANDOFF → Creation Agent  
+PASS  HANDOFF → Innovation Agent  
+PASS  HANDOFF → Promethean Agent  
+PASS  HANDOFF → Diffusion Agent  
+PASS  HANDOFF → Organizational Adoption Agent  
+PASS  HANDOFF → Landscape Agent  
+PASS  At least one EVIDENCE REQUEST  
+PASS  Evidence types from the list  []
+PASS  Readiness verdict wording (R-14)  []
+PASS  Diffusion stage word used here (I-17)  []
+PASS  Wording implies a test has started (R-7)  []
+PASS  Pair: general EVIDENCE BASE identical (R-4)  (Supplied cards vs Supplied cards)
+PASS  Pair: general MATURITY ZONE identical (R-4)  (Bleeding edge vs Bleeding edge)
+PASS  Pair: general MESSAGING SHIFT identical (R-4)  (Not observed vs Not observed)
+PASS  Pair: general RELATIVE ADVANTAGE identical (R-4)  (Unclear vs Unclear)
+PASS  Pair: application APPLICATION ZONE identical (R-4)  (Bleeding edge vs Bleeding edge)
+PASS  Pair: application FIT identical (R-4)  (Partial vs Partial)
+PASS  Pair: application ADVANTAGE OVER ALTERNATIVE identical (R-4)  (Marginal vs Marginal)
+PASS  Posture pair: recommendation or POSTURE EFFECT differs  (Bounded experiment vs Defer)
+INFO  Posture pair recommendations: Bounded experiment vs Defer
+SUMMARY: 85 pass, 0 fail, 0 flag
+----- adoption contrast_1
+PASS  Label EVIDENCE BASE uses an allowed value  (Supplied cards)
+PASS  Label MATURITY ZONE uses an allowed value  (Bleeding edge)
+PASS  Label MESSAGING SHIFT uses an allowed value  (Not observed)
+PASS  Label RELATIVE ADVANTAGE uses an allowed value  (Unclear)
+PASS  Label APPLICATION ZONE uses an allowed value  (Bleeding edge)
+PASS  Label FIT uses an allowed value  (Partial)
+PASS  Label ADVANTAGE OVER ALTERNATIVE uses an allowed value  (Marginal)
+PASS  Label ORG POSTURE uses an allowed value  (Conservative adopter)
+PASS  Label CONSEQUENCE uses an allowed value  (Reversible)
+PASS  Label REVERSIBILITY uses an allowed value  (High)
+PASS  Label CONFIGURATION uses an allowed value  (Acceptable)
+PASS  Label DEFER GATE uses an allowed value  (Present)
+PASS  Label PRIMARY UNCERTAINTY uses an allowed value  (Value)
+PASS  Label MODIFIER uses an allowed value  (not applied)
+PASS  Label RECOMMENDATION uses an allowed value  (Defer)
+PASS  General slot UNIT:  
+PASS  General slot PARENT:  
+PASS  General slot ZONE BASIS:  
+PASS  General slot DIFFUSION EVIDENCE:  
+PASS  General slot KEY UNCERTAINTY:  
+PASS  Application slot ZONE BASIS:  
+PASS  Application slot BEST ALTERNATIVE:  
+PASS  Application slot UPSTREAM READ:  
+PASS  Organization slot UNIT OF ANALYSIS:  
+PASS  Organization slot POSTURE GATE:  
+PASS  Organization slot SCOPING CONDITIONS:  
+PASS  Organization slot DEPARTURE:  
+PASS  Organization slot GATES:  
+PASS  Organization slot TABLE INPUT:  
+PASS  Organization slot POSTURE EFFECT:  
+PASS  Key uncertainty type  
+PASS  General ≤220 words  (147)
+PASS  Application ≤200 words  (128)
+PASS  Organization ≤380 words  (269)
+PASS  Recommendation ≤300 words  (166)
+PASS  Recommendation matches gates, table, uncertainty rule and modifier (R-5)  (Defer vs Defer)
+PASS  TABLE INPUT says Not reached when a gate decided  (Not reached. PRIMARY UNCERTAINTY: Value — whether exploration improves)
+PASS  Response starts RECOMMENDATION: <value> — and matches Step 4  (Defer)
+PASS  Response slot NOW:  
+PASS  Response slot BEFORE EXECUTION:  
+PASS  Response slot BEFORE WIDER USE:  
+PASS  Response slot EXPERIMENT DESIGN:  
+PASS  Response slot DECISIVE FACTORS:  
+PASS  Response slot DRIVING FACTOR:  
+PASS  Decisive factors carry a level tag  
+PASS  Experiment design Not applicable for this category  
+PASS  Defer gate is not only an ordinary precondition (R-6)  Present — the trial-specific comparable-peer requirement has not been met; the owner can c
+PASS  Step 5 slot ADVOCATE CASE:  
+PASS  Step 5 slot RISK OFFICER CASE:  
+PASS  Step 5 slot NEAREST ALTERNATIVE:  
+PASS  Step 5 slot BIAS CHECK:  
+PASS  Step 5 slot DISTINGUISHING EVIDENCE:  
+PASS  BIAS CHECK covers all four  
+PASS  Confidence opens with one value  
+PASS  ZONE CONFIDENCE present  
+PASS  At least two categorized triggers  
+PASS  Trigger arrows name a recommendation  
+PASS  Trigger slot REVALIDATE:  
+PASS  Trigger slot REVERSAL CONDITION:  
+PASS  Trigger slot REVIEW DATE:  
+PASS  HANDOFF → Creation Agent  
+PASS  HANDOFF → Innovation Agent  
+PASS  HANDOFF → Promethean Agent  
+PASS  HANDOFF → Diffusion Agent  
+PASS  HANDOFF → Organizational Adoption Agent  
+PASS  HANDOFF → Landscape Agent  
+PASS  At least one EVIDENCE REQUEST  
+PASS  Evidence types from the list  []
+PASS  Readiness verdict wording (R-14)  []
+PASS  Diffusion stage word used here (I-17)  []
+PASS  Wording implies a test has started (R-7)  []
+PASS  Pair: general EVIDENCE BASE identical (R-4)  (Supplied cards vs Supplied cards)
+PASS  Pair: general MATURITY ZONE identical (R-4)  (Bleeding edge vs Bleeding edge)
+PASS  Pair: general MESSAGING SHIFT identical (R-4)  (Not observed vs Not observed)
+PASS  Pair: general RELATIVE ADVANTAGE identical (R-4)  (Unclear vs Unclear)
+PASS  Pair: application APPLICATION ZONE identical (R-4)  (Bleeding edge vs Bleeding edge)
+PASS  Pair: application FIT identical (R-4)  (Partial vs Partial)
+PASS  Pair: application ADVANTAGE OVER ALTERNATIVE identical (R-4)  (Marginal vs Marginal)
+PASS  Posture pair: recommendation or POSTURE EFFECT differs  (Defer vs Bounded experiment)
+INFO  Posture pair recommendations: Defer vs Bounded experiment
+SUMMARY: 79 pass, 0 fail, 0 flag
+----- adoption transfer
+PASS  Label EVIDENCE BASE uses an allowed value  (None)
+PASS  Label MATURITY ZONE uses an allowed value  (Bleeding edge)
+PASS  Label MESSAGING SHIFT uses an allowed value  (Not observed)
+PASS  Label RELATIVE ADVANTAGE uses an allowed value  (Unclear)
+PASS  Label APPLICATION ZONE uses an allowed value  (Bleeding edge)
+PASS  Label FIT uses an allowed value  (Partial)
+PASS  Label ADVANTAGE OVER ALTERNATIVE uses an allowed value  (Marginal)
+PASS  Label ORG POSTURE uses an allowed value  (Innovator/early adopter)
+PASS  Label CONSEQUENCE uses an allowed value  (Severe)
+PASS  Label REVERSIBILITY uses an allowed value  (Low)
+PASS  Label CONFIGURATION uses an allowed value  (Acceptable)
+PASS  Label DEFER GATE uses an allowed value  (Present)
+PASS  Label PRIMARY UNCERTAINTY uses an allowed value  (Feasibility)
+PASS  Label MODIFIER uses an allowed value  (not applied)
+PASS  Label RECOMMENDATION uses an allowed value  (Defer)
+PASS  General slot UNIT:  
+PASS  General slot PARENT:  
+PASS  General slot ZONE BASIS:  
+PASS  General slot DIFFUSION EVIDENCE:  
+PASS  General slot KEY UNCERTAINTY:  
+PASS  Application slot ZONE BASIS:  
+PASS  Application slot BEST ALTERNATIVE:  
+PASS  Application slot UPSTREAM READ:  
+PASS  Organization slot UNIT OF ANALYSIS:  
+PASS  Organization slot POSTURE GATE:  
+PASS  Organization slot SCOPING CONDITIONS:  
+PASS  Organization slot DEPARTURE:  
+PASS  Organization slot GATES:  
+PASS  Organization slot TABLE INPUT:  
+PASS  Organization slot POSTURE EFFECT:  
+PASS  Key uncertainty type  
+PASS  General ≤220 words  (108)
+PASS  Application ≤200 words  (86)
+PASS  Organization ≤380 words  (275)
+PASS  Recommendation ≤300 words  (212)
+PASS  Recommendation matches gates, table, uncertainty rule and modifier (R-5)  (Defer vs Defer)
+PASS  TABLE INPUT says Not reached when a gate decided  (Not reached.)
+PASS  Response starts RECOMMENDATION: <value> — and matches Step 4  (Defer)
+PASS  Response slot NOW:  
+PASS  Response slot BEFORE EXECUTION:  
+PASS  Response slot BEFORE WIDER USE:  
+PASS  Response slot EXPERIMENT DESIGN:  
+PASS  Response slot DECISIVE FACTORS:  
+PASS  Response slot DRIVING FACTOR:  
+PASS  Decisive factors carry a level tag  
+PASS  Experiment design Not applicable for this category  
+PASS  Defer gate is not only an ordinary precondition (R-6)  Present — a separate environment and de-identified test set are unconfirmed, hosted retent
+PASS  Step 5 slot ADVOCATE CASE:  
+PASS  Step 5 slot RISK OFFICER CASE:  
+PASS  Step 5 slot NEAREST ALTERNATIVE:  
+PASS  Step 5 slot BIAS CHECK:  
+PASS  Step 5 slot DISTINGUISHING EVIDENCE:  
+PASS  BIAS CHECK covers all four  
+PASS  Confidence opens with one value  
+PASS  ZONE CONFIDENCE present  
+PASS  At least two categorized triggers  
+PASS  Trigger arrows name a recommendation  
+PASS  Trigger slot REVALIDATE:  
+PASS  Trigger slot REVERSAL CONDITION:  
+PASS  Trigger slot REVIEW DATE:  
+PASS  HANDOFF → Creation Agent  
+PASS  HANDOFF → Innovation Agent  
+PASS  HANDOFF → Promethean Agent  
+PASS  HANDOFF → Diffusion Agent  
+PASS  HANDOFF → Organizational Adoption Agent  
+PASS  HANDOFF → Landscape Agent  
+PASS  At least one EVIDENCE REQUEST  
+PASS  Evidence types from the list  []
+PASS  Readiness verdict wording (R-14)  []
+PASS  Diffusion stage word used here (I-17)  []
+PASS  Wording implies a test has started (R-7)  []
+SUMMARY: 71 pass, 0 fail, 0 flag
+----- adoption consequence
+PASS  Label EVIDENCE BASE uses an allowed value  (Supplied cards)
+PASS  Label MATURITY ZONE uses an allowed value  (Bleeding edge)
+PASS  Label MESSAGING SHIFT uses an allowed value  (Not observed)
+PASS  Label RELATIVE ADVANTAGE uses an allowed value  (Unclear)
+PASS  Label APPLICATION ZONE uses an allowed value  (Bleeding edge)
+PASS  Label FIT uses an allowed value  (Absent)
+PASS  Label ADVANTAGE OVER ALTERNATIVE uses an allowed value  (Marginal)
+PASS  Label ORG POSTURE uses an allowed value  (Innovator/early adopter)
+PASS  Label CONSEQUENCE uses an allowed value  (Severe)
+PASS  Label REVERSIBILITY uses an allowed value  (Low)
+PASS  Label CONFIGURATION uses an allowed value  (Unacceptable)
+PASS  Label DEFER GATE uses an allowed value  (Present)
+PASS  Label PRIMARY UNCERTAINTY uses an allowed value  (Feasibility)
+PASS  Label MODIFIER uses an allowed value  (not applied)
+PASS  Label RECOMMENDATION uses an allowed value  (Reject for now)
+PASS  General slot UNIT:  
+PASS  General slot PARENT:  
+PASS  General slot ZONE BASIS:  
+PASS  General slot DIFFUSION EVIDENCE:  
+PASS  General slot KEY UNCERTAINTY:  
+PASS  Application slot ZONE BASIS:  
+PASS  Application slot BEST ALTERNATIVE:  
+PASS  Application slot UPSTREAM READ:  
+PASS  Organization slot UNIT OF ANALYSIS:  
+PASS  Organization slot POSTURE GATE:  
+PASS  Organization slot SCOPING CONDITIONS:  
+PASS  Organization slot DEPARTURE:  
+PASS  Organization slot GATES:  
+PASS  Organization slot TABLE INPUT:  
+PASS  Organization slot POSTURE EFFECT:  
+PASS  Key uncertainty type  
+PASS  General ≤220 words  (123)
+PASS  Application ≤200 words  (109)
+PASS  Organization ≤380 words  (210)
+PASS  Recommendation ≤300 words  (178)
+PASS  Recommendation matches gates, table, uncertainty rule and modifier (R-5)  (Reject for now vs Reject for now)
+PASS  TABLE INPUT says Not reached when a gate decided  (Not reached. PRIMARY UNCERTAINTY: Feasibility — reliable product-detai)
+PASS  Response starts RECOMMENDATION: <value> — and matches Step 4  (Reject for now)
+PASS  Response slot NOW:  
+PASS  Response slot BEFORE EXECUTION:  
+PASS  Response slot BEFORE WIDER USE:  
+PASS  Response slot EXPERIMENT DESIGN:  
+PASS  Response slot DECISIVE FACTORS:  
+PASS  Response slot DRIVING FACTOR:  
+PASS  Decisive factors carry a level tag  
+PASS  Experiment design Not applicable for this category  
+PASS  Step 5 slot ADVOCATE CASE:  
+PASS  Step 5 slot RISK OFFICER CASE:  
+PASS  Step 5 slot NEAREST ALTERNATIVE:  
+PASS  Step 5 slot BIAS CHECK:  
+PASS  Step 5 slot DISTINGUISHING EVIDENCE:  
+PASS  BIAS CHECK covers all four  
+PASS  Confidence opens with one value  
+PASS  ZONE CONFIDENCE present  
+PASS  At least two categorized triggers  
+PASS  Trigger arrows name a recommendation  
+PASS  Trigger slot REVALIDATE:  
+PASS  Trigger slot REVERSAL CONDITION:  
+PASS  Trigger slot REVIEW DATE:  
+PASS  HANDOFF → Creation Agent  
+PASS  HANDOFF → Innovation Agent  
+PASS  HANDOFF → Promethean Agent  
+PASS  HANDOFF → Diffusion Agent  
+PASS  HANDOFF → Organizational Adoption Agent  
+PASS  HANDOFF → Landscape Agent  
+PASS  At least one EVIDENCE REQUEST  
+PASS  Evidence types from the list  []
+PASS  Readiness verdict wording (R-14)  []
+PASS  Diffusion stage word used here (I-17)  []
+PASS  Wording implies a test has started (R-7)  []
+SUMMARY: 70 pass, 0 fail, 0 flag
