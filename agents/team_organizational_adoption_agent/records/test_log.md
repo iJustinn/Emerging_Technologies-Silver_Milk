@@ -23,9 +23,9 @@
 
 **Human §4 review (v1.0):**
 - **Swap test passes:** the two-person retailer is Not ready (D1, D8 Not ready); the staffed retailer is Undetermined, its gaps reduced to D1 Partially ready plus unknown approval and coordination roles. Step 1 and Step 2 labels are identical.
-- **Prerequisites stay conditions:** vendor terms, tool selection and management authorization are listed under EXECUTION GATES with owners and never become the gap.
+- **Prerequisites stay conditions:** vendor terms, tool selection and management authorization are listed under EXECUTION GATES and never become the gap. Contrast 1 lists two gates with "Owner: not stated" (vendor selection, term acceptance), which R-8 would treat as a D6 question.
 - **Lane is clean:** no adopt, experiment or vendor decision; six handoffs in each run.
 - **Missing-info case:** gives eight MORE INFO lines and asks first about D6 approval and stop authority.
 - **Transfer (SaaS coding agents)** passes with unchanged instructions: provisions stated for the IDE assistant are not extended to the agent (Insufficient evidence for D4 and D6), which is [Z]'s preserved v0.1 lesson.
 
-**Weaknesses:** W-0 to W-5 in `agent_record.md`. W-0 is the main one: F1 made every DEMAND label Moderate.
+**Weaknesses:** W-0 to W-7 in `agent_record.md`. W-0 is the main one: F1 made every DEMAND label Moderate.

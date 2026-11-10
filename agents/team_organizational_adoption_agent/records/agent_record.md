@@ -6,7 +6,7 @@
 | Lab | Team Lab 8: Synthesize Team SubAgent 6, Organizational Adoption of Emerging Technologies (2026-11-10) |
 | Agent / version | `agents/team_organizational_adoption_agent`, **1.0-team**. History: 0.9-team (preserved failure, T-58) → 1.0-team |
 | Scaffold | MASY1800_ET_Agent_Scaffold_v1_0, `FROZEN CORE INTACT` |
-| Repository | `github.com/iJustinn/Emerging_Technologies-Silver_Milk`, branch `lab-08-org-adoption`, tag `team_organizational_adoption_agent-v1.0-team`, promotion commit `0cd85fb`, plus record follow-up commits in the PR; the tag marks the final commit |
+| Repository | `github.com/iJustinn/Emerging_Technologies-Silver_Milk`, branch `lab-08-org-adoption`, tag `team_organizational_adoption_agent-v1.0-team`, promotion commit `0cd85fb`; the tag marks the final commit (PR #6) |
 | Governing question | Even if adoption is strategically appropriate, can this organization absorb, govern, and sustain the application, and what must change before it can? |
 
 ## Readiness framework (memo item 1)
@@ -71,7 +71,7 @@
   - [Z] abstained under its five-unknowns rule although its own sensitivity line gave the same verdict either way, and it judged only routine production.
   - [H]'s and [K]'s headlines barely changed between the two organizations.
   - [Z], [H] and [K] made vendor terms the main gap for the staffed team.
-  - [Z]'s DEMAND labels drifted with per-run retrieval.
+  - [Z]'s DEMAND labels drifted. The drift coincided with different retrieved sources; T-58 shows it persists with the evidence base fixed.
   - [H] and [Y] carried their own case wording into this case.
 - **Team v0.9 (T-58), preserved:** all valid; verdicts Not ready / Undetermined / Undetermined / Undetermined.
   - **Failure:** the DEMAND labels drifted across the pair (D2 and D3 High in the primary; D4 High in the contrast).
@@ -82,7 +82,7 @@
   - **Prerequisites:** they appear as conditions and gates.
   - **Transfer:** passes with unchanged instructions.
 - **Check proof (T-60):** each new check fails on the output it targets (`common_test_package/check_proof_on_targets.txt`).
-- **Claims traced (E-45 to E-49):** the five external sources cited by the final runs were retrieved on 2026-11-10 and matched. No label depends on a retrieved source.
+- **Claims traced (E-45 to E-49):** the five external sources cited by the final runs were retrieved on 2026-11-10 and matched, with caveats for E-45 (no year on the page) and E-49 (the run's wording is inference). No label depends on a retrieved source.
 
 ## Team decision (confirmed as written by Justin in the session, 2026-11-10)
 
@@ -114,17 +114,18 @@ The team delegated the choice of dissents to the operator (D-47). The two record
 - **W-0 (v1.0 failure, kept by team choice: the F1 fix over-corrected).** The default-Moderate rule (F1) made the DEMAND labels stable across the pair, but uninformatively so. F1 names "autonomous actions on systems" as its High example, yet both agentic runs (coding agents, agentic AI) still returned Moderate on every dimension. Justin chose to promote 1.0 with this recorded rather than run a v1.1 round.
   - **Result:** all eight labels are Moderate in all four v1.0 runs. That includes AI coding agents and agentic AI, which v0.9 rated High on up to six dimensions (for example D4 scoped tool permissions, D6 action limits).
   - **Effect:** the general level no longer distinguishes what different technologies demand. Readiness verdicts are unaffected, because DEMAND labels never enter a rating.
-  - **Status:** not revised in Lab 8 (team choice after the finding, D-49).
+  - **Status:** not revised in Lab 8 (team choice after the finding, D-53).
   - **Reopen if:** a later lab needs Step 1 to tell technologies apart. The likely fix is fixed High anchors per technology class, taken from a reconciled source pack (I-05, I-10).
 - **W-1 (COUNTS):** v1.0 contrast 1 wrote `COUNTS: Ready 3, …, Insufficient evidence 4`, but its lines give 2 and 5. The verdict is still correct by the table. The validator does not catch it; `check_org_adoption_lab08.py` does (I-22).
 - **W-2 (rating variance):** on the unchanged transfer case, D3 and D5 moved from Partially ready (v0.9) to Ready (v1.0). On the primary, D6 moved from Not ready to Insufficient evidence. All verdicts held, but single ratings are not stable between runs.
-- **W-3 (stricter than the candidates):** under R-8 plus the gate-dependent rule, the staffed team stays Undetermined, because the case does not say who approves an environment or holds stop authority. Four of five candidates called it conditionally ready. The team accepts this as the cost of not inventing approval roles.
+- **W-3 (stricter than the candidates):** under R-8 plus the gate-dependent rule, the staffed team stays Undetermined, because the case does not say who approves an environment or holds stop authority. Of the candidates, [L] and [K] called it conditionally ready for a bounded evaluation; [Y] and [H] withheld the evaluation; [Z] judged production (Build readiness first). The team accepts this as the cost of not inventing approval roles.
 - **W-4 (evidence types):** the Census card was typed `secondary` in the primary and `primary-historical` in contrast 1, despite the tie-break (carried from Lab 7's type drift).
 - **W-5:** one final run per case; all organizations hypothetical. The Fortino Ch. 9 citations come from [Z]'s candidate and were not re-inspected this lab. The project source `1800-Textbook.pdf` is readable in-project (I-13). C2 and C3 retrieved one source each in-run (STATUS: inspected-this-run), used as context only.
 - **W-6 (technology limit and untested branches):**
   - On the diffusion pair, `TECHNOLOGY LIMIT` is a run-dated inference typed `unverified`, not a sourced marker.
   - No final run reached `Ready` or `Ready after named conditions`, and three of the four final verdicts are the abstention (`Undetermined`). So the positive branches of the table are untested on runs; they are tested only by the check script.
   - T-53 ([Z]'s D4 drift) rests partly on L8-Z-C, whose effort label was not read at launch and cannot be read back from the chat.
+- **W-7 (specialty string):** v1.0 contrast 1 and contrast 3 rewrote `agent.specialty` (shortened or extended), although that string identifies saves. The runs were mapped by Run ID and file name instead.
 - **Candidate record gaps:** [K]'s agent record is the blank template, its `contrast_2` is a placeholder and its metadata specialty is the template text. [L]'s v0.1 weakness was hand-written, not a run (disclosed by [L]). [L]'s `readiness_framework.md` is not read by `build_prompt.py`, so it never reached a packet.
 
 ## Roles, contributions, and AI use

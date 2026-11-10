@@ -4,7 +4,7 @@
 |---|---|
 | Agent | `team_organizational_adoption_agent` **1.0-team** (inventory #6) |
 | Tag | `team_organizational_adoption_agent-v1.0-team` |
-| Commit | promotion commit `0cd85fb` on branch `lab-08-org-adoption`; record follow-ups in the PR; tag marks the final commit |
+| Commit | promotion commit `0cd85fb`; the tag marks the final commit (branch `lab-08-org-adoption`, PR #6) |
 | Frozen core | `FROZEN CORE INTACT` (`final_frozen_core_check.txt`) |
 
 ## SHA-256
