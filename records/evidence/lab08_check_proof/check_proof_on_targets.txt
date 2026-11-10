@@ -1,0 +1,38 @@
+# Proof that each new Lab 8 check fails on the output it targets (2026-11-10)
+# SYNTHETIC_* files are copies of team v0.9 outputs edited by Claude Code for this proof only; they are not ChatGPT output.
+== check_proof/SYNTHETIC_action_on_ready.json
+FAIL  No action for a dimension rated Ready (R-9)  ['3']
+== check_proof/SYNTHETIC_gate_as_gap.json
+FLAG  Gap reads as an execution gate (R-8)  D6 Governance/risk — vendor terms are not yet accepted, staffing and product-detail review cannot be
+== check_proof/SYNTHETIC_missing_more_info.json
+FAIL  Every Insufficient evidence dimension has a MORE INFO → line (R-11)  [7]
+== check_proof/SYNTHETIC_trigger_same.json
+FAIL  Triggers move the verdict (R-12)  
+== check_proof/SYNTHETIC_undetermined_with_notready.json
+FAIL  Verdict matches the table for the stage asked (R-7)  (Undetermined — more evidence vs Not ready)
+FAIL  Ladder status of the stage asked matches the verdict  (Blocked)
+FAIL  Undetermined only when no required dimension is Not ready  
+FAIL  Response starts READINESS VERDICT: <value> (<stage>) — matching Step 4  (('Not ready', 'Bounded evaluation'))
+FAIL  Triggers move the verdict (R-12)  
+== real candidate_zhong__primary.json
+FAIL  EVIDENCE BASE stated  
+FAIL  Application slot UPSTREAM READ:  
+FAIL  STAGE ASKED uses an allowed value  (None)
+FAIL  Organization slot EXECUTION GATES:  
+FAIL  Organization slot STAGE LADDER:  
+FAIL  Ladder: three stages, allowed values  {'PREPARATION': None, 'BOUNDED EVALUATION': None, 'ROUTINE OPERATION': None}
+FAIL  Response starts READINESS VERDICT: <value> (<stage>) — matching Step 4  (None)
+FAIL  Response slot MOST CONSEQUENTIAL MISSING FACTOR:  
+FAIL  Response slot NOW:  
+FAIL  Triggers move the verdict (R-12)  
+FAIL  INTAKE MISSING line  
+FAIL  HANDOFF → Creation Agent  
+FAIL  HANDOFF → Innovation Agent  
+FAIL  HANDOFF → Promethean Agent  
+FAIL  HANDOFF → Diffusion Agent  
+== real pair candidate_zhong primary vs contrast_1
+PASS  Pair: same technology and application  
+FAIL  Pair: DEMAND labels identical (R-2)  (['Moderate', 'Moderate', 'Moderate', 'Moderate', 'Moderate', 'High', 'Moderate', 'Moderate'] vs ['Moderate', 'Moderate', 'Moderate', 'High', 'Moderate', 'High', 'Moderate', 'Moderate'])
+PASS  Pair: FIT identical (R-4)  
+== real Huang v02_contrast_2.json (individual package)
+FAIL  Exactly the 13 frozen top-level keys (R-16)  ['$schema', 'title']
