@@ -6,7 +6,7 @@
 | Lab | Team Lab 8: Synthesize Team SubAgent 6, Organizational Adoption of Emerging Technologies (2026-11-10) |
 | Agent / version | `agents/team_organizational_adoption_agent`, **1.0-team**. History: 0.9-team (preserved failure, T-58) → 1.0-team |
 | Scaffold | MASY1800_ET_Agent_Scaffold_v1_0, `FROZEN CORE INTACT` |
-| Repository | `github.com/iJustinn/Emerging_Technologies-Silver_Milk`, branch `lab-08-org-adoption`, tag `team_organizational_adoption_agent-v1.0-team`, commit `COMMIT_PLACEHOLDER` |
+| Repository | `github.com/iJustinn/Emerging_Technologies-Silver_Milk`, branch `lab-08-org-adoption`, tag `team_organizational_adoption_agent-v1.0-team`, promotion commit `0cd85fb`, plus record follow-up commits in the PR; the tag marks the final commit |
 | Governing question | Even if adoption is strategically appropriate, can this organization absorb, govern, and sustain the application, and what must change before it can? |
 
 ## Readiness framework (memo item 1)
@@ -54,7 +54,7 @@
 
 ## Three-level finding (final v1.0 runs)
 
-- **ET generally (text-to-image diffusion, supplied cards):** the DEMAND labels are identical across the pair, **all eight Moderate**. They are also all Moderate for AI coding agents and for agentic AI in the other two runs (see W-0). TECHNOLOGY LIMIT: generated imagery cannot be taken as a faithful product representation without verification.
+- **ET generally (text-to-image diffusion, supplied cards):** the DEMAND labels are identical across the pair, **all eight Moderate**. They are also all Moderate for AI coding agents and for agentic AI in the other two runs (see W-0). TECHNOLOGY LIMIT: generated imagery cannot be taken as a faithful product representation without verification. On this pair it is a run-dated inference with no source, although the rule asks for a dated marker (W-6).
 - **ET for this application (internal concept boards):** `FIT: Partial`, identical across the pair. Exploration is supported, but exact product-detail fidelity needs human review.
 - **In this organization:**
 
@@ -76,7 +76,7 @@
 - **Team v0.9 (T-58), preserved:** all valid; verdicts Not ready / Undetermined / Undetermined / Undetermined.
   - **Failure:** the DEMAND labels drifted across the pair (D2 and D3 High in the primary; D4 High in the contrast).
   - **Weaknesses:** a gate-dependent unknown (D4) lowered the contrast indirectly; "OPERATING OWNER: None currently exists" was forced where the case was silent.
-- **Team v1.0 (T-59):** all four runs valid; the pair's DEMAND and FIT labels are identical. Mechanical checks pass except one: contrast 1's COUNTS line is wrong (W-1). Human §4 review passes:
+- **Team v1.0 (T-59):** all four runs valid; the pair's DEMAND and FIT labels are identical. Mechanical checks pass except one: contrast 1's COUNTS line is wrong (W-1). Human §4 review passes (the check_common FLAG lines were read by hand: "creative tool" in a D7 reason is about the technology; "verified" refers to case facts):
   - **Swap test:** the verdict changes through case facts.
   - **Lane:** no adopt, experiment or vendor decision.
   - **Prerequisites:** they appear as conditions and gates.
@@ -111,16 +111,20 @@ The team delegated the choice of dissents to the operator (D-47). The two record
 
 ## Remaining limitations
 
-- **W-0 (main limitation: the F1 fix over-corrected).** The default-Moderate rule (F1) made the DEMAND labels stable across the pair, but uninformatively so.
+- **W-0 (v1.0 failure, kept by team choice: the F1 fix over-corrected).** The default-Moderate rule (F1) made the DEMAND labels stable across the pair, but uninformatively so. F1 names "autonomous actions on systems" as its High example, yet both agentic runs (coding agents, agentic AI) still returned Moderate on every dimension. Justin chose to promote 1.0 with this recorded rather than run a v1.1 round.
   - **Result:** all eight labels are Moderate in all four v1.0 runs. That includes AI coding agents and agentic AI, which v0.9 rated High on up to six dimensions (for example D4 scoped tool permissions, D6 action limits).
   - **Effect:** the general level no longer distinguishes what different technologies demand. Readiness verdicts are unaffected, because DEMAND labels never enter a rating.
-  - **Status:** not revised in Lab 8 (no second round was planned).
+  - **Status:** not revised in Lab 8 (team choice after the finding, D-49).
   - **Reopen if:** a later lab needs Step 1 to tell technologies apart. The likely fix is fixed High anchors per technology class, taken from a reconciled source pack (I-05, I-10).
 - **W-1 (COUNTS):** v1.0 contrast 1 wrote `COUNTS: Ready 3, …, Insufficient evidence 4`, but its lines give 2 and 5. The verdict is still correct by the table. The validator does not catch it; `check_org_adoption_lab08.py` does (I-22).
-- **W-2 (rating variance):** on the unchanged transfer case, D3 and D5 moved from Partially ready (v0.9) to Ready (v1.0). The verdict was Undetermined both times, but single ratings are not stable between runs.
+- **W-2 (rating variance):** on the unchanged transfer case, D3 and D5 moved from Partially ready (v0.9) to Ready (v1.0). On the primary, D6 moved from Not ready to Insufficient evidence. All verdicts held, but single ratings are not stable between runs.
 - **W-3 (stricter than the candidates):** under R-8 plus the gate-dependent rule, the staffed team stays Undetermined, because the case does not say who approves an environment or holds stop authority. Four of five candidates called it conditionally ready. The team accepts this as the cost of not inventing approval roles.
 - **W-4 (evidence types):** the Census card was typed `secondary` in the primary and `primary-historical` in contrast 1, despite the tie-break (carried from Lab 7's type drift).
-- **W-5:** one final run per case; all organizations hypothetical. The project source `1800-Textbook.pdf` is readable in-project (I-13). C2 and C3 retrieved one source each in-run (STATUS: inspected-this-run), used as context only.
+- **W-5:** one final run per case; all organizations hypothetical. The Fortino Ch. 9 citations come from [Z]'s candidate and were not re-inspected this lab. The project source `1800-Textbook.pdf` is readable in-project (I-13). C2 and C3 retrieved one source each in-run (STATUS: inspected-this-run), used as context only.
+- **W-6 (technology limit and untested branches):**
+  - On the diffusion pair, `TECHNOLOGY LIMIT` is a run-dated inference typed `unverified`, not a sourced marker.
+  - No final run reached `Ready` or `Ready after named conditions`, and three of the four final verdicts are the abstention (`Undetermined`). So the positive branches of the table are untested on runs; they are tested only by the check script.
+  - T-53 ([Z]'s D4 drift) rests partly on L8-Z-C, whose effort label was not read at launch and cannot be read back from the chat.
 - **Candidate record gaps:** [K]'s agent record is the blank template, its `contrast_2` is a placeholder and its metadata specialty is the template text. [L]'s v0.1 weakness was hand-written, not a run (disclosed by [L]). [L]'s `readiness_framework.md` is not read by `build_prompt.py`, so it never reached a packet.
 
 ## Roles, contributions, and AI use
@@ -142,7 +146,7 @@ The team delegated the choice of dissents to the operator (D-47). The two record
     - retrieving web sources for E-45 to E-49.
   - ChatGPT (Work mode, GPT-6.1 Sol, Light, project MASY-1800) generated all 18 agent responses, saved unedited; no JSON repairs.
   - During the runs the ChatGPT interface switched to Chinese and back to Chat mode. The launcher's check stopped eight sends, which were never submitted, and one (L8-L-P) was relaunched. L8-Z-C was launched before the check read the effort label (Work mode and GPT-6.1 Sol were confirmed).
-  - Justin supplied the answers recording decisions D-43 to D-51 in the session. AI assistance identified differences and proposed options; the decisions came through Justin's answers. Claude Code drafted the rule wording, which Justin ratified as proposed in the session. The choice of dissents was delegated by Justin and is recorded as delegated (D-47).
+  - Justin supplied the answers recording decisions D-43 to D-53 in the session. AI assistance identified differences and proposed options; the decisions came through Justin's answers. Claude Code drafted the rule wording, which Justin ratified as proposed in the session. The choice of dissents was delegated by Justin and is recorded as delegated (D-47).
 
 ## Final-project handoff
 

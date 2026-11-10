@@ -36,3 +36,8 @@ FAIL  Pair: DEMAND labels identical (R-2)  (['Moderate', 'Moderate', 'Moderate',
 PASS  Pair: FIT identical (R-4)  
 == real Huang v02_contrast_2.json (individual package)
 FAIL  Exactly the 13 frozen top-level keys (R-16)  ['$schema', 'title']
+== pair check on a wrong pair (primary vs. transfer contrast_2), added after the advisor review
+FAIL  Pair: same technology and application strings  
+PASS  Pair: different files  
+PASS  Pair: DEMAND labels identical (R-2)  (['Moderate', 'Moderate', 'Moderate', 'Moderate', 'Moderate', 'Moderate', 'Moderate', 'Moderate'] vs ['Moderate', 'Moderate', 'Moderate', 'Moderate', 'Moderate', 'Moderate', 'Moderate', 'Moderate'])
+PASS  Pair: FIT identical (R-4)  

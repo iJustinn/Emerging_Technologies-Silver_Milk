@@ -66,10 +66,11 @@ PASS  HANDOFF → Adoption Agent
 PASS  HANDOFF → Landscape Agent  
 PASS  Evidence types from the list  []
 PASS  Adoption or vendor decision wording (R-14)  []
-PASS  Pair: same technology and application  
+PASS  Pair: same technology and application strings  
+PASS  Pair: different files  
 PASS  Pair: DEMAND labels identical (R-2)  (['Moderate', 'Moderate', 'Moderate', 'Moderate', 'Moderate', 'Moderate', 'Moderate', 'Moderate'] vs ['Moderate', 'Moderate', 'Moderate', 'Moderate', 'Moderate', 'Moderate', 'Moderate', 'Moderate'])
 PASS  Pair: FIT identical (R-4)  
-SUMMARY: 60 pass, 0 fail, 0 flag
+SUMMARY: 61 pass, 0 fail, 0 flag
 == team_v1_0__contrast_1
 PASS  General ≤220 words  (147 words)
 PASS  Org/industry words in general level  []

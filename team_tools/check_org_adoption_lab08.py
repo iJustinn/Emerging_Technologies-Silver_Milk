@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Lab 8 Organizational Adoption checks, run in addition to check_common.py.
 
-Usage: python3 check_org_adoption_lab08.py <response.json> [--pair <other_response.json>]
+Usage: python3 check_org_adoption_lab08.py <response.json> [--pair <other_response.json> --case <case.json> --pair-case <other_case.json>]
   --pair  compare Step 1 and Step 2 labels with a run on the SAME technology and application (never the transfer case)
 FLAG = needs a human read, not an automatic failure.
 """
@@ -10,6 +10,7 @@ from pathlib import Path
 
 ap = argparse.ArgumentParser()
 ap.add_argument("response"); ap.add_argument("--pair")
+ap.add_argument("--case"); ap.add_argument("--pair-case")
 a = ap.parse_args()
 out = []
 def chk(name, ok, detail=""): out.append(f"{'PASS' if ok else 'FAIL'}  {name}  {detail}")
@@ -142,7 +143,12 @@ out.append(("FLAG" if lane else "PASS") + "  Adoption or vendor decision wording
 # Pair: Step 1 and Step 2 labels identical on the same technology and application (R-2, R-4)
 if a.pair:
     p = json.load(open(a.pair))
-    chk("Pair: same technology and application", True)
+    if a.case and a.pair_case:
+        c1, c2 = json.load(open(a.case)), json.load(open(a.pair_case))
+        chk("Pair: same technology and application strings", c1["emerging_technology"] == c2["emerging_technology"] and c1["intended_application"] == c2["intended_application"])
+    else:
+        out.append("FLAG  Pair: pass --case and --pair-case to confirm the same technology and application  ")
+    chk("Pair: different files", Path(a.pair).resolve() != Path(a.response).resolve())
     chk("Pair: DEMAND labels identical (R-2)", demands(g) == demands(p["general_et_finding"]), f"({[v for _, v in demands(g)]} vs {[v for _, v in demands(p['general_et_finding'])]})")
     chk("Pair: FIT identical (R-4)", fit == lab(p["application_finding"], "FIT", r"Strong|Partial|Absent"))
 

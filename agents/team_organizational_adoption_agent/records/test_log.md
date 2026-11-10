@@ -19,7 +19,7 @@
 | T-50 to T-57, candidates | 10 runs valid (validator and strict schema). See `lab08_candidate_comparison.md` |
 | T-58 v0.9, 4 cases | Valid. Not ready / Undetermined / Undetermined / Undetermined. **Preserved failure:** DEMAND labels drift across the pair (R-2 FAIL in `checks_v0_9.txt`). Weaknesses: gate-dependent unknown (contrast D4); OPERATING OWNER forced to "None currently exists" for silence |
 | T-59 v1.0, 4 cases | Valid. Same verdicts. Pair DEMAND and FIT identical. One mechanical FAIL: contrast 1 COUNTS (W-1). `final_checks_v1_0.txt` |
-| T-60 check proof | Every new check fails or flags on its target (5 synthetic edited copies, 3 real outputs). `common_test_package/check_proof_on_targets.txt` |
+| T-60 check proof | Every new check fails or flags on its target (5 synthetic edited copies, 4 real outputs, including a wrong pair). `common_test_package/check_proof_on_targets.txt` |
 
 **Human §4 review (v1.0):**
 - **Swap test passes:** the two-person retailer is Not ready (D1, D8 Not ready); the staffed retailer is Undetermined, its gaps reduced to D1 Partially ready plus unknown approval and coordination roles. Step 1 and Step 2 labels are identical.
