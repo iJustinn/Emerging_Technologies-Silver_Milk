@@ -62,9 +62,9 @@ For internal concept boards at the hypothetical retailer: aggressive posture, **
 - **Roles (Lab 7, confirmed by Justin in the session; all five present).** Justin Zhong: technical operator and Brightspace submitter. Nini Huang: facilitator. Dian Li: evidence keeper. Yuanxiang Zhang: skeptic. Karuna Srivastava: transfer-test owner and PR reviewer.
 - **Contributions.** See `contribution_lineage.md` and the repo's `records/contribution_record.md`.
 - **AI use and verification:**
-  - Justin Zhong coordinated the technical work, with Claude Code assisting with: reading the five candidates, building the test package, browser automation of ChatGPT web through Ego Lite (18 runs: 10 candidate, 4 v0.9, 4 v1.0), drafting the comparison, team instructions, check script and records, and web retrieval for E-40 to E-44.
-  - ChatGPT (Work mode, GPT-6.1 Sol, Light, project MASY-1800) produced every agent response. Responses are saved unedited; no JSON repairs. Claude Code's first saves of the 14 runs then collected were garbled or empty because of its copy script; they held no usable content and were replaced by re-copying the same replies from the same chats.
-  - All decisions recorded here (D-36 to D-41) came through Justin's answers in the session. AI exposed the differences and proposed options; it did not settle them. The rule wording was drafted by Claude Code and ratified as proposed.
+  - Justin Zhong coordinated the technical work. Claude Code assisted by reading the five candidates, building the test package, automating ChatGPT web through Ego Lite (18 runs: 10 candidate, 4 v0.9, 4 v1.0), drafting the comparison, team instructions, check script and records, and retrieving web sources for E-40 to E-44 (E-44 was blocked).
+  - ChatGPT (Work mode, GPT-6.1 Sol, Light, project MASY-1800) generated all 18 agent responses. Responses are saved unedited; no JSON repairs. Initial collection of the 14 runs then available failed because of errors in the Claude Code copy script: saved files were garbled or empty and held no usable content. The same replies were re-copied from the same chats.
+  - Justin supplied the answers recording decisions D-36 to D-41 in the session. AI assistance identified differences and proposed options; the decisions came through Justin's answers. Claude Code drafted the rule wording, which Justin ratified as proposed in the session.
 
 ## Final-project handoff
 
