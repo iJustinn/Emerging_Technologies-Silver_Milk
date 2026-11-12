@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "AI coding agents: LLM-based software agents that read a codebase, plan multi-step changes, edit files, and run commands/tests with varying human approval (e.g., Claude Code, OpenAI Codex, GitHub Copilot agent mode)",
+  "intended_application": "Assisting developers with maintenance of existing code, test generation, and code-review preparation on internal (non-customer-facing) legacy integration systems",
+  "organization": "Mid-size B2B SaaS company (illustrative) with an internal software engineering group of about 300 developers",
+  "industry_sector": "Business software; not a supervised financial institution; holds an annual SOC 2 Type II audit and customer security commitments",
+  "business_need": "Large maintenance backlog on aging integration code, thin test coverage, and slow code-review cycles that delay product changes",
+  "users_stakeholders": "Application developers, engineering managers, the VP Engineering, the Director of Platform Engineering, the security lead, finance, and SOC 2 auditors",
+  "adoption_posture": "Fast follower: adopts developer technologies once peer software companies show routine use",
+  "capabilities_constraints": "A 12-person platform engineering team runs developer tooling and CI, with mandatory human code review and test gates before any merge; the VP Engineering sponsors this application and reviews it quarterly; the Director of Platform Engineering has accepted permanent ownership of the agent service; an enterprise agreement with no-training data terms, single sign-on and audit logging is already in place for an IDE coding assistant, and the security lead approves tool permissions; the assistant reached about 70% weekly use after a six-week rollout led by engineering managers; finance has approved a two-year budget line covering seats and metered usage",
+  "risk_consequence_context": "Moderate consequence: defects are mostly reversible through redeploys within hours; customer data and SOC 2 commitments must still be protected",
+  "management_question": "Even if adoption is strategically appropriate, can the company actually absorb, govern and sustain routine production use of AI coding agents for this application, what is the most consequential readiness gap, and what must change before management should proceed?",
+  "time_horizon": "24 months (same horizon as the primary case)",
+  "additional_context": "Context-contrast case: same technology, same application and same engineering-group size as the primary, while the organization's capabilities and constraints change, so the readiness conclusion should change while the general and application findings stay the same. Unit of analysis: the engineering group plus the governance functions it depends on. Illustrative organization type."
+}

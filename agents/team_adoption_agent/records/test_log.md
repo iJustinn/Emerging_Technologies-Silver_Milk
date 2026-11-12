@@ -2,7 +2,7 @@
 
 **Runtime:** ChatGPT web in Ego Lite; Work mode; composer "GPT-6.1 Sol Light"; fresh chat per run in project MASY-1800 (instructions empty; Memory Default; Space access Enabled, read 2026-11-03). Source `1800-Textbook.pdf` (read 2026-11-03). **The team chose Light on the understanding it was the lowest stop; the operator then found None and Minimal listed below it.** Light was retained pending team review (D-37). Packet attached, message `[Run <ID>] …`. Map: `common_test_package/runmap.txt` (ZIP).
 
-**Handling incidents:** the first two collection attempts failed (empty clipboard, then the user prompt copied); the third garbled non-ASCII characters through a shell locale. All were Claude Code script faults, were discarded, and the same replies were re-copied under UTF-8. The team's v0.9 review was re-run on the clean copies.
+**Handling incidents:** the first two collection attempts failed (empty clipboard, then the user prompt copied); the third garbled non-ASCII characters through a shell locale. These failures arose in the Claude Code collection script; the failed copies were discarded, and the same replies were re-copied under UTF-8. The team's v0.9 review was re-run on the clean copies.
 
 | Test | Result |
 |---|---|

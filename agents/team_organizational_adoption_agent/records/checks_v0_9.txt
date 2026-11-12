@@ -1,0 +1,281 @@
+== team_v0_9__primary
+PASS  General ≤220 words  (144 words)
+FLAG  Org/industry words in general level  ['evaluation']
+PASS  Every evidence note starts with STATUS  bad indices []
+PASS  No Markdown links in sources  []
+PASS  'verified'/'checked' wording (allowed only if retrieved)  (0)
+PASS  HANDOFF lines present  (6)
+PASS  No empty arrays  []
+PASS  agent.version matches metadata  (0.9-team vs 0.9-team)
+INFO  application_finding words: 126
+INFO  organization_specific_finding words: 407
+PASS  Exactly the 13 frozen top-level keys (R-16)  []
+PASS  EVIDENCE BASE stated  
+PASS  Eight DEMAND lines, D1–D8, one value each  (8)
+PASS  TECHNOLOGY LIMIT present  
+PASS  General ≤220 words  (144)
+PASS  FIT uses an allowed value  (Partial)
+PASS  Application slot TASK SIDE:  
+PASS  Application slot TECHNOLOGY SIDE:  
+PASS  Application slot FIT GAP:  
+PASS  Application slot APPLICATION ADDS:  
+PASS  Application slot UPSTREAM READ:  
+PASS  Application ≤200 words  (126)
+PASS  STAGE ASKED uses an allowed value  (Bounded evaluation)
+PASS  Eight dimension lines D1–D8, one rating each  ([1, 2, 3, 4, 5, 6, 7, 8])
+PASS  Organization slot PREMISE:  
+PASS  Organization slot UNIT OF ANALYSIS:  
+PASS  Organization slot STRENGTHS:  
+PASS  Organization slot GAPS THAT COULD CAUSE FAILURE:  
+PASS  Organization slot EXECUTION GATES:  
+PASS  Organization slot OPERATING OWNER:  
+PASS  Organization slot VERDICT BASIS:  
+PASS  Organization slot VERDICT SENSITIVITY:  
+PASS  Organization slot STAGE LADDER:  
+PASS  Organization slot FAILURE LOCUS:  
+PASS  'Unknown' wording behind a non-Insufficient rating (R-5)  []
+PASS  COUNTS match the eight lines  (('0', '0', '3', '5') vs [0, 0, 3, 5])
+PASS  Verdict matches the table for the stage asked (R-7)  (Not ready vs Not ready)
+PASS  Ladder: three stages, allowed values  {'PREPARATION': 'Supported', 'BOUNDED EVALUATION': 'Blocked', 'ROUTINE OPERATION': 'Blocked'}
+PASS  Ladder status of the stage asked matches the verdict  (Blocked)
+PASS  Organization ≤480 words  (407)
+PASS  Response starts READINESS VERDICT: <value> (<stage>) — matching Step 4  (('Not ready', 'Bounded evaluation'))
+PASS  Response slot MOST CONSEQUENTIAL GAP:  
+PASS  Response slot MOST CONSEQUENTIAL MISSING FACTOR:  
+PASS  Response slot NOW:  
+PASS  Most consequential gap is a dimension rated Partially ready or Not ready  (D8 Not ready)
+PASS  Gap reads as an execution gate (R-8)  D8 Operating ownership — without an accountable lead, staffing and product-detail review cannot be c
+PASS  Actions: dimension, GAP, OWNER (stated/inferred/to be assigned by), DONE WHEN  (3)
+PASS  No action for a dimension rated Ready (R-9)  []
+PASS  Generic change-management action (R-9)  []
+PASS  Recommendation ≤280 words  (206)
+PASS  Confidence opens with one value  
+PASS  Step 5 slot COMPETING READING:  
+PASS  Step 5 slot STRONGEST CASE AGAINST:  
+PASS  Step 5 slot DISTINGUISHING EVIDENCE:  
+PASS  At least one TRIGGER [D<n>]  (1)
+PASS  Triggers move the verdict (R-12)  
+PASS  REVIEW DATE present  
+PASS  Every Insufficient evidence dimension has a MORE INFO → line (R-11)  []
+PASS  INTAKE MISSING line  
+PASS  HANDOFF → Creation Agent  
+PASS  HANDOFF → Innovation Agent  
+PASS  HANDOFF → Promethean Agent  
+PASS  HANDOFF → Diffusion Agent  
+PASS  HANDOFF → Adoption Agent  
+PASS  HANDOFF → Landscape Agent  
+PASS  Evidence types from the list  []
+PASS  Adoption or vendor decision wording (R-14)  []
+PASS  Pair: same technology and application  
+FAIL  Pair: DEMAND labels identical (R-2)  (['Moderate', 'High', 'High', 'Moderate', 'Moderate', 'High', 'Moderate', 'Moderate'] vs ['Moderate', 'Moderate', 'Moderate', 'High', 'Moderate', 'High', 'Moderate', 'Moderate'])
+PASS  Pair: FIT identical (R-4)  
+SUMMARY: 59 pass, 1 fail, 0 flag
+== team_v0_9__contrast_1
+PASS  General ≤220 words  (158 words)
+PASS  Org/industry words in general level  []
+PASS  Every evidence note starts with STATUS  bad indices []
+PASS  No Markdown links in sources  []
+FLAG  'verified'/'checked' wording (allowed only if retrieved)  (4)
+PASS  HANDOFF lines present  (6)
+PASS  No empty arrays  []
+PASS  agent.version matches metadata  (0.9-team vs 0.9-team)
+INFO  application_finding words: 112
+INFO  organization_specific_finding words: 355
+PASS  Exactly the 13 frozen top-level keys (R-16)  []
+PASS  EVIDENCE BASE stated  
+PASS  Eight DEMAND lines, D1–D8, one value each  (8)
+PASS  TECHNOLOGY LIMIT present  
+PASS  General ≤220 words  (158)
+PASS  FIT uses an allowed value  (Partial)
+PASS  Application slot TASK SIDE:  
+PASS  Application slot TECHNOLOGY SIDE:  
+PASS  Application slot FIT GAP:  
+PASS  Application slot APPLICATION ADDS:  
+PASS  Application slot UPSTREAM READ:  
+PASS  Application ≤200 words  (112)
+PASS  STAGE ASKED uses an allowed value  (Bounded evaluation)
+PASS  Eight dimension lines D1–D8, one rating each  ([1, 2, 3, 4, 5, 6, 7, 8])
+PASS  Organization slot PREMISE:  
+PASS  Organization slot UNIT OF ANALYSIS:  
+PASS  Organization slot STRENGTHS:  
+PASS  Organization slot GAPS THAT COULD CAUSE FAILURE:  
+PASS  Organization slot EXECUTION GATES:  
+PASS  Organization slot OPERATING OWNER:  
+PASS  Organization slot VERDICT BASIS:  
+PASS  Organization slot VERDICT SENSITIVITY:  
+PASS  Organization slot STAGE LADDER:  
+PASS  Organization slot FAILURE LOCUS:  
+PASS  'Unknown' wording behind a non-Insufficient rating (R-5)  []
+PASS  COUNTS match the eight lines  (('2', '1', '0', '5') vs [2, 1, 0, 5])
+PASS  Verdict matches the table for the stage asked (R-7)  (Undetermined — more evidence vs Undetermined — more evidence)
+PASS  Ladder: three stages, allowed values  {'PREPARATION': 'Supported', 'BOUNDED EVALUATION': 'Undetermined', 'ROUTINE OPERATION': 'Not assessed'}
+PASS  Ladder status of the stage asked matches the verdict  (Undetermined)
+PASS  Undetermined only when no required dimension is Not ready  
+PASS  Organization ≤480 words  (355)
+PASS  Response starts READINESS VERDICT: <value> (<stage>) — matching Step 4  (('Undetermined — more evidence', 'Bounded evaluation'))
+PASS  Response slot MOST CONSEQUENTIAL GAP:  
+PASS  Response slot MOST CONSEQUENTIAL MISSING FACTOR:  
+PASS  Response slot NOW:  
+PASS  Most consequential gap is a dimension rated Partially ready or Not ready  (D1 Partially ready)
+PASS  Gap reads as an execution gate (R-8)  D1 — prospective sponsorship does not establish active evaluation decision and stop authority.
+PASS  Actions: dimension, GAP, OWNER (stated/inferred/to be assigned by), DONE WHEN  (1)
+PASS  No action for a dimension rated Ready (R-9)  []
+PASS  Generic change-management action (R-9)  []
+PASS  Recommendation ≤280 words  (151)
+PASS  Confidence opens with one value  
+PASS  Step 5 slot COMPETING READING:  
+PASS  Step 5 slot STRONGEST CASE AGAINST:  
+PASS  Step 5 slot DISTINGUISHING EVIDENCE:  
+PASS  At least one TRIGGER [D<n>]  (2)
+PASS  Triggers move the verdict (R-12)  
+PASS  REVIEW DATE present  
+PASS  Every Insufficient evidence dimension has a MORE INFO → line (R-11)  []
+PASS  INTAKE MISSING line  
+PASS  HANDOFF → Creation Agent  
+PASS  HANDOFF → Innovation Agent  
+PASS  HANDOFF → Promethean Agent  
+PASS  HANDOFF → Diffusion Agent  
+PASS  HANDOFF → Adoption Agent  
+PASS  HANDOFF → Landscape Agent  
+PASS  Evidence types from the list  []
+PASS  Adoption or vendor decision wording (R-14)  []
+SUMMARY: 58 pass, 0 fail, 0 flag
+== team_v0_9__contrast_2
+PASS  General ≤220 words  (161 words)
+PASS  Org/industry words in general level  []
+PASS  Every evidence note starts with STATUS  bad indices []
+PASS  No Markdown links in sources  []
+PASS  'verified'/'checked' wording (allowed only if retrieved)  (0)
+PASS  HANDOFF lines present  (6)
+PASS  No empty arrays  []
+PASS  agent.version matches metadata  (0.9-team vs 0.9-team)
+INFO  application_finding words: 91
+INFO  organization_specific_finding words: 330
+PASS  Exactly the 13 frozen top-level keys (R-16)  []
+PASS  EVIDENCE BASE stated  
+PASS  Eight DEMAND lines, D1–D8, one value each  (8)
+PASS  TECHNOLOGY LIMIT present  
+PASS  General ≤220 words  (161)
+PASS  FIT uses an allowed value  (Partial)
+PASS  Application slot TASK SIDE:  
+PASS  Application slot TECHNOLOGY SIDE:  
+PASS  Application slot FIT GAP:  
+PASS  Application slot APPLICATION ADDS:  
+PASS  Application slot UPSTREAM READ:  
+PASS  Application ≤200 words  (91)
+PASS  STAGE ASKED uses an allowed value  (Routine operation)
+PASS  Eight dimension lines D1–D8, one rating each  ([1, 2, 3, 4, 5, 6, 7, 8])
+PASS  Organization slot PREMISE:  
+PASS  Organization slot UNIT OF ANALYSIS:  
+PASS  Organization slot STRENGTHS:  
+PASS  Organization slot GAPS THAT COULD CAUSE FAILURE:  
+PASS  Organization slot EXECUTION GATES:  
+PASS  Organization slot OPERATING OWNER:  
+PASS  Organization slot VERDICT BASIS:  
+PASS  Organization slot VERDICT SENSITIVITY:  
+PASS  Organization slot STAGE LADDER:  
+PASS  Organization slot FAILURE LOCUS:  
+PASS  'Unknown' wording behind a non-Insufficient rating (R-5)  []
+PASS  COUNTS match the eight lines  (('2', '2', '0', '4') vs [2, 2, 0, 4])
+PASS  Verdict matches the table for the stage asked (R-7)  (Undetermined — more evidence vs Undetermined — more evidence)
+PASS  Ladder: three stages, allowed values  {'PREPARATION': 'Supported', 'BOUNDED EVALUATION': 'Not assessed', 'ROUTINE OPERATION': 'Undetermined'}
+PASS  Ladder status of the stage asked matches the verdict  (Undetermined)
+PASS  Undetermined only when no required dimension is Not ready  
+PASS  Organization ≤480 words  (330)
+PASS  Response starts READINESS VERDICT: <value> (<stage>) — matching Step 4  (('Undetermined — more evidence', 'Routine operation'))
+PASS  Response slot MOST CONSEQUENTIAL GAP:  
+PASS  Response slot MOST CONSEQUENTIAL MISSING FACTOR:  
+PASS  Response slot NOW:  
+PASS  Most consequential gap is a dimension rated Partially ready or Not ready  (D3 Partially ready)
+PASS  Gap reads as an execution gate (R-8)  D3 — thin legacy test coverage limits the protection supplied by existing merge gates.
+PASS  Actions: dimension, GAP, OWNER (stated/inferred/to be assigned by), DONE WHEN  (3)
+PASS  No action for a dimension rated Ready (R-9)  []
+PASS  Generic change-management action (R-9)  []
+PASS  Recommendation ≤280 words  (192)
+PASS  Confidence opens with one value  
+PASS  Step 5 slot COMPETING READING:  
+PASS  Step 5 slot STRONGEST CASE AGAINST:  
+PASS  Step 5 slot DISTINGUISHING EVIDENCE:  
+PASS  At least one TRIGGER [D<n>]  (2)
+PASS  Triggers move the verdict (R-12)  
+PASS  REVIEW DATE present  
+PASS  Every Insufficient evidence dimension has a MORE INFO → line (R-11)  []
+PASS  INTAKE MISSING line  
+PASS  HANDOFF → Creation Agent  
+PASS  HANDOFF → Innovation Agent  
+PASS  HANDOFF → Promethean Agent  
+PASS  HANDOFF → Diffusion Agent  
+PASS  HANDOFF → Adoption Agent  
+PASS  HANDOFF → Landscape Agent  
+PASS  Evidence types from the list  []
+PASS  Adoption or vendor decision wording (R-14)  []
+SUMMARY: 58 pass, 0 fail, 0 flag
+== team_v0_9__contrast_3
+PASS  General ≤220 words  (147 words)
+PASS  Org/industry words in general level  []
+PASS  Every evidence note starts with STATUS  bad indices []
+PASS  No Markdown links in sources  []
+PASS  'verified'/'checked' wording (allowed only if retrieved)  (0)
+PASS  HANDOFF lines present  (6)
+PASS  No empty arrays  []
+PASS  agent.version matches metadata  (0.9-team vs 0.9-team)
+INFO  application_finding words: 111
+INFO  organization_specific_finding words: 373
+PASS  Exactly the 13 frozen top-level keys (R-16)  []
+PASS  EVIDENCE BASE stated  
+PASS  Eight DEMAND lines, D1–D8, one value each  (8)
+PASS  TECHNOLOGY LIMIT present  
+PASS  General ≤220 words  (147)
+PASS  FIT uses an allowed value  (Partial)
+PASS  Application slot TASK SIDE:  
+PASS  Application slot TECHNOLOGY SIDE:  
+PASS  Application slot FIT GAP:  
+PASS  Application slot APPLICATION ADDS:  
+PASS  Application slot UPSTREAM READ:  
+PASS  Application ≤200 words  (111)
+PASS  STAGE ASKED uses an allowed value  (Bounded evaluation)
+PASS  Eight dimension lines D1–D8, one rating each  ([1, 2, 3, 4, 5, 6, 7, 8])
+PASS  Organization slot PREMISE:  
+PASS  Organization slot UNIT OF ANALYSIS:  
+PASS  Organization slot STRENGTHS:  
+PASS  Organization slot GAPS THAT COULD CAUSE FAILURE:  
+PASS  Organization slot EXECUTION GATES:  
+PASS  Organization slot OPERATING OWNER:  
+PASS  Organization slot VERDICT BASIS:  
+PASS  Organization slot VERDICT SENSITIVITY:  
+PASS  Organization slot STAGE LADDER:  
+PASS  Organization slot FAILURE LOCUS:  
+PASS  'Unknown' wording behind a non-Insufficient rating (R-5)  []
+PASS  COUNTS match the eight lines  (('0', '0', '0', '8') vs [0, 0, 0, 8])
+PASS  Verdict matches the table for the stage asked (R-7)  (Undetermined — more evidence vs Undetermined — more evidence)
+PASS  Ladder: three stages, allowed values  {'PREPARATION': 'Supported', 'BOUNDED EVALUATION': 'Undetermined', 'ROUTINE OPERATION': 'Not assessed'}
+PASS  Ladder status of the stage asked matches the verdict  (Undetermined)
+PASS  Undetermined only when no required dimension is Not ready  
+PASS  Organization ≤480 words  (373)
+PASS  Response starts READINESS VERDICT: <value> (<stage>) — matching Step 4  (('Undetermined — more evidence', 'Bounded evaluation'))
+PASS  Response slot MOST CONSEQUENTIAL GAP:  
+PASS  Response slot MOST CONSEQUENTIAL MISSING FACTOR:  
+PASS  Response slot NOW:  
+PASS  Most consequential gap names a dimension or None observed  
+PASS  Actions: dimension, GAP, OWNER (stated/inferred/to be assigned by), DONE WHEN  (0)
+PASS  No action for a dimension rated Ready (R-9)  []
+PASS  Generic change-management action (R-9)  []
+PASS  Recommendation ≤280 words  (139)
+PASS  Confidence opens with one value  
+PASS  Step 5 slot COMPETING READING:  
+PASS  Step 5 slot STRONGEST CASE AGAINST:  
+PASS  Step 5 slot DISTINGUISHING EVIDENCE:  
+PASS  At least one TRIGGER [D<n>]  (2)
+PASS  Triggers move the verdict (R-12)  
+PASS  REVIEW DATE present  
+PASS  Every Insufficient evidence dimension has a MORE INFO → line (R-11)  []
+PASS  INTAKE MISSING line  
+PASS  HANDOFF → Creation Agent  
+PASS  HANDOFF → Innovation Agent  
+PASS  HANDOFF → Promethean Agent  
+PASS  HANDOFF → Diffusion Agent  
+PASS  HANDOFF → Adoption Agent  
+PASS  HANDOFF → Landscape Agent  
+PASS  Evidence types from the list  []
+PASS  Adoption or vendor decision wording (R-14)  []
+SUMMARY: 57 pass, 0 fail, 0 flag

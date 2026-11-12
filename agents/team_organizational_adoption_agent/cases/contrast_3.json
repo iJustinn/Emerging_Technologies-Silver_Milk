@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "Agentic AI",
+  "intended_application": "AI-powered customer service automation in banking: approved knowledge retrieval, routine service inquiries, and escalation to human staff. Any record changes or transactions require separately specified authority and controls; none are assumed here.",
+  "industry_sector": "Banking and financial services",
+  "business_need": "Improve timely, consistent customer service and reduce repetitive staff workload while protecting customers and preserving reliable human recourse. No measured benefits or cost savings are supplied.",
+  "users_stakeholders": "Bank customers, customer service staff and managers, IT and security teams, executive sponsors, risk/compliance/privacy reviewers, and any technology vendors. These are stakeholder categories, not evidence that roles are staffed or accountable.",
+  "risk_consequence_context": "Incorrect advice, privacy breaches, unauthorized access or actions, fraud, biased or inaccessible service, failed escalation, and service disruption can harm customers. Exact jurisdictions, data permissions, autonomy limits, and applicable approvals require clarification. No compliance or safety certification is assumed.",
+  "management_question": "Is this organization ready to adopt Agentic AI for the stated banking customer service application? Separate technology suitability from organizational readiness; assess all eight dimensions, identify strengths, gaps, unknowns, and staged actions, and distinguish pilot readiness from scaled deployment.",
+  "time_horizon": "Hypothetical planning horizon: assess discovery and a possible bounded pilot over the next six months; scaled production requires a separate evidence-based decision.",
+  "additional_context": "Entirely hypothetical educational scenario for Assignment 7; not a description of a real bank. Organizational statements are supplied assumptions, not independently verified evidence. Do not invent missing facts, measured results, named owners, approved budgets, or governance approvals. Cases share the same technology, application scope, and planning horizon.",
+  "organization": "Hypothetical bank considering the same application; size, operating footprint, and organizational capabilities are not supplied.",
+  "adoption_posture": "Considering the application; sponsorship, approval status, and pilot commitment are not supplied.",
+  "capabilities_constraints": "Critical information is missing about operational ownership and governance: no named accountable service owner, operating responsibilities, escalation/override authority, incident coverage, governance decision rights, application approval process, or control evidence is supplied. These conditions are unknown, not stated to be absent. Infrastructure, skills, budget, culture, workflow integration, and leadership commitment are also not supplied; do not import assumptions from the other cases."
+}

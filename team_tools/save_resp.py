@@ -40,6 +40,6 @@ print("general_et_finding words:", len(data.get("general_et_finding", "").split(
 for k in ["contrary_evidence_or_limitations", "change_monitoring_triggers", "abstention_or_more_information_needed"]:
     print(k, "items:", len(data.get(k, [])))
 blob = json.dumps(data).lower()
-print("case check: aggressive =", blob.count("aggressive"), "| conservative =", blob.count("conservative"),
-      "| electricity =", blob.count("electricity"), "| consult =", blob.count("consult"),
-      "| retailer =", blob.count("retailer"))
+print("case check: two-person =", blob.count("two marketing") + blob.count("two-person"), "| 14 staff =", blob.count("14 marketing") + blob.count("14-person"),
+      "| saas =", blob.count("saas"), "| customer service =", blob.count("customer service"),
+      "| concept board =", blob.count("concept"))
