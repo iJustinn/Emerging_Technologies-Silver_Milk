@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "Text-to-image diffusion models, with latent diffusion as the historical reference architecture; evaluate adjacent image editing/generation approaches as competitors, not as interchangeable diffusion models.",
+  "intended_application": "Disposable INTERNAL campaign concept images and mood boards for homeware advertising; existing human review, manual/design agency work and independently checked final product photographs remain.",
+  "organization": "Hypothetical U.S. homeware retailer with nine marketers/creatives, an assigned creative operations lead, a stocked product-photo repository, an approved software evaluation budget and security/procurement review; the trial itself is not yet authorized.",
+  "industry_sector": "U.S. consumer homeware e-commerce and digital marketing.",
+  "business_need": "Map image-generation and reference-based editing alternatives against manual or freelance concept development; identify what changes the decision to prepare a bounded comparison rather than immediately launch it.",
+  "users_stakeholders": "Two marketers, owner, freelance designer, catalog content owners, downstream customers exposed only to approved final assets.",
+  "adoption_posture": "Moderate/fast-follower with procurement-led software selection.",
+  "capabilities_constraints": "Nine staff and designated operations lead, photo catalog, software budget, established creative and review workflow, but no measured matched-task comparison; current model/provider data terms and actual integration cost remain unverified.",
+  "risk_consequence_context": "Concept boards can be discarded. Errors in reference-faithfulness, terms/rights, privacy, displaced work and downstream misuse remain relevant; no automatic public image publishing.",
+  "management_question": "For internal boards, how should a better-resourced organization rank integration, vendor portability, privacy/rights and workflow-cost comparisons against the same market evidence?",
+  "time_horizon": "Six-week management evidence review from 13 November 2026; vendor rights/terms checked just before any separately authorized trial.",
+  "additional_context": "CONTRAST 2: same technology and same disposable internal concept-board use; different organization capacity and procurement pathway. Do not infer that staff/budget alone prove value, permissions or execution authorization."
+}

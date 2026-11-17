@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "Text-to-image diffusion models, with latent diffusion as the historical reference architecture; evaluate adjacent image editing/generation approaches as competitors, not as interchangeable diffusion models.",
+  "intended_application": "Disposable INTERNAL campaign concept images and mood boards for homeware advertising; existing human review, manual/design agency work and independently checked final product photographs remain.",
+  "organization": "Hypothetical small U.S. online homeware retailer with two marketers and owner review of existing concepts; no AI-specific sponsor, coordinator, reviewer, or protected hours confirmed.",
+  "industry_sector": "U.S. consumer homeware e-commerce and digital marketing.",
+  "business_need": "Map image-generation and reference-based editing alternatives against manual or freelance concept development; identify what changes the decision to prepare a bounded comparison rather than immediately launch it.",
+  "users_stakeholders": "Two marketers, owner, freelance designer, catalog content owners, downstream customers exposed only to approved final assets.",
+  "adoption_posture": "Leading-edge toward reversible INTERNAL experimentation but not approval to trial.",
+  "capabilities_constraints": "Current manual mood boards, photo catalog and creative editing competence; unknown comparative all-in hours, permitted business uploads, software terms, sponsor and protected hours; no ML team and no actual trial.",
+  "risk_consequence_context": "Concept boards can be discarded. Errors in reference-faithfulness, terms/rights, privacy, displaced work and downstream misuse remain relevant; no automatic public image publishing.",
+  "management_question": "In a six-week evidence/readiness review, which alternatives and dated market signals matter most, and what would warrant revisiting the current PREPARATION_ONLY posture without treating technology availability as organization authorization?",
+  "time_horizon": "Six-week management evidence review from 13 November 2026; vendor rights/terms checked just before any separately authorized trial.",
+  "additional_context": "Assignment 6 proposed no-tool preparation for a conditional bounded experiment. Assignment 7 assessed organizational readiness as PREPARATION_ONLY, not authorization. All firms are hypothetical and no trial, cost saving or acceptance-rate findings exist. Assessment evidence is in agents/landscape_agent/sources/source_ledger.json, checked from original public pages on 13 November 2026. Rank non-AI manual/freelance boards as an actual incumbent rather than assuming model adoption."
+}

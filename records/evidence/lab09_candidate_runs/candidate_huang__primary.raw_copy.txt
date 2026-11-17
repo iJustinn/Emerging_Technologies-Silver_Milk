@@ -1,0 +1,55 @@
+{
+  "agent": {
+    "name": "Emerging Technology Landscape Agent",
+    "specialty": "Decision-relevant technology landscape intelligence",
+    "version": "0.2-student"
+  },
+  "analytical_question": "For the six-week review beginning November 13, 2026, which alternatives and dated signals could justify revisiting PREPARATION_ONLY for disposable internal homeware campaign concepts?",
+  "general_et_finding": "Latent diffusion is a historical architecture for generating images through iterative denoising in a compressed representation. Text-guided generation can produce visual directions from a brief, while reference-based editing can constrain changes around an existing image. Reference-based editing describes a workflow that can use diffusion or another architecture. For this application, the consequential capability is whether a tool can vary the intended elements while preserving the product details reviewers rely on. The supplied evidence does not establish current comparative performance for that capability.",
+  "application_finding": "Manual or freelance mood boards are the strongest incumbent because the team already has catalog assets, editing competence and an owner review process. Text-to-image diffusion is a candidate for early exploration of color, setting and composition where exact product identity is unnecessary. Reference-based editing is the closer candidate when the brief calls for preserving the product while varying its setting. Conventional compositing remains a credible option for those briefs because the approved product image can be retained. The incumbent's advantage would be reconsidered if a separately authorized comparison on matched briefs showed that a candidate produced reviewable concepts with less all-in effort or materially better concept coverage, while meeting the same standards for reference fidelity and review. Compare the same inputs, objectives and owner review, and count setup, prompting, cleanup, rejected outputs and review time. Apparent gains could reflect easier briefs, reusable templates or a different level of finish.",
+  "organization_specific_finding": "Three dimensions matter most. First, permitted inputs and tool terms determine whether reference-based editing can be included. If catalog uploads are not cleared, the comparison can still be prepared around generic briefs and approved non-sensitive references, with catalog-based editing out of scope. Second, reference fidelity determines which briefs each candidate can serve. The two marketers can define which details must survive editing, such as shape, finish and proportions, and document how owner review would catch drift. Third, staff capacity and all-in effort determine whether a later comparison is worth running. The owner needs a manual baseline, a proposed sponsor and reviewer, and protected marketer time before a trial request can be evaluated. Conditional watch items include vendor export and deletion controls, model or version changes, integration, independent benchmarks, comparable use by small retailers, and standards or legal developments that affect the intended workflow. Publicity alone does not change the posture.",
+  "evidence": [
+    {
+      "claim": "The retailer already uses manual mood boards and owner review. Sponsor, protected hours, upload permissions and comparative effort remain unconfirmed.",
+      "source_or_reference": "CASE — supplied case intake",
+      "date_or_recency": "November 13, 2026 case assessment date",
+      "evidence_type": "Hypothetical premise supplied in the packet",
+      "notes": "Supports the choice of incumbent and the preparation priorities. The case supplies no operational measurements."
+    },
+    {
+      "claim": "NIST provides cross-sector guidance for managing generative AI risks.",
+      "source_or_reference": "S5 — https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+      "date_or_recency": "Published July 26, 2024. Page updated April 8, 2026. Register verification November 10, 2026, America/New_York.",
+      "evidence_type": "Verified source observation from the supplied register. Government voluntary risk guidance.",
+      "notes": "Supports examining data handling and human oversight. It does not establish legal applicability, vendor terms, image fidelity or readiness at the retailer."
+    },
+    {
+      "claim": "The intake identifies a November 13 source ledger, but its entries are unavailable in the supplied materials.",
+      "source_or_reference": "LEDGER — agents/landscape_agent/sources/source_ledger.json",
+      "date_or_recency": "November 13, 2026 verification reported by the intake. Individual source and verification dates are unavailable.",
+      "evidence_type": "Unverified reference to a source ledger",
+      "notes": "No direct source URLs or observations can be recovered from the reference. The supplied bounded register does not establish current image-tool capabilities, pricing, terms or comparable deployments."
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "A polished vendor example cannot establish whether an editing tool preserves the same product across revisions or how much cleanup a marketer will need. The available evidence does not resolve either question.",
+    "Reference-based editing may reduce unwanted changes, but conventional compositing or a reusable manual template could deliver comparable concept coverage with less reviewer effort. The case provides no matched comparison.",
+    "The missing image-specific ledger limits the market assessment. There is insufficient evidence to identify a current vendor leader or determine whether a comparable retailer has deployed these tools successfully."
+  ],
+  "confidence_and_uncertainty": "Moderate confidence in the broad distinction between generation, reference-based editing and manual composition, and in the relevance of upload permissions and review. Low confidence in comparative performance, availability and terms as of November 13, 2026 because the image-specific ledger is unavailable. Local value remains undetermined without matched briefs, a manual baseline, vendor terms and actual effort data.",
+  "value_opportunity_implication": "The plausible opportunity is to explore more visual directions during internal concept development. Its value depends on whether the team gets more usable directions or spends less total time after cleanup and review. There is no basis to estimate savings or ROI.",
+  "risk_governance_implication": "Keep concepts internal, retain owner review and use independently checked final product photographs. Before any separately authorized trial, confirm who can approve uploads and review the chosen service's business-use terms, retention, training use, access, export and deletion controls. Keep the manual workflow available if access, terms or output behavior change. Have the relevant reviewer assess the applicable jurisdiction and contracts before relying on any legal conclusion.",
+  "recommendation_management_implication": "Maintain PREPARATION_ONLY during the six-week review. Use existing briefs to define comparison cases, record current manual or freelance effort, specify product details the reviewer must verify, and identify the sponsor, reviewer and time allocation a later trial would require. Revisit the posture only when the image-specific evidence, current input and output terms, staffing and comparison design support bringing a separate trial request to the owner for a decision.",
+  "change_monitoring_triggers": [
+    "Capability signal from the original benchmark paper and evaluation materials, checked at the start and close of the review by a proposed marketer lead. If a benchmark reports improved preservation of reference details across edits, inspect the method and add a matched local case to any later authorized comparison.",
+    "Adoption signal from an original retailer case report or operational report, checked at the midpoint and close by the proposed marketer lead. If it documents comparable catalog inputs, human review and all-in effort, verify those conditions before revising the proposed comparison.",
+    "Publicity signal from original vendor demonstrations or competitor announcements, checked at the midpoint and close by the proposed marketer lead. If a release claims substantially higher product fidelity or faster turnaround, verify the claim against the original documentation and seek independent evaluation before changing the shortlist.",
+    "Dependency signal from the shortlisted vendor's official release notes, business terms and control documentation, checked when shortlisted and immediately before any authorized trial by the proposed owner and catalog content owner. If the model version, upload access, retention, export or fallback changes, revalidate the affected workflow and pause it if required controls cannot be confirmed.",
+    "Cost signal from the vendor's official quote and the retailer's time records, checked at review close and before any trial request by the proposed owner. If pricing, contract terms or required staff hours change, update the cost estimate and confirm whether the comparison still fits the available time and budget."
+  ],
+  "abstention_or_more_information_needed": [
+    "Obtain the November 13 image-specific source ledger or its original source pages before asserting current tool availability, comparative performance or operational adoption.",
+    "Obtain the chosen service's current business terms, applicable jurisdiction and approval to use specific catalog inputs before drawing rights or privacy conclusions.",
+    "Obtain a sponsor, designated reviewer, protected staff time, matched briefs and a manual effort baseline before assessing whether a bounded trial merits authorization. Abstain from ROI and local performance claims until comparable observations and cost data exist."
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "agent": {
+    "name": "Emerging Technology Landscape Agent",
+    "specialty": "Technology landscape intelligence",
+    "version": "0.1-student"
+  },
+  "analytical_question": "As of 17 November 2026, where does text-to-image diffusion sit among the options for disposable internal homeware campaign boards, and what evidence should determine whether the retailer requests authorization for a bounded comparison?",
+  "general_et_finding": "As of 17 November 2026, text-to-image diffusion is commercially established for image generation. Latent diffusion is a documented reference architecture that makes text-conditioned synthesis computationally more tractable. Commercial tools are available through design suites and hosted APIs, with separately licensed open-weight options for local or managed deployment. Reference-based and instruction-guided image editors compete for related tasks, and their architecture should be assessed product by product. Recent releases show competition on editing control, speed and integration. Academic benchmarks still find trade-offs across editing tasks and between making the requested change and preserving source details. Hosted tools depend on provider infrastructure and terms, while self-hosting requires compute, technical support and license review. C2PA provides a voluntary provenance specification. Vendor-reported commercial deployments demonstrate use in selected workflows, while comparative operating costs and adoption rates remain uncertain.",
+  "application_finding": "Manual or freelance assembly using approved catalog photos is the strongest practical alternative. It preserves visible product details and uses a familiar review process. Text-to-image generation can broaden exploration of lighting, settings and composition when an exact SKU depiction is unnecessary. When a concept board depicts a named SKU, reference-guided editing merits comparison with a hybrid workflow that composites an unchanged product cutout onto a generated background. Compare the same briefs and cleared assets across workflows. Measure usable concepts, product errors such as altered finish or proportions, elapsed time, hands-on time, retries, review effort and total cost per accepted board. Essential dependencies are cleared references, controlled storage, ordinary image export and human review. A catalog API, self-hosting and Content Credentials are optional for the initial comparison.",
+  "organization_specific_finding": "For the nine-person retailer, the assigned creative operations lead, stocked photo repository and evaluation budget make it feasible to prepare a six-week comparison proposal beginning 13 November 2026. Rank privacy and rights first as approval conditions, including permission to upload each shortlisted asset class and plan-specific terms covering retention, training use and deletion. Rank workflow cost second, including staff and freelance time, rework and review. Rank integration third, starting with the effort to move cleared inputs and exported boards through existing tools. Rank vendor portability fourth for disposable boards. It rises in priority if a tool requires proprietary project files or makes it difficult to retrieve references, prompts and outputs or delete hosted copies. Procurement and security review can assess these conditions within the evidence window. The trial still requires separate authorization.",
+  "evidence": [
+    {
+      "claim": "Latent diffusion applies denoising in a learned latent representation and supports conditioning on text and other inputs.",
+      "source_or_reference": "Rombach et al., High-Resolution Image Synthesis With Latent Diffusion Models, CVPR, https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html",
+      "date_or_recency": "June 2022",
+      "evidence_type": "Peer-reviewed technical research",
+      "notes": "Establishes the historical architecture and technical feasibility. It supplies no current vendor comparison. "
+    },
+    {
+      "claim": "Commercial offerings span integrated creative suites and hosted image generation and editing APIs.",
+      "source_or_reference": "Adobe Expands Creative Possibility with AI for Every Creator at Adobe MAX 2025, https://news.adobe.com/news/2025/10/adobe-max-2025-news; OpenAI, Introducing Images 2.6, https://openai.com/index/introducing-images-2-6/",
+      "date_or_recency": "28 October 2025 and 4 November 2026",
+      "evidence_type": "Vendor announcements and product documentation",
+      "notes": "Documents product releases and integration direction. Availability, features and terms can differ by plan and model. "
+    },
+    {
+      "claim": "Black Forest Labs documents single- and multi-reference editing in FLUX.2 and lists different licenses across its open-weight variants.",
+      "source_or_reference": "Black Forest Labs, official FLUX.2 inference repository, https://github.com/black-forest-labs/flux2",
+      "date_or_recency": "25 November 2025 and 15 January 2026 release entries",
+      "evidence_type": "Provider technical and licensing documentation",
+      "notes": "The listed klein 4B variant uses Apache 2.0, while the dev and klein 9B variants have noncommercial licenses. Procurement still needs the exact terms for its chosen model and hosting arrangement. "
+    },
+    {
+      "claim": "Image-editing results vary by task and evaluation dimension, including the balance between preserving source content and making requested edits.",
+      "source_or_reference": "Wang et al., I2I-Bench, https://openaccess.thecvf.com/content/CVPR2026/html/Wang_I2I-Bench_A_Comprehensive_Benchmark_Suite_for_Image-to-Image_Editing_Models_CVPR_2026_paper.html; Kim et al., Preserve or Modify?, https://openaccess.thecvf.com/content/CVPR2025/html/Kim_Preserve_or_Modify_Context-Aware_Evaluation_for_Balancing_Preservation_and_Modification_in_Text-Guided_Image_Editing_CVPR_2025_paper.html",
+      "date_or_recency": "June 2026 and June 2025",
+      "evidence_type": "Peer-reviewed benchmark research",
+      "notes": "Supports measuring edit success and source fidelity separately. The studies provide no direct estimate of homeware SKU fidelity, review effort or cost. "
+    },
+    {
+      "claim": "Adobe describes Mattel using Firefly in a packaging workflow that produced packaging for retail shelves.",
+      "source_or_reference": "Adobe, Barbie packaging powered by Adobe Firefly generative AI hits store shelves this holiday season, https://business.adobe.com/blog/barbie-packaging-powered-by-adobe-firefly-generative-ai-hits-store-shelves-this-holiday-season",
+      "date_or_recency": "2024",
+      "evidence_type": "Vendor-documented commercial implementation",
+      "notes": "A reported production example in an adjacent workflow. It supplies neither independently verified economics nor evidence of adoption among comparable homeware retailers. "
+    },
+    {
+      "claim": "The U.S. Copyright Office describes human authorship as central to copyrightability of AI-assisted outputs, and FTC guidance explains federal truth-in-advertising requirements for consumer-facing claims.",
+      "source_or_reference": "U.S. Copyright Office, Copyright and Artificial Intelligence, Part 2 announcement, https://www.copyright.gov/newsnet/2025/1060.html; FTC, Advertising FAQ's: A Guide for Small Business, https://www.ftc.gov/business-guidance/resources/advertising-faqs-guide-small-business",
+      "date_or_recency": "29 January 2025 for the Copyright Office report; FTC guidance available at the assessment date",
+      "evidence_type": "U.S. federal agency report and regulatory guidance",
+      "notes": "Output copyrightability and permission to upload source photos are separate procurement questions. The proposed review concerns internal boards. FTC guidance matters if imagery later enters consumer-facing advertising. "
+    },
+    {
+      "claim": "C2PA Content Credentials define an opt-in mechanism to record and verify provenance information.",
+      "source_or_reference": "C2PA, Content Credentials Technical Specification v2.3, https://spec.c2pa.org/specifications/specifications/2.3/specs/C2PA_Specification.html",
+      "date_or_recency": "Version 2.3, reviewed for the 17 November 2026 assessment",
+      "evidence_type": "Voluntary technical standard",
+      "notes": "Useful if the selected tools preserve credentials across export and review. Product accuracy and permission to use an asset require separate checks. "
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "Vendor claims about faster generation, precise editing or commercial safety are sensitive to model, plan, contract and date. Faster generation alone leaves retries, product verification and review unmeasured.",
+    "Academic results use different tasks, model versions and evaluation methods. No verified benchmark measures current options on the retailer's catalog or compares them with its freelance workflow.",
+    "Commercial releases and vendor-reported implementations establish availability and selected use. Comparable retailer adoption, investment trends, current contract pricing and the direction of total workflow costs remain unverified.",
+    "The contrast case supports the same general maturity classification and manual catalog-photo baseline. The organization-level change is the ability to prepare a procurement-led comparison within six weeks. No paired output was supplied for a direct comparison of specialist responses."
+  ],
+  "confidence_and_uncertainty": "High confidence in the architecture and documented commercial availability. Moderate confidence that manual catalog-photo composition is the strongest baseline because it uses source images and the existing workflow. Low confidence in provider rankings, SKU fidelity, savings and integration effort until the retailer obtains current terms and collects matched-task results after authorization.",
+  "value_opportunity_implication": "The most plausible opportunity is to give marketers and the freelance designer more settings and compositions to choose from before briefing final assets. The stocked catalog makes a hybrid workflow worth comparing because it can reuse an approved product cutout while varying the scene.",
+  "risk_governance_implication": "Catalog access does not establish permission to upload photographs to a vendor. Procurement should review the specific plan, model and any partner processing for asset rights, retention, training use, deletion, output terms and access controls. Separate internal boards from publishing workflows, preserve human review and independently check final product photographs. Include the freelancer's review and rework in the cost comparison so a claimed saving accounts for any work shifted downstream.",
+  "recommendation_management_implication": "Prepare a six-week evidence package using existing briefs, current quotes and terms, and a documented manual or freelance baseline. Compare a text-to-image option for open-ended ideation with a reference editor or hybrid workflow for product-specific briefs. The most consequential development would be a procurement-cleared option that can accept approved references and offers a credible basis to test fidelity and workflow cost. At the review close, seek separate authorization for a bounded matched-task trial if the rights and security conditions can be met. Retain the manual workflow if those conditions remain unresolved.",
+  "change_monitoring_triggers": [
+    "Privacy and rights. Review plan-specific contracts, asset licenses and partner processing at shortlist, after any change, and immediately before a separately authorized trial. Remove or defer a candidate if procurement cannot verify upload permission, permitted data use, retention or deletion.",
+    "Fidelity and workflow cost. Review independent editing studies, vendor quotes and internal manual baseline records at midpoint and review close. Consider requesting trial authorization if a candidate offers a credible, testable way to preserve product details while reducing total effort. Use matched-task results from any authorized trial to decide whether further use merits consideration.",
+    "Integration and portability. Review import, export, deletion and model deprecation documentation at shortlist and review close. Reorder the shortlist if a product requires broad catalog access, traps work in a proprietary format, removes a needed editor or adds substantial work to routine handoff.",
+    "Downstream use and comparable deployments. Check FTC guidance, relevant provenance support and implementation evidence from comparable retailers at review close. Reopen the use boundary and approval process if consumer-facing use is proposed. Reassess the shortlist if a comparable retailer publishes a documented workflow comparison with item fidelity and review effort."
+  ],
+  "abstention_or_more_information_needed": [
+    "No provider winner or savings estimate can be supported without current plan quotes, matched briefs, a manual baseline and measured time, errors, retries and review effort.",
+    "Obtain catalog asset permission records, plan-specific contracts, partner data flows and export and deletion documentation before deciding which options are eligible for trial.",
+    "Confirm which design and catalog tools the retailer already uses, who can approve a trial and what evidence management will accept as a meaningful workflow improvement."
+  ]
+}

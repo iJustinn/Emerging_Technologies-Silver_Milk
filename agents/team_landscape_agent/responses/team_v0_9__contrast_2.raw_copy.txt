@@ -1,0 +1,117 @@
+{
+  "agent": {
+    "name": "Silver-Milk Team Landscape Agent",
+    "specialty": "Dated technology-landscape intelligence: eight fixed landscape dimensions (capability, use cases, trackers, ecosystem, standards, price/performance, coverage, alternatives) each with a basis, broad signals separated from the few that matter to this organization, execution gates kept apart from landscape signals, a gating-condition x movement table that sets the monitoring stance, owned triggers mapped to actions, and a dated stale/hype flag (never the adoption decision, never a vendor selection)",
+    "version": "0.9-team"
+  },
+  "analytical_question": "Where does this emerging technology and application sit in the current landscape of alternatives, complements, ecosystems, standards, regulation, investment and adoption signals, and what should this organization monitor next?",
+  "general_et_finding": "AS OF: 2026-11-17\nUNIT: Agentic AI\nL1 TECHNICAL CAPABILITY: Developing — independent testing finds useful performance on bounded software tasks, with reliability varying by difficulty and setup (METR, 2026-09). BASIS: E1.\nL2 USE-CASE EVIDENCE: Use cases emerging — respondents report scaling agentic coding tools, with limited independent verification across organizations (McKinsey, 2026-08). BASIS: E2.\nL3 TRACKER PLACEMENT: Gartner Hype Cycle for Artificial Intelligence 2025-08: AI agents, Peak of Inflated Expectations. MOVEMENT: Single edition only. Gartner Hype Cycle for Agentic AI 2026-04: Not retrieved — public abstract inspected, placements unavailable (Gartner, 2025-08 and 2026-04). BASIS: E3, E4.\nL4 VENDOR/ECOSYSTEM STRUCTURE: Fragmented — provisional, with competing bundled platforms and varied orchestration approaches, and insufficient evidence to identify a dominant platform (Google Cloud, 2026-04; AWS, 2026-08). BASIS: E4, E5, E6.\nL5 STANDARDS & REGULATION: Emerging — NIST launched an initiative for industry-led standards and voluntary guidance. The initiative is neither binding law nor supervisory guidance (NIST, 2026-02). BASIS: E7.\nL6 PRICE/PERFORMANCE: No supported rating — component prices and task-level consumption vary, and the inspected evidence lacks a comparable 12-month series for fixed agentic capability (McKinsey, 2026-07). BASIS: E8.\nL7 COVERAGE TONE: Mixed — deployment and investment optimism coexist with warnings about hype and operating costs (Gartner, 2026-04; McKinsey, 2026-08). BASIS: E2, E4.\nL8 ALTERNATIVES & COMPLEMENTS: INCUMBENT: staff using knowledge search, retrieval-assisted chat with deterministic routing, scripted workflows. COMPETING: narrowly scoped retrieval-and-generation assistants without autonomous orchestration. COMPLEMENTS: curated knowledge, tool interfaces, access controls, observability and human handling of exceptions.\nPOSITION: Independent evaluations show useful but uneven agent performance. Reported production use and expanding platforms warrant attention, while coverage, standards activity and component pricing leave important evidence gaps.",
+  "application_finding": "APPLICATION SIGNALS: L1 matters because responses must stay grounded in approved product and process knowledge and recognize when to escalate. L2 matters because live evidence can show whether unresolved requests reach staff with usable context. L6 matters because repeated model and tool calls can change cost per correctly resolved or appropriately escalated request.\nAPPLICATION-SPECIFIC EVIDENCE: Absent — no independent evaluation retrieved for this exact read-only, customer-facing workflow covering both grounded answers and completed staff handoffs.\nSTRONGEST ALTERNATIVE: Retrieval-assisted chat with deterministic routing — it delivers approved-knowledge responses and explicit handoff rules, providing a baseline for the incremental value of adaptive orchestration.",
+  "organization_specific_finding": "UNIT OF ANALYSIS: The hypothetical multinational bank’s decision preparation for read-only information support.\nGATING CONDITION: Before the fast-follower bank narrows its evaluation options, externally documented regional deployment must be available and comparable production evidence must show reliable approved-knowledge answers and effective staff escalation relative to the incumbent, including for vulnerable customers.\nCONDITION STATUS: Partly met — regional deployment options are documented, while comparable customer-facing outcomes and fit for the bank’s unspecified jurisdictions remain unverified. BASIS: E6, E9, E10, E11.\nMOVEMENT: Toward — AWS documented newly available regional runtime and supporting capabilities in August 2026, advancing the deployment component only. BASIS: E6.\nSTANCE: Active watch\nEXECUTION GATES: Tool and plan terms, procurement approval (procurement). Input and data rights, retention and residency sign-off (owner not stated). Security review (IT/security). Management authorization (owner not stated). Role names supplied for procurement and IT/security indicate relevant functions, with specific sign-off authority unverified.\nRELEVANT SIGNALS: L2 — a peer’s staff-assist deployment is an adjacent precedent, while this scenario requires completed customer-to-staff escalation. L4 — new regional runtime options matter because cross-border integration and residency need investigation.\nPOPULAR BUT NOT DECISIVE HERE: Gartner’s 2025 peak placement and McKinsey’s large-enterprise scaling figure cannot establish reliable customer answers or escalation.\nMOST CONSEQUENTIAL DEVELOPMENT: L4 — the August AgentCore regional expansion changes which deployment footprints can be compared during three-month decision preparation.\nECOSYSTEM DEPENDENCY: The managed agent runtime provider’s regional service footprint.\nOPTIONS DOCUMENTED: Amazon Bedrock AgentCore — AWS documents runtime, policy, evaluation and observability in two newly supported regions (vendor-claim, E6). Gemini Enterprise Agent Platform — Google Cloud documents managed runtime and agent development and governance tooling (vendor-claim, E5). NO SELECTION.",
+  "evidence": [
+    {
+      "claim": "E1: METR measures frontier agents on a suite of software tasks at different reliability levels. Results depend on task difficulty and agent setup.",
+      "source_or_reference": "https://metr.org/time-horizons/",
+      "date_or_recency": "2026-09-08",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: independent; LOAD-BEARING for L1. The page is no longer actively updated. Results apply to the tested software tasks. "
+    },
+    {
+      "claim": "E2: McKinsey reports that respondents are scaling agentic coding tools. Among respondents from large organizations, 40% report scaling AI agents in at least one function, up from 27% the previous year.",
+      "source_or_reference": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+      "date_or_recency": "2026-08-25",
+      "evidence_type": "secondary",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: industry-analyst; LOAD-BEARING for L2 and L7. Survey self-reports do not establish comparative production outcomes. "
+    },
+    {
+      "claim": "E3: Gartner’s public release for its 2025 Hype Cycle for Artificial Intelligence places AI agents at the Peak of Inflated Expectations.",
+      "source_or_reference": "https://www.gartner.com/en/newsroom/press-releases/2025-08-05-gartner-hype-cycle-identifies-top-ai-innovations-in-2025",
+      "date_or_recency": "2025-08-05",
+      "evidence_type": "secondary",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: industry-analyst; LOAD-BEARING for the published L3 placement. The plotted profile is AI agents. "
+    },
+    {
+      "claim": "E4: Gartner’s 2026 Agentic AI Hype Cycle public material describes substantial hype and distinct profiles for platforms, orchestration and other enabling technologies. Individual chart coordinates were not retrieved.",
+      "source_or_reference": "https://www.gartner.com/en/documents/7671861",
+      "date_or_recency": "2026-04-02",
+      "evidence_type": "secondary",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: industry-analyst; LOAD-BEARING for the L3 retrieval limit and L4 and L7 context. The specialist cycle and general AI cycle are different series. "
+    },
+    {
+      "claim": "E5: Google Cloud announced Gemini Enterprise Agent Platform, bundling agent development, managed runtime, governance and optimization.",
+      "source_or_reference": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform",
+      "date_or_recency": "2026-04-22",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: vendor-claim; LOAD-BEARING for L4 and the documented option. Launch documentation does not establish market share or service reliability. "
+    },
+    {
+      "claim": "E6: AWS documented AgentCore availability in US West (N. California) and Asia Pacific (Hyderabad), including runtime, access controls, policy, evaluations and observability.",
+      "source_or_reference": "https://aws.amazon.com/about-aws/whats-new/2026/08/bedrock-agentcore-two-new-regions/",
+      "date_or_recency": "2026-08-27",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: vendor-claim; LOAD-BEARING for L4 and for condition status and movement on regional availability. The source reports a release, with no independent confirmation of end-to-end residency or customer outcomes. "
+    },
+    {
+      "claim": "E7: NIST launched the AI Agent Standards Initiative to support industry-led standards, open protocols and research on agent security and identity.",
+      "source_or_reference": "https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure",
+      "date_or_recency": "2026-02-17",
+      "evidence_type": "primary-historical",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: standards-regulatory; LOAD-BEARING for L5. This is an issuer’s initiative announcement. It cites no standard version as the basis of the rating. "
+    },
+    {
+      "claim": "E8: McKinsey’s discussion with Pay-i distinguishes lower inference costs for similarly sized models from whole-task agent economics, where one task can draw on many calls and models.",
+      "source_or_reference": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/cost-versus-value-managing-agentic-ai-system-performance",
+      "date_or_recency": "2026-07",
+      "evidence_type": "secondary",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: industry-analyst; UNDERLYING: Pay-i observations discussed in the interview; LOAD-BEARING for the L6 evidence limitation. No comparable annual series of buyer prices per fixed-capability task was established. "
+    },
+    {
+      "claim": "E9: Bank of America reports that staff use EricaAssist during live calls to surface guidance, summarize context and receive suggested next steps.",
+      "source_or_reference": "https://alumni.bankofamerica.com/home/articles/bofa_enhances_ericaassist",
+      "date_or_recency": "2026-08-17",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: adopter-self-report; UNDERLYING: Bank of America’s July 21, 2026 EricaAssist announcement; LOAD-BEARING for the local evidence gap. Staff-assist deployment is adjacent to the proposed customer-facing workflow. "
+    },
+    {
+      "claim": "E10: BCG reports that 73% of surveyed banks permit agents in production for select uses and that agents account for 10% or less of AI portfolios at 88% of institutions surveyed.",
+      "source_or_reference": "https://www.bcg.com/publications/2026/ai-governance-banking-benchmark",
+      "date_or_recency": "2026-11-13",
+      "evidence_type": "secondary",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: industry-analyst; LOAD-BEARING for the local evidence gap. Production permission and portfolio share do not establish customer-facing performance or completed escalation. "
+    },
+    {
+      "claim": "E11: The hypothetical bank is a moderate fast-follower, requires human escalation, excludes account-write actions and has unspecified jurisdictions.",
+      "source_or_reference": "Supplied case context, adoption_posture, intended_application, risk_consequence_context and industry_sector",
+      "date_or_recency": "2026-11-16",
+      "evidence_type": "case-premise",
+      "notes": "STATUS: supplied; SOURCE CLASS: case-premise; LOAD-BEARING for defining the gating condition only."
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "COMPETING READING: Scheduled watch is defensible if regional runtime expansion counts as progress only after a region is matched to the bank’s actual jurisdictional footprint. Under that reading, the condition stays Partly met and movement is None.",
+    "CHASM EVIDENCE FOR: McKinsey’s August 2026 survey reports that about two in ten respondents are scaling agentic coding tools, which supports use beyond demonstrations in a bounded domain. BASIS: E2.",
+    "CHASM EVIDENCE AGAINST: BCG’s November 2026 banking benchmark reports that agents represent 10% or less of AI portfolios at 88% of institutions surveyed, indicating limited breadth despite reported permission for selected production uses. BASIS: E10.",
+    "DISTINGUISHING EVIDENCE: A dated, independently audited production comparison at a comparable bank that reports approved-knowledge accuracy and completed human handoffs against retrieval-assisted chat with deterministic routing, with results broken out for vulnerable customers.",
+    "STALE/HYPE FLAG: E2’s August 2026 figure that 40% of large-organization respondents were scaling agents can be misread as deployment prevalence across all enterprises or as proof of reliable banking support. CONTROL: Used the claim as evidence of reported scaling only and excluded it from condition status and movement. REFRESH BY: 2027-02-17.",
+    "The case supplies no external market claim to trace. No independent production audit of the specified application was retrieved. The opened tracker material did not provide comparable consecutive placements, and the available cost evidence does not support an L6 direction. Regional availability alone does not establish the location of every component or data flow."
+  ],
+  "confidence_and_uncertainty": "CONFIDENCE: Moderate — broad landscape confidence is moderate for bounded capability, reported use and platform activity, and low for comparable tracker movement and 12-month price/performance. Local relevance is clear from the scenario, while confidence in the external condition assessment is limited by unknown jurisdictions and the lack of an independently audited comparable deployment. Full 2026 Gartner placements, a comparable second tracker and independent customer-facing production evidence for the exact workflow were not retrieved.",
+  "value_opportunity_implication": "Adaptive retrieval and routing could reduce repeat handling on ambiguous requests. The relevant comparison is cost per correctly resolved or appropriately escalated request against retrieval-assisted chat with deterministic routing, including staff time spent correcting answers or recovering failed handoffs.",
+  "risk_governance_implication": "Read-only scope limits direct account actions while customers can still be harmed by incorrect guidance, privacy leakage, unequal access or failed escalation. Comparable service evidence should make escalation receipt and completion observable and report outcomes for vulnerable customers. Jurisdiction-specific legal applicability remains undetermined.",
+  "recommendation_management_implication": "STANCE: Active watch — WATCH FIRST: independently audited peer production results for approved-knowledge answers and completed staff handoffs, plus regional runtime documentation as it relates to those deployments. STRONGEST ALTERNATIVE: retrieval-assisted chat with deterministic routing. REFRESH: monthly, with a full source refresh by 2027-11-17 and a decision-preparation review on 2027-02-17.",
+  "change_monitoring_triggers": [
+    "TRIGGER 1 [L2] USE-CASE: A dated independent audit of a comparable read-only deployment in the relevant jurisdictions verifies reliable approved-knowledge answers and effective staff handoffs against the incumbent, including outcomes for vulnerable customers — threshold pending customer-protection executive approval — SOURCE: published peer-bank production audit — OWNER: customer-protection executive (proposed) — CADENCE: monthly → Landscape not the constraint.",
+    "TRIGGER 2 [L2] REVERSAL: A dated independent peer production audit finds persistent staff handoff failures in the same read-only service pattern, weakening the case that current external progress is relevant to this workflow — threshold pending operational risk approval — SOURCE: published peer-bank service assurance report — OWNER: operational risk lead (proposed) — CADENCE: monthly → Scheduled watch.",
+    "REVIEW DATE: 2027-02-17."
+  ],
+  "abstention_or_more_information_needed": [
+    "MORE INFO → Intended jurisdictions and component-level regional requirements: these determine whether documented deployment options are relevant to the bank’s operating footprint.",
+    "MORE INFO → Existing service baseline, customer segments and escalation completion measures: these establish which external outcomes are comparable and what evidence would demonstrate incremental value.",
+    "HANDOFF → Creation Agent: How did the technical components of agentic AI originate and converge?",
+    "HANDOFF → Innovation Agent: Where is this technology in its innovation lifecycle and what DEGREE label is supported?",
+    "HANDOFF → Promethean Agent: What significance class does agentic AI warrant?",
+    "HANDOFF → Diffusion Agent: What diffusion stage and timing are supported for this bounded service application?",
+    "HANDOFF → Adoption Agent: What evaluation decision and design follow from the comparative value and consequence profile?",
+    "HANDOFF → Organizational Adoption Agent: Can the bank govern and operate this workflow, and who has authority to clear each execution gate?"
+  ]
+}

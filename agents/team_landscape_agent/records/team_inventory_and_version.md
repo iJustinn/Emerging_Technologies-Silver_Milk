@@ -1,0 +1,29 @@
+# Team inventory and version (Lab 9)
+
+- Agent: `team_landscape_agent` **1.1-team** (inventory #7). Tag `team_landscape_agent-v1.1-team` on branch `lab-09-landscape`; the tag marks the final commit of the PR (commit ID in the submission package copy).
+- Scaffold: MASY1800_ET_Agent_Scaffold_v1_0 (`FROZEN CORE INTACT`, `records/final_frozen_core_check.txt`). Pristine scaffold ZIP SHA-256 3875e8924556b2801c572390fb2c90e5957aea452d33312a31084e1f3712e754 (Dian Li's and Nini Huang's copies identical).
+- Seven-agent inventory and audit: `seven_agent_integration_audit.md`; repo `records/agent_inventory.md`.
+
+## SHA-256
+```
+9e76d75deb4774f1f6e81febe035e9f84245fd701dc86fef6d2881178c714933  specialist_instructions.md
+01217a7a9e3ff09894231618b6c0c57cfc9e44850590e37258a992bbc27bfbe0  agent_metadata.json
+d2799295f83b04b585861d8a6117b197cce30bd1305f25fc2b567bfdf07c0821  records/specialist_instructions_v0.9.md
+a68d3fbf6b593fbe787c7449f7d3dbb899e31e4e2c2752c1d482c7818f0e7909  records/specialist_instructions_v1.0.md
+da2537c4b63bd7d95dc539d724dfffc6af3d623228d01cdbe7b70a70d2a3db2a  cases/contrast_1.json
+70ddeccb739e11868749c6eb93c79254a4e384c991d91c0e5a12ab53d6edad04  cases/contrast_2.json
+d77a70e4b4711cded90d491d16d2963b4d087fd05f9d4eb04e5e44805f05a9b7  cases/contrast_3.json
+2138983b83d37e5eef592bf1e66d809095e85b9f5b2e3e80f147fbb5224aa84e  cases/primary.json
+050e0570ca64c33defdabf44bada49fa408d4b71c6684218ac7910703bc0adba  responses/team_v0_9__contrast_1.json
+e43b10507966ef67f11d5efb0fdab896f8d9661ed4a1cf3cb9ebc5a60e1dd364  responses/team_v0_9__contrast_2.json
+e8e7143631dc503adf4fb2f7ffabd44e95e89390e2b830ec4b9acfdd96c32ead  responses/team_v0_9__contrast_3.json
+2e4c03e043b01889026afc1c0d8d89b5850a13e1dd94b3f3358993c10865e09b  responses/team_v0_9__primary.json
+ba697fe3a1bd0755a18703dbb5ce6ec15ad83bd2b0cecefc914ef5443bb57056  responses/team_v1_0__contrast_1.json
+bef7e8ef1ece9543df029d8d3d56a7b64c81e3ffd215307a9021f19d13fb7e00  responses/team_v1_0__contrast_2.json
+f1b566c40c8eef1aafb40a1885eaf2130e4b5997f64be523111500e5f83c118b  responses/team_v1_0__contrast_3.json
+c65ce959f9a6bca7461621389f51817567e52acfd58238fdaac8e556663f73d2  responses/team_v1_0__primary.json
+beb545abac33129c78ea3454cdb859dd87a97a1d5637a1ad995c4b5ed72670ac  responses/team_v1_1__contrast_1.json
+13aa541a433ab378a69f430326d3c120943b8ccb81855371df17691400c61941  responses/team_v1_1__contrast_2.json
+24b31f5bee05c13b3545401354cf5fb88c38790deae740063fd16a7b2ed3e0cc  responses/team_v1_1__contrast_3.json
+334c693da6c3fc7bcc8790aee8060181323bad69e913e5f107c49716706990af  responses/team_v1_1__primary.json
+```
