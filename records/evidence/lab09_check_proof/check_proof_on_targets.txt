@@ -21,3 +21,31 @@ FAIL  Every note has SOURCE CLASS from the set
 ## candidate [L] primary (C2PA 2.2)
 FLAG  C2PA version cited (latest is 2.5 as of 2026-10; R-11)  ['2.2']
 FAIL  Six HANDOFF lines  (0)
+
+## Synthetic edited copies of v1.1 primary (branches no real run reached)
+### SYNTHETIC_flag_without_control.json
+PASS  STALE/HYPE FLAG: present  
+FAIL  Flag has CONTROL and REFRESH BY date  
+### SYNTHETIC_general_over_cap.json
+PASS  STALE/HYPE FLAG: present  
+FAIL  general_et_finding ≤300 words  (323)
+### SYNTHETIC_no_reversal.json
+PASS  STALE/HYPE FLAG: present  
+FAIL  One REVERSAL trigger  
+### SYNTHETIC_no_selection_missing.json
+FAIL  OPTIONS DOCUMENTED says NO SELECTION  
+PASS  STALE/HYPE FLAG: present  
+### SYNTHETIC_stance_table_mismatch.json
+FAIL  STANCE matches table (R-5)  (Partly met × None → Active watch)
+FAIL  Recommendation starts with the same STANCE  STANCE: Scheduled watch — WATCH FIRST: indepe
+PASS  STALE/HYPE FLAG: present  
+FAIL  No trigger lands on the current stance (R-7)  [0]
+### SYNTHETIC_trigger_same_stance.json
+PASS  STALE/HYPE FLAG: present  
+FAIL  No trigger lands on the current stance (R-7)  [0]
+
+## SAME STANCE BECAUSE check on real v1.1 runs (the label is never written)
+primary: FLAG  SAME STANCE BECAUSE written with a case fact (v1.1 rule; needs the other case, W-3)  (absent)
+contrast_1: FLAG  SAME STANCE BECAUSE written with a case fact (v1.1 rule; needs the other case, W-3)  (absent)
+contrast_2: FLAG  SAME STANCE BECAUSE written with a case fact (v1.1 rule; needs the other case, W-3)  (absent)
+contrast_3: FLAG  SAME STANCE BECAUSE written with a case fact (v1.1 rule; needs the other case, W-3)  (absent)

@@ -71,6 +71,8 @@ for lab in ["EXECUTION GATES:", "RELEVANT SIGNALS:", "POPULAR BUT NOT DECISIVE H
             "ECOSYSTEM DEPENDENCY:", "OPTIONS DOCUMENTED:"]:
     chk(f"{lab} present", lab in o)
 chk("OPTIONS DOCUMENTED says NO SELECTION", "NO SELECTION" in o)
+ssb = re.search(r"SAME STANCE BECAUSE:\s*(\S+)", o)
+flag("SAME STANCE BECAUSE written with a case fact (v1.1 rule; needs the other case, W-3)", bool(ssb) and ssb.group(1).rstrip(".").lower() != "none", ssb.group(0)[:40] if ssb else "(absent)")
 # R-8: gate words inside RELEVANT SIGNALS / MOST CONSEQUENTIAL
 gate = re.compile(r"\b(terms|permission|rights|retention|security review|procurement|authori[sz]ation|contract)\b", re.I)
 for lab in ["RELEVANT SIGNALS:", "MOST CONSEQUENTIAL DEVELOPMENT:"]:

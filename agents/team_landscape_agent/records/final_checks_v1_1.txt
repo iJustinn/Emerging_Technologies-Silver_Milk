@@ -18,6 +18,7 @@ PASS  MOST CONSEQUENTIAL DEVELOPMENT: present
 PASS  ECOSYSTEM DEPENDENCY: present  
 PASS  OPTIONS DOCUMENTED: present  
 PASS  OPTIONS DOCUMENTED says NO SELECTION  
+FLAG  SAME STANCE BECAUSE written with a case fact (v1.1 rule; needs the other case, W-3)  (absent)
 PASS  R-8 gate words in RELEVANT SIGNALS  []
 PASS  R-8 gate words in MOST CONSEQUENTIAL DEVELOPMENT  []
 PASS  COMPETING READING: present  
@@ -79,6 +80,7 @@ PASS  MOST CONSEQUENTIAL DEVELOPMENT: present
 PASS  ECOSYSTEM DEPENDENCY: present  
 PASS  OPTIONS DOCUMENTED: present  
 PASS  OPTIONS DOCUMENTED says NO SELECTION  
+FLAG  SAME STANCE BECAUSE written with a case fact (v1.1 rule; needs the other case, W-3)  (absent)
 PASS  R-8 gate words in RELEVANT SIGNALS  []
 PASS  R-8 gate words in MOST CONSEQUENTIAL DEVELOPMENT  []
 PASS  COMPETING READING: present  
@@ -138,6 +140,7 @@ PASS  MOST CONSEQUENTIAL DEVELOPMENT: present
 PASS  ECOSYSTEM DEPENDENCY: present  
 PASS  OPTIONS DOCUMENTED: present  
 PASS  OPTIONS DOCUMENTED says NO SELECTION  
+FLAG  SAME STANCE BECAUSE written with a case fact (v1.1 rule; needs the other case, W-3)  (absent)
 PASS  R-8 gate words in RELEVANT SIGNALS  []
 PASS  R-8 gate words in MOST CONSEQUENTIAL DEVELOPMENT  []
 PASS  COMPETING READING: present  
@@ -197,6 +200,7 @@ PASS  MOST CONSEQUENTIAL DEVELOPMENT: present
 PASS  ECOSYSTEM DEPENDENCY: present  
 PASS  OPTIONS DOCUMENTED: present  
 PASS  OPTIONS DOCUMENTED says NO SELECTION  
+FLAG  SAME STANCE BECAUSE written with a case fact (v1.1 rule; needs the other case, W-3)  (absent)
 PASS  R-8 gate words in RELEVANT SIGNALS  []
 PASS  R-8 gate words in MOST CONSEQUENTIAL DEVELOPMENT  []
 PASS  COMPETING READING: present  

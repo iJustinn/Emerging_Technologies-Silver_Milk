@@ -31,4 +31,4 @@ Tags in `specialist_instructions.md`: [Z] Justin Zhong, [H] Nini Huang, [L] Dian
 
 ## Revision history
 - **0.9-team → 1.0-team (D-61):** T-69 failures W-1 (out-of-set L6 values split the pair) and W-2 (vendor releases moved the stance). F1–F3.
-- **1.0-team → 1.1-team (D-62):** T-70: `Insufficient evidence` overused, pair split on L7, `SAME STANCE BECAUSE: None`. Two tightening rules. T-72: zero FAILs; W-3 persists by design.
+- **1.0-team → 1.1-team (D-62):** T-70: `Insufficient evidence` overused, pair split on L7; no run wrote `SAME STANCE BECAUSE` (first misreported as `None`, see W-3). Two tightening rules. T-72: zero FAILs; the label is still never written (W-3).
