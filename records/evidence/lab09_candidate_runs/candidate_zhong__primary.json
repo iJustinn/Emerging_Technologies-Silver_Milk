@@ -1,0 +1,93 @@
+{
+  "agent": {
+    "name": "Emerging Technology Landscape Agent",
+    "specialty": "dated technology-landscape assessment (Fortino Ch. 10): eight fixed landscape dimensions with tracker placements, use-case evidence and alternatives; broad signals separated from the few decision-relevant to this organization; a gating-condition x movement table that sets the monitoring stance; monitoring triggers and a stale/hype flag",
+    "version": "0.2-student"
+  },
+  "analytical_question": "Where do text-to-image diffusion models sit in the technology landscape as of 13 November 2026, and which external developments could change the case for preparing a bounded comparison of internal homeware campaign concepts?",
+  "general_et_finding": "AS OF: 2026-11-13\nUNIT: Text-to-image diffusion models, with latent diffusion as the historical reference architecture.\nL1 TECHNICAL CAPABILITY: Developing — Independent testing on public user prompts shows useful bounded generation and substantial variation in prompt alignment (Lee and Lee, 2024-10). BASIS: E1.\nL2 USE-CASE EVIDENCE: Use cases emerging — A documented studio packaging workflow provides vendor-reported evidence of use in live creative work (Adobe, 2024-06). BASIS: E2.\nL3 TRACKER PLACEMENT: Thoughtworks Technology Radar Volume 27, 2022-10: Stable Diffusion — Assess. MOVEMENT: Single edition only. The placement concerns one model family. BASIS: E3.\nL4 VENDOR/ECOSYSTEM STRUCTURE: Fragmented — Hosted suites and downloadable model families coexist, with no platform dominance established in the retrieved sources (Stability AI, 2024-10) (Black Forest Labs, 2026-01) (Adobe, 2024-06). BASIS: E2, E4, E5.\nL5 STANDARDS & REGULATION: Emerging — U.S. copyright guidance applies existing human-authorship principles across generative AI (U.S. Copyright Office, 2025-01). BASIS: E6.\nL6 PRICE/PERFORMANCE: Falling — Provisional for entry-level compute requirements, based on a compact release with lower resource demands (Black Forest Labs, 2026-01). A matched 12-month buyer-price trend is unverified. BASIS: E5.\nL7 COVERAGE TONE: Mixed — Positive accounts of creative work coexist with prominent copyright disputes (Adobe, 2024-06) (Reuters, 2025-06). BASIS: E2, E7.\nL8 ALTERNATIVES & COMPLEMENTS: INCUMBENT: manual or freelance mood boards using licensed photos and conventional compositing. COMPETING: reference-based editing with non-diffusion image models. COMPLEMENTS: licensed reference libraries, creative editing tools, and human review.\nPOSITION: Text-to-image diffusion has documented creative uses and several deployment options. Variable prompt fidelity, limited independent production evidence, and unresolved rights questions limit what can be inferred from tracker coverage or headline performance.",
+  "application_finding": "APPLICATION SIGNALS: L1 matters because useful concepts must preserve brief-critical attributes while allowing variation in composition and style. L2 matters because completed and reviewed boards reveal rework that individual demonstrations omit. L5 matters because the rights to upload reference images and retain generated concepts depend on the assets and the service terms.\nAPPLICATION-SPECIFIC EVIDENCE: Thin — E1 independently tests generation on public prompts and E2 describes related packaging ideation, but the retrieved sources provide no independent matched comparison of internal homeware campaign boards.\nSTRONGEST ALTERNATIVE: Manual or freelance mood boards using licensed photos and conventional compositing. They give designers direct control over product appearance and provide a baseline for total effort, including review and revision.",
+  "organization_specific_finding": "UNIT OF ANALYSIS: The two marketers who would prepare the boards, the owner who reviews concepts and would authorize a comparison, and the catalog content owners whose asset permissions would govern reference use.\nGATING CONDITION: A readily usable option for reversible internal concept work must support acceptable reference fidelity and have terms compatible with the specific business assets it would handle.\nCONDITION STATUS: Partly met — Creative concept workflows and conditional deployment routes are documented, but the sources establish neither product-reference fidelity for this use nor applicable permission to process the retailer's catalog assets. BASIS: E1, E2, E5, E8.\nMOVEMENT: Toward — The January 2026 release made a compact, commercially licensed self-hostable model available, adding a route that can avoid third-party reference uploads where suitable hardware and support exist. BASIS: E5.\nSTANCE: Active watch.\nRELEVANT SIGNALS: L1, fidelity on catalog references matters because designers must retain recognizable product details through concept review. L2, timed comparisons with manual boards matter because two marketers would absorb review and rework. L4, practical local or managed deployment matters because there is no ML team. L5, asset handling terms matter because upload permission is unconfirmed.\nPOPULAR BUT NOT DECISIVE HERE: The Reuters coverage of the Midjourney lawsuit does not establish the rights or restrictions for the particular assets and terms under review. A headline about sub-second generation does not establish marketer time per accepted board.\nMOST CONSEQUENTIAL DEVELOPMENT: L2 — An independent matched comparison by a comparable small retailer that records reference fidelity, all-in staff time, and verified asset-handling terms could reopen the owner's decision about preparing a bounded comparison.\nECOSYSTEM DEPENDENCY: The selected model distribution's licensing and update channel.",
+  "evidence": [
+    {
+      "claim": "E1: Korea University researchers tested diffusion models including SDXL-Turbo and SD-Turbo across several prompt datasets, including user prompts from DiffusionDB, and found that quality varied by model and prompt.",
+      "source_or_reference": "Lee and Lee, Learning Prompt-Level Quality Variance for Cost-Effective Text-to-Image Generation, ACM CIKM. ",
+      "date_or_recency": "2024-10",
+      "evidence_type": "independent",
+      "notes": "RETRIEVED: Yes. LOAD-BEARING for L1. Uses aesthetic and prompt-alignment proxies, with no catalog-fidelity or staff-time measurement."
+    },
+    {
+      "claim": "E2: Adobe describes Mattel packaging designers using Firefly text-to-image generation to explore packaging concepts in their design workflow.",
+      "source_or_reference": "Adobe, Barbie and Adobe Firefly Generative AI: Bringing magic to Mattel’s packaging. ",
+      "date_or_recency": "2024-06-27",
+      "evidence_type": "vendor-claim",
+      "notes": "RETRIEVED: Yes. LOAD-BEARING for L2, L4, and L7. A named live-work example from the supplier, with no independent comparison against manual work."
+    },
+    {
+      "claim": "E3: Thoughtworks Volume 27 placed Stable Diffusion in Assess.",
+      "source_or_reference": "Thoughtworks Technology Radar Volume 27, blip 101. ",
+      "date_or_recency": "2022-10",
+      "evidence_type": "industry-analyst",
+      "notes": "RETRIEVED: Yes. LOAD-BEARING for L3. A historical, model-specific technology recommendation."
+    },
+    {
+      "claim": "E4: Stability AI released several downloadable Stable Diffusion 3.5 variants under its Community License, with commercial eligibility subject to the license.",
+      "source_or_reference": "Stability AI, Introducing Stable Diffusion 3.5. ",
+      "date_or_recency": "2024-10-22",
+      "evidence_type": "vendor-claim",
+      "notes": "RETRIEVED: Yes. LOAD-BEARING for L4. Documents a distribution route, with no market-share measurement."
+    },
+    {
+      "claim": "E5: Black Forest Labs released FLUX.2 klein with text-to-image and reference editing, downloadable Apache 2.0 4B variants, and separate noncommercial terms for the 9B variants.",
+      "source_or_reference": "Black Forest Labs, FLUX.2 [klein]: Towards Interactive Visual Intelligence. ",
+      "date_or_recency": "2026-01-15",
+      "evidence_type": "vendor-claim",
+      "notes": "RETRIEVED: Yes. LOAD-BEARING for L4, the provisional L6 compute-cost proxy, CONDITION STATUS, and MOVEMENT. The release establishes a new deployment option. Performance comparisons remain supplier measurements."
+    },
+    {
+      "claim": "E6: The U.S. Copyright Office says protection for AI-assisted output depends on sufficient human-determined expression, and prompting alone does not establish authorship.",
+      "source_or_reference": "U.S. Copyright Office, Copyright Office Releases Part 2 of Artificial Intelligence Report. ",
+      "date_or_recency": "2025-01-29",
+      "evidence_type": "standards-regulatory",
+      "notes": "RETRIEVED: Yes. LOAD-BEARING for L5. The guidance addresses output copyrightability across generative AI."
+    },
+    {
+      "claim": "E7: Reuters reported that Disney and Universal sued Midjourney over alleged copyright infringement involving training and recognizable outputs.",
+      "source_or_reference": "Reuters, Disney, Universal sue image creator Midjourney for copyright infringement. ",
+      "date_or_recency": "2025-06-11",
+      "evidence_type": "industry-analyst",
+      "notes": "RETRIEVED: Yes. UNDERLYING: Disney and Universal's federal complaint for allegations. LOAD-BEARING for L7 as coverage evidence. Allegations are distinct from findings."
+    },
+    {
+      "claim": "E8: Adobe's product-specific terms assign responsibility for uploaded inputs to the user and require sufficient rights for third-party protected materials.",
+      "source_or_reference": "Adobe Generative AI Product Specific Terms, sections 1–3. ",
+      "date_or_recency": "2026-04-23",
+      "evidence_type": "vendor-claim",
+      "notes": "RETRIEVED: Yes. LOAD-BEARING for CONDITION STATUS. Documents one service's conditions. Actual permissions depend on the assets, account, and applicable terms."
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "COMPETING READING: Scheduled watch is defensible if a compact self-hosted release does not count as meaningful movement for a two-person team with no confirmed hardware or technical support. Under that reading the condition is Partly met and movement is None.",
+    "CHASM EVIDENCE FOR: Adobe's June 2024 Mattel account (E2) reports use of text-to-image generation in a named packaging design workflow with real creative briefs.",
+    "CHASM EVIDENCE AGAINST: The October 2024 independent evaluation (E1) found quality and alignment variation across actual user prompts, limiting the case that successful examples generalize to routine, lightly reviewed work. This is capability evidence, and does not measure production prevalence.",
+    "DISTINGUISHING EVIDENCE: A dated, independently documented repeat-use comparison at comparable small retailers, reporting approved internal boards, reference-fidelity failures, and staff time through final review under stated asset-handling terms.",
+    "STALE/HYPE FLAG: Black Forest Labs' 2026-01-15 claim of sub-second inference for FLUX.2 klein (E5) depends on the hardware and configuration. It can quickly lose relevance as models change and excludes staff review and rework. REFRESH BY: 2026-12-13.",
+    "The referenced source_ledger.json was unavailable in the supplied workspace. The register uses sources opened during this run. Current tracker movement, a market-wide price trend at equal capability, and current coverage tone across independent outlets remain unverified."
+  ],
+  "confidence_and_uncertainty": "CONFIDENCE: Moderate — Confidence would rise with an independent matched workflow comparison, current applicable service terms, and a matched 12-month buyer-price series at equal capability. The historical Thoughtworks placement was verified. The IEEE Computer Society 2026 page could not be opened, a relevant Gartner edition was not retrieved, and no comparable consecutive tracker placements were verified.",
+  "value_opportunity_implication": "Diffusion could broaden the set of visual directions considered early in a campaign. The useful comparison is total marketer and designer time per owner-accepted board, including setup, discarded outputs, review, and revisions. Manual or freelance boards supply the baseline for both effort and control over product appearance.",
+  "risk_governance_implication": "Keep concept boards internal and disposable. Check whether the retailer has permission to use each proposed reference and whether the applicable terms cover processing, retention, and reuse just before any separately authorized trial. Continue human review of concepts and independent checks of final product photographs. Record work shifted to reviewers or freelancers when comparing effort.",
+  "recommendation_management_implication": "STANCE: Active watch — WATCH FIRST: An independent same-brief comparison of diffusion and manual concept boards at a comparable small retailer, with fidelity, staff time, and asset-handling terms documented. STRONGEST ALTERNATIVE: Manual or freelance mood boards using licensed photography and conventional compositing. REFRESH: Monthly, with a full source-portfolio refresh at least annually and a check of applicable rights and terms just before any separately authorized trial.",
+  "change_monitoring_triggers": [
+    "TRIGGER 1 [L2]: By 2026-12-25, one independent matched comparison at a comparable small retailer documents a staff-operable workflow under verified business terms, with at least 9 of 10 boards meeting a predefined product-fidelity standard → Landscape not the constraint",
+    "TRIGGER 2 [L4]: By 2026-12-25, one independent deployment review finds that zero of the newly available local workflows can run on supported off-the-shelf hardware without specialist operation, removing the observed movement toward the gate → Scheduled watch",
+    "REVIEW DATE: 2026-12-13"
+  ],
+  "abstention_or_more_information_needed": [
+    "MORE INFO → Asset rights and applicable account terms: identify which catalog inputs can be used and what processing, retention, and reuse the actual workflow would entail.",
+    "MORE INFO → Baseline time and reference-fidelity criteria: record manual and freelance effort on comparable briefs and specify the product attributes the owner must be able to verify.",
+    "MORE INFO → Supported hardware, sponsor, coordinator, reviewer, and protected hours: establish whether the proposed comparison can be staffed and governed.",
+    "HANDOFF → Adoption Agent: Given verified asset terms and a defensible manual baseline, what evidence would justify moving beyond preparation for a bounded comparison?",
+    "HANDOFF → Organizational Adoption Agent: Who would own, review, and support a separately authorized comparison within the two-marketer team's available hours?"
+  ]
+}

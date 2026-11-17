@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "Agentic AI",
+  "intended_application": "Information-support customer service: answer product/process questions using approved bank knowledge and route unresolved requests to staff. Read-only information support; no autonomous dispute decisions, account changes, payments or transaction execution.",
+  "organization": "Hypothetical multinational bank; not a named or verified institution.",
+  "industry_sector": "Banking and financial services; operates in multiple jurisdictions, which are unspecified and must be established before legal applicability claims.",
+  "business_need": "Assess whether agentic support adds defensible value over existing human support, knowledge search, retrieval-assisted chat and deterministic routing while maintaining reliable service.",
+  "users_stakeholders": "Customers including vulnerable users; service staff; knowledge owners; IT/security; procurement; risk/compliance; customer-protection and operational executives.",
+  "adoption_posture": "Moderate fast-follower; willing to investigate a bounded information-support pilot, subject to evidence and internal authority.",
+  "capabilities_constraints": "Scenario assumption: enterprise IT, procurement and risk functions and comparatively substantial evaluation resources exist. Application-specific staffing, committed budget, approved knowledge quality, vendor arrangements, controls, readiness and approvals are unknown. Cross-border integration and data-residency obligations require investigation.",
+  "risk_consequence_context": "Incorrect information, privacy leakage, unequal access and failed escalation could harm customers and create operational or reputational consequences. No account-write authority in this proposed scope. Human escalation is required by the scenario but its effectiveness is untested.",
+  "management_question": "Where does Agentic AI for information-support service sit relative to conventional and competing alternatives, and which few developments should this bank monitor before selecting a bounded evaluation path?",
+  "time_horizon": "Decision preparation over the next 3 months; potential bounded evaluation within 6 months; monitor developments over 12 months from the actual assessment date.",
+  "additional_context": "Entirely hypothetical instructional input prepared 2026-11-16. No real bank capabilities, empirical performance, cost, market/adoption claims or legal applicability have been verified. No external evidence supplied. Do not infer that institutional resources equal application readiness. Assessment must state evidence gaps and proposed research/monitoring rather than invent current findings."
+}

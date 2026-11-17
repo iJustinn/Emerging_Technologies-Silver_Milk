@@ -1,0 +1,112 @@
+{
+  "agent": {
+    "name": "Silver-Milk Team Landscape Agent",
+    "specialty": "Dated technology-landscape intelligence: eight fixed landscape dimensions (capability, use cases, trackers, ecosystem, standards, price/performance, coverage, alternatives) each with a basis, broad signals separated from the few that matter to this organization, execution gates kept apart from landscape signals, a gating-condition x movement table that sets the monitoring stance, owned triggers mapped to actions, and a dated stale/hype flag (never the adoption decision, never a vendor selection)",
+    "version": "1.0-team"
+  },
+  "analytical_question": "Which developments in text-to-image diffusion and its alternatives could change whether the retailer prepares a bounded comparison for internal campaign concepts during its six-week review?",
+  "general_et_finding": "AS OF: 2026-11-13\nUNIT: Text-to-image diffusion models, with latent diffusion as the historical reference architecture.\nL1 TECHNICAL CAPABILITY: Insufficient evidence — independent benchmarks show usable single-object results and persistent compositional errors, with no comparable body of real-task validation (GenEval, 2023-10). BASIS: E1\nL2 USE-CASE EVIDENCE: Use cases emerging — a released commercial production reportedly used Stable Diffusion alongside other tools. Evidence for routine use across organizations is missing (3DArt, 2023 campaign, reporting page inspected 2026-11). BASIS: E2\nL3 TRACKER PLACEMENT: Not covered by Thoughtworks Technology Radar, Volume 35, 2026-11 — no category placement found in the edition inspected. BASIS: E3\nL4 VENDOR/ECOSYSTEM STRUCTURE: Insufficient evidence — downloadable weights and hosted services coexist, but category-level shares and switching evidence are missing (Stability AI, 2024-10 and 2026-11 snapshot). BASIS: E4, E5\nL5 STANDARDS & REGULATION: Emerging — voluntary C2PA Content Credentials 2.5 covers provenance across media. This specification is distinct from binding law and supervisory guidance (C2PA, 2026-10). BASIS: E6\nL6 PRICE/PERFORMANCE: Insufficient evidence — posted service tiers lack a matched 12-month comparison controlling for quality, retries and review (Stability AI, 2026-11 snapshot). BASIS: E5\nL7 COVERAGE TONE: Insufficient evidence — Reuters and AIPPI covered the same copyright dispute, providing too narrow a sample for a category-wide tone (Reuters, 2025-11; AIPPI, 2026-01). BASIS: E7, E8\nL8 ALTERNATIVES & COMPLEMENTS: INCUMBENT: manual or freelance boards using existing photographs and layout tools. COMPETING: reference-based generative editing and other image-generation architectures. COMPLEMENTS: curated references, conventional compositing, human review and provenance metadata.\nPOSITION: Diffusion models have documented production use and multiple deployment routes. Comparable evidence on real-task reliability, breadth of production use and changes in cost per usable output remains limited.",
+  "application_finding": "APPLICATION SIGNALS: L1 matters because a plausible-looking concept can change the reference object's shape, material or color. L2 matters because a traceable workflow shows where people intervene and what work remains. L6 matters because generation, selection, corrections and review all contribute to the cost per usable board.\nAPPLICATION-SPECIFIC EVIDENCE: Thin — independent benchmarks cover aspects of prompt alignment, while the identified commercial case used a mixed workflow for released animation. Neither measures reference fidelity and total time for disposable internal mood boards.\nSTRONGEST ALTERNATIVE: Manual or freelance boards using existing photographs and layout tools — they preserve the reference image and provide a direct baseline for acceptable output and review effort.",
+  "organization_specific_finding": "UNIT OF ANALYSIS: The hypothetical U.S. online homeware retailer's decision about preparing a bounded comparison for disposable internal campaign concepts.\nGATING CONDITION: Because two marketers produce reversible internal concepts and retain owner review and checked final photographs, there must be an accessible reference-controlled option and credible evidence that it can preserve recognizable product details at workable total effort against manual or freelance boards.\nCONDITION STATUS: Partly met — documented controls exist. Comparable evidence on reference fidelity and all-in time is missing. BASIS: E1, E5, E9, E10\nMOVEMENT: None — the sources establish features and evaluation methods, with no qualifying dated improvement in the combined fidelity and effort requirement. BASIS: E1, E5, E9, E10\nSTANCE: Scheduled watch\nEXECUTION GATES: Exact tool and plan terms, input and catalog rights, upload and retention settings, security review, procurement and trial authorization — owner not stated for each. The owner reviews existing concepts. The case names no AI sponsor, coordinator, reviewer or protected hours.\nRELEVANT SIGNALS: L1 — composition and reference fidelity measure different outcomes, which matters when board reviewers must recognize the catalog item. L4 — hosted reference controls provide a route for a team without ML staff. L6 — credits meter operations, while the two marketers' time depends on retries, corrections and review.\nPOPULAR BUT NOT DECISIVE HERE: The Coca-Cola production example demonstrates commercial use in a mixed studio workflow and supplies no all-in effort baseline for two marketers making internal boards.\nMOST CONSEQUENTIAL DEVELOPMENT: L1 — separate evaluation methods for reference-to-image generation and image editing make it possible to seek evidence on product preservation, which could change whether preparing a comparison is worthwhile. E10 describes the method, with comparable results still missing.\nECOSYSTEM DEPENDENCY: The hosted provider's reference-control and model lifecycle.\nOPTIONS DOCUMENTED: Stability AI Stable Image Structure — vendor-claim, input-guided generation. Adobe Firefly Composition Reference — vendor-claim, outline and depth matching with adjustable strength. NO SELECTION.",
+  "evidence": [
+    {
+      "claim": "E1: GenEval evaluates text-to-image models, including Stable Diffusion variants, on object and attribute alignment. It finds stronger single-object performance and persistent difficulty with spatial relations and attribute binding.",
+      "source_or_reference": "https://arxiv.org/abs/2310.11513",
+      "date_or_recency": "2023-10-17",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: independent. LOAD-BEARING. Academic benchmark of generated images. It does not measure workflow time or fidelity to catalog photographs. "
+    },
+    {
+      "claim": "E2: 3DArt identifies Stable Diffusion as one tool in the production of Coca-Cola's released Masterpiece spot, alongside GANs and traditional compositing.",
+      "source_or_reference": "https://www.3dart.it/en/motion-design/work/coca-cola-masterpiece-electric-theatre-collective-en/",
+      "date_or_recency": "undated page, opened 2026-11-17",
+      "evidence_type": "secondary",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: industry-analyst. LOAD-BEARING. The described campaign dates to 2023. This is one traceable mixed-tool production, with no isolated performance or labor results. "
+    },
+    {
+      "claim": "E3: No text-to-image diffusion category placement was found in the inspected Thoughtworks Technology Radar Volume 35.",
+      "source_or_reference": "https://www.thoughtworks.com/radar",
+      "date_or_recency": "2026-11-04",
+      "evidence_type": "secondary",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: industry-analyst. LOAD-BEARING. The radar reflects Thoughtworks practitioners' experience. Category absence provides no movement or adoption estimate. "
+    },
+    {
+      "claim": "E4: Stability AI's launch documentation describes downloadable Stable Diffusion 3.5 variants and states that they can run on consumer hardware.",
+      "source_or_reference": "https://stability.ai/news-updates/introducing-stable-diffusion-3-5",
+      "date_or_recency": "2024-10-22",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: vendor-claim. LOAD-BEARING. Documents one supplier's deployment offering. Hardware suitability is a supplier assertion. "
+    },
+    {
+      "claim": "E5: Stability AI lists Stable Image Structure as input-guided generation at five credits per operation, with one credit priced at US$0.01. Generation and editing operations have separate charges.",
+      "source_or_reference": "https://platform.stability.ai/pricing",
+      "date_or_recency": "undated page, opened 2026-11-17",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: vendor-claim. LOAD-BEARING. Live rate card inspected after the case cutoff. Its exact cutoff-date rates were not archived in the supplied materials. "
+    },
+    {
+      "claim": "E6: C2PA's issuer index lists Content Credentials 2.5 as the latest version, and its version history dates it to October 2026.",
+      "source_or_reference": "https://spec.c2pa.org/specifications/specifications/2.5/specs/C2PA_Specification.html",
+      "date_or_recency": "2026-10",
+      "evidence_type": "primary-historical",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: standards-regulatory. LOAD-BEARING. Voluntary cross-media provenance specification. It does not establish image accuracy or rights clearance. "
+    },
+    {
+      "claim": "E7: Reuters reported on Getty Images' UK litigation over Stability AI's image generator and the ensuing debate about copyright protections.",
+      "source_or_reference": "https://www.investing.com/news/stock-market-news/getty-images-largely-loses-landmark-uk-lawsuit-over-ai-image-generator-4329613",
+      "date_or_recency": "2025-11-04",
+      "evidence_type": "secondary",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: industry-analyst. LOAD-BEARING. UNDERLYING: Getty Images v Stability AI UK High Court ruling. Coverage evidence only. "
+    },
+    {
+      "claim": "E8: AIPPI reviewed the same UK dispute and explained the limited scope of the secondary infringement issue.",
+      "source_or_reference": "https://www.aippi.org/news/getty-images-v-stability-ai-uk-high-court-finds-no-secondary-copyright-infringement-in-landmark-genai-ruling/",
+      "date_or_recency": "2026-01-23",
+      "evidence_type": "secondary",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: industry-analyst. LOAD-BEARING. UNDERLYING: Getty Images v Stability AI UK High Court ruling. A second outlet covering the same underlying event. "
+    },
+    {
+      "claim": "E9: Adobe's Firefly help page documents using a composition reference to guide outline and depth, with adjustable reference strength.",
+      "source_or_reference": "https://helpx.adobe.com/firefly/web/work-with-images/generate-images/match-image-composition-to-reference-image.html",
+      "date_or_recency": "2026-06-16",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: vendor-claim. LOAD-BEARING. Describes composition control and supplies no independent measurement of product identity preservation. "
+    },
+    {
+      "claim": "E10: Artificial Analysis separates image-editing evaluation from its planned reference-to-image benchmark, which would assess how well newly generated images retain input characteristics.",
+      "source_or_reference": "https://artificialanalysis.ai/methodology/image",
+      "date_or_recency": "undated page, opened 2026-11-17",
+      "evidence_type": "secondary",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: industry-analyst. LOAD-BEARING for the measurement distinction only. The page describes the reference-to-image benchmark as upcoming. Its publication date and comparable results were unavailable, so it cannot establish movement. "
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "COMPETING READING: Background scan is defensible if credible evidence on product fidelity and total effort is required for any partial satisfaction. Scheduled watch gives limited credit to documented composition controls that can be accessed without an ML team.",
+    "CHASM EVIDENCE FOR: The released 2023 Coca-Cola Masterpiece campaign is the clearest traceable production example found for the category. Its use of Stable Diffusion was one component of a mixed production workflow. E2.",
+    "CHASM EVIDENCE AGAINST: The October 2023 independent GenEval results document persistent spatial and attribute-binding failures in diffusion outputs. This is evidence of a technical barrier to dependable repeated use and cannot establish how often firms use the tools. E1.",
+    "DISTINGUISHING EVIDENCE: A dated, independent multi-organization report identifying exact model versions used repeatedly for internal boards, with a manual baseline and measured reference fidelity, rework and total reviewer time.",
+    "STALE/HYPE FLAG: E5's rate card inspected on 2026-11-17 lists five credits for Stable Image Structure. The rate is mutable, the cutoff-date price is unverified, and the charge excludes retries and review. CONTROL: Use the listing to describe the service and its metering. Exclude its price from the stance and any claim about savings. REFRESH BY: 2026-12-18.",
+    "The case's agents/landscape_agent/sources/source_ledger.json was not supplied. The reported November 13 source check could not be reproduced from that ledger. Live pages inspected November 17 are explicitly identified and have limited value for reconstructing the November 13 snapshot.",
+    "The case supplied no external market prediction, actual trial, measured savings or acceptance rate. The specified review date is an interim checkpoint within the six-week horizon."
+  ],
+  "confidence_and_uncertainty": "CONFIDENCE: Moderate — broad landscape confidence is moderate for documented service availability, the inspected radar edition and the issuer-verified provenance specification. It is low for category concentration, price direction and routine production breadth. Local relevance is moderate for identifying reference fidelity and total effort as the decisive gaps, and low for predicting either outcome. No second original category tracker or independent comparable homeware workflow study was retrieved.",
+  "value_opportunity_implication": "Reference-controlled generation could widen the set of compositions available for internal review. Its value depends on whether acceptable boards are produced with less total work after generation, selection, correction and owner review. Manual or freelance boards provide the incumbent baseline.",
+  "risk_governance_implication": "A board can look plausible while changing a product's shape, material or finish. Keep draft concepts within the existing internal review boundary and use independently checked final product photographs for customer-facing work. The execution gates require separate clearance before any use.",
+  "recommendation_management_implication": "STANCE: Scheduled watch — WATCH FIRST: Dated independent evidence of product-reference fidelity and total effort against a manual baseline. STRONGEST ALTERNATIVE: Manual or freelance boards using existing photographs and layout tools. REFRESH: Quarterly, with a full source refresh at least annually and an interim management checkpoint on 2026-12-18. Recheck exact plan terms immediately before any separately authorized use.",
+  "change_monitoring_triggers": [
+    "TRIGGER 1 [L1] CAPABILITY: A dated independent evaluation reports improved product-reference fidelity over a named prior version on comparable inputs, with threshold pending owner approval — SOURCE: Independent benchmark report with versioned methods — OWNER: Marketing lead (proposed) — CADENCE: Quarterly and at the six-week checkpoint → Active watch, inspect the method and pass implications for a local comparison to the Adoption Agent.",
+    "TRIGGER 2 [L2] USE-CASE: A dated independent report documents a comparable retailer's recurring internal board workflow meeting the combined product-fidelity and all-in-effort requirement against manual boards, with threshold pending owner approval — SOURCE: Independent retail workflow evaluation — OWNER: Marketing lead (proposed) — CADENCE: Quarterly and at the six-week checkpoint → Landscape not the constraint, refer the remaining decision to the Adoption and Organizational Adoption agents.",
+    "TRIGGER 3 [L1] REVERSAL: A dated independent comparative evaluation shows that the viable reference-controlled options fail to preserve product identity on comparable boards, with threshold pending owner approval — SOURCE: Independent reference-fidelity evaluation identifying model versions — OWNER: Marketing lead (proposed) — CADENCE: Quarterly and at the six-week checkpoint → Background scan.",
+    "REVIEW DATE: 2026-12-18"
+  ],
+  "abstention_or_more_information_needed": [
+    "MORE INFO → The dated source ledger or November 13 snapshots: They would verify which live service features and prices were documented at the assessment cutoff.",
+    "MORE INFO → The current manual or freelance baseline and owner-approved fidelity criteria: They determine which external reports are comparable. No performance threshold is assumed.",
+    "HANDOFF → Creation Agent: How did latent diffusion emerge, and which architectural changes enabled text conditioning and latent-space generation?",
+    "HANDOFF → Innovation Agent: What innovation lifecycle and DEGREE label are supported for this technology?",
+    "HANDOFF → Promethean Agent: What significance class fits the technology and its wider impacts?",
+    "HANDOFF → Diffusion Agent: What diffusion stage and timing are supported by category-specific production evidence?",
+    "HANDOFF → Adoption Agent: Does the evidence warrant preparing a bounded comparison, and how should its design capture fidelity and all-in effort if separately authorized?",
+    "HANDOFF → Organizational Adoption Agent: Who can sponsor the work, clear each execution gate and provide protected review time?"
+  ]
+}

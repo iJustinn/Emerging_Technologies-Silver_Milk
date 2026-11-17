@@ -1,0 +1,75 @@
+{
+  "agent": {
+    "name": "Emerging Technology Landscape Agent",
+    "specialty": "Current technology-landscape mapping, competing and complementary approaches, standards, ecosystem dependencies and decision-changing monitoring",
+    "version": "0.2"
+  },
+  "analytical_question": "Which alternatives and dated landscape signals could justify revisiting PREPARATION_ONLY for disposable internal homeware campaign concepts at the six-week management review?",
+  "general_et_finding": "As of 2026-11-17, the dated evidence shows an ecosystem that has expanded from prompt-driven text-to-image synthesis to reference-conditioned generation and conversational editing. Latent diffusion is a technical architecture. Stable Diffusion 3 Medium is a model release in a separate diffusion-transformer and flow-matching lineage. OpenAI's 4o image generation is an adjacent generation and editing approach. Adobe Firefly's web app is a product surface offering reference controls. A workflow also includes asset selection, prompting or manual design, correction, acceptance review and handoff. The sources establish historical capabilities and releases. Current operational maturity for this task, effective access, and relative workflow economics remain unknown.",
+  "application_finding": "Ranked by fit for this internal brief: (1) manual or freelance designer boards are the incumbent and matched-brief baseline, especially when concepts need to reflect existing products, (2) text-to-image is the direct competitor for broad visual exploration where exact product identity is unnecessary, (3) reference-guided generation or editing is a complement when styling or composition needs to follow an authorized reference, (4) conventional retouching is a complement for targeted corrections and moves ahead of generative options when recognizable product details must be preserved, and (5) independently checked original product photography remains the downstream source for final assets. Catalog photos and specifications provide the reference for checking any product-specific concept.",
+  "organization_specific_finding": "The highest-ranked signal is documented permission for the exact tool, plan, and intended inputs, including acceptable retention and training-use settings, alongside an owner-designated sponsor and reviewer with protected hours. Second is matched-brief evidence that an alternative can meet the concept acceptance criteria with a worthwhile difference in all-in hours or spend. Third is a material change in platform access, export, or provenance handling that affects the ability to run or reverse a bounded comparison. With two marketers and no confirmed AI-specific staffing, the owner can review a prepared comparison at six weeks while retaining PREPARATION_ONLY until the gates are met.",
+  "evidence": [
+    {
+      "claim": "Latent diffusion performs denoising in a learned representation and can condition generation on text or other inputs.",
+      "source_or_reference": "High-Resolution Image Synthesis With Latent Diffusion Models — Rombach et al., IEEE/CVF CVPR. https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html",
+      "date_or_recency": "Published in 2022. Source retrieved 2026-11-17.",
+      "evidence_type": "VERIFIED — peer-reviewed technical research",
+      "notes": "Supports the architecture distinction and reported research capabilities. The experimental tasks did not measure a retailer's workflow. "
+    },
+    {
+      "claim": "Stability AI documented a diffusion-transformer and flow-matching approach for Stable Diffusion 3 and announced a Medium weight release.",
+      "source_or_reference": "Stable Diffusion 3 and Announcing the Open Release of Stable Diffusion 3 Medium — Stability AI. https://stability.ai/news-updates/stable-diffusion-3 and https://stability.ai/news-updates/stable-diffusion-3-medium",
+      "date_or_recency": "Preview dated 2024-02-22 and Medium release dated 2024-06-12. Sources retrieved 2026-11-17.",
+      "evidence_type": "VERIFIED historical announcement / VENDOR-CLAIMED implementation and capability",
+      "notes": "The release shows a historical weights-access path. The operative license, pricing, and actual account access were not assessed. "
+    },
+    {
+      "claim": "Adobe announced Structure Reference in the Firefly web app. OpenAI documented native image generation and editing in 4o.",
+      "source_or_reference": "New Structure Reference Capabilities in Adobe Firefly Bring a New Level of Creative Control to Ideation — Adobe. https://blog.adobe.com/en/publish/2024/03/26/new-structure-reference-capabilities-adobe-firefly-bring-new-level-creative-control-ideation | Addendum to GPT-4o System Card: Native Image Generation — OpenAI. https://cdn.openai.com/11998be9-5319-4302-bfbf-1167e093f1fb/Native_Image_Generation_System_Card.pdf",
+      "date_or_recency": "Adobe 2024-03-26 and OpenAI 2025-03-25. Sources retrieved 2026-11-17.",
+      "evidence_type": "VENDOR-CLAIMED capabilities and historical product documentation",
+      "notes": "Evidence of different product interaction patterns. Vendor demonstrations provide no matched comparison of concept acceptance, speed, or product fidelity. "
+    },
+    {
+      "claim": "The ICLR study reported improvements for evaluated diffusion editing methods on measures that included structure and background preservation.",
+      "source_or_reference": "PnP Inversion: Boosting Diffusion-based Editing with 3 Lines of Code — Ju et al., ICLR. https://openreview.net/pdf?id=FoMZ4ljhVw",
+      "date_or_recency": "Published at ICLR 2024. Source retrieved 2026-11-17.",
+      "evidence_type": "VERIFIED — peer-reviewed research with author-reported benchmark results",
+      "notes": "PIE-Bench covers prompt-based image editing. The evaluated measures do not validate SKU geometry, finishes, dimensions, or commercial catalog accuracy. "
+    },
+    {
+      "claim": "Content Credentials can support validation of signed provenance assertions and their association with an asset. Factual truth and product accuracy require separate checks.",
+      "source_or_reference": "C2PA and Content Credentials Explainer — Coalition for Content Provenance and Authenticity, version 2.2. https://c2pa.org/specifications/specifications/2.2/explainer/Explainer.html",
+      "date_or_recency": "Version 2.2. Source retrieved 2026-11-17.",
+      "evidence_type": "VERIFIED — primary standards-body explainer",
+      "notes": "The cited version establishes what the standard does. Current vendor support and whether credentials survive the retailer's export and handoff remain unknown. "
+    },
+    {
+      "claim": "Companion radar record covering the eight required lenses.",
+      "source_or_reference": "Case context and the dated technical, vendor, benchmark, and standards sources cited above.",
+      "date_or_recency": "Compiled for the 2026-11-17 assessment.",
+      "evidence_type": "Mixed evidence and inference, labeled by lens",
+      "notes": "(a) Capability and maturity — VERIFIED research demonstrations of conditional generation and editing, UNKNOWN operational maturity for homeware boards. (b) Direct approaches — VERIFIED historical latent diffusion research and Stable Diffusion 3 release documentation, VENDOR-CLAIMED adjacent native generation and editing capabilities. (c) Incumbents — INFERRED task fit for the case's manual or freelance boards, conventional design, and photography. (d) Complements — VENDOR-CLAIMED reference controls, INFERRED value of conventional retouching and catalog checks. (e) Ecosystem and switching — VERIFIED historical examples of downloadable weights and hosted interfaces, UNKNOWN current plan access, export constraints and migration effort. (f) Performance and all-in costs — UNKNOWN for generation, rejected drafts, prompting, correction, review, and displaced work. Historical quotes would be STALE for a purchase decision. (g) License, inputs and data — UNKNOWN current plan terms, permissions for individual references, retention, training use, and deletion. (h) Provenance and policy — VERIFIED C2PA version 2.2 semantics, UNKNOWN platform implementation and applicable policy changes. External publishing requirements are NOT RELEVANT to the internal comparison itself and would become a separate gate if distribution changes."
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "Vendor marketing: release demos and vendor claims about speed, quality, or control do not establish comparative performance on the retailer's briefs. Release dates document historical availability and supply no current price, license, or adoption finding.",
+    "Domain transfer: better structure or background preservation on PIE-Bench does not establish that a specific homeware item remains faithful after editing. Acceptable internal concepts can tolerate some visual deviations that would make an external product image unsuitable.",
+    "The packet reports a 2026-11-13 source-ledger review. The ledger and frozen validation script were not supplied for this run. Any archived references outside the directly retrieved sources are INHERITED/NOT RECHECKED. No frozen-script validation or independent contrast executions were performed.",
+    "The retailer is hypothetical. No trial, invoice, matched-brief timing, acceptance data, or workload-displacement measurements exist."
+  ],
+  "confidence_and_uncertainty": "High confidence in the historical architecture distinction and the cited C2PA semantics. Moderate confidence in the task-fit ordering as a judgment based on the brief. Current access, terms, staff capacity, accepted-image quality, and all-in cost differences remain unverified.",
+  "value_opportunity_implication": "A bounded comparison could test whether prompt-based generation expands the range of concepts worth discussing and whether reference-guided editing helps on composition-constrained briefs. Compare the number and quality of accepted concepts with staff time and external spend per accepted board. Include prompting, generation wait and handling, rejected drafts, corrections, reviewer time, and work displaced by the comparison.",
+  "risk_governance_implication": "Keep concepts internal, label generated drafts as concept-only, and separate the concept workspace from approved catalog assets. Verify permissions for each company or third-party reference separately from vendor rules on uploads, retention, training, and deletion. For concepts claiming to depict a real product, check original photographs or specifications for material discrepancies. Any later proposal for external publication requires its own authorization and one-by-one product-faithfulness review against original photographs and specifications. Provenance credentials can accompany that review.",
+  "recommendation_management_implication": "Maintain PREPARATION_ONLY. Use the six-week window beginning 2026-11-13 to define matched briefs, document the existing manual or freelance baseline, identify authorized reference candidates, and prepare an acceptance rubric and labor log without using a tool. At the 2026-12-25 review point, management can decide whether the evidence, staffing, and permissions warrant seeking separate authorization for a bounded comparison. No vendor is selected.",
+  "change_monitoring_triggers": [
+    "1. Permission and capacity gate. Owner accountable, with a designated marketer gathering the plan-specific contract, privacy and data-use materials plus an internal reference-rights inventory. Review at six weeks and recheck applicable price and terms on the same day as any separately authorized purchase or real trial. Revisit PREPARATION_ONLY only if intended uploads and output use are documented as permitted, data handling is acceptable, and the owner has assigned a sponsor, reviewer, and protected time.",
+    "2. Matched-task evidence gate. Owner-designated marketing lead accountable. Check for independent product-relevant comparisons at the six-week review and record locally reviewed matched-brief results only if a comparison is separately authorized. Compare against manual or freelance boards using the same acceptance criteria. Set the minimum worthwhile time, cost, or quality improvement in advance and require the result to meet that threshold after rejected work, corrections, and review are counted.",
+    "3. Access, switching, and provenance trigger. Owner-designated coordinator accountable. Check official vendor release notes, plan documentation, and C2PA materials at six weeks and before any authorized setup. Revise the comparison design if a documented change alters eligible inputs, usable export, retention or deletion, credential handling on handoff, or the ability to return to the manual workflow."
+  ],
+  "abstention_or_more_information_needed": [
+    "No trial-approved vendor, preferred purchase, best model, accuracy ranking, or time-saving finding can be supported.",
+    "Obtain authoritative plan-specific access, pricing, license and data terms, plus internal authorization for each proposed reference input.",
+    "Confirm the sponsor, coordinator, reviewer, protected hours, manual or freelance baseline, and acceptance criteria. Obtain independent product-relevant evidence or separately authorized matched-brief observations before making comparative performance claims."
+  ]
+}
