@@ -1,0 +1,78 @@
+{
+  "agent": {
+    "name": "Emerging Technology Landscape Agent",
+    "specialty": "Technology landscape intelligence",
+    "version": "0.1-student"
+  },
+  "analytical_question": "During the six-week review beginning 13 November 2026, how should a small U.S. homeware retailer compare text-to-image diffusion and reference-based editing with its manual and freelance concept workflow, and what evidence would justify revisiting PREPARATION_ONLY for a separately authorized internal comparison?",
+  "general_et_finding": "As of 17 November 2026, text-to-image diffusion is commercially established as a tool category, with documented model releases and a broader market of hosted generation and editing products. Operational reliability remains task-specific. Latent diffusion is the historical reference architecture. Research demonstrated text conditioning and reduced computation relative to pixel-space diffusion in the reported experiments. Stable Diffusion 3.5 is a documented diffusion-family offering. Adjacent hosted image generators, reference-based editors, and conventional design software compete on workflow capabilities. Model distribution, creative-tool integration, compute, asset handling, and human evaluation support practical use. Hosted tools can reduce local compute and maintenance but introduce dependence on plan terms, model changes, and usage limits. Distributed weights offer more control when licensing, hardware, and maintenance are viable. C2PA provides a voluntary media-provenance standard. Public releases establish availability and vendor activity, while the reviewed evidence does not establish comparable production reliability, independent adoption rates, or a sustained decline in all-in workflow costs. ",
+  "application_finding": "The strongest practical alternative is the existing manual mood board assembled from the approved catalog with conventional editing and freelance design as needed. It provides a baseline for product fidelity, editability, and review effort. Prompt-only diffusion is a candidate for exploring lighting, color palettes, and room compositions when exact product depiction is unnecessary. Reference-based editing in an established editor is the strongest AI-assisted comparator where a recognizable product matters. Adobe documents reference-guided Generative Fill, and OpenAI documents hosted generation and editing as an adjacent offering. These capabilities warrant comparison but provide no measurement of fidelity on the retailer's products. Use the same briefs and assess whether each board communicates the intended campaign direction, preserves relevant product attributes, remains editable and exportable, and limits rework. All-in cost should include subscriptions or credits, setup, asset checks, generation, selection, correction, review, and freelance fees as applicable. Essential complements are rights-cleared references, approved asset handling, and human review. Provenance metadata is optional. Independently checked final product photography remains the basis for public assets. ",
+  "organization_specific_finding": "Two marketers and existing owner review make the manual baseline practical to document during the six-week review. With no ML team, self-managed diffusion is a lower-priority comparator because setup, compute, and maintenance would consume capacity before the retailer can assess whether concept development improves. An editing feature within an already approved creative environment would be the first AI-assisted candidate to screen, if the relevant plan permits the proposed reference uploads and handling. The retailer's appetite for reversible internal experiments supports preparation. A named owner or sponsor, a coordinator and reviewer, protected hours, a budget for the comparison, and explicit authority to run it are unconfirmed. The most consequential development would be verification that an affordable plan permits the intended catalog-image workflow under acceptable data terms, alongside confirmed staff capacity and trial authorization.",
+  "evidence": [
+    {
+      "claim": "Latent diffusion demonstrated text-conditioned image synthesis and reduced computational requirements relative to pixel-space diffusion in the reported research.",
+      "source_or_reference": "Rombach et al., High-Resolution Image Synthesis With Latent Diffusion Models, CVPR 2022. https://openaccess.thecvf.com/content/CVPR2022/papers/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.pdf ",
+      "date_or_recency": "2022",
+      "evidence_type": "Peer-reviewed technical research",
+      "notes": "Historical evidence for the architecture and reported experimental results. It supplies no current retailer cost or product-fidelity benchmark."
+    },
+    {
+      "claim": "Stability AI announced multiple Stable Diffusion 3.5 model variants, establishing a documented diffusion-family option.",
+      "source_or_reference": "Stability AI, Introducing Stable Diffusion 3.5. https://stability.ai/news-updates/introducing-stable-diffusion-3-5 ",
+      "date_or_recency": "22 October 2024, updated 29 October 2024",
+      "evidence_type": "Vendor release announcement",
+      "notes": "Evidence of model availability at release. Verify current license, support, and cost for any candidate version."
+    },
+    {
+      "claim": "Commercial creative tools document reference-guided image generation and editing.",
+      "source_or_reference": "Adobe, Use reference images for generative fill in Photoshop. https://helpx.adobe.com/photoshop/desktop/create-open-import-images/create-images/use-reference-images-for-consistent-results.html. OpenAI, Image generation. https://developers.openai.com/api/docs/guides/tools-image-generation ",
+      "date_or_recency": "Live product documentation checked 17 November 2026. Publication dates unconfirmed.",
+      "evidence_type": "Vendor implementation documentation",
+      "notes": "Documents supported workflows. Architecture, specific plan entitlements, reference fidelity, usage charges, and permitted uploads require separate verification for each candidate."
+    },
+    {
+      "claim": "The U.S. Copyright Office's report ties copyright protection for generative outputs to sufficient human authorship. The FTC states that U.S. advertising claims must be truthful and supported.",
+      "source_or_reference": "U.S. Copyright Office, Copyright and Artificial Intelligence, Part 2: Copyrightability release notice. https://www.copyright.gov/newsnet/2025/1060.html. FTC, Advertising and Marketing Basics. https://www.ftc.gov/business-guidance/advertising-marketing/advertising-marketing-basics ",
+      "date_or_recency": "Copyright Office report released 29 January 2025. Undated FTC guidance checked 17 November 2026.",
+      "evidence_type": "U.S. federal authority report and guidance",
+      "notes": "The copyright report explains the Office's interpretation and leaves vendor rights and individual outputs to separate review. Federal truth-in-advertising requirements matter if a concept influences a public product claim."
+    },
+    {
+      "claim": "C2PA publishes a technical specification for recording media provenance through Content Credentials.",
+      "source_or_reference": "Coalition for Content Provenance and Authenticity, C2PA Specifications 2.4. https://spec.c2pa.org/specifications/specifications/2.4/ ",
+      "date_or_recency": "Version 2.4 page checked 17 November 2026. Publication date unconfirmed.",
+      "evidence_type": "Voluntary industry technical standard",
+      "notes": "Provenance can support asset tracking. Product accuracy, rights clearance, and credential survival through export require separate checks."
+    },
+    {
+      "claim": "The hypothetical retailer has an existing manual and freelance workflow and is at PREPARATION_ONLY. No trial results are available.",
+      "source_or_reference": "Supplied case context summarizing Assignments 6 and 7",
+      "date_or_recency": "Six-week case review begins 13 November 2026",
+      "evidence_type": "Provided hypothetical case evidence",
+      "notes": "Assignments 6 and 7 and the cited source ledger were unavailable as separate files. The recommendation applies to the supplied primary case."
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "Vendor claims about improved consistency are sensitive to model versions and demo selection. An attractive render can still alter a product's dimensions, finish, texture, or construction.",
+    "Plan eligibility, model availability, upload and retention terms, and credit pricing can change within the review window. The documented interfaces establish candidate capabilities. The exact plan and its business terms require a fresh check.",
+    "No independent matched benchmark or comparable retailer deployment was verified for homeware mood boards. Release announcements and product documentation establish supply and tooling, with adoption, realized savings, and performance in this workflow still uncertain.",
+    "Published image-quality metrics cannot establish how often the owner would accept a board or how much time marketers would spend correcting it."
+  ],
+  "confidence_and_uncertainty": "High confidence in the historical architecture and the existence of commercial generation and reference-editing workflows. Moderate confidence that reference editing is the most relevant AI-assisted comparison for this retailer, based on its existing catalog and editing skills. Low confidence in any vendor ranking, product-fidelity rate, adoption estimate, or cost advantage. The manual and freelance workflow is the strongest current baseline based on the case. Its measured cost and effort remain unknown.",
+  "value_opportunity_implication": "Disposable internal boards create an opportunity to explore more campaign directions before commissioning work. Value would come from usable creative choices within comparable total effort and acceptable product fidelity. The immediate management value is a better-defined manual baseline and evidence about whether a later comparison is worth staff time.",
+  "risk_governance_implication": "Catalog uploads can introduce contractual and privacy risks even for internal boards. Before any separately authorized trial, verify input permissions, the provider's retention and training-use terms, output and export rights, and who can access or share the boards. Keep concepts clearly labeled and outside publishing workflows. Review public advertising against independently checked product photos and substantiated claims. Include revisions and displaced staff or freelance work in the cost comparison. ",
+  "recommendation_management_implication": "Maintain PREPARATION_ONLY for the six-week review. Measure recent manual and freelance work, define representative briefs and product attributes reviewers expect to preserve, and compare public documentation for one diffusion offering and one reference-based editor. The strongest baseline is manual assembly from approved catalog photography with freelance support as needed. The most consequential external development would be a documented, affordable reference-editing option with acceptable rights and data handling for the proposed plan. Revisit a bounded internal comparison only if those terms are verified, a credible comparison can be run, and management assigns responsibility, protects staff time, and explicitly authorizes it.",
+  "change_monitoring_triggers": [
+    "Review candidate plan terms at the start, during the review if terms change, and immediately before any authorized trial. Use the governing terms, data policy, plan details, and applicable contract. A verified permission to use the specified references with acceptable retention, training use, access, and export terms keeps a hosted candidate eligible. A material restriction removes or replaces it.",
+    "Review independent reference-editing studies or documented comparable retailer workflows every two weeks. Evidence covering preservation of product shape, finish, and material on comparable briefs, with review and correction effort reported, would support prioritizing the reference editor for a future comparison.",
+    "Check plan pricing, export, limits, and model availability at the midpoint and close. Compare vendor plan documents with recent manual hours and freelance fees. A material cost change, export restriction, or model retirement changes whether the candidate remains in scope.",
+    "Review owner approval, named responsibilities, protected hours, and a documented manual baseline at midpoint and close. Confirmed capacity and explicit authorization, together with satisfactory vendor evidence, would allow management to reconsider PREPARATION_ONLY.",
+    "Check U.S. Copyright Office and FTC updates at the close of the review and before any proposed change to external use. A material change affecting asset rights or public advertising warrants reassessing permitted references and where concepts may circulate."
+  ],
+  "abstention_or_more_information_needed": [
+    "Obtain agents/landscape_agent/sources/source_ledger.json to reconcile this run with the reported 13 November 2026 evidence snapshot. The available public sources were checked separately.",
+    "Obtain candidate plan terms, input asset permissions, usage and retention settings, costs, and export restrictions before deeming a tool eligible.",
+    "Collect representative briefs, historical manual and freelance effort, an acceptable budget, explicit ownership, authorized reviewers, and protected hours before judging whether management should authorize a comparison.",
+    "Withhold vendor superiority, ROI, acceptance-rate, and product-fidelity conclusions until a comparable evaluation is available. Only the primary case was supplied, so cross-case stability and the instruction-revision rerun could not be verified."
+  ]
+}

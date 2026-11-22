@@ -1,0 +1,111 @@
+{
+  "agent": {
+    "name": "Silver-Milk Team Landscape Agent",
+    "specialty": "Dated technology-landscape intelligence: eight fixed landscape dimensions (capability, use cases, trackers, ecosystem, standards, price/performance, coverage, alternatives) each with a basis, broad signals separated from the few that matter to this organization, execution gates kept apart from landscape signals, a gating-condition x movement table that sets the monitoring stance, owned triggers mapped to actions, and a dated stale/hype flag (never the adoption decision, never a vendor selection)",
+    "version": "1.0-team"
+  },
+  "analytical_question": "Where does Agentic AI for read-only information-support customer service sit relative to alternatives, and which external developments could change the hypothetical multinational bank’s evaluation priorities?",
+  "general_et_finding": "AS OF: 2026-11-17\nUNIT: Agentic AI\nL1 TECHNICAL CAPABILITY: Developing — a narrow live study found useful performance under externally enforced constraints and recurring failures under agent-enforced constraints. A conversational benchmark separately found coordination failures (Husk, 2026-07; Barres et al., 2025-06). BASIS: E1, E2\nL2 USE-CASE EVIDENCE: Use cases emerging — named live workflows are documented, with sustained operating outcomes largely reported by vendors or adopters in the inspected evidence (Salesforce, 2024-09; Reuters, 2026-07). BASIS: E3, E7\nL3 TRACKER PLACEMENT: Not covered by Thoughtworks Technology Radar Vol. 35 at category level — Agent sandboxing is Adopt, a technique placement. MOVEMENT: Single edition only for that blip. Gartner Hype Cycle for Agentic AI 2026: category placement not retrieved from the public abstract (Thoughtworks, 2026-11; Gartner, 2026-04). BASIS: E4, E5\nL4 VENDOR/ECOSYSTEM STRUCTURE: Insufficient evidence — products are documented, with insufficient comparable market-share or switching evidence (Salesforce, 2024-09; Backbase, 2026-10). BASIS: E3, E10\nL5 STANDARDS & REGULATION: Emerging — NIST launched an interoperability and security standards initiative. The announcement itself is an initiative, distinct from a published standard or binding rule (NIST, 2026-02). BASIS: E6\nL6 PRICE/PERFORMANCE: Insufficient evidence — no matched 12-month comparison of price at fixed task quality and oversight burden (Thoughtworks, 2026-11). BASIS: E4\nL7 COVERAGE TONE: Mixed — expansion and deployment coverage accompanies concern over control (Reuters, 2026-07; Gartner, 2026-04). BASIS: E7, E5\nL8 ALTERNATIVES & COMPLEMENTS: INCUMBENT: human-operated knowledge search and deterministic workflows. COMPETING: retrieval-assisted chat with deterministic routing. COMPLEMENTS: governed knowledge, restricted tool access and monitoring.\nPOSITION: Agentic AI has documented live uses and evidence of useful bounded performance. Reliability across settings and the cost of obtaining comparable outcomes remain less well evidenced.",
+  "application_finding": "APPLICATION SIGNALS: L1 matters for faithful answers, recognition of unresolved questions and completed staff handoffs. L2 matters for evidence from live queues with repeat contacts and exceptions. L6 matters for the cost per correctly resolved request, including staff rework.\nAPPLICATION-SPECIFIC EVIDENCE: Thin — E2 independently tests relevant conversational coordination in simulation. The inspected evidence lacks independent live results covering approved-knowledge answers, read-only scope and completed staff handoffs together.\nSTRONGEST ALTERNATIVE: Retrieval-assisted chat with deterministic routing — it offers the same answer-and-handoff workflow with an explicit routing rule and provides a direct comparator for the incremental value of agentic orchestration.",
+  "organization_specific_finding": "UNIT OF ANALYSIS: Hypothetical multinational bank’s customer-service evaluation decision.\nGATING CONDITION: Given the bank’s moderate fast-follower posture and mandatory human escalation, an externally documented option must support bounded information service, and independent comparable production evidence must show dependable approved-knowledge answers and completed, accessible staff handoffs against the existing workflow.\nCONDITION STATUS: Partly met — documented control and knowledge mechanisms cover part of the requirement, and live comparative evidence for the combined workflow remains missing. BASIS: E2, E3, E7, E8\nMOVEMENT: None — inspected recent sources describe broader deployment and safeguards without establishing a qualifying change toward the missing comparative evidence. BASIS: E4, E7, E10\nSTANCE: Scheduled watch\nEXECUTION GATES: Tool and plan terms and procurement approval — procurement. Approved inputs and knowledge rights — knowledge owners. Retention, residency and jurisdiction review — risk/compliance and IT/security. Security review — IT/security. Management authorization — owner not stated.\nRELEVANT SIGNALS: L1 — observed conversational coordination failures matter because customers rely on completed escalation. L2 — live bank reporting mostly concerns adjacent workflows, leaving the read-only customer service comparison unresolved. L5 — interoperability work matters for cross-border integrations and distinguishing external specifications from local obligations.\nPOPULAR BUT NOT DECISIVE HERE: Agentic AI investment attention says little about answer quality. Transaction-executing agent launches fall outside the proposed scope.\nMOST CONSEQUENTIAL DEVELOPMENT: L1 — independent benchmark evidence of performance loss when support requires active user coordination changes which handoff failure modes deserve scrutiny in a bounded evaluation.\nECOSYSTEM DEPENDENCY: The model orchestration runtime and its control-return interface.\nOPTIONS DOCUMENTED: Amazon Bedrock Agents (vendor-claim) documents returning a proposed action to the calling application. Salesforce Agentforce (vendor-claim) describes knowledge-based answers and triage in a named deployment. NO SELECTION.",
+  "evidence": [
+    {
+      "claim": "E1: A live field study of two autonomous agents found that externally enforced constraints held under observed pressure while agent-enforced constraints failed in recognizable ways.",
+      "source_or_reference": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6884282",
+      "date_or_recency": "2026-07-30",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: independent; LOAD-BEARING. Revised working paper on a narrow live deployment. Its author designed the tested approach. Transfer to other settings is uncertain. "
+    },
+    {
+      "claim": "E2: The τ²-Bench study found lower agent performance when telecom support tasks required coordination with an active simulated user.",
+      "source_or_reference": "https://arxiv.org/abs/2506.07982",
+      "date_or_recency": "2025-06-09",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: independent; LOAD-BEARING. Controlled simulation. It did not measure successful transfer to live bank staff. "
+    },
+    {
+      "claim": "E3: Salesforce reports that Wiley went live with an Agentforce workflow answering knowledge-base questions and triaging selected requests.",
+      "source_or_reference": "https://investor.salesforce.com/news/news-details/2024/Salesforce-Unveils-AgentforceWhat-AI-Was-Meant-to-Be/default.aspx",
+      "date_or_recency": "2024-09",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: vendor-claim; LOAD-BEARING. The release quotes Wiley. The operating claim and quoted customer statement are counted once. "
+    },
+    {
+      "claim": "E4: Thoughtworks Technology Radar Vol. 35 places Agent sandboxing in Adopt and discusses the broader engineering and operating costs of agent systems.",
+      "source_or_reference": "https://www.thoughtworks.com/radar/techniques",
+      "date_or_recency": "2026-11-04",
+      "evidence_type": "secondary",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: industry-analyst; LOAD-BEARING. The placement is for a technique. The earlier coding-specific sandboxing entry has a narrower scope and does not establish same-blip movement here. "
+    },
+    {
+      "claim": "E5: Gartner’s public 2026 Hype Cycle abstract describes strong interest and investment alongside hype and confusion. The placement chart was unavailable in the public abstract.",
+      "source_or_reference": "https://www.gartner.com/en/documents/7671861",
+      "date_or_recency": "2026-04-02",
+      "evidence_type": "secondary",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: industry-analyst; LOAD-BEARING for coverage tone. The abstract supplies no verified chart placement or movement. "
+    },
+    {
+      "claim": "E6: NIST announced an initiative to advance secure agent interoperability and industry-led standards development.",
+      "source_or_reference": "https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure",
+      "date_or_recency": "2026-02-17",
+      "evidence_type": "primary-historical",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: standards-regulatory; LOAD-BEARING. The cited item is a dated initiative announcement with no versioned specification or binding requirements. "
+    },
+    {
+      "claim": "E7: Reuters reports live use of digital agents in named banks’ operations and describes customer-facing deployment as more cautious, including a planned supervised test.",
+      "source_or_reference": "https://www.fidelity.com/news/article/default/202607130500RTRSNEWSCOMBINED_L4N432191_1",
+      "date_or_recency": "2026-07-13",
+      "evidence_type": "secondary",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: industry-analyst; LOAD-BEARING. Reuters reporting includes bank and industry accounts. It supplies no independent comparative outcomes for the exact workflow. "
+    },
+    {
+      "claim": "E8: Amazon Bedrock Agents documents a configuration that returns elicited action parameters to the calling application for handling.",
+      "source_or_reference": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents-returncontrol.html",
+      "date_or_recency": "undated page, opened 2026-11-17",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: vendor-claim; LOAD-BEARING for documented option mechanics. An application-level control return does not measure whether a staff handoff was completed. "
+    },
+    {
+      "claim": "E9: The hypothetical bank requires approved-knowledge answers, read-only scope and human escalation. It has a three-month decision-preparation horizon and may consider a bounded evaluation within six months.",
+      "source_or_reference": "Supplied case context",
+      "date_or_recency": "2026-11-16",
+      "evidence_type": "case-premise",
+      "notes": "STATUS: supplied; SOURCE CLASS: case-premise; LOAD-BEARING for the local gate and horizon only. Jurisdictions, internal readiness and actual outcomes are unspecified."
+    },
+    {
+      "claim": "E10: Backbase announced general availability of Conversational Banking with governed banking actions and transfer to employees when human judgment is needed.",
+      "source_or_reference": "https://www.backbase.com/press/backbase-launches-conversational-banking-to-turn-customer-conversations-into-governed-banking-action",
+      "date_or_recency": "2026-10-08",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: vendor-claim. Availability and documented scope only. The release describes account actions beyond the proposed application and gives no qualifying comparative production evidence. "
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "COMPETING READING: Background scan is defensible if a documented control mechanism is considered too partial to satisfy any meaningful part of the gate until a comparable end-to-end workflow is observable.",
+    "CHASM EVIDENCE FOR: Reuters, 2026-07-13 (E7), reports named banks integrating agents into day-to-day operations, evidence that some agentic workflows have moved beyond demonstrations.",
+    "CHASM EVIDENCE AGAINST: The same Reuters report (E7) describes cautious movement into direct client interaction, including a planned supervised test. Its live internal deployments do not establish repeatable customer-facing information support.",
+    "DISTINGUISHING EVIDENCE: A dated independent field report on comparable production queues that publishes approved-knowledge accuracy, completed and accessible staff handoffs, and repeat-contact outcomes against a retrieval-and-rules comparator.",
+    "STALE/HYPE FLAG: Salesforce’s 2024-09 report of more than 40% higher case resolution at Wiley (E3) is a vendor-published early comparison with an older chatbot. Its age, setting and unspecified transferability make it unsuitable as a bank performance estimate. CONTROL: Used the named live use case as deployment evidence and excluded its uplift figure from the gate, movement and value estimate. REFRESH BY: 2027-02-17.",
+    "The case supplies no market claim requiring origin tracing. The tracker entries cover different units, so their placements cannot establish direction. The inspected sources supplied no matched 12-month price/performance series, independent multi-organization production study of the exact workflow, or basis for jurisdiction-specific applicability."
+  ],
+  "confidence_and_uncertainty": "CONFIDENCE: Moderate — broad landscape confidence is moderate for bounded capability and documented live use, and low for category placement, ecosystem concentration and comparable price/performance. Local relevance confidence is moderate because the case explicitly requires read-only scope and human escalation. Confidence in transferable customer outcomes is low. The public Gartner chart and an independent comparable live bank study were unavailable in the inspected evidence.",
+  "value_opportunity_implication": "Agentic orchestration could add value when customers ask ambiguous, multi-step questions that require clarification and selection among approved knowledge sources. The relevant comparison is incremental correct resolution and staff time per request, accounting for false resolutions, repeat contacts and handoff rework. The inspected evidence supports no quantified local uplift.",
+  "risk_governance_implication": "A plausible unsupported answer or a failed transfer can leave a customer without reliable help even when the system has read-only access. Comparable external evidence should report outcomes by language and accessibility needs, distinguish transfer attempts from staff receipt, and disclose how failures were detected. Jurisdictions remain unspecified, so legal applicability is undetermined.",
+  "recommendation_management_implication": "STANCE: Scheduled watch — WATCH FIRST: Independent production comparisons that report grounded answers and completed human escalations in read-only customer support. STRONGEST ALTERNATIVE: Retrieval-assisted chat with deterministic routing. REFRESH: Quarterly, starting 2027-02-17, with a full source refresh by 2027-11-17.",
+  "change_monitoring_triggers": [
+    "TRIGGER 1 [L2] USE-CASE: A dated independent production comparison reports reproducible progress toward dependable approved-knowledge answers and completed staff handoffs in a comparable read-only service workflow, with some gate criteria still open — threshold pending customer-protection executive approval — SOURCE: peer-reviewed field report or independent audit — OWNER: customer-protection executive (proposed) — CADENCE: quarterly → Active watch",
+    "TRIGGER 2 [L2] REVERSAL: A dated independent field evaluation shows that a comparable workflow previously counted as feasible cannot sustain completed staff handoffs under the no-write restriction, removing the evidence behind partial gate satisfaction — threshold pending customer-protection executive approval — SOURCE: independent follow-up audit with documented workflow failures — OWNER: operational risk lead (proposed) — CADENCE: quarterly → Background scan",
+    "REVIEW DATE: 2027-02-17"
+  ],
+  "abstention_or_more_information_needed": [
+    "MORE INFO → In-scope jurisdictions and support channels: these define which peer deployments and external requirements are comparable.",
+    "MORE INFO → Baseline answer and escalation measures, including staff receipt, repeat contacts and access outcomes: these define the comparison and the thresholds that local owners must approve.",
+    "MORE INFO → Primary tracker chart, independent production comparisons and matched cost data: these could resolve the outstanding placement, transferability and price/performance gaps.",
+    "HANDOFF → Creation Agent: How did the technical components of agentic orchestration originate?",
+    "HANDOFF → Innovation Agent: Which lifecycle position and DEGREE label fit this application?",
+    "HANDOFF → Promethean Agent: What significance class fits the changes to customer-service work?",
+    "HANDOFF → Diffusion Agent: What diffusion stage and timing are supported for this specific application?",
+    "HANDOFF → Adoption Agent: What decision or bounded evaluation design would compare agentic orchestration with the retrieval-and-rules baseline?",
+    "HANDOFF → Organizational Adoption Agent: Can the bank govern and operate the workflow, and which roles have authority to clear each execution gate?"
+  ]
+}

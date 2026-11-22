@@ -1,0 +1,234 @@
+##### primary
+PASS  L1  label from allowed set  (Developing)
+PASS  L2  label from allowed set  (Use cases emerging)
+PASS  L4  label from allowed set  (Fragmented)
+PASS  L5  label from allowed set  (Emerging)
+PASS  L6  label from allowed set  (Mixed)
+PASS  L7  label from allowed set  (Mixed)
+PASS  BASIS on L1, L2, L4–L7 (≥6)  (7)
+PASS  L3 present  (Not retrieved — The public Gartner abstract exposes no verifiable category placement or ed)
+PASS  L3 placement >24 months old is marked Stale (R-11)  ([])
+PASS  POSITION present, no score  
+PASS  STANCE matches table (R-5)  (Partly met × Toward → Active watch)
+PASS  Recommendation starts with the same STANCE  STANCE: Active watch — WATCH FIRST: Independe
+PASS  EXECUTION GATES: present  
+PASS  RELEVANT SIGNALS: present  
+PASS  POPULAR BUT NOT DECISIVE HERE: present  
+PASS  MOST CONSEQUENTIAL DEVELOPMENT: present  
+PASS  ECOSYSTEM DEPENDENCY: present  
+PASS  OPTIONS DOCUMENTED: present  
+PASS  OPTIONS DOCUMENTED says NO SELECTION  
+PASS  R-8 gate words in RELEVANT SIGNALS  []
+PASS  R-8 gate words in MOST CONSEQUENTIAL DEVELOPMENT  []
+PASS  COMPETING READING: present  
+PASS  CHASM EVIDENCE FOR: present  
+PASS  CHASM EVIDENCE AGAINST: present  
+PASS  DISTINGUISHING EVIDENCE: present  
+PASS  STALE/HYPE FLAG: present  
+PASS  Flag has CONTROL and REFRESH BY date  
+PASS  Flag names a dated claim (E-number or case location, a date)  
+PASS  CONFIDENCE label  CONFIDENCE: Moderate — Broad l
+PASS  2–4 TRIGGER lines  (2)
+PASS  Each trigger: [L<n>] TYPE, SOURCE, OWNER, CADENCE, →  bad []
+PASS  No trigger lands on the current stance (R-7)  []
+PASS  One REVERSAL trigger  
+PASS  REVIEW DATE present  
+PASS  Numbers in triggers not given by the case (R-7)  []
+PASS  6–12 evidence items  (11)
+PASS  evidence_type in team set  []
+PASS  Every note has SOURCE CLASS from the set  
+PASS  ≥4 source classes  ['independent', 'industry-analyst', 'standards-regulatory', 'vendor-claim']
+PASS  Claims numbered E<n>:  
+PASS  Every item dated  []
+PASS  C2PA version cited (latest is 2.5 as of 2026-10; R-11)  []
+PASS  Six HANDOFF lines  (6)
+PASS  No lane violation (R-12)  []
+PASS  general_et_finding ≤300 words  (271)
+PASS  application_finding ≤150 words  (110)
+PASS  organization_specific_finding ≤320 words  (289)
+PASS  recommendation_management_implication ≤150 words  (47)
+FAIL  Pair: Step 1 labels identical (R-3) + Step 2  {'L6 PRICE/PERFORMANCE': ('Mixed', None)}
+FLAG  Pair: L3 text identical  (Not retrieved — The public Gartner abstract exposes no verifiable category placement or ed | Not covered by Stanford AI Index 2026-04 at category level — Gemini-3-Pro leads Figure 2.3)
+PASS  General ≤300 words  (271 words)
+FLAG  Org/industry words in general level  ['review']
+PASS  Every evidence note starts with STATUS  bad indices []
+PASS  No Markdown links in sources  []
+FLAG  'verified'/'checked' wording (allowed only if retrieved)  (4)
+PASS  HANDOFF lines present  (6)
+PASS  No empty arrays  []
+INFO  application_finding words: 110
+INFO  organization_specific_finding words: 289
+##### contrast_1
+PASS  L1  label from allowed set  (Developing)
+PASS  L2  label from allowed set  (Use cases emerging)
+PASS  L4  label from allowed set  (Fragmented)
+PASS  L5  label from allowed set  (Emerging)
+FAIL  L6  label from allowed set  (None)
+PASS  L7  label from allowed set  (Mixed)
+PASS  BASIS on L1, L2, L4–L7 (≥6)  (7)
+PASS  L3 present  (Not covered by Stanford AI Index 2026-04 at category level — Gemini-3-Pro leads Figure 2.3)
+PASS  L3 placement >24 months old is marked Stale (R-11)  ([])
+PASS  POSITION present, no score  
+PASS  STANCE matches table (R-5)  (Partly met × Toward → Active watch)
+PASS  Recommendation starts with the same STANCE  STANCE: Active watch — WATCH FIRST: matched e
+PASS  EXECUTION GATES: present  
+PASS  RELEVANT SIGNALS: present  
+PASS  POPULAR BUT NOT DECISIVE HERE: present  
+PASS  MOST CONSEQUENTIAL DEVELOPMENT: present  
+PASS  ECOSYSTEM DEPENDENCY: present  
+PASS  OPTIONS DOCUMENTED: present  
+PASS  OPTIONS DOCUMENTED says NO SELECTION  
+PASS  R-8 gate words in RELEVANT SIGNALS  []
+PASS  R-8 gate words in MOST CONSEQUENTIAL DEVELOPMENT  []
+PASS  COMPETING READING: present  
+PASS  CHASM EVIDENCE FOR: present  
+PASS  CHASM EVIDENCE AGAINST: present  
+PASS  DISTINGUISHING EVIDENCE: present  
+PASS  STALE/HYPE FLAG: present  
+PASS  Flag has CONTROL and REFRESH BY date  
+PASS  Flag names a dated claim (E-number or case location, a date)  
+PASS  CONFIDENCE label  CONFIDENCE: Moderate — confide
+PASS  2–4 TRIGGER lines  (2)
+PASS  Each trigger: [L<n>] TYPE, SOURCE, OWNER, CADENCE, →  bad []
+PASS  No trigger lands on the current stance (R-7)  []
+PASS  One REVERSAL trigger  
+PASS  REVIEW DATE present  
+PASS  Numbers in triggers not given by the case (R-7)  []
+PASS  6–12 evidence items  (12)
+PASS  evidence_type in team set  []
+PASS  Every note has SOURCE CLASS from the set  
+PASS  ≥4 source classes  ['independent', 'industry-analyst', 'standards-regulatory', 'vendor-claim']
+PASS  Claims numbered E<n>:  
+PASS  Every item dated  []
+PASS  C2PA version cited (latest is 2.5 as of 2026-10; R-11)  []
+PASS  Six HANDOFF lines  (6)
+PASS  No lane violation (R-12)  []
+PASS  general_et_finding ≤300 words  (295)
+PASS  application_finding ≤150 words  (107)
+FAIL  organization_specific_finding ≤320 words  (325)
+PASS  recommendation_management_implication ≤150 words  (48)
+PASS  General ≤300 words  (295 words)
+FLAG  Org/industry words in general level  ['creative', 'marketing', 'review']
+PASS  Every evidence note starts with STATUS  bad indices []
+PASS  No Markdown links in sources  []
+FLAG  'verified'/'checked' wording (allowed only if retrieved)  (2)
+PASS  HANDOFF lines present  (6)
+PASS  No empty arrays  []
+INFO  application_finding words: 107
+INFO  organization_specific_finding words: 325
+##### contrast_2
+PASS  L1  label from allowed set  (Developing)
+PASS  L2  label from allowed set  (Use cases emerging)
+PASS  L4  label from allowed set  (Fragmented)
+PASS  L5  label from allowed set  (Emerging)
+FAIL  L6  label from allowed set  (None)
+PASS  L7  label from allowed set  (Mixed)
+PASS  BASIS on L1, L2, L4–L7 (≥6)  (7)
+PASS  L3 present  (Gartner Hype Cycle for Artificial Intelligence 2025-08: AI agents, Peak of Inflated Expect)
+PASS  L3 placement >24 months old is marked Stale (R-11)  ([])
+PASS  POSITION present, no score  
+PASS  STANCE matches table (R-5)  (Partly met × Toward → Active watch)
+PASS  Recommendation starts with the same STANCE  STANCE: Active watch — WATCH FIRST: independe
+PASS  EXECUTION GATES: present  
+PASS  RELEVANT SIGNALS: present  
+PASS  POPULAR BUT NOT DECISIVE HERE: present  
+PASS  MOST CONSEQUENTIAL DEVELOPMENT: present  
+PASS  ECOSYSTEM DEPENDENCY: present  
+PASS  OPTIONS DOCUMENTED: present  
+PASS  OPTIONS DOCUMENTED says NO SELECTION  
+PASS  R-8 gate words in RELEVANT SIGNALS  []
+PASS  R-8 gate words in MOST CONSEQUENTIAL DEVELOPMENT  []
+PASS  COMPETING READING: present  
+PASS  CHASM EVIDENCE FOR: present  
+PASS  CHASM EVIDENCE AGAINST: present  
+PASS  DISTINGUISHING EVIDENCE: present  
+PASS  STALE/HYPE FLAG: present  
+PASS  Flag has CONTROL and REFRESH BY date  
+PASS  Flag names a dated claim (E-number or case location, a date)  
+PASS  CONFIDENCE label  CONFIDENCE: Moderate — broad l
+PASS  2–4 TRIGGER lines  (2)
+PASS  Each trigger: [L<n>] TYPE, SOURCE, OWNER, CADENCE, →  bad []
+PASS  No trigger lands on the current stance (R-7)  []
+PASS  One REVERSAL trigger  
+PASS  REVIEW DATE present  
+PASS  Numbers in triggers not given by the case (R-7)  []
+PASS  6–12 evidence items  (11)
+PASS  evidence_type in team set  []
+PASS  Every note has SOURCE CLASS from the set  
+PASS  ≥4 source classes  ['adopter-self-report', 'case-premise', 'independent', 'industry-analyst', 'standards-regulatory', 'vendor-claim']
+PASS  Claims numbered E<n>:  
+PASS  Every item dated  []
+PASS  C2PA version cited (latest is 2.5 as of 2026-10; R-11)  []
+PASS  Six HANDOFF lines  (6)
+PASS  No lane violation (R-12)  []
+PASS  general_et_finding ≤300 words  (274)
+PASS  application_finding ≤150 words  (101)
+PASS  organization_specific_finding ≤320 words  (272)
+PASS  recommendation_management_implication ≤150 words  (50)
+PASS  General ≤300 words  (274 words)
+PASS  Org/industry words in general level  []
+PASS  Every evidence note starts with STATUS  bad indices []
+PASS  No Markdown links in sources  []
+PASS  'verified'/'checked' wording (allowed only if retrieved)  (0)
+PASS  HANDOFF lines present  (6)
+PASS  No empty arrays  []
+INFO  application_finding words: 101
+INFO  organization_specific_finding words: 272
+##### contrast_3
+PASS  L1  label from allowed set  (Developing)
+PASS  L2  label from allowed set  (Use cases emerging)
+PASS  L4  label from allowed set  (Consolidating)
+PASS  L5  label from allowed set  (Emerging)
+PASS  L6  label from allowed set  (Mixed)
+PASS  L7  label from allowed set  (Mixed)
+PASS  BASIS on L1, L2, L4–L7 (≥6)  (7)
+PASS  L3 present  (Thoughtworks Technology Radar 2025-11: Claude Code Trial; 2026-04: Claude Code Adopt, prod)
+PASS  L3 placement >24 months old is marked Stale (R-11)  ([])
+PASS  POSITION present, no score  
+PASS  STANCE matches table (R-5)  (Partly met × Toward → Active watch)
+PASS  Recommendation starts with the same STANCE  STANCE: Active watch — WATCH FIRST: Trace rou
+PASS  EXECUTION GATES: present  
+PASS  RELEVANT SIGNALS: present  
+PASS  POPULAR BUT NOT DECISIVE HERE: present  
+PASS  MOST CONSEQUENTIAL DEVELOPMENT: present  
+PASS  ECOSYSTEM DEPENDENCY: present  
+PASS  OPTIONS DOCUMENTED: present  
+PASS  OPTIONS DOCUMENTED says NO SELECTION  
+PASS  R-8 gate words in RELEVANT SIGNALS  []
+PASS  R-8 gate words in MOST CONSEQUENTIAL DEVELOPMENT  []
+PASS  COMPETING READING: present  
+PASS  CHASM EVIDENCE FOR: present  
+PASS  CHASM EVIDENCE AGAINST: present  
+PASS  DISTINGUISHING EVIDENCE: present  
+PASS  STALE/HYPE FLAG: present  
+PASS  Flag has CONTROL and REFRESH BY date  
+PASS  Flag names a dated claim (E-number or case location, a date)  
+PASS  CONFIDENCE label  CONFIDENCE: Moderate — broad l
+PASS  2–4 TRIGGER lines  (2)
+PASS  Each trigger: [L<n>] TYPE, SOURCE, OWNER, CADENCE, →  bad []
+PASS  No trigger lands on the current stance (R-7)  []
+PASS  One REVERSAL trigger  
+PASS  REVIEW DATE present  
+PASS  Numbers in triggers not given by the case (R-7)  []
+PASS  6–12 evidence items  (11)
+PASS  evidence_type in team set  []
+PASS  Every note has SOURCE CLASS from the set  
+PASS  ≥4 source classes  ['independent', 'industry-analyst', 'standards-regulatory', 'vendor-claim']
+PASS  Claims numbered E<n>:  
+PASS  Every item dated  []
+PASS  C2PA version cited (latest is 2.5 as of 2026-10; R-11)  []
+PASS  Six HANDOFF lines  (6)
+PASS  No lane violation (R-12)  []
+PASS  general_et_finding ≤300 words  (248)
+PASS  application_finding ≤150 words  (101)
+PASS  organization_specific_finding ≤320 words  (277)
+PASS  recommendation_management_implication ≤150 words  (52)
+PASS  General ≤300 words  (248 words)
+PASS  Org/industry words in general level  []
+PASS  Every evidence note starts with STATUS  bad indices []
+PASS  No Markdown links in sources  []
+FLAG  'verified'/'checked' wording (allowed only if retrieved)  (1)
+PASS  HANDOFF lines present  (6)
+PASS  No empty arrays  []
+INFO  application_finding words: 101
+INFO  organization_specific_finding words: 277

@@ -1,0 +1,123 @@
+{
+  "agent": {
+    "name": "Silver-Milk Team Landscape Agent",
+    "specialty": "Dated technology-landscape intelligence: eight fixed landscape dimensions (capability, use cases, trackers, ecosystem, standards, price/performance, coverage, alternatives) each with a basis, broad signals separated from the few that matter to this organization, execution gates kept apart from landscape signals, a gating-condition x movement table that sets the monitoring stance, owned triggers mapped to actions, and a dated stale/hype flag (never the adoption decision, never a vendor selection)",
+    "version": "1.1-team"
+  },
+  "analytical_question": "Where does Agentic AI for read-only information-support customer service sit relative to alternatives, complements, ecosystems, standards, regulation, investment and adoption signals, and what should the hypothetical multinational bank monitor next?",
+  "general_et_finding": "AS OF: 2026-11-17\nUNIT: Agentic AI\nL1 TECHNICAL CAPABILITY: Developing — Independent software-task evaluations show bounded task completion with reliability varying across models and tasks, supporting continued human review (METR, 2026-09). BASIS: E1.\nL2 USE-CASE EVIDENCE: Use cases emerging — Analyst surveys report production and scaling, with limited independent verification of named deployments (G2, 2026-10; McKinsey, 2026-08). BASIS: E2, E12.\nL3 TRACKER PLACEMENT: Gartner Hype Cycle for Agentic AI 2026-04: Peak of Inflated Expectations. MOVEMENT: Single edition only. Not covered by Thoughtworks Technology Radar as a category-level placement in 2026-11; its agent sandboxing technique is Adopt. The instruments measure expectations and practitioner recommendations, respectively (Gartner, 2026-04; Thoughtworks, 2026-11). BASIS: E3, E4.\nL4 VENDOR/ECOSYSTEM STRUCTURE: Fragmented — Distinct orchestration and management offerings coexist with an emerging plugin ecosystem; available evidence does not establish market dominance (Gartner, 2026-04; Thoughtworks, 2026-11). BASIS: E3, E4.\nL5 STANDARDS & REGULATION: Emerging — NIST launched voluntary standardization work; its announcement carries no binding requirement (NIST, 2026-02). BASIS: E5.\nL6 PRICE/PERFORMANCE: Mixed — Posted inference became cheaper while cost per completed task stopped falling in one study; a matched 12-month series for deployed agents was unavailable (Chattergoon and Humphries, 2026-08). BASIS: E6.\nL7 COVERAGE TONE: Mixed — Coverage pairs strong expectations with evidence gaps around execution and trust (Gartner, 2026-04; G2, 2026-10). BASIS: E3, E2.\nL8 ALTERNATIVES & COMPLEMENTS: INCUMBENT: Staff-led support with knowledge search and fixed routing. COMPETING: Retrieval-assisted chat with deterministic routing. COMPLEMENTS: Curated knowledge, access controls, evaluations and audit logging.\nPOSITION: Agentic AI delivers useful results on bounded tasks and has reported production deployments. Reliability, economics and supporting practices vary across deployments.",
+  "application_finding": "APPLICATION SIGNALS: L1 — Grounded answers and successful human handoff matter when requests are ambiguous or knowledge is incomplete. L2 — Comparable production outcomes help establish sustained reliability. L6 — Cost per correctly resolved or appropriately escalated request captures the cost of retries and staff work.\nAPPLICATION-SPECIFIC EVIDENCE: Thin — The inspected research benchmark exercises knowledge retrieval in customer-service dialogue, but also requires simulated account writes. It gives indirect evidence about answer grounding and does not establish read-only handoff performance (E11).\nSTRONGEST ALTERNATIVE: Retrieval-assisted chat with deterministic routing — It addresses knowledge-backed answers and explicit escalation while giving a direct baseline for the incremental value of agentic orchestration.",
+  "organization_specific_finding": "UNIT OF ANALYSIS: The hypothetical multinational bank's customer-service evaluation decision.\nGATING CONDITION: Given its evidence-dependent fast-follower posture, mandatory human escalation and read-only scope, the bank needs a documented option and credible comparable evidence of reliable approved-knowledge answers and staff handoff without account writes.\nCONDITION STATUS: Partly met — Options document escalation, while comparable outcome evidence is missing. BASIS: E8, E9, E11.\nMOVEMENT: None — Documentation establishes feature availability, and the benchmark covers a different scope. Neither establishes recent progress on comparable service outcomes. BASIS: E8, E9, E11.\nSTANCE: Scheduled watch.\nEXECUTION GATES: Tool and plan terms, procurement (procurement); knowledge and input rights (knowledge owners); access, logging and retention review (IT/security); jurisdiction and data-residency review (risk/compliance); evaluation authorization (owner not stated). Functional assignments are provisional.\nRELEVANT SIGNALS: L1 — Retrieval and policy failures in simulated service warrant scrutiny because incorrect answers can harm customers (E11). L5 — HKMA's proposed prompt human-access principle matters because escalation is mandatory (E10). L4 — Documented orchestration and handoff options matter because staff routing is in scope and account writes are excluded (E8, E9).\nPOPULAR BUT NOT DECISIVE HERE: Gartner's peak placement measures expectations and cannot establish answer or handoff reliability (E3).\nMOST CONSEQUENTIAL DEVELOPMENT: L5 — HKMA's November 2026 discussion paper proposes prompt access to an authorized person for customer-facing agents, which could change the evidence requested on escalation before defining the evaluation scope (E10).\nECOSYSTEM DEPENDENCY: The agent runtime's connector to the contact-center routing platform.\nOPTIONS DOCUMENTED: Amazon Connect agentic self-service describes orchestration and human escalation (E8, vendor-claim). OpenAI Presence describes customer-facing voice/chat agents with configurable escalation rules (E9, vendor-claim). NO SELECTION.",
+  "evidence": [
+    {
+      "claim": "E1: METR reports modeled success horizons for agents on an expert-timed suite of software tasks.",
+      "source_or_reference": "https://metr.org/time-horizons/",
+      "date_or_recency": "2026-09-08",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: independent; LOAD-BEARING for L1. Task-suite results do not establish live service reliability. "
+    },
+    {
+      "claim": "E2: G2 reports that 66% of surveyed organizations had AI agents in limited or scaled production and highlights persistent trust concerns.",
+      "source_or_reference": "https://company.g2.com/news/2026-ai-agents-report",
+      "date_or_recency": "2026-10-14",
+      "evidence_type": "secondary",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: industry-analyst; LOAD-BEARING for L2 and L7. Buyer responses and marketplace reviews do not independently audit deployments. "
+    },
+    {
+      "claim": "E3: The April 2026 Gartner edition places Agentic AI at the Peak of Inflated Expectations and describes separate development, management and orchestration profiles.",
+      "source_or_reference": "https://www.gartner.com/en/documents/7671861 | https://www.gartner.com/en/articles/hype-cycle-for-agentic-ai",
+      "date_or_recency": "2026-04-02",
+      "evidence_type": "secondary",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: industry-analyst; UNDERLYING: April 2026 Gartner Hype Cycle for Agentic AI, with placement available in Gartner's April 15 companion article. LOAD-BEARING for L3, L4 and L7. "
+    },
+    {
+      "claim": "E4: Thoughtworks Technology Radar volume 35 places agent sandboxing in Adopt and describes a growing ecosystem of agent plugins and supporting tools.",
+      "source_or_reference": "https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2026/11/tr_technology_radar_vol_35_en.pdf",
+      "date_or_recency": "2026-11",
+      "evidence_type": "secondary",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: industry-analyst; LOAD-BEARING for L3 and L4. Adopt applies to a technique. "
+    },
+    {
+      "claim": "E5: NIST launched an initiative for agent standards development, community protocols and research on security and identity.",
+      "source_or_reference": "https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure",
+      "date_or_recency": "2026-02-17",
+      "evidence_type": "primary-historical",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: standards-regulatory; LOAD-BEARING for L5. This is an initiative announcement, with no versioned standard cited. "
+    },
+    {
+      "claim": "E6: A quality-adjusted inference pricing study finds falling posted prices and a halt to price declines when measured per completed task.",
+      "source_or_reference": "https://arxiv.org/abs/2608.29843",
+      "date_or_recency": "2026-08-30",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: independent; LOAD-BEARING for L6. Preprint evidence on inference and benchmark tasks; excludes full deployment and operating costs. "
+    },
+    {
+      "claim": "E7: Gartner found that 4% of surveyed customer-service organizations reported attaining the ROI expected from their AI initiatives.",
+      "source_or_reference": "https://www.gartner.com/en/newsroom/press-releases/2026-11-04-gartner-survey-reveals-just-4-percent-of-customer-service-leaders-have-achieved-the-expected-roi-of-their-ai-initiatives",
+      "date_or_recency": "2026-11-04",
+      "evidence_type": "secondary",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: industry-analyst; context only. The survey covers wider service AI, with no estimate for read-only agentic support. "
+    },
+    {
+      "claim": "E8: Amazon Connect documents multi-step agentic self-service and escalation to a human agent.",
+      "source_or_reference": "https://docs.aws.amazon.com/connect/latest/adminguide/ai-agent-self-service.html",
+      "date_or_recency": "undated page, opened 2026-11-17",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: vendor-claim; LOAD-BEARING for the option-availability portion of CONDITION STATUS. Does not verify regional availability or escalation outcomes. "
+    },
+    {
+      "claim": "E9: OpenAI's Presence launch describes voice and chat agents with escalation rules and human handoff.",
+      "source_or_reference": "https://openai.com/index/introducing-openai-presence/",
+      "date_or_recency": "2026-07-22",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: vendor-claim; LOAD-BEARING for the option-availability portion of CONDITION STATUS. Launch documentation supplies features, with no independent service outcomes established here. "
+    },
+    {
+      "claim": "E10: HKMA's banking discussion paper proposes prompt customer access to an authorized person and distinguishes general information from material decisions and transactions.",
+      "source_or_reference": "https://www.hkma.gov.hk/media/eng/doc/key-information/press-release/2026/20261102e3a1.pdf",
+      "date_or_recency": "2026-11-02",
+      "evidence_type": "primary-historical",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: standards-regulatory; LOAD-BEARING for the most consequential development. Preliminary supervisory views in a discussion paper. Applicability depends on the bank's jurisdictions. "
+    },
+    {
+      "claim": "E11: The τ-Knowledge study reports low benchmark success on simulated banking-support dialogues that combine unstructured knowledge retrieval and account updates.",
+      "source_or_reference": "https://arxiv.org/abs/2603.04370",
+      "date_or_recency": "2026-03-04",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: independent; LOAD-BEARING for the application evidence limit and CONDITION STATUS. Simulation with account writes; no direct read-only handoff estimate. "
+    },
+    {
+      "claim": "E12: McKinsey's 2026 survey reports greater scaling of AI agents among respondents from large enterprises, with software coding a prominent use case.",
+      "source_or_reference": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+      "date_or_recency": "2026-08-25",
+      "evidence_type": "secondary",
+      "notes": "STATUS: inspected-this-run; SOURCE CLASS: industry-analyst; LOAD-BEARING for L2. Reported scaling and use-case patterns are respondent evidence without independently audited production outcomes. "
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "COMPETING READING: Background scan — If a comparable observed service outcome is treated as the minimum evidence for any partial satisfaction, E8 and E9 establish only that options exist and E11 leaves the condition not met.",
+    "CHASM EVIDENCE FOR: E12 (2026-08-25) reports scaling agentic coding in multiple organizations. The survey provides evidence of specific workflow use through respondents' accounts.",
+    "CHASM EVIDENCE AGAINST: E11 (2026-03-04) found low success in realistic, knowledge-intensive support simulations, limiting the case for routine operation in demanding service workflows. Its account-write scope limits direct transfer.",
+    "DISTINGUISHING EVIDENCE: Dated independent evaluations from separate issuers documenting sustained production use across several organizations, including approved-knowledge answers and completed human handoffs against a conventional baseline.",
+    "STALE/HYPE FLAG: E2 (2026-10-14) reports 66% in limited or scaled production. The figure combines deployment scopes and depends on a survey of software buyers. CONTROL: Used it with other analyst evidence for L2 and excluded it from CONDITION STATUS and MOVEMENT. REFRESH BY: 2027-02-17.",
+    "No local baseline, verified deployment performance or jurisdiction list was supplied. Publication and consultation activity can change the monitoring agenda while those gaps persist."
+  ],
+  "confidence_and_uncertainty": "CONFIDENCE: Moderate — Broad landscape confidence is moderate because independent technical evidence and two different trackers support bounded conclusions, while verified production coverage and matched end-to-end pricing remain limited. Local relevance confidence is lower because no comparable independent production evaluation or local baseline was found. Gartner's public placement was retrieved, but its full paid research and a consecutive comparable edition were unavailable. No qualifying independent multi-organization production audits or comparable adopter self-reports with measured handoff outcomes were retrieved.",
+  "value_opportunity_implication": "Multi-step retrieval may help answer questions that span several approved documents and pass relevant context to staff. The decision-relevant value is the change in cost per correctly resolved or appropriately escalated request relative to retrieval-assisted chat with rules-based routing.",
+  "risk_governance_implication": "Read-only scope limits direct account changes. Incorrect information, disclosure of sensitive data and failed handoffs remain material, especially for vulnerable customers. Track external evidence on answer provenance, accessible escalation and completion of the transfer to staff.",
+  "recommendation_management_implication": "STANCE: Scheduled watch — WATCH FIRST: Independent evidence that customers receive correct answers from approved sources and reach staff when escalation is required in comparable read-only deployments. STRONGEST ALTERNATIVE: Retrieval-assisted chat with deterministic routing. REFRESH: Quarterly, with a full source refresh by 2027-11-17.",
+  "change_monitoring_triggers": [
+    "TRIGGER 1 [L1] CAPABILITY: A dated independent evaluation reports improved completion of human handoffs in a comparable read-only support workflow against a retrieval-assisted baseline, threshold pending customer-protection executive approval — SOURCE: Published independent benchmark or evaluation report — OWNER: customer-protection executive (proposed) — CADENCE: quarterly → Active watch, with a methods review and planning for a local test referred to the Adoption Agent.",
+    "TRIGGER 2 [L2] REVERSAL: A dated independent field review finds that documented human handoff fails in comparable read-only deployments, invalidating the available options' practical fit for the required scope, threshold pending risk/compliance approval — SOURCE: Published independent service audit or supervisory thematic review — OWNER: risk/compliance (proposed) — CADENCE: quarterly → Background scan.",
+    "REVIEW DATE: 2027-02-17"
+  ],
+  "abstention_or_more_information_needed": [
+    "MORE INFO → Jurisdictions, service channels, approved-knowledge baseline and current escalation outcomes: These determine source comparability and which regulatory developments are relevant.",
+    "HANDOFF → Creation Agent: Which technical advances made tool-using conversational agents possible?",
+    "HANDOFF → Innovation Agent: What lifecycle position and DEGREE label fit this scoped use?",
+    "HANDOFF → Promethean Agent: What significance class applies to agentic information support?",
+    "HANDOFF → Diffusion Agent: What diffusion stage and timing are supported for this application?",
+    "HANDOFF → Adoption Agent: What action and evaluation design would test incremental value against retrieval-assisted chat with deterministic routing?",
+    "HANDOFF → Organizational Adoption Agent: Can the bank govern and operate the scoped workflow, and which roles formally clear each execution gate?"
+  ]
+}

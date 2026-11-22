@@ -1,0 +1,118 @@
+{
+  "agent": {
+    "name": "Silver-Milk Team Landscape Agent",
+    "specialty": "Dated technology-landscape intelligence: eight fixed landscape dimensions (capability, use cases, trackers, ecosystem, standards, price/performance, coverage, alternatives) each with a basis, broad signals separated from the few that matter to this organization, execution gates kept apart from landscape signals, a gating-condition x movement table that sets the monitoring stance, owned triggers mapped to actions, and a dated stale/hype flag (never the adoption decision, never a vendor selection)",
+    "version": "1.0-team"
+  },
+  "analytical_question": "Where do AI coding agents and their use for legacy maintenance, test generation, and code-review preparation sit in the current landscape, and what should a conservative regional bank monitor over the next 24 months?",
+  "general_et_finding": "AS OF: 2026-11-10\nUNIT: AI coding agents that read repositories, plan changes, edit files, and run commands or tests.\nL1 TECHNICAL CAPABILITY: Developing — agents produced mergeable changes on real repositories, but review and CI exposed recurring failures, especially in bug-fix and performance work (Ehsani et al., 2026-01). BASIS: E1.\nL2 USE-CASE EVIDENCE: Use cases emerging — vendor-documented engineering workflows include changes that reach production, with open-source merge evidence and limited independent verification of routine production use across organizations (Anthropic, 2026-11). BASIS: E1, E3.\nL3 TRACKER PLACEMENT: Thoughtworks Technology Radar 2026-11: Assess for production-aware coding agents, a specific technique within the category. MOVEMENT: Single edition only (Thoughtworks, 2026-11). BASIS: E2.\nL4 VENDOR/ECOSYSTEM STRUCTURE: Insufficient evidence — comparable cross-vendor market shares and a time series showing concentration are missing (Anthropic, 2026-06). BASIS: E8.\nL5 STANDARDS & REGULATION: Emerging — NIST has an agent identity and authorization implementation project. Its announcement describes interoperability and security work in progress (NIST, 2026-09). BASIS: E4.\nL6 PRICE/PERFORMANCE: Insufficient evidence — a 12-month comparison of total cost for equivalent, successfully reviewed changes is missing (METR, 2026-02). BASIS: E5.\nL7 COVERAGE TONE: Mixed — coverage recognizes useful workflows while raising doubts about review capacity, cost, and productivity (Thoughtworks, 2026-11) (Stack Overflow, 2026-05). BASIS: E2, E9.\nL8 ALTERNATIVES & COMPLEMENTS: INCUMBENT: Developer-led maintenance with deterministic CI and peer review. COMPETING: Non-agentic LLM coding assistants. COMPLEMENTS: Isolated execution, repository permissions, automated tests, and audit logs.\nPOSITION: Coding agents produce useful changes on real repositories and appear in documented production workflows. Reliability varies by task, and independent measures of routine production use and comparable cost remain limited.",
+  "application_finding": "APPLICATION SIGNALS: L1 matters because bug fixes need to preserve legacy behavior and generated tests must check meaningful outcomes. L2 matters because production workflows reveal whether useful patches, tests, and review materials survive integration and human review. L6 matters because retries and reviewer time can erase drafting gains.\nAPPLICATION-SPECIFIC EVIDENCE: Thin — E1 independently observes real repository maintenance and review outcomes, but the retrieved studies do not directly evaluate the complete maintenance, test generation, and review-preparation workflow on internal legacy integrations.\nSTRONGEST ALTERNATIVE: Developer-led maintenance with deterministic CI and peer review — it addresses all three tasks while giving maintainers explicit control over expected behavior and acceptance criteria.",
+  "organization_specific_finding": "UNIT OF ANALYSIS: The illustrative U.S. regional bank’s internal engineering group of about 300 developers.\nGATING CONDITION: As a conservative adopter, the bank requires standardized coding agents supported by established vendors and in routine use at comparable banks.\nCONDITION STATUS: Partly met — established vendor support is visible, while relevant standardization remains in development and routine use at comparable banks remains unverified. BASIS: E3, E4, E7.\nMOVEMENT: Toward — NIST moved from consultation to naming DevSecOps as its first implementation use case for agent identity and authorization. BASIS: E4.\nSTANCE: Active watch\nEXECUTION GATES: Approved execution environment and code-egress boundaries, tool and plan terms, code and input rights, retention, security and risk review, procurement, and management authorization. Accountable approval owners are not stated. No approved agent environment exists.\nRELEVANT SIGNALS: L2 — E3 reports controlled engineering use at a large bank, while this bank requires evidence from comparable regional banks. L4 — documented enterprise offerings matter because vendor review takes 6–12 months. L5 — the NIST implementation work addresses agent identity and authorization, relevant to the bank’s audit requirements and code-exposure risk.\nPOPULAR BUT NOT DECISIVE HERE: The 90% code-generation forecast has no comparable-bank deployment evidence. The memo’s agent-first peer assertion has no named peers or traceable production workflows.\nMOST CONSEQUENTIAL DEVELOPMENT: L5 — NIST’s selection of DevSecOps as the first implementation use case could change how management prioritizes externally documented identity and authorization controls during this approval cycle.\nECOSYSTEM DEPENDENCY: The chosen deployment’s model-serving platform and its continuing support for the applicable model versions and access controls.\nOPTIONS DOCUMENTED: GitHub Copilot cloud agent takes assigned issues and opens pull requests for review (E7, vendor-claim). Anthropic documents Claude Code running within JPMorganChase’s containerized Devspace on firm infrastructure (E3, vendor-claim). NO SELECTION.",
+  "evidence": [
+    {
+      "claim": "E1: An empirical study of about 33,000 agent-authored GitHub pull requests found different merge outcomes by task. Documentation, CI, and build changes performed better than bug-fix and performance changes. Unmerged changes often failed CI validation.",
+      "source_or_reference": "Ehsani et al., Where Do AI Coding Agents Fail? https://arxiv.org/abs/2601.15195",
+      "date_or_recency": "2026-01-21",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: independent. LOAD-BEARING. Observational preprint. A merge establishes repository acceptance and leaves downstream deployment and defect outcomes unresolved. "
+    },
+    {
+      "claim": "E2: The November Thoughtworks radar puts production-aware coding agents in Assess. The edition describes wider experimentation with parallel agents alongside review and delivery bottlenecks.",
+      "source_or_reference": "Thoughtworks Technology Radar, volume 35. https://www.thoughtworks.com/en-us/radar/techniques/production-aware-coding-agents and https://www.thoughtworks.com/radar",
+      "date_or_recency": "2026-11-04",
+      "evidence_type": "secondary",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: industry-analyst. LOAD-BEARING. The placement covers a technique within the category. "
+    },
+    {
+      "claim": "E3: Anthropic reports that JPMorganChase uses Claude Code in engineering and legacy modernization workflows, with controlled execution including the firm's containerized Devspace and approval gates for production changes.",
+      "source_or_reference": "Anthropic, JPMorganChase expands Claude Code to more employees across the firm. https://claude.com/resources/articles/jpmorganchase-expands-claude-code",
+      "date_or_recency": "2026-11-09",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: vendor-claim. LOAD-BEARING. The vendor describes one named large bank and its own customer relationship. The report leaves routine use at comparable regional banks unverified. "
+    },
+    {
+      "claim": "E4: After receiving feedback on its agent identity and authorization concept paper, NIST NCCoE designated DevSecOps as the project's first implementation use case.",
+      "source_or_reference": "NIST, Comments on Software and Agentic AI Identity Concept Paper. https://www.nist.gov/news-events/news/2026/09/comments-software-and-agentic-ai-identity-concept-paper",
+      "date_or_recency": "2026-09-29",
+      "evidence_type": "primary-historical",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: standards-regulatory. LOAD-BEARING. This is a completed project-scoping step for future implementation work. The release establishes no final standard or binding rule. "
+    },
+    {
+      "claim": "E5: METR judged its late-2025 follow-up unreliable as an estimate of current developer productivity because of selection effects and task-time measurement problems. It provides no quality-adjusted buyer cost series.",
+      "source_or_reference": "METR, We Are Changing Our Developer Productivity Experiment Design. https://metr.org/blog/2026-02-24-uplift-update/",
+      "date_or_recency": "2026-02-24",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: independent. LOAD-BEARING for the price/performance evidence gap only. The study covers broader AI-assisted development and its follow-up estimates are unsuitable as evidence of movement. "
+    },
+    {
+      "claim": "E6: Anthropic CEO Dario Amodei forecast in March 2025 that AI could write 90% of code within three to six months. The transcript is a plausible original for the memo’s forecast.",
+      "source_or_reference": "Council on Foreign Relations, CEO Speaker Series With Dario Amodei of Anthropic. https://www.cfr.org/event/ceo-speaker-series-dario-amodei-anthropic",
+      "date_or_recency": "2025-03-10",
+      "evidence_type": "primary-historical",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: vendor-claim. The transcript verifies what the executive predicted. The case provides no memo citation confirming the attribution and the transcript provides no measured share. "
+    },
+    {
+      "claim": "E7: GitHub documents a cloud agent workflow in which assigning an issue creates a pull request and the agent requests review when it finishes.",
+      "source_or_reference": "GitHub Docs, Kick off a task with Copilot agents on GitHub. https://docs.github.com/en/copilot/how-tos/copilot-on-github/use-copilot-agents/kick-off-a-task",
+      "date_or_recency": "undated page, opened 2026-11-17",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: vendor-claim. LOAD-BEARING for documented workflow and present support. The undated page cannot establish when individual features became available. "
+    },
+    {
+      "claim": "E8: Anthropic reports observed activity in its own interactive Claude Code sessions and growth in coding-agent activity on GitHub projects. Its telemetry does not establish comparable vendor shares.",
+      "source_or_reference": "Anthropic, How Claude Code is used in practice. https://www.anthropic.com/research/claude-code-expertise",
+      "date_or_recency": "2026-06-16",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: vendor-claim. LOAD-BEARING for the ecosystem evidence gap only. Session activity is a visibility signal. "
+    },
+    {
+      "claim": "E9: Stack Overflow coverage describes coding agents changing development workflows while questioning productivity and cost efficiency and reporting pressure on downstream review and operations.",
+      "source_or_reference": "Stack Overflow, Coding agents are giving everyone decision fatigue. https://stackoverflow.blog/2026/05/21/coding-agents-are-giving-everyone-decision-fatigue",
+      "date_or_recency": "2026-05-21",
+      "evidence_type": "secondary",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: industry-analyst. LOAD-BEARING for coverage tone only. "
+    },
+    {
+      "claim": "E10: Interagency revised model-risk guidance emphasizes tailoring to organizational size, complexity, and model-risk profile. The Federal Reserve identifies institutions over $30 billion in assets as the most relevant audience for its letter.",
+      "source_or_reference": "Federal Reserve, SR 26-2, Revised Guidance on Model Risk Management. https://www.federalreserve.gov/supervisionreg/srletters/SR2602.htm",
+      "date_or_recency": "2026-04-17",
+      "evidence_type": "primary-historical",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: standards-regulatory. This is supervisory guidance. The illustrative case supplies neither the bank's asset size nor its primary supervisor. "
+    },
+    {
+      "claim": "E11: The case says the board memo cites a forecast that AI will soon write about 90% of all code and asserts that peer banks have moved to agent-first engineering. It also defines the bank’s conservative adoption posture and approved-environment constraint.",
+      "source_or_reference": "Supplied CASE CONTEXT, business_need, adoption_posture, and capabilities_constraints",
+      "date_or_recency": "2026-11-10",
+      "evidence_type": "case-premise",
+      "notes": "STATUS: supplied. SOURCE CLASS: case-premise. LOAD-BEARING for the local decision context only. The original memo date, citations, and peer names were not supplied."
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "COMPETING READING: Scheduled watch is defensible if movement requires a published standard or comparable-bank operating evidence. E4 advances implementation work, while the bank’s outstanding requirements are still open.",
+    "CHASM EVIDENCE FOR: The November 9 Anthropic account documents coding-agent use in an existing engineering workflow where reviewed changes reach production at JPMorganChase (E3). Its vendor authorship and single-bank scope limit the conclusion.",
+    "CHASM EVIDENCE AGAINST: The January GitHub pull-request study finds recurring CI and merge failures, with weaker outcomes for bug fixes and performance work (E1). Those results weaken a broad claim that reliable operational use is already routine.",
+    "DISTINGUISHING EVIDENCE: A dated, independent study naming comparable U.S. regional banks and documenting recurring production releases from agent-assisted legacy maintenance, with acceptance, rework, and escaped-defect outcomes against a developer-led baseline.",
+    "STALE/HYPE FLAG: The board memo’s peer-bank assertion, supplied for the 2026-11-10 assessment (E11), lacks named peers, a dated original, and a definition of agent-first. E3 identifies one much larger bank. The memo’s 90% forecast plausibly traces to Amodei’s 2025-03-10 CFR remarks (E6), where it was a time-bounded forecast about code generation. CONTROL: Neither claim set condition status or movement. REFRESH BY: 2026-12-10.",
+    "L3 covers one opened placement instrument and one edition for the cited technique. Tracker disagreement and same-tracker movement could not be assessed.",
+    "The dated sources support the assessment cutoff. E7 is an undated documentation page opened after the cutoff and is used to describe the documented option, with no claim about its feature release date."
+  ],
+  "confidence_and_uncertainty": "CONFIDENCE: Moderate — Broad landscape confidence is moderate for bounded real-repository capability and documented production use, and low for concentration and price/performance trends. Local relevance confidence is high that standardization and comparable-bank operating evidence matter under the stated posture, and low that routine peer use has been demonstrated. A second comparable tracker placement from Gartner, IEEE, Forrester, or IDC, independent multi-bank production evidence, and a comparable 12-month cost series were not retrieved.",
+  "value_opportunity_implication": "The most relevant potential gain is shorter elapsed time from maintenance ticket to accepted change, particularly where the agent can draft regression tests or summarize a patch for review. The comparison should account for reviewer time, rework, and escaped defects alongside cycle time and test coverage. Code volume alone cannot show that the backlog is clearing faster.",
+  "risk_governance_implication": "The reported personal-account use makes code exposure and change traceability immediate internal governance questions. For landscape monitoring, the relevant evidence is whether external deployments demonstrate attributable agent actions and enforceable boundaries, with human accountability for released changes. The interagency model-risk guidance is supervisory guidance and its applicability depends on the bank’s profile and activities.",
+  "recommendation_management_implication": "STANCE: Active watch — WATCH FIRST: Follow the NIST NCCoE DevSecOps implementation work and independently documented legacy-maintenance deployments at comparable regional banks. STRONGEST ALTERNATIVE: Developer-led maintenance with deterministic CI and peer review. REFRESH: Review signals monthly and refresh the full source register at least annually, by 2027-11-10 for the first full refresh.",
+  "change_monitoring_triggers": [
+    "TRIGGER 1 [L2] USE-CASE: A dated independent study documents routine production use for legacy maintenance at comparable U.S. regional banks — SOURCE: Peer-reviewed field study or independent supervisory research — OWNER: Engineering management (proposed) — CADENCE: Monthly → Landscape not the constraint, if standardized support is already documented and comparable-peer threshold pending CIO approval has been satisfied.",
+    "TRIGGER 2 [L5] REVERSAL: A dated NIST NCCoE project update cancels the DevSecOps implementation use case that supports current movement — SOURCE: NIST NCCoE project hub — OWNER: Information security (proposed) — CADENCE: Monthly → Scheduled watch, if established-vendor availability remains and no other qualifying movement is documented.",
+    "REVIEW DATE: 2026-12-10"
+  ],
+  "abstention_or_more_information_needed": [
+    "MORE INFO → The original dated board memo and its named peer examples: needed to verify the forecast attribution and check whether the claimed peer deployments are comparable.",
+    "MORE INFO → The bank’s peer definition, documented standardization criterion, asset size, and primary supervisor: needed to interpret peer evidence and the relevance of the supervisory guidance.",
+    "HANDOFF → Creation Agent: How did repository-aware coding agents emerge from earlier coding assistants and software engineering tools?",
+    "HANDOFF → Innovation Agent: What lifecycle position and DEGREE label apply to agent-assisted legacy maintenance?",
+    "HANDOFF → Promethean Agent: What significance class is supported for this application?",
+    "HANDOFF → Diffusion Agent: What diffusion stage and timing are supported for this application among comparable regional banks?",
+    "HANDOFF → Adoption Agent: What management action, if any, is justified under the bank’s posture and 24-month horizon?",
+    "HANDOFF → Organizational Adoption Agent: Can the bank govern and operate this workflow, and who has authority to clear each execution gate?"
+  ]
+}
