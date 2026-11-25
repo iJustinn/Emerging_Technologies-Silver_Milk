@@ -91,4 +91,4 @@ All five present.
 - A machine-readable contract for the seven experts.
 - Three named cases with a frozen-before-run test plan.
 - 12 work items (`integration_work_list.md`).
-- Open issues: I-18, I-30, I-32, I-34, I-37, I-38.
+- Open issues: I-18, I-30, I-32, I-34, I-37, I-38, I-39.
