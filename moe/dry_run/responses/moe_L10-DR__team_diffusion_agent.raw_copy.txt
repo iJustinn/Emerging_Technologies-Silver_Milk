@@ -1,0 +1,101 @@
+{
+  "agent": {
+    "name": "Silver-Milk Team Diffusion Agent",
+    "specialty": "Rogers diffusion of an emerging technology and its application: adopter-category stage by evidence rule at three levels (technology, application, peer group), five perceived characteristics, accelerators and inhibitors, and the timing implication for an organization's decision (never the adoption decision)",
+    "version": "1.0-team"
+  },
+  "analytical_question": "Where is the technology and application in the diffusion process, what is accelerating or inhibiting spread, and what timing implication follows for this organization?",
+  "general_et_finding": "EVIDENCE BASE: Supplied cards\nUNIT: General-purpose humanoids controlled by learned robot foundation models\nPARENT: General-purpose humanoid robotics\nUSE LEVEL OBSERVED: Available — S1 documents restricted early access and S2 documents released model weights.\nTECHNOLOGY STAGE: Withheld — insufficient evidence\nSTAGE BASIS: No qualifying repeated-use share or dated routine-use account identifies a learned foundation model controlling the humanoid. S3 reports external model testing without establishing the full configuration in use.\nFIVE FACTORS:\nRELATIVE ADVANTAGE: Neutral · Speculative — likely Favors: one learned controller could support multiple tasks.\nCOMPATIBILITY: Neutral · Speculative — likely Inhibits: existing control interfaces may require adaptation.\nCOMPLEXITY: Neutral · Speculative — likely Inhibits: whole-body control may increase configuration and supervision demands.\nTRIALABILITY: Neutral · Speculative — likely Favors: early access could enable bounded trials. Trial terms and reversibility are undocumented.\nOBSERVABILITY: Neutral · Speculative — likely Inhibits: peers have limited access to outcomes from routine operation of the exact configuration.\nACCELERATORS / INHIBITORS:\nCHANGE AGENTS: Google DeepMind, NVIDIA\nOPINION LEADERS: None identified\nSTANDARDS: None — ISO 10218-1:2025 addresses industrial robots generally. ISO/CD 25785-1 is a committee draft for dynamically stable industrial mobile robots.\nCOMPLEMENTARY ASSETS: Partial — model weights and early-access hardware partnerships exist. Evidence of routine integration, safety validation and maintenance support for the combined system is missing.\nBASE CASE: None\nMESSAGING SHIFT: Not observed\nNETWORK-EFFECT DEPENDENCY: No — a single operator can benefit without other organizations using the same system.\nSTRONGEST SIGNAL: S1, published 2026-07-30, documents whole-body Gemini Robotics 2 tests on Apptronik Apollo in DeepMind's test setting. Customer use remains unestablished.\nMAIN INHIBITOR: Hypothesized — intervention burden during task variation could limit routine use. Dated field records linking operator interventions to interrupted or discontinued use would test it.",
+  "application_finding": "APPLICATION: Humanoid transfer of plastic totes among AMRs, conveyors and racks in e-commerce fulfillment.\nADOPTION MEANS: Recurring tote handoffs on normal fulfillment shifts, documented as part of routine operations beyond a pilot.\nUSE LEVEL OBSERVED: Piloted — S4 documents repeated live tote transfers by Digit at GXO. S5 leaves production status disputed, and neither card identifies the controller.\nAPPLICATION STAGE: Withheld — insufficient evidence\nSTAGE BASIS: No qualifying repeated-use share. The sole named task match has conflicting accounts of production status, and its model layer is undisclosed. The evidence reaches live task testing for the humanoid task, while the exact technology is documented at availability. A diffusion lead or lag cannot be established.\nSTRONGEST APPLICATION SIGNAL: S4, published 2025-11-20, reports over 100,000 tote moves at one GXO facility, including AMR-to-conveyor transfers. The observation period and throughput denominator are unknown.\nAPPLICATION FACTORS:\nRELATIVE ADVANTAGE: Neutral · Speculative — likely Favors: transferring the lifting work could reduce manual handling. No comparison measures that benefit.\nCOMPATIBILITY: Favors · Observed — S4 documents Digit transferring totes from existing AMRs to a conveyor at GXO. The controller is unspecified.\nCOMPLEXITY: Neutral · Speculative — likely Inhibits: recovering failed handoffs may add work. Adopter burden is undocumented.\nTRIALABILITY: Neutral · Speculative — likely Favors: one transfer station offers a bounded task. Trial terms and reversibility are undocumented.\nOBSERVABILITY: Favors · Observed — S4 publishes a site-specific task-volume result peers can inspect. Its scope is cumulative volume.",
+  "organization_specific_finding": "UNIT OF ANALYSIS: The hypothetical 3PL's VP Operations is considering when the diffusion evidence warrants revisiting the tote-transfer decision within the 12-month horizon that includes Q1 2027 capital planning.\nPEER GROUP: Mid-size U.S. contract e-commerce fulfillment 3PLs operating AMR-and-conveyor facilities under client service-level agreements.\nPEER GROUP STAGE: Withheld — insufficient evidence. No qualifying share or dated, confirmed routine-use base case establishes uptake among comparable operators. The cards do not establish that the GXO operation matches this peer group in scale and operating conditions.\nORG POSTURE: Fast follower — the case requires repeatable peer results before adopting automation and measured results before a multi-year commitment.\nPEER EVIDENCE ROLE: Prerequisite — repeatable results from comparable operators are needed to advance the timing decision.\nORG-SPECIFIC FORCES:\nObserved (case) — existing AMRs, conveyors and warehouse-system integration provide a compatible starting environment.\nObserved (case) — humanoid work near associates requires EHS clearance, and EHS has yet to review it.\nObserved (case) — associates have raised job-displacement concerns that could slow acceptance.\nTABLE INPUT: Withheld — insufficient evidence × Fast follower (Early adopters row)\nTIMING IMPLICATION: Patience — look for dated, denominator-based evidence placing this application in Early majority, with repeatable results from comparable operators to meet the peer prerequisite.\nPOSTURE EFFECT: The fast-follower posture can tolerate uncertainty about the broader technology while requiring comparable-peer evidence before advancing the timing decision. Reassess at Q1 2027 capital planning or earlier if qualifying evidence emerges.",
+  "evidence": [
+    {
+      "claim": "DeepMind announced restricted early access to Gemini Robotics 2 and reported whole-body manipulation tests of the VLA on Apptronik Apollo.",
+      "source_or_reference": "S1 | https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+      "date_or_recency": "published: 2026-07-30; observed: unknown",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: supplied — The packet preparer reports opening the publisher page. Vendor-reported controlled tests and early-access availability. Named partnerships do not establish operational use."
+    },
+    {
+      "claim": "NVIDIA lists released Isaac GR00T weights and describes N1.7 as commercially licensed, while noting conflicting license text in the repository.",
+      "source_or_reference": "S2 | https://developer.nvidia.com/isaac/gr00t/llm-info.md",
+      "date_or_recency": "published: unknown; observed: 2026-07 model release",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: supplied — The packet preparer reports opening the vendor page, marked last updated in 2026-08. The card supports availability of model weights."
+    },
+    {
+      "claim": "The Next Web reports that Foxconn, Siemens and Nexuni were testing GR00T 2, with no production commitment reported.",
+      "source_or_reference": "S3 | https://thenextweb.com/news/nvidia-gr00t-2-robots-human-video-corl",
+      "date_or_recency": "published: 2026-11-09; observed: unknown",
+      "evidence_type": "secondary",
+      "notes": "STATUS: supplied — The packet preparer reports opening the article. The vendor-sourced account does not specify the test configuration or establish routine use of foundation-model-controlled humanoids."
+    },
+    {
+      "claim": "Agility reported more than 100,000 tote moves by Digit at GXO's Flowery Branch facility, including transfers from AMRs to a conveyor.",
+      "source_or_reference": "S4 | https://www.agilityrobotics.com/content/digit-moves-over-100k-totes",
+      "date_or_recency": "published: 2025-11-20; observed: unknown",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: supplied — The packet preparer reports opening the vendor account. Vendor-reported cumulative tote count at one named GXO facility. Fleet, shift, observation-period and population denominators are unknown. The report is just over 12 months old at assessment and is retained because it documents the closest task match in the register. The age of the underlying moves is unknown."
+    },
+    {
+      "claim": "The Robot Report quotes GXO's CEO describing humanoid activity as pilots without production or ROI, and Agility's CEO describing live commercial operations. The planned site expansion was prospective.",
+      "source_or_reference": "S5 | https://www.therobotreport.com/agility-gxo-logistics-plan-expanded-deployment-digit-humanoid/",
+      "date_or_recency": "published: 2026-10-26; observed: 2026-08 earnings-call remarks",
+      "evidence_type": "secondary",
+      "notes": "STATUS: supplied — The packet preparer reports opening the trade article. The original call transcript was not opened. The quoted speakers' descriptions leave routine production status unresolved."
+    },
+    {
+      "claim": "The IFR reported about 7,000 full-size humanoid robots sold globally in 2025, across uses.",
+      "source_or_reference": "S8 | https://ifr.org/ifr-press-releases/news/global-sales-of-professional-service-robots-surge-24-percent",
+      "date_or_recency": "published: 2026-09-30; observed: 2025",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: supplied — The packet preparer reports opening the IFR release. The figure counts global unit sales of full-size humanoids. The denominator of organizations using the exact technology is unknown, and the full report methodology was not opened."
+    },
+    {
+      "claim": "ISO published ISO 10218-1:2025 for industrial robots. ISO/CD 25785-1, addressing dynamically stable industrial mobile robots, was at committee-draft stage in the supplied evidence.",
+      "source_or_reference": "S10 and S11 | https://committee.iso.org/standard/73933.html | https://committee.iso.org/standard/91469.html",
+      "date_or_recency": "published: 2025-02-05 for S10, unknown for S11; observed: 2026-07-08 committee-draft comment closure for S11",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: supplied — The packet preparer reports opening both ISO entries. The S10 publication is over 12 months old and is retained to distinguish its general scope from the newer unit-specific draft. The draft stage date is not a publication date or evidence of adoption."
+    },
+    {
+      "claim": "Agility reported Digit at nine customer sites with more than 65,000 operating hours, as relayed by The Robot Report.",
+      "source_or_reference": "S12 | https://www.therobotreport.com/agility-robotics-reports-18m-revenue-ahead-of-humanoid-spac/",
+      "date_or_recency": "published: 2026-09-07; observed: unknown",
+      "evidence_type": "secondary",
+      "notes": "STATUS: supplied — The packet preparer reports opening the article. The figures are vendor-reported and secondhand. The population cited is Agility's reported customer sites. The eligible site denominator, site-by-site task mix, controller and production status are unknown."
+    },
+    {
+      "claim": "The hypothetical 3PL is a fast follower with existing AMR and conveyor infrastructure, an EHS sign-off requirement and workforce concerns. An internal memo claims that humanoids are already running in production at major 3PLs.",
+      "source_or_reference": "Supplied case context and internal memo claim | ROBOTICS-HUMANOID-TOTE-2026-11-24-v1",
+      "date_or_recency": "published: unknown; observed: unknown",
+      "evidence_type": "case-premise",
+      "notes": "STATUS: supplied — The case facts are hypothetical. The memo supplies no named sites, repeated-use records, controller details or denominator."
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "COMPETING STAGE READ: Early adopters. S4's 2025-11-20 commercial account is the strongest candidate for a named base case because it gives an exact task match and substantial repeated activity. S5's 2026-10-26 report relays the customer's statement that humanoid work had not reached production as of its August remarks. The supplied cards cannot reconcile the descriptions or establish the controller used.",
+    "DISTINGUISHING EVIDENCE: By Q1 2027 capital planning or within the 12-month horizon, look for a dated adopter account naming the site and controller and showing regular tote-transfer shifts across consecutive reporting periods after trial completion. A representative sample or census with a stated denominator would distinguish a single base case from broader diffusion.",
+    "WEAKEST DIFFUSION CLAIM: The memo's claim that humanoids are already running in production at major 3PLs is weak because it provides no source identifying even one operator's routine production use.",
+    "EVIDENCE GAPS: Technology gap — no dated routine-use account identifies the controlling foundation model, and no qualifying share exists. Application gap — no confirmed post-pilot operating record or population denominator. Peer gap — no qualifying share or confirmed routine-use record for a comparable 3PL.",
+    "The register is selective and reflects summaries supplied by the packet preparer. Automotive pilots, announced expansion, robot sales and cumulative operating hours cannot resolve the application or peer-group stage."
+  ],
+  "confidence_and_uncertainty": "STAGE CONFIDENCE: technology Low — a dated routine-use account identifying the controlling model could establish a floor. Application Low — an adopter account resolving production status and controller identity could establish a floor, and a qualifying share could establish a higher band. Peer group Low — dated routine-use records for genuinely comparable operators, ideally with a representative denominator, could change the read.",
+  "value_opportunity_implication": "The closest observed task match supports the feasibility of live AMR-to-conveyor handoffs within an existing automation workflow. The cards do not quantify labor, ergonomic or throughput gains against manual transfer, so the cumulative tote count cannot establish the size of the opportunity.",
+  "risk_governance_implication": "The applicable industrial-robot safety standard has broad scope, and the supplied legged-robot standard is still a committee draft. Evidence from comparable sites would carry more weight if it documented worker exposure, interventions, goods damage and throughput continuity during normal shifts.",
+  "recommendation_management_implication": "TIMING: Patience — reassess at Q1 2027 capital planning or sooner if dated comparable-peer operating results emerge. Watch for recurring tote-transfer shifts beyond trials, disclosure of the controlling model and a representative application-use share. A confirmed named routine-use case would strengthen the stage finding. A qualifying Early majority share would move the table result to Urgency, with comparable-peer proof still relevant to this fast follower.",
+  "change_monitoring_triggers": [
+    "By Q1 2027 or within the 12-month horizon, a dated public adopter account confirming recurring post-trial use of a named foundation model on a humanoid would move technology from Withheld to Early adopters if it establishes a base case and no qualifying share is available.",
+    "Within the 12-month horizon, a dated adopter record naming the controller and showing recurring AMR-to-conveyor tote-transfer shifts after trial completion would move application from Withheld to Early adopters in the absence of a qualifying share. A record from a comparable 3PL would also establish a peer-group floor.",
+    "Within the 12-month horizon, a dated representative survey or census with its denominator stated and a repeated-use share clearly in the Early majority band, without dated evidence of a stall, would move application to Early majority and table timing from Patience to Urgency. Comparable-peer operating evidence would address the organization's separate peer prerequisite."
+  ],
+  "abstention_or_more_information_needed": [
+    "HANDOFF → Creation Agent: Which predecessors led to foundation-model-controlled humanoids, and what stage of the creation arc do they occupy?",
+    "HANDOFF → Innovation Agent: What innovation lifecycle and performance-based degree does the tote-transfer application show?",
+    "HANDOFF → Promethean Agent: What significance class is supported for the technology and this application?",
+    "HANDOFF → Adoption Agent: Given the timing evidence, what adoption decision or next step is appropriate for this organization?",
+    "HANDOFF → Organizational Adoption Agent: Can the 3PL support the stage under consideration given its staffing, safety review, client obligations and fallback arrangements?",
+    "HANDOFF → Landscape Agent: Which vendors and comparable peer deployments beyond the supplied register materially change the market picture?",
+    "Missing information: adopter-confirmed operating status and controller identity for the named tote-transfer work, a defined peer population with dated repeated-use evidence, and comparable results across normal shifts."
+  ]
+}

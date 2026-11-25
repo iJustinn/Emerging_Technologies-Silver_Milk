@@ -15,6 +15,7 @@ This repository holds the **team-approved** specialist agents (Labs 3–9), the 
 | `records/evidence/` | Saved test artifacts referenced by the logs |
 | `scaffold/` | Placeholder for the unchanged ET scaffold working copy (see its README) |
 | `agents/` | Team-approved specialists only, promoted per the standard, Section 6 |
+| `moe/` | Final MoE architecture and orchestration package (Team Lab 10, 1.0-design): spec, expert contract, synthesizer instructions, system test plan, integration work list, architecture critique, robotics dry run |
 
 ## Public-repo rule
 

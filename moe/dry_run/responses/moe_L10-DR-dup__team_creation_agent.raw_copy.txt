@@ -1,0 +1,145 @@
+{
+  "agent": {
+    "name": "Silver-Milk Team Creation Agent",
+    "specialty": "technology creation and evolution: originating need, recombined predecessor capabilities, enabling conditions, and position on the arc of technology",
+    "version": "1.0-team"
+  },
+  "analytical_question": "How did this technology come into existence, what combination of prior capabilities made it possible, and what does that history imply for this application and organization?",
+  "general_et_finding": "NEED: Robotics researchers and automation developers sought machines that could perform varied physical tasks in human-built spaces. Earlier systems relied on engineered movement and task-specific control or training. The documented research goal was broader physical autonomy. Reducing the engineering and data collection needed for each new task is an inferred economic pull.\nPREDECESSORS: (1) Honda P2 (1996), autonomous bipedal embodiment and dynamic balance. (2) Transformer (2017), attention-based sequence processing for modern multimodal policies. (3) CLIP (2021), transferable visual representations grounded in language. (4) RT-1 (2022), a shared learned robot-control policy trained on real task demonstrations. (5) RT-2 (2023), joint training on web-scale visual-language tasks and robot actions to transfer semantic knowledge into control. These are lineage records for necessary capabilities in the present form. The original implementations are replaceable.\nENABLERS: NVIDIA's 2025 GR00T N1 combined real trajectories, human video and synthetic data, widening the training supply. Early commercial demand provided an economic incentive for continued development, as reflected in reported 2025 humanoid sales revenue. Direct evidence that this demand enabled the original VLA recombination is missing.\nARC STAGE: Emerging→Developing | defining layer: the reusable learned VLA policy that grounds visual and language inputs in physical action on a humanoid | markers: March 2025 GR00T N1 coupled a vision-language backbone to a flow-matching action generator and demonstrated bimanual humanoid manipulation, establishing a working recombination. January 2026 Helix 02 put learned whole-body coordination behind three control levels, including a balance controller. The disclosed scope of learned control and the boundary between policy and body control still differ.\nTRAJECTORY (inference): At 5 years, planners, action generators and safety controls may have clearer interfaces. At 10 years, reusable policies may share adaptation tooling across some bodies while retaining body-specific controllers. At 15 years, common interfaces could support specialized policy and controller components if cross-body transfer becomes repeatable.",
+  "application_finding": "The technology is the learned VLA control layer on a humanoid body. Digit is a commercial robot cited for task precedent, with its controlling model undisclosed in the supplied records. The local application is moving plastic totes among AMRs, conveyors and racks. The workflow includes AMR arrival, station handshakes, placement confirmation and exception handling. Item picking, truck loading and work in public areas are outside scope. Inference: vision-conditioned manipulation → locate, grasp and place totes despite pose and load variation → adaptation may reduce the need for precise presentation, but grip stability, placement repeatability and recovery remain unestablished. Inference: dynamically balanced whole-body control → transfer a loaded tote while staying within the station's operating envelope and meeting handoff timing → balance, stopping and recovery behavior must be assessed on the exact body and controller combination. Inference: existing AMR and conveyor controls → coordinate handoffs and preserve the manual route during interruptions → their existing interfaces are a dependable integration starting point, while the humanoid interface and recovery behavior remain unsettled. Agility's cumulative tote count supplies a close workflow precedent. It leaves throughput, safety, economics and the contribution of a VLA policy unresolved.",
+  "organization_specific_finding": "This six-site 3PL can contain the impact of controller changes at one fenceable AMR-to-conveyor station over roughly 12 weeks because it already operates AMRs and conveyors and can retain manual transfer. Its capacity to absorb disruption is narrower than the physical scope suggests. Transfer work runs across two shifts, a stalled station threatens client service levels, technicians lack humanoid experience, and the manual stop-and-fallback procedure is unwritten and undemonstrated. A change in policy or body firmware could therefore create new support and safety work within the same short window. VP Operations is the named sponsor with stop authority, while an operating owner and protected hours are unspecified and no evaluation budget is approved. The Q1 2027 capital planning date within the 12-month horizon makes unsupported assumptions about portability, support coverage and multi-site economics consequential. Associates' stated displacement concerns also affect how changes in work assignments would be interpreted.",
+  "evidence": [
+    {
+      "claim": "Honda traces its humanoid program to the goal of useful autonomous walking and records the 1996 P2 as a predecessor to ASIMO.",
+      "source_or_reference": "Honda Motor Co., Honda Debuts New Humanoid Robot ASIMO, https://global.honda/en/newsroom/news/2000/c001120b-eng.html",
+      "date_or_recency": "2000-11-20 release, documenting the 1996 prototype",
+      "evidence_type": "primary-historical",
+      "notes": "STATUS: inspected-this-run. Honda's dated launch record documents its stated research goal and prototype lineage."
+    },
+    {
+      "claim": "The Transformer introduced attention-based sequence processing without recurrence as its architectural basis.",
+      "source_or_reference": "Vaswani et al., Attention Is All You Need, https://arxiv.org/abs/1706.03762",
+      "date_or_recency": "2017-06-12",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: inspected-this-run. The original paper's abstract documents the architecture."
+    },
+    {
+      "claim": "CLIP showed that natural-language supervision can produce transferable visual representations.",
+      "source_or_reference": "Radford et al., Learning Transferable Visual Models From Natural Language Supervision, https://arxiv.org/abs/2103.00020",
+      "date_or_recency": "2021-02-26",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: inspected-this-run. This is a canonical record for the capability, with no claim that each subsequent policy uses CLIP weights."
+    },
+    {
+      "claim": "RT-1 demonstrated a common learned control policy trained on real-world robot demonstrations spanning many tasks.",
+      "source_or_reference": "Brohan et al., RT-1: Robotics Transformer for Real-World Control at Scale, https://arxiv.org/abs/2212.06817",
+      "date_or_recency": "2022-12-13",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: inspected-this-run. The lineage contribution is shared demonstration-trained control."
+    },
+    {
+      "claim": "RT-2 showed how a pretrained vision-language model could transfer semantic knowledge into robotic control by training on robot actions alongside vision-language tasks.",
+      "source_or_reference": "Brohan et al., RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control, https://arxiv.org/abs/2307.15818",
+      "date_or_recency": "2023-07-28",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: inspected-this-run. RT-2 encoded actions as tokens. Later action generators can implement the same grounding capability differently."
+    },
+    {
+      "claim": "GR00T N1 used a vision-language backbone and a jointly trained flow-matching action generator, with real trajectories, human video and synthetic data. NVIDIA reported real humanoid bimanual manipulation.",
+      "source_or_reference": "NVIDIA et al., GR00T N1: An Open Foundation Model for Generalist Humanoid Robots, https://arxiv.org/abs/2503.14734",
+      "date_or_recency": "2025-03-18",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: inspected-this-run. The developer's paper supports the architectural description and a bounded demonstration."
+    },
+    {
+      "claim": "Figure described Helix 02 as an integrated whole-body system with semantic reasoning, visuomotor coordination and a learned balance controller at distinct control rates.",
+      "source_or_reference": "Figure, Introducing Helix 02: Full-Body Autonomy, https://www.figure.ai/news/helix-02",
+      "date_or_recency": "2026-01-27",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: inspected-this-run. Figure's description exposes a different partition of learned control from the disclosed GR00T N1 model. The disclosure does not provide a complete comparison of either platform's full control stack."
+    },
+    {
+      "claim": "Google DeepMind reported early-access whole-body VLA capabilities, with vendor-run Apptronik Apollo success varying by pick location.",
+      "source_or_reference": "S1, Google DeepMind, Gemini Robotics 2 brings whole-body intelligence to robots, https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+      "date_or_recency": "2026-07-30",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: supplied. The packet preparer accessed the source on 2026-11-24. The vendor-reported table, floor and shelf results do not establish performance for tote transfer."
+    },
+    {
+      "claim": "Agility reported more than 100,000 cumulative tote moves at a GXO site, including AMR-to-conveyor transfers.",
+      "source_or_reference": "S4, Agility Robotics, Digit Moves Over 100,000 Totes in Commercial Deployment, https://www.agilityrobotics.com/content/digit-moves-over-100k-totes",
+      "date_or_recency": "2025-11-20",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: supplied. The packet preparer accessed the source on 2026-11-24. The vendor-reported count gives no fleet size, exposure period, error denominator or controlling model."
+    },
+    {
+      "claim": "Trade reporting describes Digit operating under a commercial agreement and separately attributes to GXO's CEO a statement that humanoids had yet to reach production or yield ROI.",
+      "source_or_reference": "S5, The Robot Report, Agility and GXO Logistics plan expanded deployment of Digit humanoid, https://www.therobotreport.com/agility-gxo-logistics-plan-expanded-deployment-digit-humanoid/",
+      "date_or_recency": "2026-10-26, citing August 2026 remarks",
+      "evidence_type": "secondary",
+      "notes": "STATUS: supplied. The packet preparer accessed the source on 2026-11-24. The earnings transcript was outside the supplied retrieval and the expansion was announced."
+    },
+    {
+      "claim": "Company figures reported by trade press indicate some early commercial demand alongside a substantial operating loss.",
+      "source_or_reference": "S12, The Robot Report, Agility Robotics reports $1.8M revenue ahead of humanoid SPAC, https://www.therobotreport.com/agility-robotics-reports-18m-revenue-ahead-of-humanoid-spac/",
+      "date_or_recency": "2026-09-07, reporting FY2025 figures",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: supplied. The packet preparer accessed the article on 2026-11-24. The article reports company figures of $1.8 million in net sales and $140 million in operating losses. The filing itself was outside the supplied retrieval. These figures do not isolate demand or economics for VLA control."
+    },
+    {
+      "claim": "The RoboDojo preprint reports low aggregate success for generalist policies on a diverse set of unfamiliar real-world bimanual tasks.",
+      "source_or_reference": "S9, Chen et al., RoboDojo: A Unified Sim-and-Real Benchmark for Generalist Robot Manipulation Policies, https://huggingface.co/papers/2607.04434",
+      "date_or_recency": "2026-07-05, v3 2026-07-08",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: supplied. The packet preparer accessed the source on 2026-11-24 and read it in part. The preprint tested tabletop arms, so aggregate scores cannot be transferred to a constrained tote station."
+    },
+    {
+      "claim": "A safety standard specifically addressing dynamically stable industrial mobile robots was at committee-draft stage.",
+      "source_or_reference": "S11, ISO/TC 299, ISO/CD 25785-1 Safety requirements for dynamically stable industrial mobile robots — Part 1: Robots, https://committee.iso.org/standard/91469.html",
+      "date_or_recency": "2026-07-08 committee-draft comment period closed",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: supplied. The packet preparer accessed the source on 2026-11-24. This is a dated draft milestone and provides no product certification."
+    },
+    {
+      "claim": "The 3PL case specifies a fenceable station, a manual route, limited humanoid support capacity, required approvals and a Q1 2027 capital planning decision.",
+      "source_or_reference": "MASY1800 specialist packet, ROBOTICS-HUMANOID-TOTE-2026-11-24-v1, hypothetical case context",
+      "date_or_recency": "2026-11-24",
+      "evidence_type": "case-premise",
+      "notes": "STATUS: supplied. The packet preparer dated the exercise 2026-11-24. These organizational details are hypothetical."
+    },
+    {
+      "claim": "Lower per-task engineering effort plausibly created economic pull. Over 5, 10 and 15 years, interface separation, adaptation tooling and component specialization are conditional structural possibilities.",
+      "source_or_reference": "Specialist inference from the RT-1, RT-2, GR00T N1 and Helix 02 architecture records",
+      "date_or_recency": "Assessment as of 2026-11-24",
+      "evidence_type": "inference",
+      "notes": "STATUS: unverified. The motivation and trajectory are interpretations. The long-horizon outcomes depend on repeatable transfer and usable common interfaces."
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "A1 ASSUMPTION: The core mechanism of the defining layer works as claimed: a learned policy maps visual observations and language goals to executable robot actions on a humanoid body. | VERDICT: HOLDS | WHY: GR00T N1 documents the mapping and reports physical bimanual execution, while Figure reports learned whole-body execution. This verdict is limited to mechanism feasibility under demonstrated conditions. | IF DIFFERENT: Without executed physical actions, the claimed mechanism would remain a research proposition and the case for a transition toward developing practice would weaken.",
+    "A2 ASSUMPTION: The defining layer has converged on a de facto architecture across major providers. | VERDICT: DOES NOT HOLD | WHY: The disclosed architectures share a perception-to-action pattern but differ materially in the scope and partition of action generation, coordination and balance. No common policy-to-controller boundary or transferable architecture is established across the major designs examined. | IF DIFFERENT: Common implementation boundaries and demonstrable interchangeability across independent providers would justify reassessing the stage as Developing or later.",
+    "A3 ASSUMPTION: Demand for this technology sustains a business model that funds its continued development. | VERDICT: UNTESTED | WHY: Early whole-robot sales show some willingness to pay, but the available economics do not isolate demand for VLA-controlled humanoids or show recurring revenue sufficient to sustain development. One company's reported losses do not establish category-wide failure. | IF DIFFERENT: Evidence of sustained customer-funded development would strengthen the case for a durable development trajectory. Evidence of persistent dependence on subsidies would weaken it. Neither finding would settle A2.",
+    "The uncited memo claim that humanoids are already running in production at major 3PLs is unsupported as stated. The closest record documents vendor-reported commercial tote movement at one GXO site. Reported GXO and Agility statements use conflicting descriptions of operating status, and the supplied deployment records do not identify a VLA controller.",
+    "Vendor demonstrations and the RoboDojo benchmark differ in tasks, embodiments and conditions. Together they establish uncertainty about transfer, with no defensible station-level success or failure rate."
+  ],
+  "confidence_and_uncertainty": "High confidence in the documented technical lineage and bounded feasibility of learned physical action. Moderate confidence in the arc placement because provider disclosures describe different layers in different detail. Low confidence in durable commercial economics, model attribution in live logistics and repeatable performance at the proposed station.",
+  "value_opportunity_implication": "Behavior learned across tasks could make tote handling less dependent on hand-coded responses to changes in pose and presentation. The case-specific value would come from reducing repetitive transfers and associate strain while maintaining SLA throughput. Current evidence leaves the magnitude and even the net direction of those effects unresolved.",
+  "risk_governance_implication": "Policy, firmware and body changes can alter motion, balance, recovery and interactions with the station. For this operation, those changes matter to associate safety, dropped client goods and SLA interruptions. EHS review needs to address the exact robot, control configuration and integration. The committee draft indicates a standards development path. The case also leaves video retention and client permissions unresolved.",
+  "recommendation_management_implication": "Assume that capability and recovery behavior attach to the exact body, policy, firmware and station configuration. Watch controller interface stability, independent reports with model attribution, and comparable throughput and recovery evidence. Keep AMR and conveyor handshakes, event logs and the manual transfer route independent of the humanoid provider where practicable. Avoid locking the FY2027 plan into proprietary interfaces, multi-site scope or a multi-year agreement on the strength of cumulative tote counts. Any operation near people is conditional on EHS sign-off. Use of client-dedicated space is conditional on contract review and any required client consent, and any video retention is conditional on explicit permission. Work requiring evaluation spending is conditional on budget approval. Capital or a multi-year agreement is conditional on measured results and CFO approval.",
+  "change_monitoring_triggers": [
+    "Independent providers disclose and demonstrate a common policy-to-controller interface with reproducible portability across humanoid bodies. Reassess A2 and the arc stage.",
+    "Comparable customer disclosures show renewals and recurring revenue that sustainably funds development, with the deployed VLA architecture identified. Reassess A3.",
+    "An adopter publishes comparable tote-transfer records naming the robot, model and version and reporting throughput, interventions, drops, downtime and recovery. Reassess how much of the demonstrated capability transfers to this workflow.",
+    "ISO publishes requirements addressing dynamically stable industrial mobile robots and their integration, or the applicable EHS review identifies a new requirement for the exact configuration. Reassess the local governance implications.",
+    "The 3PL assigns an operating owner and protected hours, resolves client and data permissions, and documents and demonstrates the manual fallback before the Q1 2027 capital decision. Reassess how much controller instability the site can absorb."
+  ],
+  "abstention_or_more_information_needed": [
+    "HANDOFF → Innovation Classification Agent: Does this recombination represent meaningful innovation, and which milestones establish invention, innovation or commercialization?",
+    "HANDOFF → Promethean Agent: Does reusable embodied control have civilization-changing significance?",
+    "HANDOFF → Diffusion Agent: How widespread is sustained production use among 3PLs, and how should vendor-defined live operation be reconciled with adopter-defined production?",
+    "HANDOFF → Adoption Agent: Which management action is warranted now, and what evidence would justify a later capital or multi-year commitment?",
+    "HANDOFF → Organizational Adoption Agent: Can the site support the contemplated scope given the missing operating owner, protected hours, training owner, budget, governance reviews and demonstrated fallback?",
+    "HANDOFF → Landscape Agent: Which commercially accessible robot and controller combinations disclose model identity, control boundaries, update terms and support obligations?",
+    "A stronger causal account needs dated primary evidence linking development decisions to economic demand. A defensible production claim needs an adopter-authored account defining production and identifying the active control stack. A station-specific assessment needs the proposed robot and model version, expected tote range, current throughput and exception baselines, and the status of operating ownership and permissions."
+  ]
+}
