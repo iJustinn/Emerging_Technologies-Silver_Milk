@@ -12,7 +12,7 @@ Team Silver Milk: Dian Li, Justin Zhong, Karuna Srivastava, Nini Huang, Yuanxian
 - **1.0 has not been re-run end to end** since those changes (W-6). Lab 11 is its first full test.
 
 **Rule tags**
-- `[S]` team choice in the Lab 10 session, answered by Justin Zhong (D-67 to D-78)
+- `[S]` team choice in the Lab 10 session, answered by Justin Zhong (D-67 to D-79)
 - `[R]` carried from an earlier decision or issue
 - `[CR-n]` / `[DR-n]` the critic or dry-run finding that changed the rule
 
@@ -51,7 +51,7 @@ WAVE 2: Adoption   ← verbatim label passages from Diffusion, Promethean, Lands
 WAVE 3: Org Adoption ← verbatim passages from Adoption (action, gates) and Landscape (execution gates)
    │   CHECK
 BRIEF ASSEMBLY (script): panel · action→stage readiness test · every §4.2 conflict row · gates ·
-                         missing evidence (with asked_by) · triggers · flags F-1…F-10
+                         missing evidence (with asked_by) · triggers · flags F-1…F-11
    │
 SYNTHESIZER (1 ChatGPT run, narrow): TRADEOFFS prose + conflict explanations only,
                          every sentence carrying an exact quoted expert passage                    [S, CR-4]
@@ -181,7 +181,7 @@ Thresholds drafted by the operator and accepted by the team (D-78): 18-month car
 | F-6 | The decision asks for, or the action requires, a vendor, tool or model choice. That choice is always the owner's procurement call (I-25) |
 | F-7 | The support check fails (§4.3 S-2) |
 | F-8 | Adoption `RECOMMENDATION CONFIDENCE: Low`, or Org Adoption `VERDICT CONFIDENCE: Low` |
-| F-9 | **Computed from the intake, not from an expert's list:** for the stage the action executes (§4.5), any of org facts 2, 3, 4 or 6 (sponsor, coordinator/owner, environment, budget) is `Not stated` `[CR-14]` |
+| F-9 | **Computed from the intake, not from an expert's list:** when the stage the action executes (§4.5) is **beyond preparation**, any of org facts 2, 3, 4 or 6 (sponsor, coordinator/owner, environment, budget) is `Not stated` `[CR-14]`. (The 0.9 scope "beyond preparation" is kept; whether F-9 should also fire for no-start actions is an open question for Lab 11, W-L13.) |
 | F-10 | **Same-stage readiness block** `[S]`: for an action that starts work (Adopt, Bounded experiment, Proof of concept), Org Adoption reads `Not ready` or `Undetermined — more evidence` (verdict), or `Blocked` or `Undetermined` (stage ladder), for the stage the action executes (§4.5). `Partially ready`, `Conditional` and `Not assessed` are shown in §2 of the brief without a flag (D-79) |
 | F-11 | **Action starts work** `[S]`: the proposed action is Adopt, Bounded experiment or Proof of concept. Such a brief always goes to the owner, so only Monitor, Defer, Reject for now and Withheld briefs with no other flag are auto-accepted (D-79) |
 
@@ -193,7 +193,7 @@ Every row keeps both readings verbatim. Q/E/J are **annotations that explain a r
 - `E`: the same question, read from different evidence.
 - `J`: the same evidence, read differently.
 
-What reaches the owner is decided by F-3 and F-10, not by the annotation. The system never resolves a row.
+What reaches the owner is decided by the flags (F-3, F-10, F-11), not by the annotation. The system never resolves a row.
 
 ### 4.2 Conflict rows the script always builds (all rows, every run) `[DR-12][CR-3]`
 | Row | Readings placed side by side | Same question? | Source |

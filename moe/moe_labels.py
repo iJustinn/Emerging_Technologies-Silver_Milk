@@ -32,6 +32,11 @@ def labels_for(expert, path):
     t = text_of(d)
     out = {}
     for h in expert["headline"]:
+        if h.get("indexed"):  # e.g. Org Adoption 'DEMAND [D1]:' … '[D8]:' (contract 'indexed')
+            vals = [read_label(t, f"{h['label']} [{i}]") for i in h["indexed"]]
+            out[h["label"]] = None if all(v is None for v in vals) else "; ".join(
+                f"{i}: {(v or 'not found').split(' — ')[0]}" for i, v in zip(h["indexed"], vals))
+            continue
         # the contract's named field first (a label can appear twice in one output, e.g. Landscape MOVEMENT), then anywhere
         fields = [f.strip() for f in h.get("field", "").replace(" or ", ",").split(",") if f.strip() in d]
         v = None

@@ -594,9 +594,19 @@
           "label": "DEMAND",
           "field": "general_et_finding",
           "values": [
-            "DEMAND [D1]…[D8]: Low | Moderate | High"
+            "written 'DEMAND [D<n>]: Low | Moderate | High — <reason>' once per index; read as the set of eight values"
           ],
-          "use": "AC-C1 baseline set (CR-9, CR-16)"
+          "use": "AC-C1 baseline set (CR-9, CR-16)",
+          "indexed": [
+            "D1",
+            "D2",
+            "D3",
+            "D4",
+            "D5",
+            "D6",
+            "D7",
+            "D8"
+          ]
         }
       ],
       "confidence": {
@@ -621,7 +631,8 @@
     "label_match": "'<LABEL>' or an alias, followed by optional text up to 60 chars, then ':' (Promethean 'CONFIDENCE AT LEAST <class>:')",
     "value": "the full source line is kept verbatim (upstream copy, brief); the canonical value is the text before the first ' — ', '. ' or ' | ', except that a parenthesized value is kept whole ('Indeterminate (Incremental | Breakthrough)')",
     "case": "values are compared case-insensitively (Org Adoption wrote '(bounded evaluation)')",
-    "missing": "a contracted label not found is shown 'not found in output' and is a soft warning; for a decisive label (Adoption RECOMMENDATION, Org Adoption READINESS VERDICT, Landscape STANCE) it is a hard FAIL"
+    "missing": "a contracted label not found is shown 'not found in output' and is a soft warning; for a decisive label (Adoption RECOMMENDATION, Org Adoption READINESS VERDICT, Landscape STANCE) it is a hard FAIL",
+    "indexed": "a label with 'indexed' is read once per index as '<LABEL> [<index>]:' and reported as the ordered set (Org Adoption DEMAND [D1]…[D8])"
   },
   "uncertainty_display": "each expert's own confidence words, plus a separate status OK | ABSTAINED | FAILED | unavailable; no translated scale and no overall confidence (CR-12, I-33)",
   "action_to_stage": {

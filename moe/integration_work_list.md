@@ -18,5 +18,12 @@ Owners are named only where the team already assigned the role. Everything else 
 | W-L10 | `team_tools/check_org_adoption_lab08.py`: match the stage case-insensitively. This is a tool fix, not an agent change; the agent is unchanged | DR-4(d) | In | Lab 11 integrator |
 | W-L11 | `records/moe_runs/` and the disposition ledger | §5.4 | In | Evidence keeper |
 | W-L12 | Re-confirm the MASY-1800 project settings (sources, instructions, memory) before the frozen runs | Runtime, I-13 | In | Operator |
+| W-L13 | Team question: should F-9 (missing sponsor, owner, environment or budget) also fire for no-start actions (Monitor, Defer, Reject for now)? 1.0 keeps the 0.9 scope, beyond preparation only | §3 F-9 | Start of Lab 11 | Team decision |
+
+**Lab 11 run load (estimate):**
+- **Planned runs:** 3 cases × (7 experts + 1 synthesizer) = 24; + 4 AC-C4 reruns on case A (Promethean, Diffusion, Landscape, Innovation); + 1 AC-F4 Org Adoption run = **29 ChatGPT runs**, plus up to one relaunch each.
+- **Dry-run timings** (GPT-6.2 Sol, Light): replies took 10–47 s per expert ("Worked for"); launch and collection add about 20–40 s per run.
+- **Waves:** they serialize two steps per case.
+- **Implication:** two cases in class (memo minimum) is realistic only if the runner (W-L4) works first time; the third case and the AC-C4 reruns fit the posting window as "already-defined frozen runs".
 
 **Open issues carried into Lab 11:** I-18 (Defer may resolve to Monitor), I-30 (PR reviews not recorded), I-32 (comparison across cases, done by hand), and W-1 to W-7 in the spec.

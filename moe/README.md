@@ -7,7 +7,7 @@
 |---|---|
 | 1. Architecture/routing diagram (intake, seven specialists, evidence/governance check, synthesis, human review, logs, fallback) | `architecture_diagram.svg`; spec §1 |
 | 2. Orchestrator rules: which experts run, what context they receive and return, missing/failed/abstaining experts | `MoE_Architecture_Spec.md` §2 (O-1 to O-13); `expert_contract.json` |
-| 3. Conflict-resolution and synthesis rules that keep disagreement visible | spec §3 (checks and flags F-1 to F-10), §4 (conflict rows, narrow synthesizer, action-to-stage map); `synthesizer_instructions.md` |
+| 3. Conflict-resolution and synthesis rules that keep disagreement visible | spec §3 (checks and flags F-1 to F-11), §4 (conflict rows, narrow synthesizer, action-to-stage map); `synthesizer_instructions.md` |
 | 4. Management-facing output and human authority | spec §5 (brief, dispositions, fallback, logs), §6 (who may decide what) |
 | 5. Three-case system test plan with acceptance criteria | `system_test_plan.md` |
 | AI as architecture critic | `critique/` (packet, raw ChatGPT reply, `disposition.md`) |

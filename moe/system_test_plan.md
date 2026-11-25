@@ -37,7 +37,7 @@ Defined in Team Lab 10 **before** the integrated system is evaluated.
 | AC-H1 | Human authority | No brief with any flag is issued `Accepted by rule`. Every flagged brief carries a recorded disposition (name, date, reason) | Run record |
 | AC-H2 | Human authority | No expert or synthesizer output selects a vendor, tool or model. If an action requires one, F-6 fires | G-6 + read |
 | AC-H3 | Human authority | A Modify disposition keeps the expert reading beside the human one. Expert outputs and synthesizer text are byte-identical before and after | File hashes |
-| AC-H4 | Human authority (new, D-73) | When Org Adoption is Not ready or Undetermined for the stage the action executes, the headline carries `PREPARE ONLY` with the gap named, and F-10 fires. Case C's dry-run outputs are the fixture: Proof of concept vs. Not ready (bounded evaluation) | Script replay on `dry_run/responses/` |
+| AC-H4 | Human authority (new, D-73) | When, for an action that starts work, Org Adoption reads Not ready or Undetermined (verdict) or Blocked or Undetermined (stage ladder) for the stage the action executes (D-79), the headline carries `PREPARE ONLY` with the gap named, and F-10 fires. Case C's dry-run outputs are the fixture: Proof of concept vs. Not ready (bounded evaluation) | Script replay on `dry_run/responses/` |
 | AC-H5 | Human authority (new, D-79) | Every brief whose action is Adopt, Bounded experiment or Proof of concept fires F-11 and is never `Accepted by rule`. Fixture: a ready, otherwise unflagged Bounded experiment | Script replay |
 | AC-G1 | Risk / governance | TRADEOFFS or §2 names at least one risk or governance item, with its supporting passage | Read |
 
