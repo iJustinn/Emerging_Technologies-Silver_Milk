@@ -16,7 +16,7 @@
 | Version before critique and dry run | `records_v0_9/` |
 | I-01 evidence from Labs 3–9 | `evidence/cross_lab_label_table.md` |
 
-## Team decision (confirmed by Justin Zhong in session; D-70 to D-78)
+## Team decision (confirmed as written by Justin Zhong in session, including the operator-drafted rules; D-70 to D-79)
 
 **Routing:**
 - All seven team specialists always run, in three fixed waves, driven by a local script.
@@ -29,14 +29,15 @@
 
 **The one recommendation:** the Adoption Agent's action. The system may only qualify it:
 - when Org Adoption is not ready for the stage the action executes, the headline reads `PREPARE ONLY` and the owner must decide (F-10)
+- every action that starts work (Adopt, Bounded experiment, Proof of concept) goes to the owner (F-11)
 - conflicts are shown side by side and never averaged
 - vendor selection is always the owner's
 
 **The synthesizer:** one narrow ChatGPT run. It writes only the tradeoff prose and conflict explanations, each sentence backed by an exact quoted expert passage that a script checks.
 
 **Human authority:**
-- The named decision owner reviews whenever any of ten flags fires.
-- A brief with no flags is issued "Accepted by rule" and can be reopened.
+- The named decision owner reviews whenever any of eleven flags fires.
+- Only a no-start brief (Monitor, Defer, Reject for now, Withheld) with no flags is issued "Accepted by rule", and it can be reopened.
 - **What the synthesizer may decide:** nothing beyond its own prose. It cannot change the action, resolve a conflict, add evidence or state an overall confidence.
 - **What the human may override:** everything: the action, the conditions, starting despite PREPARE ONLY, and vendor choice. The reason goes in the disposition, never as an edit to an expert's output.
 
@@ -50,7 +51,7 @@
 - **The synthesizer** passed every mechanical check but credited three experts with requests they never made. That is why it was narrowed.
 
 ## Dissent and limits
-- **No member dissent was raised in session.** Recorded alternatives, not dissent: the critic's CR-1 ("the owner should always decide"; the team rejected it because F-10, F-5 and F-6 now cover every brief that starts work, spends money or selects a vendor) and its simplest alternative (drop the synthesizer).
+- **No member dissent was raised in session.** Recorded alternatives, not dissent: the critic's CR-1 ("the owner should always decide"; the team rejected it because flags now cover what matters: F-11 sends every action that starts work to the owner, F-10 every readiness block, F-5 Adopt or Severe, F-6 vendor choice) and its simplest alternative (drop the synthesizer).
 - **Limits** (spec §7):
   - W-1: rerun instability
   - W-2: review-when-flagged has been measured on one case only

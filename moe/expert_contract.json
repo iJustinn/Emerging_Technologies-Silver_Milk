@@ -632,6 +632,6 @@
     "Defer": "Preparation",
     "Reject for now": "Preparation",
     "Withheld — more evidence": "Preparation",
-    "rule": "if Org Adoption is Not ready or Undetermined for the mapped stage (its READINESS VERDICT if STAGE ASKED matches, else its STAGE LADDER entry), headline gets 'PREPARE ONLY' and F-10 fires (D-73)"
+    "rule": "for an action that starts work (Adopt, Bounded experiment, Proof of concept) only: if Org Adoption reads Not ready or Undetermined (verdict, when STAGE ASKED matches the mapped stage) or Blocked or Undetermined (its STAGE LADDER entry for the mapped stage), the headline gets 'PREPARE ONLY' and F-10 fires; Partially ready / Conditional / Not assessed are shown without a flag (D-73, D-79). F-11 fires for every start action."
   }
 }

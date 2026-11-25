@@ -1,6 +1,6 @@
 # Silver-Milk MoE Architecture and Orchestration Specification
 
-**Team Lab 10 · Version 1.0-design · ratified 2026-11-24**
+**Team Lab 10 · Version 1.0-design · ratified 2026-11-24 (D-70 to D-79)**
 
 Team Silver Milk: Dian Li, Justin Zhong, Karuna Srivastava, Nini Huang, Yuanxiang Zhang
 
@@ -57,7 +57,7 @@ SYNTHESIZER (1 ChatGPT run, narrow): TRADEOFFS prose + conflict explanations onl
                          every sentence carrying an exact quoted expert passage                    [S, CR-4]
    │   SUPPORT CHECK (script): quotes exist verbatim · action unchanged · rows answered
    ▼
-any flag? ── no ──► brief issued "Accepted by rule"; owner notified, may reopen                    [S]
+any flag F-1…F-11? ── no (only Monitor/Defer/Reject/Withheld can get here) ──► "Accepted by rule"; owner may reopen [S]
    │ yes
 HUMAN DECISION OWNER: Accept · Modify · Reject · Request more evidence  ──►  DECISION LOG + RUN RECORD
 ```
@@ -170,6 +170,7 @@ The orchestrator is a **local script** run by the operator. It makes no judgment
   - any vendor, tool or model selection
 
 ### Flags (any flag keeps the brief Draft until the owner decides; §5)
+Thresholds drafted by the operator and accepted by the team (D-78): 18-month card age (F-4), 5-minute reply timeout and one relaunch (O-9), one rerun on a hard FAIL (O-10), 120-word TRADEOFFS (§4.3). O-11 and the §5.3 fallback table are also operator-drafted and team-accepted.
 | Flag | Fires when |
 |---|---|
 | F-1 | An expert is FAILED after the rerun, or Adoption or Org Adoption is unavailable |
@@ -181,7 +182,8 @@ The orchestrator is a **local script** run by the operator. It makes no judgment
 | F-7 | The support check fails (§4.3 S-2) |
 | F-8 | Adoption `RECOMMENDATION CONFIDENCE: Low`, or Org Adoption `VERDICT CONFIDENCE: Low` |
 | F-9 | **Computed from the intake, not from an expert's list:** for the stage the action executes (§4.5), any of org facts 2, 3, 4 or 6 (sponsor, coordinator/owner, environment, budget) is `Not stated` `[CR-14]` |
-| F-10 | **Same-stage readiness block** `[S]`: Org Adoption is `Not ready` or `Undetermined — more evidence` for the stage the action executes (§4.5) |
+| F-10 | **Same-stage readiness block** `[S]`: for an action that starts work (Adopt, Bounded experiment, Proof of concept), Org Adoption reads `Not ready` or `Undetermined — more evidence` (verdict), or `Blocked` or `Undetermined` (stage ladder), for the stage the action executes (§4.5). `Partially ready`, `Conditional` and `Not assessed` are shown in §2 of the brief without a flag (D-79) |
+| F-11 | **Action starts work** `[S]`: the proposed action is Adopt, Bounded experiment or Proof of concept. Such a brief always goes to the owner, so only Monitor, Defer, Reject for now and Withheld briefs with no other flag are auto-accepted (D-79) |
 
 ## 4. Conflict resolution and synthesis (memo item 3)
 
@@ -252,9 +254,9 @@ There is a separate status column: `OK`, `ABSTAINED`, `FAILED` or `unavailable`.
 ### 4.5 Action-to-stage map and same-stage readiness `[S]`
 | Adoption action | Stage the action executes | If Org Adoption is `Not ready` / `Undetermined` for that stage |
 |---|---|---|
-| Adopt | Routine operation | Headline: `<action> — PREPARE ONLY: do not start until <gap(s)> close (Org Adoption)`; F-10 |
+| Adopt | Routine operation | Headline: `<action> — PREPARE ONLY: do not start until <gap(s)> close (Org Adoption)`; F-10 (and F-11 always) |
 | Bounded experiment · Proof of concept | Bounded evaluation | same |
-| Monitor · Defer · Reject for now · Withheld | Preparation | same |
+| Monitor · Defer · Reject for now · Withheld | Preparation | No `PREPARE ONLY` (nothing starts); readiness is shown in §2 of the brief; no F-10 |
 
 - The action category stays Adoption's (the qualify-only rule).
 - The owner chooses: prepare only, start anyway (Modify, with a reason), or request more evidence.
@@ -280,8 +282,8 @@ DECISION OWNER: <role>   HORIZON: <horizon>   STATUS: Draft (flags) | Accepted b
 ```
 
 ### 5.2 Human authority
-- **H-1 Review when flagged** `[S]`. If no flag F-1 to F-10 fires, the brief is issued `Accepted by rule`; the owner is notified and may reopen it at any time. Otherwise it stays `Draft` until the owner records a disposition.
-  - **Team reason** (critic CR-1 rejected, D-74): F-10, F-5 and F-6 now catch every brief that starts work, spends money or chooses a vendor, so auto-accepting the rest saves owner time.
+- **H-1 Review when flagged** `[S]`. If no flag F-1 to F-11 fires, the brief is issued `Accepted by rule`; the owner is notified and may reopen it at any time. Otherwise it stays `Draft` until the owner records a disposition.
+  - **Team reason** (critic CR-1 rejected, D-74): flags catch everything that matters. F-11 (added in D-79 after review found a ready, unflagged trial would otherwise be auto-accepted) sends every action that starts work to the owner; F-5 and F-6 cover Adopt/Severe and vendor choice. Only no-start briefs (Monitor, Defer, Reject for now, Withheld) with no flag are auto-accepted, saving owner time.
   - W-2 measures this in Lab 11.
 - **H-2 Dispositions.** The owner can:
   - **Accept** the action and conditions.
@@ -319,19 +321,19 @@ DECISION OWNER: <role>   HORIZON: <horizon>   STATUS: Draft (flags) | Accepted b
 |---|---|---|---|
 | Which experts run, in what order | Fixed by O-4/O-5 | — | Changed only by a decision-log entry |
 | Proposed action category | Copies Adoption's | Echoes it, cannot change it | Accepts or changes it (Modify, with a reason) |
-| Readiness block for the executed stage | Adds `PREPARE ONLY` + F-10 | — | Prepare only / start anyway / more evidence |
+| Readiness block for the executed stage | Adds `PREPARE ONLY` + F-10 (start actions only) | — | Prepare only / start anyway / more evidence |
 | Conditions, gates, missing evidence, triggers | Quotes or computes them from experts | — | Accepts or edits them in the disposition |
 | Conflicts | Builds every row; marks same-question rows | Explains each row; may annotate E/J (with support) | Resolves material disagreements |
 | Evidence base | Freezes the pack | Adds nothing | Approves cards (evidence keeper checks them) |
 | Vendor/tool selection | Never | Never | Always |
-| Issue without review | Only when no flag fires (H-1) | — | May reopen any time |
+| Issue without review | Only a no-start action with no flag (H-1, F-11) | — | May reopen any time |
 
 ## 7. Known limits (tested, not hidden)
 - **W-1 Rerun instability of general labels** `[DR-1][DR-2]`.
   - On a byte-identical packet, these flipped: Innovation `ENTREPRENEURSHIP` (pack-bound: Not established vs. Incumbent-led); Promethean `WEIGHT` (routed to Adoption: Moderate vs. Low) and its confidence; Landscape L1 (Developing vs. Emerging).
   - **A single MoE run cannot see this.** D-18's reopen condition is met.
   - Lab 11 adds a rerun-stability check (work list W-L6), and the team decides there whether to version Promethean or Innovation.
-- **W-2** "Review when flagged" fired on the only dry-run case (F-4, F-6, F-9; F-10 would also fire under 1.0). Lab 11 records the flag rate on all three cases.
+- **W-2** "Review when flagged" fired on the only dry-run case (F-4, F-6, F-9; F-10 and F-11 would also fire under 1.0). Lab 11 records the flag rate on all three cases.
 - **W-3** The dry run was the first GPT-6.2 Sol run of the six older agents. They passed on single runs apart from two soft-format items (DR-5, DR-11).
 - **W-4** Runs inside the MASY-1800 project can read the textbook PDF (I-13). Kept, for consistency with Labs 4–9.
 - **W-5** Comparison across cases (I-32) sits outside a single run. Lab 11 compares briefs across the three cases by hand.
@@ -343,7 +345,7 @@ DECISION OWNER: <role>   HORIZON: <horizon>   STATUS: Draft (flags) | Accepted b
 |---|---|
 | I-01 reconcile conflicting findings | **Closed (D-72):** never merged; all §4.2 rows shown; F-3/F-10 send material disagreements and readiness blocks to the owner; the Lab 1 example is a side-by-side row |
 | I-02 validator passes empty/invalid output | **Closed (D-75):** hard/soft check layer G-1 to G-6 |
-| I-03 scaffold not in workspace | Closed earlier in practice (packages since Lab 3); marked closed |
+| I-03 scaffold not in workspace | **Closed (D-79):** the full scaffold ships in every package; the public repo keeps the `FROZEN CORE INTACT` output (D-12) |
 | I-05, I-10, I-13, I-15, I-19 per-run retrieval drives general labels | **Mitigated (D-71):** frozen pack + evidence policy per label; residual W-1 (DR-1/DR-2) → Lab 11 |
 | I-07 per-agent mechanical checks | **Closed (D-75):** the integration layer runs each agent's lab check (G-1) |
 | I-09, I-27 shared label names | **Closed (D-75):** key on agent + label with per-label extraction rules (O-8) |

@@ -84,7 +84,7 @@
   <path class="ln" d="M430,504 L430,528"/>
   <rect class="chk" x="150" y="530" width="560" height="56" rx="6"/>
   <text x="430" y="551" text-anchor="middle" class="t">BRIEF ASSEMBLY (script)</text>
-  <text x="430" y="569" text-anchor="middle" class="s">action→stage readiness (PREPARE ONLY + F-10) · all §4.2 rows · asked_by · flags F-1…F-10</text>
+  <text x="430" y="569" text-anchor="middle" class="s">action→stage readiness (PREPARE ONLY + F-10) · all §4.2 rows · asked_by · flags F-1…F-11</text>
 
   <!-- Synthesizer -->
   <path class="ln" d="M430,586 L430,610"/>
@@ -101,12 +101,12 @@
   <path class="ln" d="M430,686 L430,712"/>
   <polygon points="430,714 540,764 430,814 320,764" fill="#fff" stroke="#333" stroke-width="1.3"/>
   <text x="430" y="760" text-anchor="middle" class="t">any flag</text>
-  <text x="430" y="776" text-anchor="middle" class="t">F-1…F-10?</text>
+  <text x="430" y="776" text-anchor="middle" class="t">F-1…F-11?</text>
   <path class="ln" d="M540,764 L690,764"/>
   <text x="590" y="756" class="s">no</text>
   <rect class="box" x="692" y="734" width="258" height="60" rx="6"/>
   <text x="821" y="756" text-anchor="middle" class="t">Brief issued "Accepted by rule"</text>
-  <text x="821" y="773" text-anchor="middle" class="s">decision owner notified; may reopen</text>
+  <text x="821" y="773" text-anchor="middle" class="s">only no-start actions; owner may reopen</text>
 
   <!-- Human -->
   <path class="ln" d="M430,814 L430,840"/>

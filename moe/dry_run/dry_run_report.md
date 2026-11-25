@@ -1,6 +1,6 @@
 # Lab 10 dry run: MOE-C-1 (robotics, test case C) against spec 0.9-design
 
-**Date:** 2026-11-24.
+**Date:** 2026-11-24. **Built against 0.9-design:** the template, flags and upstream blocks here were produced with `records_v0_9/expert_contract.json` and the 0.9 rules. After the 1.0 changes, `moe_labels.py` was rerun with the 1.0 contract on these same outputs, and the DR-1 flips are unchanged.
 
 **Runtime:**
 - ChatGPT web in Ego Lite, Work mode, GPT-6.2 Sol, Light, project MASY-1800.
@@ -68,7 +68,9 @@
 | DR-12 | **The conflict table covered 5 of the 8 §4.2 pairs.** The other three were checked by hand. Adoption ↔ Diffusion: Bleeding edge vs Withheld, type Q. Expert ↔ pack: no pack-bound general label rests on retrieved evidence. Lab 1 example: not applicable. The closest factual tension: Diffusion "no dated routine-use account identifies the controlling model" vs Landscape "reported in live operations … remain unverified". These are consistent readings of S4/S5, so no type E/J row and **F-3 had nothing to fire on** | operator read | §4.2, F-3 |
 | DR-13 | **Earlier decisions touched.** D-18's reopen condition is met: ENTREPRENEURSHIP drifted on identical supplied cards (DR-1). D-53: not recurred, since DEMAND labels are no longer all Moderate (D6 High). D-65: CONDITION STATUS is Partly met again, but this is not a clearly met or unmet case, so it is not triggered | DR-1; Org Adoption Step 1; Landscape Step 3 | decision log |
 
-## Report-out (memo 56–60 min)
+## Report-out (memo 56–60 min; as of 0.9-design, before the dispositions)
+*Superseded in 1.0 (see `../README.md`): the conflict is now handled by `PREPARE ONLY` + F-10 and F-11; the criterion most likely to fail is now AC-C4.*
+
 - **Architecture choice:** all seven, three fixed waves, script-run. Adoption's action is the headline. Template plus one bounded ChatGPT synthesizer, with a mechanical synthesis check. A human decides whenever a flag fires.
 - **Biggest unresolved conflict:** Adoption says prepare a proof of concept, while Org Adoption says the organization is not ready to run one (no budget, no owner). Both are right about different questions. The design must make the owner choose between "prepare only" and "start", not let the headline imply a start.
 - **Acceptance criterion most likely to fail:** AC-C1 (general-label stability), now with evidence. Two pack-bound labels flipped on an identical packet (DR-1). The critic independently named AC-C1, for a different reason: no exact baseline files.

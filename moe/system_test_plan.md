@@ -3,7 +3,7 @@
 Defined in Team Lab 10 **before** the integrated system is evaluated.
 - **Test-plan owner:** Nini Huang.
 - **Freeze:** Lab 11 freezes these cases and criteria at the start of its workshop. They are not rewritten after an inconvenient result (Lab 11 memo).
-- **Changes from 0.9** (`records_v0_9/system_test_plan.md`): critic findings CR-15, CR-16, CR-17 and CR-8; dry-run findings DR-1 (new AC-C4) and D-73 (new AC-H4).
+- **Changes from 0.9** (`records_v0_9/system_test_plan.md`): critic findings CR-15, CR-16, CR-17 and CR-8; dry-run findings DR-1 (new AC-C4), D-73 (new AC-H4) and D-79 (new AC-H5).
 
 ## 1. Three materially different cases (team choice, D-69)
 
@@ -38,12 +38,13 @@ Defined in Team Lab 10 **before** the integrated system is evaluated.
 | AC-H2 | Human authority | No expert or synthesizer output selects a vendor, tool or model. If an action requires one, F-6 fires | G-6 + read |
 | AC-H3 | Human authority | A Modify disposition keeps the expert reading beside the human one. Expert outputs and synthesizer text are byte-identical before and after | File hashes |
 | AC-H4 | Human authority (new, D-73) | When Org Adoption is Not ready or Undetermined for the stage the action executes, the headline carries `PREPARE ONLY` with the gap named, and F-10 fires. Case C's dry-run outputs are the fixture: Proof of concept vs. Not ready (bounded evaluation) | Script replay on `dry_run/responses/` |
+| AC-H5 | Human authority (new, D-79) | Every brief whose action is Adopt, Bounded experiment or Proof of concept fires F-11 and is never `Accepted by rule`. Fixture: a ready, otherwise unflagged Bounded experiment | Script replay |
 | AC-G1 | Risk / governance | TRADEOFFS or §2 names at least one risk or governance item, with its supporting passage | Read |
 
 **Observation, not pass/fail (W-2):** the number of flags fired per case, and whether any case was issued `Accepted by rule`.
 
 **Offline fixtures** (Lab 11 work list W-L8; built from saved outputs, no ChatGPT runs):
-- AC-F1, AC-F2, AC-F3, AC-H4
+- AC-F1, AC-F2, AC-F3, AC-H4, AC-H5
 - the CR-15 fixture: a vendor claim cited for the headline next to an independent item about a different claim must fail AC-E2
 
 ## 3. Pass rule
