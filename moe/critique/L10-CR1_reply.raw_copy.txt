@@ -1,0 +1,160 @@
+{
+  "findings": [
+    {
+      "id": "CR-1",
+      "category": "hidden-authority",
+      "target": "H-1, H-2, H-3, AC-H1",
+      "problem": "An unflagged brief becomes `Accepted by rule` without a recorded owner disposition. The brief does not distinguish passing automated checks from accepting the recommendation.",
+      "why_it_matters": "A reader can treat the status as permission to act. The owner’s ability to reopen the brief comes after that acceptance signal has already been issued.",
+      "proposed_change": "Issue unflagged briefs as `Ready for owner decision`. Require an owner disposition before recording acceptance, and test that an unflagged brief with no disposition cannot be mistaken for authorization.",
+      "severity": "high"
+    },
+    {
+      "id": "CR-2",
+      "category": "hidden-authority",
+      "target": "F-3, §4.1, §4.2, §4.3",
+      "problem": "The synthesizer can propose a conflict type, but the spec never says who confirms it or which type drives F-3. A caution signal also triggers F-3 under §4.3 even though F-3 is defined only for material E or J conflicts.",
+      "why_it_matters": "Classifying a row as Q can determine whether it receives mandatory review. The workflow gives the synthesizer or operator that discretion without recording who exercised it.",
+      "proposed_change": "Preserve both readings and route unresolved material disagreements and execution blockers to the owner regardless of their proposed type. Use Q/E/J as explanatory annotations.",
+      "severity": "high"
+    },
+    {
+      "id": "CR-3",
+      "category": "unsupported-synthesis",
+      "target": "§4.1, §4.2, AC-S2",
+      "problem": "Several default conflict rules infer disagreement from labels that measure different things. High Promethean weight and Monitor can coexist because weight measures attention. Breakthrough degree and Incremental significance can coexist because the specialists assess different dimensions. The readiness row also escalates a failure at a stage beyond the one proposed while treating failure at the proposed stage as Q by default.",
+      "why_it_matters": "The table can manufacture judgment conflicts and give a real execution blocker less prominence than a readiness gap outside the proposed scope.",
+      "proposed_change": "Show unlike measures side by side. Require a shared question and scope before labeling a difference E or J. Check readiness against the explicit stage associated with the proposed action and surface any same-stage execution blocker.",
+      "severity": "high"
+    },
+    {
+      "id": "CR-4",
+      "category": "unsupported-synthesis",
+      "target": "G-7, S-2, F-7, AC-E3, AC-S2, AC-F3",
+      "problem": "A valid agent-and-label citation does not establish that a qualification follows from that label. A synthesizer could write `begin the trial now`, cite an actual `READINESS VERDICT: Not ready`, echo the action correctly, and pass the stated checks. S-2 also checks URLs and dates but omits the numbers and sources required by AC-E3.",
+      "why_it_matters": "The rendered brief can reverse a specialist’s judgment or imply permission to act while passing the action-echo and citation checks.",
+      "proposed_change": "Render execution conditions and dissent directly from validated expert passages. If generated prose is retained, give each consequential claim an exact supporting passage and require a support check before release. Add a replay with an unchanged action and valid citation attached to a reversed condition.",
+      "severity": "high"
+    },
+    {
+      "id": "CR-5",
+      "category": "inconsistent-interface",
+      "target": "O-5, O-6, O-8, expert_contract.json, AC-R1",
+      "problem": "The contract extracts the first occurrence of `<LABEL>:` from a named field, but Landscape STANCE has two possible fields and EXECUTION GATES can be a list. End-of-line copying can lose list items. Diffusion can emit `TIMING IMPLICATION` and Promethean can emit `WEIGHT`, while receivers request the canonical labels and AC-R1 requires byte matches.",
+      "why_it_matters": "A handoff can pass a byte comparison on the first line while delivering incomplete or unrecognized evidence to the downstream expert.",
+      "proposed_change": "Define one extraction rule per label covering accepted aliases, field precedence, duplicates and multiline values. Preserve the complete source passage and use a canonical label separately. Test the parsed receiving input against fixtures for these variants.",
+      "severity": "high"
+    },
+    {
+      "id": "CR-6",
+      "category": "hidden-authority",
+      "target": "O-5, O-6, O-7, O-10, G-3, G-4",
+      "problem": "The architecture diagram puts governance checks after all three waves. The handoff and failure rules require knowing whether an upstream expert failed before downstream execution, but they do not specify when that validation occurs.",
+      "why_it_matters": "Under the diagram’s order, a rejected upstream finding can already have influenced the downstream recommendation or verdict. A flag added at the end cannot remove that influence.",
+      "proposed_change": "Validate each routed output before copying it. Record the exact validated attempt used by downstream experts and rerun affected downstream experts if that attempt is replaced.",
+      "severity": "high"
+    },
+    {
+      "id": "CR-7",
+      "category": "inconsistent-interface",
+      "target": "O-2, G-3, F-4, §5.3, expert_contract.json",
+      "problem": "G-3 covers four pack-bound experts but omits Innovation ENTREPRENEURSHIP, which O-2 and the contract explicitly bind to the pack. The no-pack fallback prescribes `EVIDENCE BASE: Retrieved this run`, which G-3 would reject for the four pack-bound experts. F-4 also lacks the no-pack trigger named in the fallback.",
+      "why_it_matters": "A label can bypass its evidence policy, while a no-pack run can either fail validation or proceed under different rules depending on how the operator reads the spec.",
+      "proposed_change": "Declare evidence policy per label in one place. Apply it to ENTREPRENEURSHIP and define an explicit no-pack validation branch with mandatory review and a fixture that exercises it.",
+      "severity": "high"
+    },
+    {
+      "id": "CR-8",
+      "category": "inconsistent-interface",
+      "target": "F-2, F-8, §4.4, S-2, synthesizer_instructions.md, AC-S3",
+      "problem": "F-2 cites Adoption `Withheld`, while the contract emits `Withheld — more evidence`. Org Adoption is evaluated against a recommended stage without an action-to-stage mapping. Landscape STANCE is decisive for abstention in F-2, but the synthesizer’s confidence rule identifies only Adoption and Org Adoption as decisive. AC-S3 also reads as a cap on the entire brief, which displays each expert’s original confidence.",
+      "why_it_matters": "Abstention and low-confidence flags can diverge across components. A faithful brief showing High and Low specialist judgments could also fail AC-S3.",
+      "proposed_change": "Define a canonical status and stage mapping used by F-2 and F-8. Test that the brief preserves original confidence values and contains no overall confidence claim.",
+      "severity": "high"
+    },
+    {
+      "id": "CR-9",
+      "category": "inconsistent-interface",
+      "target": "O-8, expert_contract.json, §5.1, AC-C1",
+      "problem": "O-8 says the orchestrator reads only contracted labels, but §5.1 needs Org Adoption execution gates and AC-C1 needs the Org Adoption DEMAND set. Neither appears in that expert’s contract. F-5 likewise depends on a Promethean irreversibility guard with no contracted extraction rule.",
+      "why_it_matters": "The report, a mandatory review flag and the baseline comparison each rely on fields the stated parser has no defined way to locate.",
+      "proposed_change": "Declare these exact inputs and their source fields in the contract, or remove the dependent behavior where it is unnecessary. Define what happens when each input is absent.",
+      "severity": "high"
+    },
+    {
+      "id": "CR-10",
+      "category": "inconsistent-interface",
+      "target": "S-1, S-2, §5.1, synthesizer_instructions.md",
+      "problem": "S-1 allows generated tradeoffs, conditions and conflict explanations. The synthesizer schema also returns cautions, ordered missing evidence, reassessment triggers and limits. The template requires some of those sections, but the spec never assigns authoritative ownership or validation to each field.",
+      "why_it_matters": "A renderer can silently omit a reassessment trigger or use generated priorities and cautions that were never authorized by S-1.",
+      "proposed_change": "Give each brief field one owner. Populate gates, missing evidence and reassessment triggers from expert outputs, and narrow the optional generated schema to the prose fields the brief will actually use.",
+      "severity": "medium"
+    },
+    {
+      "id": "CR-11",
+      "category": "unnecessary-orchestration",
+      "target": "O-8, expert_contract.json",
+      "problem": "The live runner accepts historical naming patterns even though new runs have a canonical filename. The three accepted patterns omit `_response_v1_1.json` and `team_v1_1__*.json`, both shown in the inventory.",
+      "why_it_matters": "Live routing inherits incomplete compatibility logic that can miss or misidentify a historical output.",
+      "proposed_change": "Remove legacy filename discovery from live routing. Point AC-C1 to explicit saved baseline files and limit historical filename handling to replay or import.",
+      "severity": "low"
+    },
+    {
+      "id": "CR-12",
+      "category": "unnecessary-orchestration",
+      "target": "O-12, §4.4, expert_contract.json",
+      "problem": "The extra Firm/Qualified/Weak display translates confidence about different questions onto a common-looking scale. Creation and Innovation cannot use that scale consistently, and Creation’s qualification wording can be displayed as abstention.",
+      "why_it_matters": "The translation adds parser and display rules while implying comparability between confidence in an application stage, a recommendation and a readiness verdict.",
+      "proposed_change": "Remove the display scale. Show the specialist’s original confidence, the label it applies to and a separate status for genuine abstention.",
+      "severity": "medium"
+    },
+    {
+      "id": "CR-13",
+      "category": "abstention",
+      "target": "O-4, O-6, O-12, F-2, expert_contract.json",
+      "problem": "In Case C, Diffusion should withhold the application stage if the pack shows humanoid demonstrations but no evidence of adoption for warehouse tote moving. The contract can display a withheld stage, but the handoff gives no explicit rule for a timing label whose basis was withheld.",
+      "why_it_matters": "A surviving timing label can be read as an urgency signal grounded in application adoption even when Diffusion found no basis to classify that application.",
+      "proposed_change": "Forward the application-stage abstention and its missing evidence together. Forward timing only with its stated independent basis, if one exists. Test that an unrelated demonstration does not supply the missing application-stage evidence.",
+      "severity": "high"
+    },
+    {
+      "id": "CR-14",
+      "category": "abstention",
+      "target": "O-4, O-12, F-2, F-9, expert_contract.json",
+      "problem": "For a proposed bank coding-agent trial with no verified data permissions and no named stop authority, Org Adoption should withhold a readiness conclusion if those facts are unknown. The design has an `Undetermined — more evidence` value but depends on the expert listing missing inputs to fire F-9, and F-2 depends on an unspecified stage match.",
+      "why_it_matters": "An incomplete expert recap can prevent mandatory review even though the frozen intake directly records missing trial prerequisites.",
+      "proposed_change": "Evaluate required intake fields directly for the explicit stage asked. Preserve `Undetermined — more evidence` for unknown readiness and keep it distinct from a confirmed failed requirement.",
+      "severity": "high"
+    },
+    {
+      "id": "CR-15",
+      "category": "test-gap",
+      "target": "G-5, AC-E2",
+      "problem": "A trace can pass when a vendor claim supplies the only relevant support and an independent item is cited alongside it but addresses a different claim. The source read covers only two consequential claims, with no rule for selecting them.",
+      "why_it_matters": "An unsupported headline can acquire the appearance of independent corroboration and still satisfy the count and trace checks.",
+      "proposed_change": "Require each decisive headline to identify the passage that supports it and show that passage’s source class. Add a fixture pairing a relevant vendor claim with an irrelevant independent citation and require it to fail.",
+      "severity": "high"
+    },
+    {
+      "id": "CR-16",
+      "category": "test-gap",
+      "target": "AC-C1, O-2, expert_contract.json, system_test_plan.md",
+      "problem": "The baseline test assumes the integrated Case A uses the same cards as prior specialist runs, but the plan merges two case intakes and draws a combined pack without identifying exact per-agent baseline files or card equivalence. It calls for each pack-bound general label yet lists only three checks, omitting Diffusion’s TECHNOLOGY STAGE and Innovation’s pack-bound ENTREPRENEURSHIP.",
+      "why_it_matters": "A justified change caused by different evidence can fail the regression test, while instability in omitted labels can pass.",
+      "proposed_change": "Freeze the exact baseline file, extracted label and pack identity for each comparison. Record any merge-induced pack difference and evaluate changed-input runs against their supplied evidence.",
+      "severity": "high"
+    },
+    {
+      "id": "CR-17",
+      "category": "test-gap",
+      "target": "AC-F1, AC-F4, O-5, O-10, F-9",
+      "problem": "AC-F1 allows any Wave-1 expert as the failed fixture even though only Diffusion, Promethean and Landscape are routed into Adoption. AC-F4 reruns only Org Adoption against changed intake, so it cannot establish that the flag survives the normal frozen-packet workflow and reaches the final brief.",
+      "why_it_matters": "The tests can either demand an upstream marker where no upstream route exists or pass without exercising the real flag and handoff path.",
+      "proposed_change": "Use a routed expert for AC-F1 and verify the input actually received by Adoption contains the unavailable marker. Run AC-F4 through intake, flag calculation and brief issuance using an internally consistent replay.",
+      "severity": "medium"
+    }
+  ],
+  "simplest_viable_alternative": "Keep the frozen intake and source pack, all seven expert runs in the existing dependency order, and one run record. Validate each routed result before passing its fully attributed reading downstream. Generate the brief directly from validated outputs, with Adoption’s proposed action, stage-specific readiness, execution gates, evidence, abstentions and material disagreements. Issue the brief for owner disposition. Drop legacy filename discovery from live runs, the translated confidence scale and the model synthesis step until the template demonstrates a concrete usability gap.",
+  "biggest_unresolved_conflict_you_see": "The design gives the decision owner control over trial authorization, yet it can mark a brief `Accepted by rule` while recommending a bounded experiment that Org Adoption says the organization is unready to execute. The same-stage disagreement defaults to Q, the action headline remains unchanged, and the spec leaves escalation partly dependent on a generated caution. The team needs an explicit owner decision on whether the organization may prepare, begin execution, or request more evidence.",
+  "acceptance_criterion_most_likely_to_fail": "AC-C1. Case A lacks identified, evidence-equivalent baselines for the labels it claims to test. The merged intake and pack can legitimately change a label, and the Org Adoption DEMAND set has no contracted extraction rule. The comparison can fail even when the specialists used the evidence correctly."
+}

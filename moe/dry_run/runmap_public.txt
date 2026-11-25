@@ -1,0 +1,15 @@
+RunID	role	packet	note
+L10-CR1	critic	critique/critic_packet_v0_9.txt	planned
+L10-DR-W1-CRE	dry run wave 1	dry_run/packets/w1__team_creation_agent.txt	planned (first launch; output of the launch loop was not printed)
+L10-DR-W1-INN	dry run wave 1	dry_run/packets/w1__team_innovation_classification_agent.txt	planned (first launch)
+L10-DR-W1-PRO	dry run wave 1	dry_run/packets/w1__team_promethean_classification_agent.txt	planned (first launch)
+L10-DR-W1-DIF	dry run wave 1	dry_run/packets/w1__team_diffusion_agent.txt	planned (first launch)
+L10-DR-W1-LAN	dry run wave 1	dry_run/packets/w1__team_landscape_agent.txt	planned (first launch)
+L10-DR-W1-CRE (dup)	unplanned duplicate	same packet	operator error: relaunched because the loop printed nothing
+L10-DR-W1-INN (dup)	unplanned duplicate	same packet	operator error: second batch
+L10-DR-W1-PRO (dup)	unplanned duplicate	same packet	operator error: second batch
+L10-DR-W1-DIF (dup)	unplanned duplicate	same packet	operator error: second batch
+L10-DR-W1-LAN (dup)	unplanned duplicate	same packet	operator error: second batch
+L10-DR-W2-ADO	dry run wave 2	dry_run/packets/w2__team_adoption_agent.txt	planned
+L10-DR-W3-ORG	dry run wave 3	dry_run/packets/w3__team_organizational_adoption_agent.txt	planned
+L10-DR-SYN	dry run synthesizer	dry_run/packets/synth__MOE-C-1.txt	planned (first attempt aborted before sending: attachment chip not visible after 5 s; relaunched with a 15 s wait)

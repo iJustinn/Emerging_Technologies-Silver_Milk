@@ -1,0 +1,637 @@
+{
+  "contract_version": "1.0-design",
+  "date": "2026-11-24",
+  "note": "Lab 10 interface contract (1.0-design). Keyed on agent + label (I-09, I-27). Values copied from each agent's specialist_instructions.md at its tag on main (28ac2d5). Extraction rules: see 'extraction'.",
+  "source_pack": {
+    "location": "additional_context",
+    "heading": "# Fixed evidence register",
+    "card_fields": [
+      "S<n> <Publisher>: <Title>",
+      "URL",
+      "Date",
+      "Accessed",
+      "Source class",
+      "Supports",
+      "Limits / forbidden inference"
+    ],
+    "source_classes": [
+      "vendor-claim",
+      "adopter-self-report",
+      "industry-analyst",
+      "independent",
+      "standards-regulatory"
+    ],
+    "pack_bound_general_labels": [
+      "team_promethean_classification_agent",
+      "team_diffusion_agent",
+      "team_adoption_agent",
+      "team_organizational_adoption_agent",
+      "team_innovation_classification_agent:ENTREPRENEURSHIP"
+    ]
+  },
+  "upstream_block": {
+    "location": "additional_context (appended after the evidence register)",
+    "heading": "# Upstream expert reads (case-premise; produced by other Silver-Milk team specialists in MoE run <RUN ID>)",
+    "line": "- <Agent name> <version>: <LABEL>: <value copied verbatim to end of line>",
+    "failed": "- <Agent name>: unavailable in this run (failed check)"
+  },
+  "run_file_pattern": "moe_<RUNID>__<agent_folder>.json (live runs: only this pattern)",
+  "legacy_run_patterns": {
+    "use": "replay and AC-C1 baselines only (CR-11)",
+    "patterns": [
+      "<case>_response_v1.0.json",
+      "<case>_response_v1_0.json",
+      "<case>_response_v1_1.json",
+      "<case>_transfer_response_v1_0.json",
+      "team_v1_0__<case>.json",
+      "team_v1_1__<case>.json"
+    ]
+  },
+  "experts": [
+    {
+      "folder": "team_creation_agent",
+      "name": "Silver-Milk Team Creation Agent",
+      "version": "1.0-team",
+      "tag": "team_creation_agent-v1.0-team",
+      "wave": 1,
+      "receives_upstream": [],
+      "aliases": [
+        "Creation Agent",
+        "Technology Creation Agent"
+      ],
+      "headline": [
+        {
+          "label": "ARC STAGE",
+          "field": "general_et_finding",
+          "values": [
+            "Emerging",
+            "Emerging→Developing",
+            "Developing",
+            "Developing→Mature",
+            "Mature"
+          ]
+        }
+      ],
+      "confidence": {
+        "label": null,
+        "field": "confidence_and_uncertainty",
+        "display": "text only"
+      },
+      "abstention": [
+        "free wording in abstention_or_more_information_needed"
+      ],
+      "pack_bound": false,
+      "check_script": "check_team_run.py",
+      "evidence_policy": "pack + retrieval (W-1)"
+    },
+    {
+      "folder": "team_innovation_classification_agent",
+      "name": "Silver-Milk Team Innovation Classification Agent",
+      "version": "1.1-team",
+      "tag": "team_innovation_classification_agent-v1.1-team",
+      "wave": 1,
+      "receives_upstream": [],
+      "aliases": [
+        "Innovation Agent",
+        "Innovation Classification Agent"
+      ],
+      "headline": [
+        {
+          "label": "LIFECYCLE",
+          "field": "general_et_finding",
+          "values": [
+            "slot verdicts HOLDS | DOES NOT HOLD | UNTESTED for INVENTION, INNOVATION, COMMERCIALIZATION"
+          ]
+        },
+        {
+          "label": "ENTREPRENEURSHIP",
+          "field": "general_et_finding",
+          "values": [
+            "Incumbent-led",
+            "Entrepreneur-led",
+            "Mixed",
+            "Not yet entrepreneurial",
+            "Not established"
+          ],
+          "pack_bound": true
+        },
+        {
+          "label": "DEGREE",
+          "field": "general_et_finding",
+          "values": [
+            "Incremental",
+            "Breakthrough",
+            "Contested (breakthrough candidate)"
+          ]
+        },
+        {
+          "label": "STATUS IN CASE",
+          "field": "application_finding",
+          "values": [
+            "Proposed",
+            "Demonstration",
+            "Trial or pilot in use",
+            "Implemented"
+          ]
+        },
+        {
+          "label": "NOVELTY",
+          "field": "application_finding",
+          "values": [
+            "four-level novelty or Withheld (with most likely label)"
+          ]
+        }
+      ],
+      "confidence": {
+        "label": null,
+        "field": "confidence_and_uncertainty",
+        "display": "text only"
+      },
+      "abstention": [
+        "Withheld"
+      ],
+      "pack_bound": "ENTREPRENEURSHIP only",
+      "check_script": "check_innovation_lab04.py",
+      "evidence_policy": "ENTREPRENEURSHIP pack-only; LIFECYCLE and DEGREE may use retrieval"
+    },
+    {
+      "folder": "team_promethean_classification_agent",
+      "name": "Silver-Milk Team Promethean Classification Agent",
+      "version": "1.0-team",
+      "tag": "team_promethean_classification_agent-v1.0-team",
+      "wave": 1,
+      "receives_upstream": [],
+      "aliases": [
+        "Promethean Agent",
+        "Promethean Classification Agent"
+      ],
+      "headline": [
+        {
+          "label": "SIGNIFICANCE CLASS",
+          "field": "general_et_finding",
+          "values": [
+            "Incremental",
+            "Breakthrough",
+            "Potential Promethean",
+            "Indeterminate (Incremental | Breakthrough)",
+            "Indeterminate (Breakthrough | Potential Promethean)",
+            "Withheld — insufficient evidence"
+          ]
+        },
+        {
+          "label": "WEIGHT OF BROAD SIGNIFICANCE ON THIS DECISION",
+          "field": "organization_specific_finding",
+          "values": [
+            "Low",
+            "Moderate",
+            "High"
+          ],
+          "routing_rule": "route on WEIGHT, never on SIGNIFICANCE CLASS; Indeterminate weighted as its lower label, Withheld as Low (I-12)",
+          "alt_label": "WEIGHT"
+        },
+        {
+          "label": "REVERSIBILITY OF THE DECISION",
+          "field": "organization_specific_finding",
+          "values": [
+            "free text; the irreversibility guard sentence fires F-5"
+          ]
+        }
+      ],
+      "confidence": {
+        "label": "CONFIDENCE AT LEAST <class>: / CONFIDENCE NOT HIGHER",
+        "field": "confidence_and_uncertainty",
+        "values": [
+          "Low",
+          "Moderate",
+          "High",
+          "n/a"
+        ]
+      },
+      "abstention": [
+        "Indeterminate (…)",
+        "Withheld — insufficient evidence"
+      ],
+      "pack_bound": true,
+      "check_script": "check_promethean_lab05.py",
+      "evidence_policy": "general labels pack-only (G-3 hard check)"
+    },
+    {
+      "folder": "team_diffusion_agent",
+      "name": "Silver-Milk Team Diffusion Agent",
+      "version": "1.0-team",
+      "tag": "team_diffusion_agent-v1.0-team",
+      "wave": 1,
+      "receives_upstream": [],
+      "aliases": [
+        "Diffusion Agent"
+      ],
+      "headline": [
+        {
+          "label": "TECHNOLOGY STAGE",
+          "field": "general_et_finding",
+          "values": [
+            "Innovators",
+            "Early adopters",
+            "Chasm",
+            "Early majority",
+            "Late majority",
+            "Laggards",
+            "Withheld — insufficient evidence"
+          ]
+        },
+        {
+          "label": "APPLICATION STAGE",
+          "field": "application_finding",
+          "values": [
+            "same set"
+          ],
+          "to_upstream_of": [
+            "team_adoption_agent"
+          ]
+        },
+        {
+          "label": "STAGE BASIS",
+          "field": "application_finding",
+          "values": [
+            "free text"
+          ],
+          "to_upstream_of": [
+            "team_adoption_agent"
+          ]
+        },
+        {
+          "label": "PEER GROUP STAGE",
+          "field": "organization_specific_finding",
+          "values": [
+            "same set"
+          ]
+        },
+        {
+          "label": "TIMING",
+          "field": "recommendation_management_implication, organization_specific_finding",
+          "alt_label": "TIMING IMPLICATION",
+          "values": [
+            "Urgency",
+            "Patience",
+            "Continued monitoring"
+          ],
+          "to_upstream_of": [
+            "team_adoption_agent"
+          ],
+          "routing_rule": "timing only; never an adopt signal (I-14)"
+        }
+      ],
+      "confidence": {
+        "label": "STAGE CONFIDENCE",
+        "field": "confidence_and_uncertainty",
+        "values": [
+          "Low",
+          "Moderate",
+          "High"
+        ],
+        "per": [
+          "technology",
+          "application",
+          "peer group"
+        ]
+      },
+      "abstention": [
+        "Withheld — insufficient evidence"
+      ],
+      "pack_bound": true,
+      "check_script": "check_diffusion_lab06.py",
+      "evidence_policy": "general labels pack-only (G-3 hard check)"
+    },
+    {
+      "folder": "team_landscape_agent",
+      "name": "Silver-Milk Team Landscape Agent",
+      "version": "1.1-team",
+      "tag": "team_landscape_agent-v1.1-team",
+      "wave": 1,
+      "receives_upstream": [],
+      "aliases": [
+        "Landscape Agent",
+        "Technology Landscape Agent"
+      ],
+      "headline": [
+        {
+          "label": "CONDITION STATUS",
+          "field": "organization_specific_finding",
+          "values": [
+            "Met",
+            "Partly met",
+            "Not met"
+          ],
+          "to_upstream_of": [
+            "team_adoption_agent"
+          ]
+        },
+        {
+          "label": "MOVEMENT",
+          "field": "organization_specific_finding",
+          "values": [
+            "Toward",
+            "None",
+            "Away"
+          ],
+          "to_upstream_of": [
+            "team_adoption_agent"
+          ]
+        },
+        {
+          "label": "STANCE",
+          "field": "organization_specific_finding, recommendation_management_implication",
+          "values": [
+            "Landscape not the constraint",
+            "Active watch",
+            "Scheduled watch",
+            "Background scan"
+          ],
+          "to_upstream_of": [
+            "team_adoption_agent"
+          ],
+          "routing_rule": "monitoring cadence, never an action (I-31)"
+        },
+        {
+          "label": "EXECUTION GATES",
+          "field": "organization_specific_finding",
+          "values": [
+            "list or None"
+          ],
+          "to_upstream_of": [
+            "team_adoption_agent",
+            "team_organizational_adoption_agent"
+          ]
+        },
+        {
+          "label": "STALE/HYPE FLAG",
+          "field": "contrary_evidence_or_limitations",
+          "values": [
+            "always one specific dated claim; flag F-4 only if it cites the case or a pack card, or CORRECTION: is written"
+          ]
+        },
+        {
+          "label": "OPTIONS DOCUMENTED",
+          "field": "organization_specific_finding",
+          "values": [
+            "up to three options + NO SELECTION"
+          ],
+          "routing_rule": "selection is human (I-25, F-6)"
+        }
+      ],
+      "confidence": {
+        "label": "CONFIDENCE",
+        "field": "confidence_and_uncertainty",
+        "values": [
+          "Low",
+          "Moderate",
+          "High"
+        ]
+      },
+      "abstention": [
+        "Insufficient evidence — <what is missing> (per dimension)",
+        "STANCE abstention"
+      ],
+      "pack_bound": false,
+      "source_class_in_notes": true,
+      "check_script": "check_landscape_lab09.py",
+      "evidence_policy": "pack + retrieval (W-1); SOURCE CLASS in notes"
+    },
+    {
+      "folder": "team_adoption_agent",
+      "name": "Silver-Milk Team Adoption Agent",
+      "version": "1.0-team",
+      "tag": "team_adoption_agent-v1.0-team",
+      "wave": 2,
+      "receives_upstream": [
+        {
+          "from": "team_diffusion_agent",
+          "labels": [
+            "APPLICATION STAGE",
+            "STAGE BASIS",
+            "TIMING"
+          ]
+        },
+        {
+          "from": "team_promethean_classification_agent",
+          "labels": [
+            "SIGNIFICANCE CLASS",
+            "WEIGHT OF BROAD SIGNIFICANCE ON THIS DECISION"
+          ]
+        },
+        {
+          "from": "team_landscape_agent",
+          "labels": [
+            "STANCE",
+            "CONDITION STATUS",
+            "MOVEMENT",
+            "EXECUTION GATES"
+          ]
+        }
+      ],
+      "aliases": [
+        "Adoption Agent"
+      ],
+      "headline": [
+        {
+          "label": "RECOMMENDATION",
+          "field": "recommendation_management_implication",
+          "values": [
+            "Adopt",
+            "Bounded experiment",
+            "Proof of concept",
+            "Monitor",
+            "Defer",
+            "Reject for now",
+            "Withheld — more evidence"
+          ],
+          "role": "PROPOSED ACTION of the brief (D-39; Lab 10 headline rule)"
+        },
+        {
+          "label": "MATURITY ZONE",
+          "field": "general_et_finding",
+          "values": [
+            "Bleeding edge",
+            "Leading edge",
+            "Commodity",
+            "Trailing edge"
+          ]
+        },
+        {
+          "label": "DEFER GATE",
+          "field": "organization_specific_finding",
+          "values": [
+            "Present",
+            "None"
+          ],
+          "to_upstream_of": [
+            "team_organizational_adoption_agent"
+          ]
+        },
+        {
+          "label": "POSTURE GATE",
+          "field": "organization_specific_finding",
+          "values": [
+            "requirement text",
+            "None beyond ordinary conditions"
+          ],
+          "to_upstream_of": [
+            "team_organizational_adoption_agent"
+          ]
+        },
+        {
+          "label": "CONSEQUENCE",
+          "field": "organization_specific_finding",
+          "values": [
+            "Severe",
+            "Costly",
+            "Reversible"
+          ]
+        }
+      ],
+      "confidence": {
+        "label": "RECOMMENDATION CONFIDENCE",
+        "field": "confidence_and_uncertainty",
+        "values": [
+          "Low",
+          "Moderate",
+          "High"
+        ]
+      },
+      "abstention": [
+        "Withheld — more evidence"
+      ],
+      "pack_bound": true,
+      "check_script": "check_adoption_lab07.py",
+      "evidence_policy": "general labels pack-only (G-3 hard check)"
+    },
+    {
+      "folder": "team_organizational_adoption_agent",
+      "name": "Silver-Milk Team Organizational Adoption Agent",
+      "version": "1.0-team",
+      "tag": "team_organizational_adoption_agent-v1.0-team",
+      "wave": 3,
+      "receives_upstream": [
+        {
+          "from": "team_adoption_agent",
+          "labels": [
+            "RECOMMENDATION",
+            "DEFER GATE",
+            "POSTURE GATE"
+          ]
+        },
+        {
+          "from": "team_landscape_agent",
+          "labels": [
+            "EXECUTION GATES"
+          ]
+        }
+      ],
+      "aliases": [
+        "Organizational Adoption Agent",
+        "Org Adoption Agent"
+      ],
+      "headline": [
+        {
+          "label": "STAGE ASKED",
+          "field": "organization_specific_finding",
+          "values": [
+            "Preparation",
+            "Bounded evaluation",
+            "Routine operation"
+          ]
+        },
+        {
+          "label": "READINESS VERDICT",
+          "field": "recommendation_management_implication",
+          "values": [
+            "Ready",
+            "Partially ready",
+            "Not ready",
+            "Undetermined — more evidence"
+          ]
+        },
+        {
+          "label": "STAGE LADDER",
+          "field": "organization_specific_finding",
+          "values": [
+            "PREPARATION: / BOUNDED EVALUATION: / ROUTINE OPERATION: each Supported | Conditional | Blocked | Undetermined | Not assessed"
+          ],
+          "use": "readiness for the stage the action executes (D-73)"
+        },
+        {
+          "label": "COUNTS",
+          "field": "organization_specific_finding",
+          "values": [
+            "Ready <n>, Partially ready <n>, Not ready <n>, Insufficient evidence <n>"
+          ],
+          "recompute_from": "D1–D8 lines (I-22)"
+        },
+        {
+          "label": "MOST CONSEQUENTIAL GAP",
+          "field": "recommendation_management_implication",
+          "values": [
+            "D<n> … or None observed"
+          ]
+        },
+        {
+          "label": "INTAKE MISSING",
+          "field": "abstention_or_more_information_needed",
+          "values": [
+            "list of org intake fields or None"
+          ],
+          "flag": "F-9"
+        },
+        {
+          "label": "EXECUTION GATES",
+          "field": "organization_specific_finding",
+          "values": [
+            "list or None"
+          ],
+          "use": "brief §2 (CR-9)"
+        },
+        {
+          "label": "DEMAND",
+          "field": "general_et_finding",
+          "values": [
+            "DEMAND [D1]…[D8]: Low | Moderate | High"
+          ],
+          "use": "AC-C1 baseline set (CR-9, CR-16)"
+        }
+      ],
+      "confidence": {
+        "label": "VERDICT CONFIDENCE",
+        "field": "confidence_and_uncertainty",
+        "values": [
+          "Low",
+          "Moderate",
+          "High"
+        ]
+      },
+      "abstention": [
+        "Undetermined — more evidence"
+      ],
+      "pack_bound": true,
+      "check_script": "check_org_adoption_lab08.py",
+      "evidence_policy": "general labels pack-only (G-3 hard check)"
+    }
+  ],
+  "extraction": {
+    "order": "named field(s) in 'field' first, in the order listed; then anywhere in the output (CR-5, DR-4: Landscape writes MOVEMENT in L3 and Step 3)",
+    "label_match": "'<LABEL>' or an alias, followed by optional text up to 60 chars, then ':' (Promethean 'CONFIDENCE AT LEAST <class>:')",
+    "value": "the full source line is kept verbatim (upstream copy, brief); the canonical value is the text before the first ' — ', '. ' or ' | ', except that a parenthesized value is kept whole ('Indeterminate (Incremental | Breakthrough)')",
+    "case": "values are compared case-insensitively (Org Adoption wrote '(bounded evaluation)')",
+    "missing": "a contracted label not found is shown 'not found in output' and is a soft warning; for a decisive label (Adoption RECOMMENDATION, Org Adoption READINESS VERDICT, Landscape STANCE) it is a hard FAIL"
+  },
+  "uncertainty_display": "each expert's own confidence words, plus a separate status OK | ABSTAINED | FAILED | unavailable; no translated scale and no overall confidence (CR-12, I-33)",
+  "action_to_stage": {
+    "Adopt": "Routine operation",
+    "Bounded experiment": "Bounded evaluation",
+    "Proof of concept": "Bounded evaluation",
+    "Monitor": "Preparation",
+    "Defer": "Preparation",
+    "Reject for now": "Preparation",
+    "Withheld — more evidence": "Preparation",
+    "rule": "if Org Adoption is Not ready or Undetermined for the mapped stage (its READINESS VERDICT if STAGE ASKED matches, else its STAGE LADDER entry), headline gets 'PREPARE ONLY' and F-10 fires (D-73)"
+  }
+}

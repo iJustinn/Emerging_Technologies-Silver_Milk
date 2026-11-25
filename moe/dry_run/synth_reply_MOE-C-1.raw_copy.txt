@@ -1,0 +1,161 @@
+{
+  "proposed_action_echo": "Proof of concept — prepare an isolated feasibility proposal.",
+  "conditions": [
+    {
+      "text": "Prepare the one-station protocol, matched manual comparison and decision criteria for VP Operations. Use representative tote loads and arrival patterns. Keep the proposed test isolated from live orders, production connections, client-dedicated production, near-person operation and unauthorized recording.",
+      "cites": ["Adoption: RECOMMENDATION: Proof of concept", "Adoption: DEFER GATE: None", "Org Adoption: READINESS VERDICT: Not ready (bounded evaluation)"]
+    },
+    {
+      "text": "Before execution, obtain VP Operations authorization and a written funding decision covering the approved scope, protected staff hours and backfill. Record who accepts evaluation coordination, escalation across both shifts and handback to site operations.",
+      "cites": ["Org Adoption: MOST CONSEQUENTIAL GAP: D5 Resources/budget", "Org Adoption: MOST CONSEQUENTIAL MISSING FACTOR: D8 Operating ownership", "Landscape: EXECUTION GATES"]
+    },
+    {
+      "text": "Before powered trials, identify the controller and version, approve the station and complete the site safety review. Demonstrate segregation, stopping, escalation and restoration of manual flow. Assign human authority for incident review and restart. Suspend the trial on a containment breach, unsafe motion, failed stop or unauthorized data capture. Resumption requires cause review and fresh authorization.",
+      "cites": ["Adoption: RECOMMENDATION: Proof of concept", "Org Adoption: READINESS VERDICT: Not ready (bounded evaluation)", "Landscape: EXECUTION GATES"]
+    },
+    {
+      "text": "Before execution, resolve vendor terms, access, security review and applicable client, data and video permissions and retention terms. Assign owners where the packet leaves them unstated. EHS sign-off is required before any near-person operation.",
+      "cites": ["Landscape: EXECUTION GATES", "Adoption: DEFER GATE: None", "Adoption: POSTURE GATE: Adoption only"]
+    },
+    {
+      "text": "Require a separate decision before limited live use, supported by repeatable handoff and recovery results and applicable safety and client permissions. Before routine use or a capital commitment, require comparable-peer results, measured local value against manual transfer and total cost including intervention and fallback. Obtain CFO approval for capital or multi-year terms.",
+      "cites": ["Adoption: POSTURE GATE: Adoption only", "Adoption: MATURITY ZONE: Bleeding edge", "Landscape: EXECUTION GATES"]
+    }
+  ],
+  "caution_signals": [
+    {
+      "text": "The organization is not ready to execute a bounded evaluation. Funding is the decisive gap, and evaluation ownership remains unresolved. The expert identifies workflow mapping, baseline collection and resource-request preparation as work that can proceed now.",
+      "cites": ["Org Adoption: READINESS VERDICT: Not ready (bounded evaluation)"]
+    },
+    {
+      "text": "The external landscape supports watching for dated peer records that establish routine use of an identified controller and report outcomes against a baseline. The undated memo claiming production across major 3PLs was excluded from the landscape judgment.",
+      "cites": ["Landscape: STANCE: Scheduled watch"]
+    },
+    {
+      "text": "Reassess timing at Q1 2027 capital planning or sooner if comparable-peer results emerge. Technology, application and peer-group stages were all withheld.",
+      "cites": ["Diffusion: TIMING: Patience"]
+    },
+    {
+      "text": "Adoption's risk-officer reading is Monitor if an isolated setup cannot reproduce realistic tote presentation and AMR timing. Its advocate case favors a Bounded experiment to observe live intervention and throughput, while the decisive uncertainty remains repeatable handoff and controlled recovery.",
+      "cites": ["Adoption: RECOMMENDATION: Proof of concept"]
+    }
+  ],
+  "conflicts": [
+    {
+      "row": 1,
+      "proposed_type": "Q",
+      "explanation": "Adoption addresses preparing the proposal. Organizational Adoption addresses readiness to execute the bounded evaluation.",
+      "would_settle_it": "By 2027-01-15, a signed funding decision identifying the authorized one-station scope, together with written ownership and shift coverage, would show which execution prerequisites have cleared."
+    },
+    {
+      "row": 2,
+      "proposed_type": "Q",
+      "explanation": "Innovation assesses the degree of change against task-specific industrial robots. Promethean assesses reduction of an established barrier against the prior workflow, with an incremental weighting inside its indeterminate classification.",
+      "would_settle_it": "By 2027-11-24, a dated matched comparison naming the controller and reporting feasible tasks, setup effort, interventions, completed work quality and total cost across shifts and task changes would inform both judgments against their respective baselines."
+    },
+    {
+      "row": 3,
+      "proposed_type": "Q",
+      "explanation": "Scheduled watch concerns the external landscape, Patience concerns diffusion timing, and Proof of concept concerns preparing a reversible local feasibility proposal.",
+      "would_settle_it": "At Q1 2027 capital planning, dated comparable-peer records showing recurring post-trial shifts with an identified controller, alongside dated results on representative handoffs and stop recovery, would let each agent reassess its own judgment."
+    },
+    {
+      "row": 4,
+      "proposed_type": "Q",
+      "explanation": "Creation assesses the evolution and convergence of learned control architecture. Innovation separately judges whether a working mechanism has been documented.",
+      "would_settle_it": "Dated technical records documenting a working humanoid control mechanism and comparable provider disclosures showing interface convergence or continued divergence would establish the evidence relevant to each label."
+    },
+    {
+      "row": 5,
+      "proposed_type": "Q",
+      "explanation": "Moderate weight describes the importance of broader significance to the decision. Proof of concept describes the reversible next step supported by the application evidence.",
+      "would_settle_it": "A dated comparison measuring setup, interventions, throughput, ergonomic exposure and service effects against the incumbent workflow would show how much the broader capability matters to the local decision."
+    }
+  ],
+  "tradeoffs": "Variable tote handling could reduce repetitive manual work and task-specific setup. The reported commercial handoff establishes physical task precedent. Controller identity, shift-level reliability and comparative cost remain unresolved. A representative isolated test could measure placement, throughput, intervention and recovery while keeping live orders outside the scope. If the setup cannot reproduce tote variation and AMR timing, its results may have limited value. Funding, staffing, containment and a demonstrated manual fallback are prerequisites to execution. Routine use would require comparable-peer evidence, measured local value and applicable approvals.",
+  "most_valuable_missing_evidence": [
+    {
+      "text": "A signed decision on scoped evaluation funding, protected hours and backfill, with named coordination, training, escalation and handback roles and associate concern follow-up.",
+      "asked_by": ["Creation", "Innovation", "Promethean", "Landscape", "Adoption", "Org Adoption"]
+    },
+    {
+      "text": "Approved station scope and representative test conditions, with demonstrated containment, stop, escalation, recovery and manual fallback, plus applicable vendor, client, security and data permissions.",
+      "asked_by": ["Creation", "Innovation", "Promethean", "Landscape", "Adoption", "Org Adoption"]
+    },
+    {
+      "text": "Dated comparable-peer records distinguishing routine post-trial tote transfer from pilot or live commercial activity, naming the robot and controller version, and reporting shift hours, attempts, completions, interventions and downtime. Include the original memo citation and date and, for broader diffusion, a defined peer population and repeated-use denominator.",
+      "asked_by": ["Creation", "Innovation", "Promethean", "Diffusion", "Landscape", "Adoption", "Org Adoption"]
+    },
+    {
+      "text": "Matched results against manual transfer and relevant engineered automation covering setup, tasks each workflow can perform, throughput, completed work quality, ergonomic exposure, recovery burden, SLA effects and fully loaded cost. Include binding commercial and exit terms where a commitment is contemplated.",
+      "asked_by": ["Creation", "Innovation", "Promethean", "Landscape", "Adoption", "Org Adoption"]
+    },
+    {
+      "text": "Current architecture disclosures and reproducible cross-body transfer evidence, together with sales, renewals, support costs or other commercial evidence attributable to the identified learned control system.",
+      "asked_by": ["Creation", "Innovation"]
+    }
+  ],
+  "reassessment_triggers": [
+    {
+      "text": "Reassess the architecture stage and portability if providers document common observation, action and controller interfaces with reproducible cross-body skill transfer. Continued architectural divergence retains the current stage ceiling and calls for a portability review.",
+      "agent": "Creation"
+    },
+    {
+      "text": "Update the task judgment on sustained adopter results naming the robot and controller version and reporting hours, handoffs, exceptions, interventions and downtime. Revisit site safety evidence needs if the dynamically stable mobile robot standard is published or integration guidance appears.",
+      "agent": "Creation"
+    },
+    {
+      "text": "Reassess business-model sustainability when recurring revenue, renewals, support costs and cost-to-serve can be attributed to learned control. Before the Q1 2027 capital decision, revisit local integration risk if site records establish fallback performance, required client permissions and named ownership.",
+      "agent": "Creation"
+    },
+    {
+      "text": "Move INNOVATION from UNTESTED to HOLDS on attributable sustained customer work beyond pilots with a named VLA-controlled humanoid and measured results. Move COMMERCIALIZATION from UNTESTED to HOLDS on a documented sale, published pricing or general availability for an explicitly identified integrated system.",
+      "agent": "Innovation"
+    },
+    {
+      "text": "Move DEGREE toward Breakthrough if comparative field evidence shows repeatable work at practical cost that task-specific robots could not feasibly perform. Incremental gains on already feasible work support Incremental. A dated comparable 3PL record naming the learned controller in routine tote transfer would move NOVELTY from Withheld to New to the organization only.",
+      "agent": "Innovation"
+    },
+    {
+      "text": "Move SIGNIFICANCE from Moderate to Low if process and SLA records show a bypassable handoff with no change to core costs. Move it to High if evidence shows erosion of the primary pricing basis or competitive advantage that forces the 3PL to change how it earns money.",
+      "agent": "Innovation"
+    },
+    {
+      "text": "Sustained substantial reductions in intervention or task-specific engineering against an equivalent workflow move the class toward Breakthrough. Marginal reductions with an affirmative performance improvement move it toward Incremental.",
+      "agent": "Promethean"
+    },
+    {
+      "text": "Routine performance without the constraint, with dated evidence that other workflows depend on the capability, moves Dissolution from Reduced to Dissolved. Evidence across two or more tiers opens Layer 3. A dated external opportunity with a demonstrable closing window for comparable 3PLs raises the decision weight to High.",
+      "agent": "Promethean"
+    },
+    {
+      "text": "At Q1 2027 capital planning or within the 12-month horizon, adopter confirmation of recurring post-trial use of a named foundation model could support Early adopters for technology. A corresponding AMR-to-conveyor tote record could support Early adopters for the application, and a comparable 3PL record would establish a peer-group floor.",
+      "agent": "Diffusion"
+    },
+    {
+      "text": "Within the 12-month horizon, a dated representative survey or census with a stated denominator and repeated use in the Early majority band, without dated evidence of a stall, moves application to Early majority and timing to Urgency. Comparable-peer evidence addresses the separate peer prerequisite.",
+      "agent": "Diffusion"
+    },
+    {
+      "text": "Review quarterly, with the recorded review date of 2027-02-24 and a full refresh at least annually. Independently verified comparable shifts with a named VLA and transfer and intervention denominators could move Scheduled watch to Active watch while safety or cost evidence remains incomplete. Repeatable results meeting approved service, safety and cost criteria could make Landscape not the constraint. Verified withdrawal of the comparable GXO handoff after service or safety failures, with no comparable replacement, could move the stance to Background scan. Thresholds remain pending approval.",
+      "agent": "Landscape"
+    },
+    {
+      "text": "Review by 2027-03-31 or sooner on comparable-peer shift records or a site safety finding. At the Q1 review or before any powered test, an unmet containment or entry-control requirement that could expose associates to difficult-to-reverse injury triggers Defer.",
+      "agent": "Adoption"
+    },
+    {
+      "text": "By 2027-11-24, an approved feasibility pass across representative conditions with all limited-live-use gates cleared triggers reassessment to Bounded experiment. A dated matched comparison showing no advantage on agreed service, ergonomics and fully loaded cost triggers Reject for now.",
+      "agent": "Adoption"
+    },
+    {
+      "text": "Revalidate results after material changes to the model or version, hardware or end effector, interfaces, permissions, tote inputs or operating envelope. Watch for checkable peer shifts, controller disclosure, intervention and downtime records, binding terms and changes to applicable safety standards.",
+      "agent": "Adoption"
+    },
+    {
+      "text": "Review on 2027-01-15. A signed decision authorizing funding for the scoped evaluation, with other ratings unchanged, moves the verdict to Undetermined — more evidence. Written coordinator acceptance addresses the most consequential remaining unknown.",
+      "agent": "Org Adoption"
+    }
+  ],
+  "synthesizer_limits": "The template records pending format-check failures for Landscape and Organizational Adoption, with both reruns outstanding and human review required. Tool selection remains a procurement decision for the decision owner. The record leaves GXO's routine-production status and controller identity unresolved. Innovation withheld novelty and left innovation and commercialization untested. Promethean left significance class indeterminate. Diffusion withheld technology, application and peer-group stages. Landscape assigned no tracker movement because the required tracker records were unavailable. Creation left business-model sustainability untested. Organizational Adoption retains insufficient evidence on two readiness dimensions."
+}

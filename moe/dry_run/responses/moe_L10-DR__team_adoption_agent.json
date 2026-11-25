@@ -1,0 +1,129 @@
+{
+  "agent": {
+    "name": "Silver-Milk Team Adoption Agent",
+    "specialty": "Bounded adoption action for an emerging-technology application in one organization: maturity zones by evidence rule, gates (fit, advantage, configuration, defer gate), zone-by-posture table, consequence modifier, one of six recommendation categories with now / before execution / before wider use stages, experiment design, and reversal triggers (readiness is handed to Organizational Adoption)",
+    "version": "1.0-team"
+  },
+  "analytical_question": "What should the hypothetical 3PL prepare now for humanoid tote transfer, what evidence would justify a different action, and what would be required before a capital or multi-year commitment?",
+  "general_et_finding": "EVIDENCE BASE: Supplied cards.\nUNIT: Learned foundation-model-controlled general-purpose humanoid robots.\nPARENT: Industrial and service robotics.\nMATURITY ZONE: Bleeding edge.\nZONE BASIS: Evidence default — the cards contain neither an independent repeated-use share with a defined denominator nor two independently checkable routine users of the exact unit. Named developers and test partners establish development and testing (S1–S3). Reported humanoid deployments lack controller identification (S4–S7, S12).\nDIFFUSION EVIDENCE: None — IFR reports about 7,000 full-size humanoids sold globally in 2025, a broader hardware count without a repeated-use denominator (S8).\nMESSAGING SHIFT: Not observed — the cards do not supply two dated advocate items documenting a shift from novelty to use-case messaging for the exact unit.\nRELATIVE ADVANTAGE: Unclear — S1 and S3 report vendor performance on selected tasks, and S9 compares policies with human teleoperation on bimanual arms. The cards provide no comparative result for the defined humanoid unit.\nKEY UNCERTAINTY: Can an identified humanoid controller sustain repeatable whole-body handling across presentation changes and recoverable faults with limited intervention? Testable.",
+  "application_finding": "APPLICATION ZONE: Bleeding edge.\nZONE BASIS: Evidence default — matches the general zone. GXO/Digit is Checkable for the AMR-to-conveyor task through S4–S5, but the tote count is vendor-only, routine production status is disputed, and controller identity is undisclosed. BMW/Figure is Checkable through the adopter (S6), with a sheet-metal pilot and announced parts sequencing. Hyundai/Atlas is Checkable for announced training and testing on automotive parts (S7), with affiliated parties. None qualifies as routine foundation-model-controlled tote transfer, and no independent repeated-use share is supplied.\nFIT: Partial — the physical handoff is plausible, but reliable tote alignment and recovery across variable presentations still call for material human supervision and intervention.\nBEST ALTERNATIVE: The current associate-operated tote transfer process.\nADVANTAGE OVER ALTERNATIVE: Marginal — potential handling benefits remain unmeasured against the current process after setup, correction, intervention and review.\nUPSTREAM READ: Case-premise — Diffusion withheld application stage because qualifying repeated-use evidence, confirmed routine status and controller identity are missing. Patience is a timing read only. Promethean's indeterminate significance, weighted Incremental, warrants attention to setup and intervention burden. Landscape reports a scheduled watch and partial comparable-task evidence.",
+  "organization_specific_finding": "UNIT OF ANALYSIS: The VP Operations of the hypothetical six-site 3PL must decide what stage to prepare for AMR-to-conveyor tote transfer.\nORG POSTURE: Fast follower — it permits small reversible trials and expects repeatable peer results before adoption.\nPOSTURE GATE: Adoption only — require documented, repeatable results from comparable operators before routine adoption. EHS sign-off for work near people is a safety condition.\nSCOPING CONDITIONS: (1) Physically isolate a single station and exclude people from the robot's operating and fall envelope while energized. (2) Use non-client test totes and isolate interfaces from live production. (3) Keep manual production transfer available and exclude client goods, unauthorized recording and long-term commitments.\nCONSEQUENCE: Reversible — the case describes a fenced single-station evaluation with manual fallback as reversible. The scoped test excludes the stated near-person and live-service exposures.\nDEPARTURE: None.\nREVERSIBILITY: High — the isolated test can stop and be disconnected while manual production transfer continues.\nCONFIGURATION: Acceptable — physical segregation and offline interfaces define the proposed design. Their effectiveness must be established before execution.\nDEFER GATE: None — near-person operation, client-dedicated production and unauthorized recording are outside the proposed test. The specified near-person sign-off condition therefore does not block preparation of this isolated test.\nGATES: Rejection gates clear. Defer gate clear.\nTABLE INPUT: Bleeding edge × Fast follower → Proof of concept.\nPRIMARY UNCERTAINTY: Feasibility.\nMODIFIER: not applied — the scoped consequence is Reversible.\nRECOMMENDATION: Proof of concept.\nPOSTURE EFFECT: Fast follower selects the proof-of-concept cell and adds comparable-peer evidence for adoption. An innovator/early adopter would reach the same recommendation through the feasibility step. A conservative adopter would monitor.",
+  "evidence": [
+    {
+      "claim": "DeepMind announced early access for its humanoid VLA and reported Apollo pick success of 68.4% from a table, 45.7% from the floor and 76.3% from a shelf.",
+      "source_or_reference": "S1 — https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+      "date_or_recency": "published: 2026-07-30; observed: unknown",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: supplied — opened by the packet preparer. Vendor-run tests, with no tote comparator or operating customer."
+    },
+    {
+      "claim": "NVIDIA lists GR00T N1.7 and warehouse logistics as a use case, with conflicting commercial-license language described in the card.",
+      "source_or_reference": "S2 — https://developer.nvidia.com/isaac/gr00t/llm-info.md",
+      "date_or_recency": "published: unknown; observed: page updated 2026-08",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: supplied — opened by the packet preparer. Vendor product information supplies neither a customer deployment nor tote performance."
+    },
+    {
+      "claim": "The Next Web reported NVIDIA's GR00T 2 announcement, selected-task results and three organizations testing the system.",
+      "source_or_reference": "S3 — https://thenextweb.com/news/nvidia-gr00t-2-robots-human-video-corl",
+      "date_or_recency": "published: 2026-11-09; observed: unknown",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: supplied — opened by the packet preparer. Product announcement reported through an independent outlet, with vendor-run measurements and no qualifying routine deployment."
+    },
+    {
+      "claim": "Agility reports more than 100,000 tote moves at GXO, including AMR-to-conveyor handling and stacking.",
+      "source_or_reference": "S4 — https://www.agilityrobotics.com/content/digit-moves-over-100k-totes",
+      "date_or_recency": "published: 2025-11-20; observed: unknown",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: supplied — opened by the packet preparer. Vendor-reported cumulative count with no shift, fleet or intervention denominator and no controller identification."
+    },
+    {
+      "claim": "Trade reporting describes planned GXO expansion and conflicting adopter and vendor accounts of production status. GXO's CEO reported no achieved ROI.",
+      "source_or_reference": "S5 — https://www.therobotreport.com/agility-gxo-logistics-plan-expanded-deployment-digit-humanoid/",
+      "date_or_recency": "published: 2026-10-26; observed: 2026-08 for the GXO earnings-call remarks",
+      "evidence_type": "secondary",
+      "notes": "STATUS: supplied — opened by the packet preparer. The CEO remarks are secondhand, planned sites are prospective, and the controller is undisclosed."
+    },
+    {
+      "claim": "BMW describes a roughly ten- to eleven-month sheet-metal handling pilot and announces a Figure 03 parts-sequencing task.",
+      "source_or_reference": "S6 — https://newsroom.bmwgroup.com/global/bmw-group-advances-the-use-of-physical-ai-in-production-with-figure-03-project-in-spartanburg",
+      "date_or_recency": "published: 2026-06-25; observed: prior pilot of approximately ten to eleven months, exact dates unknown",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: supplied — opened by the packet preparer. Adopter-reported pilot and announcement for different tasks, without controller identification."
+    },
+    {
+      "claim": "An Atlas application center opened for training and testing on automotive parts logistics.",
+      "source_or_reference": "S7 — https://www.therobotreport.com/boston-dynamics-opens-metaplant-application-center-train-atlas-humanoid-robots/",
+      "date_or_recency": "published: 2026-09-21; observed: unknown",
+      "evidence_type": "secondary",
+      "notes": "STATUS: supplied — opened by the packet preparer. Hyundai owns Boston Dynamics. Planned production volumes do not measure routine robot use."
+    },
+    {
+      "claim": "IFR reports approximately 7,000 full-size humanoids sold globally in 2025 and describes specialized uses and human teleoperation.",
+      "source_or_reference": "S8 — https://ifr.org/ifr-press-releases/news/global-sales-of-professional-service-robots-surge-24-percent",
+      "date_or_recency": "published: 2026-09-30; observed: 2025 for sales",
+      "evidence_type": "secondary",
+      "notes": "STATUS: supplied — opened by the packet preparer. Annual hardware sales span applications and provide no repeated-use share for the exact unit."
+    },
+    {
+      "claim": "In RoboDojo, the best tested policy achieved 12.8% overall real-world success versus 100% for human teleoperation across 18 tasks on three bimanual platforms.",
+      "source_or_reference": "S9 — https://huggingface.co/papers/2607.04434",
+      "date_or_recency": "published: 2026-07-05, revised 2026-07-08; observed: unknown",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: supplied — the packet preparer read the preprint in part. Challenging tabletop tasks on bimanual arms give no tote-transfer failure rate."
+    },
+    {
+      "claim": "ISO 10218-1:2025 is a published industrial robot safety standard. ISO/CD 25785-1 for dynamically stable industrial mobile robots was at committee-draft stage.",
+      "source_or_reference": "S10 — https://committee.iso.org/standard/73933.html | S11 — https://committee.iso.org/standard/91469.html",
+      "date_or_recency": "published: 2025-02-05 for ISO 10218-1, unknown for ISO/CD 25785-1; observed: 2026-07-08 for the draft comment-stage closure",
+      "evidence_type": "primary-historical",
+      "notes": "STATUS: supplied — both pages were opened by the packet preparer. The draft can change, and neither card establishes safety or compliance for a site installation."
+    },
+    {
+      "claim": "Agility reported nine customer sites and more than 65,000 operating hours, alongside indicative pricing and future production targets.",
+      "source_or_reference": "S12 — https://www.therobotreport.com/agility-robotics-reports-18m-revenue-ahead-of-humanoid-spac/",
+      "date_or_recency": "published: 2026-09-07; observed: unknown for the site and operating-hour totals",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: supplied — the packet preparer opened the trade article. Company figures reported secondhand lack named sites, task-specific denominators and binding terms."
+    },
+    {
+      "claim": "An internal memo claims production use at major 3PLs. The case also supplies Diffusion, Promethean and Landscape judgments.",
+      "source_or_reference": "Case context — internal memo and upstream expert reads",
+      "date_or_recency": "published: unknown; observed: unknown",
+      "evidence_type": "case-premise",
+      "notes": "STATUS: supplied — case assertions and prior judgments. The memo supplies no named corroboration, and the upstream reads do not qualify as independent observations."
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "ADVOCATE CASE: Prepare a Bounded experiment. The reported GXO handoff directly matches the initial station task, and limited real use would measure intervention and throughput under conditions an isolated setup cannot fully recreate.",
+    "RISK OFFICER CASE: Monitor. If an isolated setup cannot preserve realistic tote presentation and AMR timing, peer shift records could resolve more of the uncertainty than a local test.",
+    "NEAREST ALTERNATIVE: Bounded experiment. The reported task match makes it plausible, but an identified controller still needs to demonstrate repeatable handoffs and controlled recovery before exposure to live orders.",
+    "BIAS CHECK: Novelty — foundation-model branding can overstate the task evidence. FOMO — the unsupported peer-production memo creates pressure to act. Sunk cost — not evidenced because the case states no evaluation budget or vendor contract. Excessive conservatism — not evidenced because the stated posture allows small reversible trials.",
+    "DISTINGUISHING EVIDENCE: By the Q1 2027 review, obtain dated records for an identified controller showing repeated handoffs across representative tote loads and arrival patterns, with logged interventions, faults and repeatable stop recovery. Compare those records with the agreed technical criteria and the current manual process.",
+    "Contrary observations: GXO's reported lack of production deployment and ROI conflicts with the vendor's account of live commercial operation. Independent bimanual benchmark results caution against extrapolating from selected demonstrations to robust physical handling.",
+    "Evidence gaps: The cards lack an identified controller for the matching installation, comparable shift-level reliability and intervention records, measured local value and demonstrated site-specific controls. The gaps leave those outcomes undetermined."
+  ],
+  "confidence_and_uncertainty": "RECOMMENDATION CONFIDENCE: Moderate — the procedure supports an isolated feasibility test, with execution dependent on establishing representative isolation and safe test conditions.\nZONE CONFIDENCE: High for the general evidence-default zone — an independent qualifying repeated-use share or two independently checkable routine users of identified systems could change it. High for the application evidence-default zone — qualifying repeated-use evidence specific to tote transfer or two independently checkable routine deployments with identified controllers could change it. These confidence judgments apply to the supplied record.",
+  "value_opportunity_implication": "The value hypothesis is that humanoid tote transfer could reduce repetitive associate handling at equivalent service levels relative to the current manual process. A later proof of value should compare throughput, manual handling exposure, intervention and oversight time, fallback labor, damage and fully loaded cost across comparable shifts. The cards establish a reported task analogue and supply no measured local productivity, ergonomic or economic benefit.",
+  "risk_governance_implication": "The VP Operations retains evaluation authorization and stop authority. The CFO controls capital and multi-year commitments. The proposed isolated setup requires demonstrated physical separation, controlled stop and recovery, segregation from production interfaces and documented data permissions before execution. Residual exposure includes equipment damage, unexpected motion within the test area and unsafe entry during fault recovery. The case identifies a station that could be fenced and manual transfer that remains available. It supplies no demonstration of containment or fallback. Any later proposal for near-person work requires EHS sign-off, and any use at a client-dedicated station requires resolution of applicable client permissions.",
+  "recommendation_management_implication": "RECOMMENDATION: Proof of concept — prepare an isolated feasibility proposal.\nNOW: Draft the one-station protocol, manual comparator and staged decision criteria for the VP Operations and Q1 capital review.\nBEFORE EXECUTION: Obtain VP authorization, name a test lead, confirm resources and access permissions, and complete the site safety review. Demonstrate segregation, stop and recovery before powered trials. Resolve vendor and data terms before use.\nBEFORE WIDER USE: Require a separate decision before live use. Before routine use or capital commitment, require documented comparable-peer results, local proof of value against manual transfer, approved safety and client conditions, total cost including intervention and fallback, and CFO approval for capital or multi-year terms.\nEXPERIMENT DESIGN: All elements proposed pending management approval.\nHYPOTHESIS: An identified foundation-model-controlled humanoid can repeatedly complete the specified AMR-to-conveyor handoff and recover safely from defined faults.\nCOMPARATOR: Manual transfers of identical test totes under matched presentations.\nSCOPE: One isolated station for up to about 12 weeks, with representative test loads and arrival variation. No live orders or production connections.\nOWNER ROLE: A site evaluation lead designated by VP Operations.\nMEASURES: Correct placements per attempt, cycle times, interventions, drops, fault recovery and stop performance.\nPROPOSED ACCEPTANCE RULE: Meet pre-agreed technical criteria across repeat runs and representative test conditions, with successful stop and recovery demonstrations before recommending a live trial.\nPROPOSED STOP RULE: Suspend on containment breach, unsafe motion, failed stop or unauthorized data capture. Require cause review and fresh authorization to resume.\nDECISIVE FACTORS: [Application] Bleeding edge by evidence default. [Organization] Fast-follower posture. [Organization] Reversible isolated scope.\nDRIVING FACTOR: [Application] Repeatable handoff and safe recovery with an identified controller remain unestablished.",
+  "change_monitoring_triggers": [
+    "TRIGGER [new evidence]: By 2027-11-24, an approved isolated evaluation meets its pre-agreed handoff and recovery criteria across representative conditions, and all safety and permission gates for limited live use are cleared, leaving comparative value as the primary uncertainty → Bounded experiment.",
+    "TRIGGER [internal capability]: At the Q1 2027 review or before any powered test, a dated site assessment identifies an unmet containment or entry-control requirement whose absence could expose associates to difficult-to-reverse injury during the proposed test → Defer.",
+    "TRIGGER [new evidence]: By 2027-11-24, a dated matched comparison shows no advantage over manual transfer across the agreed service, ergonomic and fully loaded cost criteria → Reject for now.",
+    "REVALIDATE: Recheck prior results after material changes to the controller model or version, robot hardware or end effector, interfaces, permissions, tote inputs or operating envelope before relying on those results.",
+    "REVERSAL CONDITION: A documented feasibility pass for an identified controller on representative tote handoffs, with live-use gates cleared, would change the next decision to Bounded experiment.",
+    "REVIEW DATE: 2027-03-31, or sooner if comparable-peer shift records or a site safety finding becomes available. Watch for independently checkable recurring tote-transfer shifts, controller disclosure, intervention and downtime records, binding commercial terms, and changes in the applicable safety standards."
+  ],
+  "abstention_or_more_information_needed": [
+    "HANDOFF → Creation Agent: What development arc and technical predecessors explain today's foundation-model-controlled humanoid capability?",
+    "HANDOFF → Innovation Agent: What innovation lifecycle and performance-based degree are supported for the exact technology?",
+    "HANDOFF → Promethean Agent: Does dated comparative evidence on setup and intervention change the significance judgment?",
+    "HANDOFF → Diffusion Agent: Do new repeated-use records establish an application stage or change the timing judgment?",
+    "HANDOFF → Organizational Adoption Agent: Can the 3PL staff, fund, govern and sustain the isolated stage, including test ownership, EHS review, protected hours, permissions, training, fallback and associate engagement?",
+    "HANDOFF → Landscape Agent: Which available configurations can document controller identity, support an isolated test and supply comparable operating records and applicable terms?",
+    "EVIDENCE REQUEST: An identified controller, representative test conditions and a documented containment and stop demonstration are needed before powered execution. The supplier, site evaluation lead and EHS manager can supply them.",
+    "EVIDENCE REQUEST: Repeatable handoff and recovery logs, plus applicable live-use safety and client permissions, are needed before a Bounded experiment. The evaluation lead, EHS manager and client account or contract owners can supply them.",
+    "EVIDENCE REQUEST: Comparable-peer shift records, measured local value against manual transfer and binding total-cost and exit terms are needed before adoption or a capital or multi-year decision. Comparable operators, site operations, procurement and finance can supply them."
+  ]
+}

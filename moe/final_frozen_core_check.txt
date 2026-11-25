@@ -1,0 +1,11 @@
+Lab 10 frozen-core check, 2026-11-24 19:59 EST, scaffold used for the dry run (agents at main 28ac2d5, unedited):
+FROZEN CORE INTACT
+
+Agent instruction SHA-256 (unchanged from their tags):
+cd80bc4f04a8950a  agents/team_adoption_agent
+c5c3038c16e4c72a  agents/team_creation_agent
+8942a289550ddbf8  agents/team_diffusion_agent
+9617ebfa14905e8f  agents/team_innovation_classification_agent
+9e76d75deb4774f1  agents/team_landscape_agent
+ad4e19f73ece60e5  agents/team_organizational_adoption_agent
+4c33eee30c6548c1  agents/team_promethean_classification_agent

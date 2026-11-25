@@ -1,0 +1,126 @@
+{
+  "agent": {
+    "name": "Silver-Milk Team Landscape Agent",
+    "specialty": "Dated technology-landscape intelligence: eight fixed landscape dimensions (capability, use cases, trackers, ecosystem, standards, price/performance, coverage, alternatives) each with a basis, broad signals separated from the few that matter to this organization, execution gates kept apart from landscape signals, a gating-condition x movement table that sets the monitoring stance, owned triggers mapped to actions, and a dated stale/hype flag (never the adoption decision, never a vendor selection)",
+    "version": "1.1-team"
+  },
+  "analytical_question": "Where does this emerging technology and application sit in the current landscape of alternatives, complements, ecosystems, standards, regulation, investment and adoption signals, and what should this organization monitor next?",
+  "general_et_finding": "AS OF: 2026-11-24\nUNIT: General-purpose humanoid robots controlled by learned vision-language-action robot foundation models.\nL1 TECHNICAL CAPABILITY: Developing — real-humanoid research shows useful bounded manipulation, with failures and weak results for some baseline policies. Replication and routine-review reliability remain unestablished (Albaba et al., 2026-10; Google DeepMind, 2026-07). BASIS: E1, E2.\nL2 USE-CASE EVIDENCE: Demonstrations dominate — research shows the control stack on a real robot. The strongest live-operation accounts for adjacent humanoids leave the deployed control model unidentified (Albaba et al., 2026-10; GXO and Agility, 2026-10). BASIS: E1, E4, E11.\nL3 TRACKER PLACEMENT: Not retrieved — Gartner's public abstract was opened. The placement chart for the July 2026 Hype Cycle for Physical AI was unavailable (Gartner, 2026-07). BASIS: E6.\nL4 VENDOR/ECOSYSTEM STRUCTURE: Fragmented — multiple hardware and model suppliers, with partner-limited and downloadable models visible and no documented market leader (Google DeepMind, 2026-07; NVIDIA, 2026-08). BASIS: E2, E3.\nL5 STANDARDS & REGULATION: Emerging — ISO/CD 25785-1 edition 1 is a committee draft. ISO 10218-1:2025 edition 3 is published for industrial robots. These are ISO instruments (ISO, 2026-07 and 2025-02). BASIS: E7, E8.\nL6 PRICE/PERFORMANCE: Mixed — low-confidence read from expanding model access and continuing hardware and service charges. Comparable twelve-month transaction prices at fixed capability are unavailable (NVIDIA, 2026-08; The Robot Report, 2026-09). BASIS: E3, E10.\nL7 COVERAGE TONE: Mixed — coverage pairs market growth and commercial prospects with teleoperation and economic caveats (IFR, 2026-09; The Robot Report, 2026-09). BASIS: E9, E10.\nL8 ALTERNATIVES & COMPLEMENTS: INCUMBENT: manual handling, fixed transfer automation. COMPETING: task-specific mobile manipulators. COMPLEMENTS: fleet orchestration, sensing, simulation and independent safety controls.\nPOSITION: Whole-body VLA capability is visible on bounded tasks. Verified production use and comparable economics for this control stack remain sparse.",
+  "application_finding": "APPLICATION SIGNALS: L1 for repeatable tote grasp, placement and recovery across ordinary station variation. L2 for model-identified evidence with scheduled hours, successful transfers, interventions and downtime. L5 for safety evidence specific to dynamically balancing robots at an integrated transfer station.\nAPPLICATION-SPECIFIC EVIDENCE: Thin — dated records describe the AMR-to-conveyor workflow in live operations, but the operating model is undisclosed and independent shift-level performance evidence was unavailable (E4, E5, E11).\nSTRONGEST ALTERNATIVE: Fixed transfer automation — a powered conveyor or dedicated transfer module can handle a repeatable handoff where the docking geometry and tote interfaces support it.",
+  "organization_specific_finding": "UNIT OF ANALYSIS: VP Operations at the hypothetical six-site 3PL, with CFO authority over capital and multi-year contracts.\nGATING CONDITION: As a fast follower that requires repeatable peer results and measured evidence before multi-year commitment, the 3PL needs comparable peer tote-transfer operations with a named VLA stack and repeatable, measured service-level, safety and cost performance.\nCONDITION STATUS: Partly met — the comparable physical handoff has been reported in live operations. Model identity, repeatable shift performance, safety and economics remain unverified. BASIS: E4, E5, E11.\nMOVEMENT: None — planned expansion, on-task accuracy without scheduled-shift denominators and research results on other tasks do not establish progress against the full peer-evidence gap. BASIS: E1, E4, E5, E11.\nSTANCE: Scheduled watch.\nEXECUTION GATES: Evaluation authorization and stop authority — VP Operations. Near-person safety sign-off — EHS manager. Capital or multi-year contract approval — CFO. Evaluation budget and staff hours, vendor terms, client consent, data and video rights and retention, security review, and documented fallback readiness — owner not stated.\nRELEVANT SIGNALS: L2 — GXO's pilot versus production distinction matters because stalled stations can incur SLA penalties. L5 — ISO's balancing-robot draft matters because associates could be exposed to loss of stability. L6 — service and deployment charges matter to the Q1 2027 capital plan.\nPOPULAR BUT NOT DECISIVE HERE: Global humanoid shipments span tasks and control stacks, so they cannot quantify tote-station performance (E9).\nMOST CONSEQUENTIAL DEVELOPMENT: L2 — GXO's August disclosure that its humanoid work remained at pilot stage and had yet to achieve ROI could change what Operations asks peers to document before reopening the FY2027 capital question (E5).\nECOSYSTEM DEPENDENCY: A provider-supported robot orchestration interface to the existing AMR and conveyor controls.\nOPTIONS DOCUMENTED: Digit with Agility Arc — adopter-self-report, joint release with vendor, documents live tote transfers and cloud orchestration. Gemini Robotics 2 — vendor-claim, whole-body VLA early access. Isaac GR00T N1.7 — vendor-claim, downloadable weights with conflicting license language. NO SELECTION.",
+  "evidence": [
+    {
+      "claim": "E1: VioLA researchers report real Unitree G1 results on bounded locomotion and manipulation tasks, with 88.6% manipulation success for their policy and weak zero-shot locomotion results for comparator policies.",
+      "source_or_reference": "Albaba et al., VioLA preprint, https://arxiv.org/abs/2610.12435",
+      "date_or_recency": "2026-10-08",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: independent. LOAD-BEARING. Authors evaluated their own research system and benchmarked third-party baselines. Single-body study with no independent replication or tote-station deployment."
+    },
+    {
+      "claim": "E2: DeepMind documents partner-only access to Gemini Robotics 2 VLA and On-Device 2, with variable success across its own whole-body manipulation tests.",
+      "source_or_reference": "Google DeepMind, https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+      "date_or_recency": "2026-07-30",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: vendor-claim. LOAD-BEARING. Vendor evaluation and access terms. Tests do not cover tote handling."
+    },
+    {
+      "claim": "E3: NVIDIA documents successive GR00T releases and N1.7-3B weight access, with a discrepancy between the commercial-use description and repository license text.",
+      "source_or_reference": "NVIDIA Isaac GR00T developer information, https://developer.nvidia.com/isaac/gr00t/llm-info.md",
+      "date_or_recency": "2026-08",
+      "evidence_type": "primary-technical",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: vendor-claim. LOAD-BEARING. Weight availability does not establish usable commercial rights, deployment cost or field reliability."
+    },
+    {
+      "claim": "E4: GXO and Agility describe live tote transfers at Flowery Branch under a commercial agreement, name the Arc orchestration platform and announce additional sites for 2027.",
+      "source_or_reference": "GXO and Agility joint release, https://investors.gxo.com/news-releases/news-release-details/gxo-and-agility-robotics-expand-partnership-accelerate",
+      "date_or_recency": "2026-10-26",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: adopter-self-report. UNDERLYING: GXO and Agility's joint account of the same Flowery Branch deployment and tote milestone previously reported by Agility. LOAD-BEARING. Vendor co-issued. Additional facilities are plans. Arc identifies orchestration, with the deployed control model undisclosed."
+    },
+    {
+      "claim": "E5: GXO's CEO described humanoid deployments as pilots, expected zero humanoid robots in production in 2026 and said humanoids had yet to deliver ROI.",
+      "source_or_reference": "GXO second-quarter earnings call transcript, https://gxologistics.gcs-web.com/static-files/353008a6-ffe8-40ea-b6e6-0c38832d5e3d",
+      "date_or_recency": "2026-08-05",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: adopter-self-report. LOAD-BEARING. Direct transcript replaces reliance on the supplied trade-press paraphrase. The August production expectation is dated and does not establish the later status of every site."
+    },
+    {
+      "claim": "E6: Gartner's dated 2026 Physical AI Hype Cycle abstract describes the tracker scope, but its public text does not expose the chart or exact-unit placement.",
+      "source_or_reference": "Gartner, Hype Cycle for Physical AI, 2026, https://www.gartner.com/en/documents/8138029",
+      "date_or_recency": "2026-07-16",
+      "evidence_type": "secondary",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: industry-analyst. LOAD-BEARING for the retrieval limitation only. The abstract supplies no placement or movement evidence."
+    },
+    {
+      "claim": "E7: ISO/CD 25785-1 edition 1 is under committee review and addresses industrial mobile robots that rely on active stability control.",
+      "source_or_reference": "ISO committee draft listing, https://committee.iso.org/standard/91469.html",
+      "date_or_recency": "2026-07-08",
+      "evidence_type": "primary-historical",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: standards-regulatory. LOAD-BEARING. The date is the supplied committee-stage milestone, not a publication date. The current issuer listing identifies edition 1 as a committee draft."
+    },
+    {
+      "claim": "E8: ISO identifies ISO 10218-1:2025 edition 3 as its published standard for industrial robot safety requirements.",
+      "source_or_reference": "ISO edition and scope listing, https://committee.iso.org/standard/73933.html",
+      "date_or_recency": "2025-02",
+      "evidence_type": "primary-historical",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: standards-regulatory. LOAD-BEARING. Published standard. The listing does not establish applicability to a specific installation, legal incorporation or product certification."
+    },
+    {
+      "claim": "E9: IFR reports about 7,000 full-size humanoids sold globally in 2025 and describes current uses as largely specialized and often assisted by teleoperation.",
+      "source_or_reference": "International Federation of Robotics, https://ifr.org/ifr-press-releases/news/global-sales-of-professional-service-robots-surge-24-percent",
+      "date_or_recency": "2026-09-30",
+      "evidence_type": "secondary",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: industry-analyst. LOAD-BEARING. Industry federation release. Unit sales across uses and control stacks do not measure installed base, firm adoption or VLA production."
+    },
+    {
+      "claim": "E10: Trade coverage pairs Agility's operating scale ambitions with an operating loss and reported planning assumptions for monthly service, purchase, deployment and maintenance.",
+      "source_or_reference": "The Robot Report, supplied register S12, https://www.therobotreport.com/agility-robotics-reports-18m-revenue-ahead-of-humanoid-spac/",
+      "date_or_recency": "2026-09-07",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: supplied. SOURCE CLASS: vendor-claim. UNDERLYING: Agility company figures from its S-4 as reported by The Robot Report. LOAD-BEARING for coverage and illustrative charge structure only. Underlying S-4 pricing was not verified. Figures are assumptions, with no comparable transaction-price series."
+    },
+    {
+      "claim": "E11: Agility's registration statement reports roughly 98% on-task operational accuracy at GXO and describes tote movements at Schaeffler. Neither account identifies the deployed VLA model or supplies a scheduled-shift denominator for the GXO accuracy figure.",
+      "source_or_reference": "Agility Robotics Form S-1, https://www.sec.gov/Archives/edgar/data/2074973/000121390026118037/ea0311221-s1_agility.htm",
+      "date_or_recency": "2026-11-10",
+      "evidence_type": "dated-market",
+      "notes": "STATUS: inspected-this-run. SOURCE CLASS: vendor-claim. UNDERLYING: Agility's own operating records, including the same GXO tote-count milestone as E4. LOAD-BEARING. Filing venue does not make the performance figures independently verified."
+    },
+    {
+      "claim": "E12: An uncited internal memo says humanoids are already running in production at major 3PLs.",
+      "source_or_reference": "Case additional_context, internal operations memo as reported in the packet",
+      "date_or_recency": "undated memo, supplied in 2026-11-24 case packet",
+      "evidence_type": "case-premise",
+      "notes": "STATUS: supplied. SOURCE CLASS: case-premise. The packet date identifies when the claim was supplied. Original memo date and provenance are unavailable."
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "COMPETING READING: Background scan is defensible if partial fulfillment requires model-verified operating evidence. On that reading, the GXO workflow is evidence for the physical handoff alone and the exact-stack gate remains unmet.",
+    "CHASM EVIDENCE FOR: E4, 2026-10-26, is the strongest direct account of a matching workflow performing real tote moves under a commercial agreement. It supports work beyond a staged demonstration for adjacent humanoid hardware. It leaves routine production and VLA control unresolved.",
+    "CHASM EVIDENCE AGAINST: E5, 2026-08-05, gives the nearest peer's own distinction between pilots and production and reports no achieved humanoid ROI as of that call.",
+    "DISTINGUISHING EVIDENCE: A dated, independently verified peer operating record names the model and version in control, classifies the work as routine production, and reports scheduled hours, completed and failed transfers, interventions, downtime, safety outcomes and cost against the incumbent workflow.",
+    "STALE/HYPE FLAG: E12, the undated memo claim supplied on 2026-11-24, generalizes production use across major 3PLs. Its original source could not be traced. The closest original records describe one named 3PL's live commercial work and its earlier pilot-status disclosure (E4, E5). CONTROL: Excluded the memo from condition status and movement. Counted the joint release and vendor filing as overlapping evidence for the same GXO workflow. REFRESH BY: 2027-02-24.",
+    "The fixed register supplied no exact-unit tracker placement. Gartner's chart and IEEE's full report were unavailable on retrieval, so no tracker movement or cross-tracker disagreement was assigned.",
+    "L6 reflects mixed evidence on access and cost structure. The available sources do not resolve a twelve-month quality-adjusted market price trend."
+  ],
+  "confidence_and_uncertainty": "CONFIDENCE: Moderate — broad landscape confidence is moderate for bounded whole-body capability and the standards status, and low for tracker placement and comparable pricing. Local relevance confidence is moderate for the AMR-to-conveyor workflow match and low for repeatability or economics under a named VLA stack. Gartner's full placement chart and the IEEE Computer Society full predictions report could not be retrieved. Independent multi-site exact-stack production audits and quality-adjusted buyer transaction series were unavailable.",
+  "value_opportunity_implication": "A comparable operating record could show whether humanoids reduce repetitive manual transfers at an existing interface while preserving SLA throughput. The economic comparison needs cost per successful transfer and scheduled-shift performance, including human assistance, integration, downtime and fallback labor. A cumulative tote count cannot establish either labor relief or delivered cost.",
+  "risk_governance_implication": "Loss of balance, dropped totes and prolonged fallback can expose associates and interrupt client service. Peer records are more transferable when they identify the equipment, model version, safeguards, exposure conditions and exceptions. ISO's draft signals work on the applicable safety problem. Site authorization, contractual permissions and EHS review remain separate gates.",
+  "recommendation_management_implication": "STANCE: Scheduled watch — WATCH FIRST: Dated peer evidence that distinguishes routine VLA-controlled tote transfer from pilot activity and reports shift-level outcomes against a baseline. STRONGEST ALTERNATIVE: Fixed transfer automation at the AMR-to-conveyor handoff. REFRESH: Quarterly, with the first review ahead of the Q1 2027 capital-plan decision where timing permits, and a full source refresh at least annually.",
+  "change_monitoring_triggers": [
+    "TRIGGER 1 [L2] USE-CASE: A dated independent site assessment confirms that a comparable 3PL has completed routine shifts using a named VLA for AMR-to-conveyor tote transfers and publishes transfer and intervention denominators, while safety or cost evidence remains incomplete — SOURCE: independent site assessment or audited client operations report — OWNER: VP Operations (proposed) — CADENCE: quarterly → Active watch. Check workflow and model comparability. Threshold pending VP Operations approval.",
+    "TRIGGER 2 [L2] USE-CASE: A dated, independently verified peer operating record shows repeatable named-stack results across comparable shifts, with service-level, safety and cost measures meeting approved criteria — SOURCE: audited peer or client operations record — OWNER: VP Operations (proposed) — CADENCE: quarterly → Landscape not the constraint. Reassess every part of the external gate. Threshold pending VP Operations approval with EHS and CFO input.",
+    "TRIGGER 3 [L2] REVERSAL: A dated independent operating review confirms that the comparable GXO handoff was discontinued after failed service or safety performance and documents no replacement comparable peer operation — SOURCE: independent operational review with site records — OWNER: VP Operations (proposed) — CADENCE: quarterly → Background scan. Remove the withdrawn workflow from the evidence for partial fulfillment. Threshold pending VP Operations approval.",
+    "REVIEW DATE: 2027-02-24."
+  ],
+  "abstention_or_more_information_needed": [
+    "MORE INFO → Original memo citation and date: needed to trace which named 3PLs, workflows and production definitions the memo relied on.",
+    "MORE INFO → Peer shift records, model identity and version, and approved comparison criteria: needed to verify repeatability, SLA impact, safety and cost against the incumbent.",
+    "HANDOFF → Creation Agent: Which advances made learned whole-body humanoid control possible?",
+    "HANDOFF → Innovation Agent: Where is this capability in its innovation lifecycle, and what DEGREE label fits?",
+    "HANDOFF → Promethean Agent: What significance class applies to this technology and use?",
+    "HANDOFF → Diffusion Agent: What diffusion stage and timing are supported for the exact unit and for the tote-transfer application?",
+    "HANDOFF → Adoption Agent: Given peer evidence and the fixed-transfer comparator, what action and evidence requirements fit the management question?",
+    "HANDOFF → Organizational Adoption Agent: Can the 3PL govern and operate the proposed stage, and who clears each unresolved execution gate?"
+  ]
+}

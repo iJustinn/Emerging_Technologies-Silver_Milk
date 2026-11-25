@@ -1,0 +1,9 @@
+PASS  S-2a action echo identical to template  ('Proof of concept — prepare an isolated feasibility proposal.' vs 'Proof of concept — prepare an isolated feasibility proposal.')
+PASS  S-2b every condition/caution cites agent + an existing label
+PASS  S-2c no new dates
+PASS  S-2c no new URLs
+PASS  S-2c no new numbers
+PASS  S-2d every conflict row answered  (template 5, reply [1, 2, 3, 4, 5])
+PASS  S-2d conflict types in Q/E/J
+PASS  S-2e no vendor selection wording
+SYNTHESIS CHECK: PASS
